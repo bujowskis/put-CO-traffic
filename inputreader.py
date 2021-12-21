@@ -1,18 +1,18 @@
-import simulation as sim
+import instance as ins
 import objects as obj
 
 
-def readInput(filepath) -> sim.Simulation:
+def readInput(filepath) -> ins.Instance:
     """
     Reads the input file, returns all parameters necessary for the simulation
 
     :param filepath: path to the input text file
-    :return: todo - add all returns
+    :return: object of type Instance, with all the parameters assigned according to the specification in filepath
     """
     if filepath is None:
         raise Exception("no filepath provided")
 
-    simulation = sim.Simulation()
+    simulation = ins.Instance()
     with open(filepath, "r") as file:
         # first line
         line = file.readline().split()
@@ -22,13 +22,28 @@ def readInput(filepath) -> sim.Simulation:
         simulation.no_cars = int(line[3])
         simulation.bonus = int(line[4])
 
-        # streets todo
+        # intersections
+        simulation.intersections = [obj.Intersection(i) for i in range(simulation.no_intersections)]
+
+        # streets
         for i in range(simulation.no_streets):
             line = file.readline().split()
-            simulation.streets.add(obj.Street())
+            street = obj.Street(line[2], int(line[3]))
+            simulation.intersections[int(line[1])].streets_in.add(street)
+            simulation.streets[line[2]] = street
 
-        # cars todo
+        # cars
+        for i in range(simulation.no_cars):
+            line = file.readline().split()
+            car = obj.Car(line[1:len(line)])
 
-        # intersections todo
+            # first (beginning) street
+            street = simulation.streets[line[1]]
+            street.cars_total += 1
+            street.queue.put(car)
+
+            # rest of the streets
+            for j in range(1, len(line)-1):  # no need to add to total count for the last street
+                simulation.streets[line[j]].cars_total += 1
 
     return simulation

@@ -1,6 +1,6 @@
 import inputreader
 import objects as obj
-import simulation as sim
+import instance as ins
 
 # main program
 # todo
