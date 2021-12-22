@@ -25,44 +25,57 @@ class Intersection:
     def __init__(self, id: int):
         self.id = id
         self.streets_in = set()
+        self.number_of_street_that_has_green = 0  # according to the position in schedule
+        self.n_streets_in_schedule = 0
         self.schedule = None
+        #self.cycle_length = 0
+        self.time_to_change_lights =
         # todo - maybe lights state
+    def switchLights(self):
+        """ function used to overrwite street_that_has_green and
+        update time_to_change_ights
+        """
 
+        self.number_of_street_that_has_green = \
+            (self.number_of_street_that_has_green + 1) % self.n_streets_in_schedule
+        self.time_to_change_lights = self.schedule[self.number_of_street_that_has_green][1]
 
 class Schedules:
     """
-    Schedule is a SET of sequences of turning the lights on and off
-    for each intersection
+    Schedule is a DICTIONARY of sequences of turning the lights on and off
+    for each intersection:
+        - key: intersection_id
+        - value: list of tuples: (street_name, duration)
     """
 
     def __init__(self):
 
-        self.schedules = {}     # key: intersection_id
+        self.schedules_dict = {}     # key: intersection_id
                                 # value: list of tuples: (street_name, duration)
 
     def add_schedule(self, intersection_id, data):
-        self.schedules[str(intersection_id)] = data
+        self.schedules_dict[str(intersection_id)] = data
 
-    def updateIntersections(self):
-        """
-        invoking this function will update schedules for all intersections,
-        that have their schedule specified
-        """
-        for schedule in self.schedules:
-            pass
-
-    def areValid(self):
-        """
-        checks if the set of schedules is valid
-        """
-        pass
+    # def updateIntersections(self):
+    #     """
+    #     invoking this function will update schedules_dict for all intersections,
+    #     that have their schedule specified
+    #     """
+    #     for schedule in self.schedules_dict:
+    #         pass
+    #
+    # def areValid(self):
+    #     """
+    #     checks if the set of schedules_dict is valid
+    #     """
+    #     pass
 
     def export(self, filename):
         with open(filename, 'w') as out_file:
-            out_file.write(f'{len(self.schedules.keys())}\n')  # todo - calculate how many
-            for intersection_id in self.schedules.keys():
-                out_file.write(f'{intersection_id}\n{len(self.schedules[intersection_id])}\n')
-                for i in self.schedules[intersection_id]:
-                    out_file.write(f'{i[0]} {i[1]}\n')
+            out_file.write(f'{len(self.schedules_dict.keys())}\n')  # todo - calculate how many
+            for intersection_id in self.schedules_dict.keys():
+                out_file.write(f'{intersection_id}\n{len(self.schedules_dict[intersection_id])}\n')
+                for i in self.schedules_dict[intersection_id]:
+                    out_file.write(f'{i[0].name} {i[1]}\n')
 
 

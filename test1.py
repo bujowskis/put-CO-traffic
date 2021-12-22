@@ -9,7 +9,8 @@ instance = inputreader.readInput("example-graphs/a.txt")
 # now, based on the instance, we specify the schedule that maximizes
 # the prize
 
-schedule_uniform = instance.uniform_schedules()
-schedule_uniform.export('schedule_1.txt')
+schedules_uniform = instance.uniform_schedules()
+schedules_uniform.export('schedule_1.txt')
+instance.simulate(schedules_uniform, do_print=True)
 # now evaluate the performance
 
