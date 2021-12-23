@@ -9,16 +9,98 @@ class Street:
         self.light_is_green = False
         self.heading_car = None
         self.last_car = None
-        self.cars_total = 0
+        self.cars_total = 0  # FIXME: may be redundant
+
+    def performAction(self, curr_time, do_print):
+        """
+        1) "move" the car that is in the front (heading_car)
+            if the car already passed the entire street, add it
+            to the queue and update heading_car
+        2) check if there is any car in the queue
+            If there is, let this car cross the intersection
+        """
+        car_reaches_dest = self.updateHeadingCar(do_print, curr_time)
+
+        if not self.queue.empty():
+            car = self.queue.get()
+            car.crossIntersection(curr_time, do_print)
+            print(f'car{car.car_id} crosses intersection from {car.path[car.current_position].name} '
+                  f'to {car.path[car.current_position+1].name}')
+
+        return car_reaches_dest
+
+    def addCar(self, new_car, curr_time, do_print):
+        new_car: Car
+        if do_print:
+            print(f'car {new_car.car_id} added to street {self.name}')
+        if self.heading_car is not None:
+            assert(self.drive_time > 0)
+            self.heading_car.driving = self.drive_time
+            last_car_so_far = self.last_car
+            last_car_so_far.on_tail = (new_car, curr_time - last_car_so_far.time_I_entered_the_street)
+        else:
+            self.heading_car = new_car
+            self.last_car = new_car
+        new_car.time_I_entered_the_street = curr_time
+
+    def updateHeadingCar(self, do_print, curr_time):
+        self.heading_car: Car
+        """
+        if the car that is in front reaches the end of the street, then add it to
+        queue, make the second car the heading one
+            (But if the street is the last one in the path, then add points to
+            the score, delete the car)
+        Else, update the driving time
+        """
+
+        car_reaches_dest = False
+        if self.heading_car is not None:
+            # if the car just crossed the intersection, it shouldn't move further
+            # in this turn
+            if self.heading_car.time_I_entered_the_street != curr_time:
+                self.heading_car.driving -= 1
+                if do_print:
+                    print(f'car {self.heading_car.car_id} has '
+                          f'{self.heading_car.driving} secs to pass road {self.name}')
+
+            # if heading car has reached the end of the street
+            if self.heading_car.driving == 0:
+                # if it is the last street in car's path
+                if self.heading_car.current_position == self.heading_car.last_idx:
+                    car_reaches_dest = True
+                else:
+                    self.queue.put(self.heading_car)
+                    if do_print:
+                        print(f'car {self.heading_car.car_id} '
+                              f'ends at {self.heading_car.path[-1].name}')
+
+                if self.heading_car.on_tail is not None:
+                    temp_time = self.heading_car.on_tail[1]
+                    self.heading_car = self.heading_car.on_tail[0]
+                    self.heading_car.driving = temp_time
+        else:  # if there is no car driving through the street:
+            pass
+        return car_reaches_dest
 
 
 class Car:
-    def __init__(self, path):
+    def __init__(self, path, car_id):
         self.path = path
         self.last_idx = len(path) - 1  # index of the last street
         self.current_position = 0  # index relative to the position in path
         self.on_tail = None  # becomes tuple of form (Car_behind, offset in seconds)
         self.driving = 0  # used for leading cars, indicated how many seconds until end of street
+        self.time_I_entered_the_street = 0
+        self.car_id = car_id
+
+    def crossIntersection(self, curr_time, do_print):
+        """
+        car is in front of the queue, has the green light, crosses the intersection,
+        enters the next street in it's path
+        """
+        self.path[self.current_position+1].addCar(self, curr_time, do_print)
+
+
 
 
 class Intersection:
@@ -29,16 +111,19 @@ class Intersection:
         self.n_streets_in_schedule = 0
         self.schedule = None
         #self.cycle_length = 0
-        self.time_to_change_lights =
+        self.time_to_change_lights = 0
         # todo - maybe lights state
+
     def switchLights(self):
-        """ function used to overrwite street_that_has_green and
-        update time_to_change_ights
+        """
+        function used to overwrite street_that_has_green and
+        update time_to_change_lights
         """
 
         self.number_of_street_that_has_green = \
             (self.number_of_street_that_has_green + 1) % self.n_streets_in_schedule
         self.time_to_change_lights = self.schedule[self.number_of_street_that_has_green][1]
+
 
 class Schedules:
     """

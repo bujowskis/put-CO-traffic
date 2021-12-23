@@ -1,0 +1,4 @@
+
+Car.path przechowuje teraz pointery ulic, a nie nazwy
+
+car_id tylko do rozróżniania samochodów, algorytm z nich nie korzysta

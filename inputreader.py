@@ -33,9 +33,11 @@ def readInput(filepath) -> ins.Instance:
             simulation.streets[line[2]] = street
 
         # cars
+
         for i in range(simulation.no_cars):
             line = file.readline().split()
-            car = obj.Car(line[1:len(line)])
+            path_strings = line[1:len(line)]
+            car = obj.Car(streetObjectsAsPath(path_strings, simulation.streets), i+1)
 
             # first (beginning) street
             street = simulation.streets[line[1]]
@@ -47,3 +49,17 @@ def readInput(filepath) -> ins.Instance:
                 simulation.streets[line[j]].cars_total += 1
 
     return simulation
+
+
+def streetObjectsAsPath(path_strings, streets_dict: dict):
+    """
+    Given the path represented as street names, returns the path represented
+    by street objects
+    """
+    path_objects = []
+    for street_string in path_strings:
+        path_objects.append(streets_dict[street_string])
+    return path_objects
+
+
+

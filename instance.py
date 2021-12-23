@@ -11,12 +11,13 @@ class Instance:
         self.no_intersections = 0   # (2 <= I <= 10^5)
         self.no_streets = 0         # (2 <= S <= 10^5)
         self.no_cars = 0            # (1 <= V <= 10^3)
-        self.bonus = 0              # (1 <= F <= 10^3)
+        self.bonus = 0   # (1 <= F <= 10^3)
         self.streets = dict()
         # self.cars = set()
         self.intersections = None   # list
         self.schedules = None  # todo - is even needed? we generate schedules_dict using greedy and xxx
         self.time = 0
+
 
     def simulate(self, schedules: Schedules, do_print=False) -> int:
         """
@@ -43,6 +44,8 @@ class Instance:
         """
 
         # load the schedules to the intersections
+        # FIXME - think of more efficient way to keep schedules, since loading it each time
+        # is redundant
         active_intersections = []
         for intersection_id, data in schedules.schedules_dict.items():
             active_intersections.append(self.intersections[int(intersection_id)])
@@ -51,27 +54,33 @@ class Instance:
             active_intersections[-1].time_to_change_lights = data[0][1]
             #active_intersections[-1].cycle_length = sum(duration for _, duration in data)
 
-
-        cur_time = 0
+        curr_time = 0
         score = 0
-        while cur_time < self.duration:
+        while curr_time < self.duration:
             # first, check if it is needed to switch lights
+            if do_print:
+                print(f'\ntime={curr_time}')
             for i in active_intersections:
-                if i.time_to_change_lights <=0:
+                if i.time_to_change_lights == 0:
                     i.switchLights()
-                else:
-                    i.time_to_change_lights -= 1
 
+                i.time_to_change_lights -= 1
 
+                if do_print:
+                    print(f'at intersection {i.id}, green light from '
+                          f'{i.schedule[i.number_of_street_that_has_green][0].name}')
 
+                # now when the green light is updated:
+                # perform an action on the street with green light
+                street_with_green = i.schedule[i.number_of_street_that_has_green][0]
+                # below method returns true if some car reaches it's destination
+                car_reaches_dest = street_with_green.performAction(curr_time, do_print)
+                if car_reaches_dest:
+                    score += self.bonus + (self.duration - curr_time)
 
-
-
-            cur_time += 1
+            curr_time += 1
 
         return score
-
-
 
 
     def uniform_schedules(self) :
