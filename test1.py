@@ -11,7 +11,7 @@ instance = inputreader.readInput("example-graphs/a.txt")
 
 schedules_uniform = instance.uniform_schedules()
 schedules_uniform.export('schedule_1.txt')
+
+# now evaluate the performance
 score = instance.simulate(schedules_uniform, do_print=True)
 print(score)
-# now evaluate the performance
-
