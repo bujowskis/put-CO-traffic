@@ -56,18 +56,33 @@ class Street:
 
         car_reaches_dest = False
         if self.heading_car is not None:
+            time_of_driving = curr_time - self.heading_car.time_I_entered_the_street
+
             # if the car just crossed the intersection, it shouldn't move further
             # in this turn (it was already added to the street
             if self.heading_car.time_I_entered_the_street != curr_time:
 
 
-                self.heading_car.driving -= 1
+               #self.heading_car.driving -= 1
+                time_of_driving = curr_time - self.heading_car.time_I_entered_the_street
                 if do_print:
                     print(f'car {self.heading_car.car_id} has '
-                          f'{self.heading_car.driving} secs to pass road {self.name}')
+                          f'{time_of_driving} secs to pass road {self.name}')
 
             # if heading car has reached the end of the street
-            if self.heading_car.driving <= 0:
+            #if self.heading_car.driving <= 0:
+
+
+            # FIXME - use while loop to iterate over all tailing cars as long
+            # as they also passed the street, (do the below operation for all
+            # such cars)
+            # it usually happens that some streets have the red light,
+            # but there are some cars driving by them
+
+            # then, just when the street finally has green light
+            # add the cars to the queue as long a
+
+            if time_of_driving >= self.drive_time:
                 # if it is the last street in car's path
                 if self.heading_car.current_position == self.heading_car.last_idx:
                     car_reaches_dest = True

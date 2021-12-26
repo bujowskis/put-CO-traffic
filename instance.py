@@ -80,6 +80,14 @@ class Instance:
 
             curr_time += 1
 
+
+            print(f'score: {score}')
+
+        # TODO
+        # when the time is up, iterate over all the streets, maybe some cars had ended their journey
+        # but have not been updated, because of the red light
+
+
         return score
 
 
