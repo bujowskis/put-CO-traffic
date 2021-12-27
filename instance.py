@@ -45,7 +45,7 @@ class Instance:
 
         # load the schedules to the intersections
         # FIXME - think of more efficient way to keep schedules, since loading it each time
-        # is redundant
+        # is not optimal
         active_intersections = []
         for intersection_id, data in schedules.schedules_dict.items():
             active_intersections.append(self.intersections[int(intersection_id)])
@@ -74,20 +74,28 @@ class Instance:
                 # perform an action on the street with green light
                 street_with_green = i.schedule[i.number_of_street_that_has_green][0]
                 # below method returns true if some car reaches it's destination
-                car_reaches_dest = street_with_green.performAction(curr_time, do_print)
-                if car_reaches_dest:
-                    score += self.bonus + (self.duration - curr_time)
+                timestamps = street_with_green.performAction(curr_time, do_print)
+                if timestamps is not None:
+                    new_points = [self.bonus + (self.duration - i) for i in timestamps]
+                    score += sum(new_points)
 
             curr_time += 1
 
-
-            print(f'score: {score}')
-
-        # TODO
         # when the time is up, iterate over all the streets, maybe some cars had ended their journey
         # but have not been updated, because of the red light
 
+        # some cars may end their paths on streets that has their lights always red,
+        # nevertheless, they are able to complete their way and points should be given
+        if do_print:
+            print(f'\ntime={curr_time}')
+        assert(curr_time == self.duration)
+        for street in self.streets.values():
+            timestamps = street.finalStreetCheck(curr_time, do_print)
+            if timestamps is not None:
+                new_points = [self.bonus + (self.duration - i) for i in timestamps]
+                score += sum(new_points)
 
+        print(f'score: {score}')
         return score
 
 

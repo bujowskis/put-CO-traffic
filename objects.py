@@ -1,4 +1,5 @@
 from queue import SimpleQueue
+from typing import List, Any, Union
 
 
 class Street:
@@ -19,90 +20,195 @@ class Street:
         2) check if there is any car in the queue
             If there is, let this car cross the intersection
         """
-        car_reaches_dest = self.updateHeadingCar(do_print, curr_time)
+        timestamps = self.updateHeadingCar(do_print, curr_time)
 
         if not self.queue.empty():
             car = self.queue.get()
-            car.crossIntersection(curr_time, do_print)
+            car.crossIntersection(curr_time, do_print)  # FIXME: crossing the intersection should
+                                                        # take 1 second (now it is instant)
 
-
-        return car_reaches_dest
+        return timestamps
 
     def addCar(self, new_car, curr_time, do_print):
         new_car: Car
         # new_car.driving = self.drive_time
         if do_print:
-            print(f'car {new_car.car_id} added to street {self.name}')
+            print(f'car {new_car.car_id} will be added to street {self.name} in next second')
         if self.heading_car is not None:
-            assert(self.drive_time > 0)
+
             # self.heading_car.driving = self.drive_time ?? don't know why i'd put it here
             last_car_so_far = self.last_car
             last_car_so_far.on_tail = (new_car, curr_time - last_car_so_far.time_I_entered_the_street)
         else:
             self.heading_car = new_car
             self.last_car = new_car
-            new_car.driving = self.drive_time
-        new_car.time_I_entered_the_street = curr_time
+        # when the car crosses  the intersection, it has no tail
+        new_car.on_tail = None
+        new_car.time_I_entered_the_street = curr_time + 1  # here we state that crossing the
+        # intersection takes one second
 
-    def updateHeadingCar(self, do_print, curr_time):
+    def updateHeadingCar(self, do_print, curr_time) -> list or None:
         self.heading_car: Car
-        """
-        if the car that is in front reaches the end of the street, then add it to
-        queue, make the second car the heading one
-            (But if the street is the last one in the path, then add points to
-            the score, delete the car)
-        Else, update the driving time
-        """
 
-        car_reaches_dest = False
-        if self.heading_car is not None:
-            time_of_driving = curr_time - self.heading_car.time_I_entered_the_street
+        # current_car = self.heading_car
+        timestamps: list[int] = []
 
-            # if the car just crossed the intersection, it shouldn't move further
-            # in this turn (it was already added to the street
-            if self.heading_car.time_I_entered_the_street != curr_time:
+        # if there is no car on the street or the heading car has just crossed the
+        # intersection:
+        if self.heading_car is None or self.heading_car.time_I_entered_the_street == curr_time:
+            return None
 
 
-               #self.heading_car.driving -= 1
-                time_of_driving = curr_time - self.heading_car.time_I_entered_the_street
+        # the time the car should finish driving through current street
+        timestamp = self.heading_car.time_I_entered_the_street + self.drive_time
+
+        # just print how much time the car still needs
+        if do_print:
+            print(f'car {self.heading_car.car_id} has '
+                  f'{timestamp - curr_time} secs to pass road {self.name}')
+
+
+
+        # the following procedure has to be executed for all cars that have
+        # finished driving through a given street:
+        #current_car = self.heading_car
+
+        while timestamp <= curr_time:
+            # so if the car has already drove through the entire street:
+
+            # if it is the last street in car's path
+            if self.heading_car.current_position == self.heading_car.last_idx:
                 if do_print:
-                    print(f'car {self.heading_car.car_id} has '
-                          f'{time_of_driving} secs to pass road {self.name}')
+                    print(f'car {self.heading_car.car_id} '
+                          f'ends at {self.heading_car.path[-1].name} when time= {timestamp}')
+                timestamps.append(timestamp)
 
-            # if heading car has reached the end of the street
-            #if self.heading_car.driving <= 0:
+            else:  # if it is not the last street in the car's path:
+                self.heading_car.on_tail = None  # unlink the tail
+                self.queue.put(self.heading_car)
+
+            # now check the next car
+
+            # if the current car is the last one:
+            if self.heading_car.on_tail is None:
+                self.heading_car = None
+                self.last_car = None
+                break
+
+            else:
+                print(f'    next car is car {self.heading_car.on_tail[0].car_id}')
+                self.heading_car, offset = self.heading_car.on_tail
+                timestamp += offset
+
+        return timestamps
+
+    def finalStreetCheck(self, curr_time, do_print) -> list or None:
+        # fixme: remove duplicated code when everything works
+        """
+        Returns list of timestamps, in which cars have finished their paths
+        """
+        # pretty similar to updateHeadingCar method
+        timestamps = []
+        self.heading_car: Car
+        if self.heading_car is None:
+            return None
+
+        timestamp = self.heading_car.time_I_entered_the_street + self.drive_time
+        while timestamp <= curr_time:
+            # so if the car has already drove through the entire street:
+
+            # if it is the last street in car's path
+            if self.heading_car.current_position == self.heading_car.last_idx:
+                if do_print:
+                    print(f'finally, car {self.heading_car.car_id} '
+                          f'ends at {self.heading_car.path[-1].name} when time = {timestamp}')
+                timestamps.append(timestamp)
+
+            else:  # if it is not the last street in the path:
+                pass
+
+            # now check the next car
+
+            # if the current car is the last one:
+            if self.heading_car.on_tail is None:
+                self.heading_car = None
+                self.last_car = None
+                break
+
+            else:
+                self.heading_car, offset = self.heading_car.on_tail
+                timestamp += offset
+
+        return timestamps
 
 
-            # FIXME - use while loop to iterate over all tailing cars as long
-            # as they also passed the street, (do the below operation for all
-            # such cars)
-            # it usually happens that some streets have the red light,
-            # but there are some cars driving by them
-
-            # then, just when the street finally has green light
-            # add the cars to the queue as long a
-
-            if time_of_driving >= self.drive_time:
-                # if it is the last street in car's path
-                if self.heading_car.current_position == self.heading_car.last_idx:
-                    car_reaches_dest = True
-                    if do_print:
-                        print(f'car {self.heading_car.car_id} '
-                              f'ends at {self.heading_car.path[-1].name}')
-                else:
-                    self.queue.put(self.heading_car)
 
 
-                if self.heading_car.on_tail is not None:
-                    temp_time = self.heading_car.on_tail[1]
-                    self.heading_car = self.heading_car.on_tail[0]
-                    self.heading_car.driving = temp_time
-                else:
-                    self.heading_car = None
-                    self.last_car = None
-        else:  # if there is no car driving through the street:
-            pass
-        return car_reaches_dest
+
+    # def updateHeadingCar(self, do_print, curr_time):
+    #     self.heading_car: Car
+    #     """
+    #     if the car that is in front reaches the end of the street, then add it to
+    #     queue, make the second car the heading one
+    #         (But if the street is the last one in the path, then add points to
+    #         the score, delete the car)
+    #     Else, update the driving time
+    #
+    #     This function should return:
+    #         the list of timestamps in which cars have finished their driving
+    #         or None if no car has finished in a given iteration
+    #     """
+    #
+    #     #car_reaches_dest = False
+    #     cars_timestamps = []
+    #     if self.heading_car is not None:
+    #         time_of_driving = curr_time - self.heading_car.time_I_entered_the_street
+    #
+    #         # if the car just crossed the intersection, it shouldn't move further
+    #         # in this turn (it was already added to the street
+    #         if self.heading_car.time_I_entered_the_street != curr_time:
+    #
+    #
+    #            #self.heading_car.driving -= 1
+    #             time_of_driving = curr_time - self.heading_car.time_I_entered_the_street
+    #             if do_print:
+    #                 print(f'car {self.heading_car.car_id} has '
+    #                       f'{time_of_driving} secs to pass road {self.name}')
+    #
+    #         # if heading car has reached the end of the street
+    #         #if self.heading_car.driving <= 0:
+    #
+    #
+    #         # FIXME - use while loop to iterate over all tailing cars as long
+    #         # as they also passed the street, (do the below operation for all
+    #         # such cars)
+    #         # it usually happens that some streets have the red light,
+    #         # but there are some cars driving by them
+    #
+    #         # then, just when the street finally has green light
+    #         # add the cars to the queue as long a
+    #
+    #         if time_of_driving >= self.drive_time:
+    #             # if it is the last street in car's path
+    #             if self.heading_car.current_position == self.heading_car.last_idx:
+    #                 car_reaches_dest = True
+    #                 if do_print:
+    #                     print(f'car {self.heading_car.car_id} '
+    #                           f'ends at {self.heading_car.path[-1].name}')
+    #             else:
+    #                 self.queue.put(self.heading_car)
+    #
+    #
+    #             if self.heading_car.on_tail is not None:
+    #                 temp_time = self.heading_car.on_tail[1]  # FIXME - it is offset, not time
+    #                 self.heading_car = self.heading_car.on_tail[0]
+    #                 self.heading_car.driving = temp_time   # FIXME - not using `driving` variable anymore
+    #             else:
+    #                 self.heading_car = None
+    #                 self.last_car = None
+    #     else:  # if there is no car driving through the street:
+    #         pass
+    #     return car_reaches_dest
 
 
 class Car:
@@ -111,7 +217,7 @@ class Car:
         self.last_idx = len(path) - 1  # index of the last street
         self.current_position = 0  # index relative to the position in path
         self.on_tail = None  # becomes tuple of form (Car_behind, offset in seconds)
-        self.driving = 0  # used for leading cars, indicated how many seconds until end of street
+        # self.driving = 0  # used for leading cars, indicated how many seconds until end of street
         self.time_I_entered_the_street = 0
         self.car_id = car_id
 

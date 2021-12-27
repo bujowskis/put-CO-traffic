@@ -25,3 +25,11 @@ print(schedules_uniform == schedules_uniform2)
 schedules_uniform2.export('schedule_2.txt')
 score2 = instance2.simulate(schedules_uniform2, do_print=True)
 print(score2)
+
+
+instance3 = inputreader.readInput("example-graphs/a3.txt")
+schedules_uniform3 = instance3.uniform_schedules()
+print(schedules_uniform == schedules_uniform3)
+schedules_uniform3.export('schedule_2.txt')
+score3 = instance3.simulate(schedules_uniform3, do_print=True)
+print(score3)
