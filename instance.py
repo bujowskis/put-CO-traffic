@@ -62,7 +62,7 @@ class Instance:
                 print(f'\ntime={curr_time}')
             for i in active_intersections:
                 if i.time_to_change_lights == 0:
-                    i.switchLights()
+                    i.switchLights()  # FIXME: can this method be optimised??
 
                 i.time_to_change_lights -= 1
 

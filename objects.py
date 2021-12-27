@@ -96,7 +96,8 @@ class Street:
                 break
 
             else:
-                print(f'    next car is car {self.heading_car.on_tail[0].car_id}')
+                if do_print:
+                    print(f'    next car is car {self.heading_car.on_tail[0].car_id}')
                 self.heading_car, offset = self.heading_car.on_tail
                 timestamp += offset
 
