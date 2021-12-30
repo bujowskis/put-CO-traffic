@@ -213,13 +213,14 @@ class Street:
 
 
 class Car:
-    def __init__(self, path, car_id):
+    def __init__(self, path, car_id, cars_in_front_in_queue_when_entered):
         self.path = path
         self.last_idx = len(path) - 1  # index of the last street
         self.current_position = 0  # index relative to the position in path
         self.on_tail = None  # becomes tuple of form (Car_behind, offset in seconds)
-        # self.driving = 0  # used for leading cars, indicated how many seconds until end of street
+        self.driving = False  # True if car is currently diving down some street
         self.time_I_entered_the_street = 0
+        self.cars_in_front_in_queue_when_entered = cars_in_front_in_queue_when_entered
         self.car_id = car_id
 
     def crossIntersection(self, curr_time, do_print):
@@ -229,6 +230,47 @@ class Car:
         """
         self.path[self.current_position+1].addCar(self, curr_time, do_print)
         self.current_position +=1 ## FIXME will it help??
+
+    def changeState(self, t):
+        """
+        Returns 0, if in time t, car c finishes its path,
+        otherwise - expected time of next action
+
+        There are 3 options, either in time t:
+            - car finishes driving down the street s, then must be added to the
+            queue of street s (or return 0 if it;s the last street in the path)
+            - is in front of the queue, or was expected to be in front of the queue
+            then:
+                - if it is in front of the queue -> try to cross intersection
+                - if it is not in front of the queue: check how much time for lights to be
+                switched, and try after that time
+        """
+
+        current_street = self.path[self.current_position]
+        if self.driving:
+            # if that value is true, we don't need to check any other conditions
+            # we know that the car is just finishing driving down current street
+            # so we can safely add it to the queue (there is no longer the need of
+            # linking the cars on the street, since we have all the needed data in
+            # "cars_actions" and order is for sure preserved
+
+            # if the curent street is the last one
+            if self.current_position == self.last_idx:
+                return 0
+
+
+            # add the current car to the queue of the street
+            current_street.queue.put(self)
+
+            # return the time in which the current car is expected to cross the intersection
+            # (assuming the light is always green!) TODO - predict light switches
+            return t + len(self.path[self.current_position].queue)
+
+        elif self == current_street.queue[0]:
+            # try to cross the intersection:
+            pass # TODO
+        else: # car not in front of the queue -> check how many cars in front
+            pass # TODO
 
 
 

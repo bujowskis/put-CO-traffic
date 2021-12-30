@@ -1,5 +1,5 @@
 from objects2 import *
-
+from queue import SimpleQueue
 
 # contains all objects needed for the simulation
 class Instance:
@@ -14,88 +14,75 @@ class Instance:
         self.no_cars = 0  # (1 <= V <= 10^3)
         self.bonus = 0  # (1 <= F <= 10^3)
         self.streets = dict()
-        # self.cars = set()
+        self.cars = set()
         self.intersections = None  # list
 
 
     def simulate(self, schedules: Schedules, do_print=False) -> int:
         """
-        Simulates the instance specified by Instance's parameters, using the given schedule
+        in this approach, we iterate over cars, not over intersections
+        
+        Each car, in time t can be in one of 3 states:
+            - driving the street s
+            - waiting in a queue at the end of the street
+            - crossing the intersection i
+            
+        Some cars are driving down the streets for long
+            -> we shouldn't update their state each second
+            We can calculate in what moment of simulation, the car is going to
+            change its state -> perform the action
 
-        :return: obtained score
+        To store the moments in which cars change their states, we create the list:
+            - in each index idx, there is a queue of cars that are to change their
+            state in time = idx
+
+
+        The issue: How to predict in what time the car will be in the front of
+        street's queue and be able to cross the intersection?
+        - what is more efficient? Calculatint the light shifts and number of cars
+        in front of the queue, or checking the possibility to change the state each
+        second???
+
+        Firstly, we use the second option.
         """
-
-        """
-        Procedure:
-            In each second iterate over all intersections that has their schedule specified
-                (since if no schedule for a given intersections --> all lights red forever -->
-                no possibility to move)
-
-            For each scheduled intersection
-            1. check if the lights should switch --> 
-            2. do the action (car in front of the queue crosses and appears at the beginning of
-               next street of it's path)
-
-            We iterate over schedules_dict, not intersections, because some of intersections have no 
-            schedule, and iterating over intersections would lead to performing redundant steps
-        """
-
-        # load the schedules to the intersections
-        # FIXME - think of more efficient way to keep schedules, since loading it each time
-        #   is not optimal
-
-        # todo - intersections are only to check if green
-        active_intersections = []  # todo - set? or even work directly on schedules?
-        for intersection_id, data in schedules.schedules_dict.items():
-            active_intersections.append(self.intersections[int(intersection_id)])
-            active_intersections[-1].schedule = data
-            active_intersections[-1].n_streets_in_schedule = len(data)
-            active_intersections[-1].time_to_change_lights = data[0][1]
-            # active_intersections[-1].cycle_length = sum(duration for _, duration in data)
-
-        curr_time = 0
         score = 0
-        while curr_time < self.duration:
-            # first, check if it is needed to switch lights
-            if do_print:
-                print(f'\ntime={curr_time}')
-            for i in active_intersections:
-                if i.time_to_change_lights == 0:
-                    i.switchLights()  # FIXME: can this method be optimised??
+        cars_actions = [SimpleQueue() for _ in range(self.duration)]
+        # cars_actions[t]: the queue of cars that are to update their state in time t
 
-                i.time_to_change_lights -= 1
+        # in the beginning, all cars are waiting to cross some intersection,
+        # so for each car, we check how many cars are before them in the queue (may not
+        # be efficient!)
 
-                # todo - this could be removed in the final version
-                if do_print:
-                    print(f'at intersection {i.id}, green light from '
-                          f'{i.schedule[i.number_of_street_that_has_green][0].name}')
+        # so, we know, that the car will wait in the queue at least as many seconds,
+        # as many cars in front of it in the street's queue
+        for car in self.cars:
+            cars_actions[car.cars_in_front_in_queue_when_entered].put(car)
+            # we still keep the order of cars, no need to worry about that
 
-                # now when the green light is updated:
-                # perform an action on the street with green light
-                street_with_green = i.schedule[i.number_of_street_that_has_green][0]
-                # below method returns true if some car reaches it's destination
-                timestamps = street_with_green.performAction(curr_time, do_print)
-                if timestamps is not None:
-                    new_points = [self.bonus + (self.duration - i) for i in timestamps]
-                    score += sum(new_points)
 
-            curr_time += 1
+        # then in each second, we consider only cars that are expected to change
+        # state in given second
+        # if no car is to change the state in a given second -> the queue is empty
+        # -> then do nothing
 
-        # when the time is up, iterate over all the streets, maybe some cars had ended their journey
-        # but have not been updated, because of the red light
-        # todo - other way - once car on final street, check if time left > time needed: add points
+        for t in range(self.duration):
+            while not cars_actions[t].empty():
+                # there are some cars that are to change their state in time t
+                curr_car = cars_actions[t].get()
+                next_time = curr_car.changeState(t)
+                if t == 0:
+                    score += self.bonus + (self.duration - t)
+                elif next_time < self.duration:
+                    cars_actions[next_time].put(curr_car)
+                else:  # if car's next move would be performed after the simulation ends
+                    continue
 
-        # 3, 9
-        # some cars may end their paths on streets that has their lights always red,
-        # nevertheless, they are able to complete their way and points should be given
-        # if do_print:
-        #     print(f'\ntime={curr_time}')
-        # assert(curr_time == self.duration)
-        # for street in self.streets.values():
-        #     timestamps = street.finalStreetCheck(curr_time, do_print)
-        #     if timestamps is not None:
-        #         new_points = [self.bonus + (self.duration - i) for i in timestamps]
-        #         score += sum(new_points)
+
+
+
+
+
+        score = 0
 
         print(f'score: {score}')
         return score
