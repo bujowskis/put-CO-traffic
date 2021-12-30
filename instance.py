@@ -117,16 +117,19 @@ class Instance:
 
     def greedy(self) -> Schedules:
         """
-        Generates schedules_dict for the intersections of the instance specified by Instance's parameters using greedy
-        algorithm
+        Generates schedules_dict for the intersections of the instance specified by Instance's parameters using
+        greedy-like heuristic algorithm
 
-        :return: dict of schedules_dict for the intersections
+        :return: Schedules for the intersections
         """
         schedules = Schedules()
         # todo - don't consider the last street !!!
         for car in self.cars:
             #print("car: {}".format(car.car_id))
             car: Car
+            # for strt_idx in range(len(car.path) - 1):  # -1 not to consider the last street
+            #     # print("\tadding to street {}".format(street.name))
+            #     car.path[strt_idx].cars_total += 1
             for street in car.path:
                 #print("\tadding to street {}".format(street.name))
                 street.cars_total += 1
@@ -148,39 +151,13 @@ class Instance:
             # todo - make something better - maybe combine with "add 1 second for every street it's better than"?
             for street in intersection.streets_in:
                 normalized = math.ceil(street.cars_total / min_cars)
+                #normalized = round(street.cars_total / min_cars)
                 if normalized != 0:
                     data.append((street, math.ceil(street.cars_total/min_cars)))
             if len(data):
-                # fixme - consider what to do in case only one street gets green the whole time
-                #  - may be the cause of error
                 schedules.add_schedule(intersection.id, data)
 
         return schedules
-
-    def greedy2(self):
-        # we count how many cars pass given street during whole simulation
-        for car in self.cars:
-            for street in car.path:
-                street.cars_total += 1
-
-        # now we check each intersection
-        for intersection in self.intersections:
-
-            # we count how many cars pass the intersection
-            cars_crossing_intersection = 0
-            min_cars = 1000
-            for street in intersection.streets_in:
-                cars_crossing_intersection += street.cars_total
-                #if 0 < min_cars
-
-
-
-            for street in intersection.streets_in:
-
-
-
-
-                pass
 
     def xxx(self) -> Schedules:  # todo - choose algorithm
         """

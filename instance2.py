@@ -59,7 +59,6 @@ class Instance:
             cars_actions[car.cars_in_front_in_queue_when_entered].put(car)
             # we still keep the order of cars, no need to worry about that
 
-
         # then in each second, we consider only cars that are expected to change
         # state in given second
         # if no car is to change the state in a given second -> the queue is empty
@@ -76,13 +75,6 @@ class Instance:
                     cars_actions[next_time].put(curr_car)
                 else:  # if car's next move would be performed after the simulation ends
                     continue
-
-
-
-
-
-
-        score = 0
 
         print(f'score: {score}')
         return score

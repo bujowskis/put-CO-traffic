@@ -254,8 +254,9 @@ class Car:
             # linking the cars on the street, since we have all the needed data in
             # "cars_actions" and order is for sure preserved
 
-            # if the curent street is the last one
+            # if the current street is the last one
             if self.current_position == self.last_idx:
+                # todo - check if enough time to drive to end
                 return 0
 
 
@@ -271,7 +272,6 @@ class Car:
             pass # TODO
         else: # car not in front of the queue -> check how many cars in front
             pass # TODO
-
 
 
 
