@@ -33,15 +33,13 @@ def readInput(filepath) -> ins.Instance:
             simulation.streets[line[2]] = street
 
         # cars
-
         for i in range(simulation.no_cars):
             line = file.readline().split()
             path_strings = line[1:len(line)]
             car = obj.Car(streetObjectsAsPath(path_strings, simulation.streets), i+1)
-
+            simulation.cars.add(car)
             # first (beginning) street
             street = simulation.streets[line[1]]
-            street.cars_total += 1
             street.queue.put(car)
 
             # rest of the streets

@@ -1,6 +1,4 @@
-import math
-
-from objects import *
+from objects2 import *
 
 
 # contains all objects needed for the simulation
@@ -8,17 +6,17 @@ class Instance:
     """
     Contains all the information describing the simulation
     """
+
     def __init__(self):
-        self.duration = 0           # (1 <= D <= 10^4)
-        self.no_intersections = 0   # (2 <= I <= 10^5)
-        self.no_streets = 0         # (2 <= S <= 10^5)
-        self.no_cars = 0            # (1 <= V <= 10^3)
-        self.bonus = 0   # (1 <= F <= 10^3)
+        self.duration = 0  # (1 <= D <= 10^4)
+        self.no_intersections = 0  # (2 <= I <= 10^5)
+        self.no_streets = 0  # (2 <= S <= 10^5)
+        self.no_cars = 0  # (1 <= V <= 10^3)
+        self.bonus = 0  # (1 <= F <= 10^3)
         self.streets = dict()
-        self.cars = set()
-        self.intersections = None   # list
-        self.schedules = None  # todo - is even needed? we generate schedules_dict using greedy and xxx
-        self.time = 0
+        # self.cars = set()
+        self.intersections = None  # list
+
 
     def simulate(self, schedules: Schedules, do_print=False) -> int:
         """
@@ -32,12 +30,12 @@ class Instance:
             In each second iterate over all intersections that has their schedule specified
                 (since if no schedule for a given intersections --> all lights red forever -->
                 no possibility to move)
-                
+
             For each scheduled intersection
             1. check if the lights should switch --> 
             2. do the action (car in front of the queue crosses and appears at the beginning of
                next street of it's path)
-               
+
             We iterate over schedules_dict, not intersections, because some of intersections have no 
             schedule, and iterating over intersections would lead to performing redundant steps
         """
@@ -45,13 +43,15 @@ class Instance:
         # load the schedules to the intersections
         # FIXME - think of more efficient way to keep schedules, since loading it each time
         #   is not optimal
+
+        # todo - intersections are only to check if green
         active_intersections = []  # todo - set? or even work directly on schedules?
         for intersection_id, data in schedules.schedules_dict.items():
             active_intersections.append(self.intersections[int(intersection_id)])
             active_intersections[-1].schedule = data
             active_intersections[-1].n_streets_in_schedule = len(data)
             active_intersections[-1].time_to_change_lights = data[0][1]
-            #active_intersections[-1].cycle_length = sum(duration for _, duration in data)
+            # active_intersections[-1].cycle_length = sum(duration for _, duration in data)
 
         curr_time = 0
         score = 0
@@ -100,7 +100,7 @@ class Instance:
         print(f'score: {score}')
         return score
 
-    def uniform_schedules(self) -> Schedules:
+    def uniform_schedules(self):
         """
         this function returns the simplest schedule, that is, each street on each intersection
         has the green light for 1 second
@@ -109,86 +109,31 @@ class Instance:
         for i in self.intersections:
             data = []
             for street in i.streets_in:
-                data.append((street, 1))    # schedule will store the reference to street objects, not
-                                            # only their names
+                data.append((street, 1))  # schedule will store the reference to street objects, not
+                # only their names
             schedules.add_schedule(i.id, data)
 
         return schedules
 
-    def greedy(self) -> Schedules:
+    def greedy(self) -> set:
         """
         Generates schedules_dict for the intersections of the instance specified by Instance's parameters using greedy
         algorithm
 
-        :return: dict of schedules_dict for the intersections
+        :return: set of schedules_dict for the intersections
         """
-        schedules = Schedules()
-        # todo - don't consider the last street !!!
-        for car in self.cars:
-            #print("car: {}".format(car.car_id))
-            car: Car
-            for street in car.path:
-                #print("\tadding to street {}".format(street.name))
-                street.cars_total += 1
-        #print("\n")
-
-        for intersection in self.intersections:
-            total_cars_count = 0
-            min_cars = math.inf
-            data = list()
-            #print(len(intersection.streets_in))
-            for street in intersection.streets_in:
-                #print("\t{}, {}".format(street.name, street.cars_total))
-                total_cars_count += street.cars_total
-                if 0 < street.cars_total < min_cars:
-                    min_cars = street.cars_total
-            #print(min_cars)
-
-            # normalize by dividing minimum positive time, assign as many seconds as ceil(normalized)
-            # todo - make something better - maybe combine with "add 1 second for every street it's better than"?
-            for street in intersection.streets_in:
-                normalized = math.ceil(street.cars_total / min_cars)
-                if normalized != 0:
-                    data.append((street, math.ceil(street.cars_total/min_cars)))
-            if len(data):
-                # fixme - consider what to do in case only one street gets green the whole time
-                #  - may be the cause of error
-                schedules.add_schedule(intersection.id, data)
+        schedules = set()
+        # todo
 
         return schedules
 
-    def greedy2(self):
-        # we count how many cars pass given street during whole simulation
-        for car in self.cars:
-            for street in car.path:
-                street.cars_total += 1
-
-        # now we check each intersection
-        for intersection in self.intersections:
-
-            # we count how many cars pass the intersection
-            cars_crossing_intersection = 0
-            min_cars = 1000
-            for street in intersection.streets_in:
-                cars_crossing_intersection += street.cars_total
-                #if 0 < min_cars
-
-
-
-            for street in intersection.streets_in:
-
-
-
-
-                pass
-
-    def xxx(self) -> Schedules:  # todo - choose algorithm
+    def xxx(self) -> set:  # todo - choose algorithm
         """
         Generates schedules_dict for the intersections of the instance specified by Instance's parameters using todo
 
-        :return: dict of schedules_dict for the intersections
+        :return: set of schedules_dict for the intersections
         """
-        schedules = Schedules()
+        schedules = set()
         # todo
 
         return schedules
