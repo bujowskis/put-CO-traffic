@@ -123,7 +123,6 @@ class Car:
                     pass # TODO
             pass  # TODO
 
-
 class Intersection:
     def __init__(self, id: int):
         self.id = id
