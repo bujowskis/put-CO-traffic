@@ -1,5 +1,3 @@
-from queue import SimpleQueue
-from functools import lru_cache
 
 
 class Street:
@@ -67,7 +65,6 @@ class Schedules:
         """
         pass  # todo - probably needed for xxx algorithm
 
-    @lru_cache(maxsize=512)  # todo - consider what's reasonable maxsize
     def timeTillGreen(self, street: Street, time_now: int) -> int:
         """
         Given a street and the current time, check how long until the green light on that street.

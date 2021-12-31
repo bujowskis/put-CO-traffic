@@ -17,7 +17,7 @@ class Instance:
         self.cars = list()
         self.intersections = None   # list todo - set?
 
-    def simulate(self, schedules: Schedules, do_print=False) -> int:
+    def simulate(self, schedules: Schedules, do_print=False) -> int:  # todo - remove do_print
         """
         Simulates the instance using the given schedule
 
@@ -79,7 +79,7 @@ class Instance:
 
             time += 1
 
-        print(f'score: {score}')
+        # todo - add "cleaning" (reset cars and streets)
         return score
 
     def uniform_schedules(self) -> Schedules:
@@ -102,35 +102,33 @@ class Instance:
         Generates schedules_dict for the intersections of the instance specified by Instance's parameters using
         greedy-like heuristic algorithm
 
+        It takes into account how many cars pass through the incoming streets of every intersection, and assigns time
+        of green for each street according to the normalized proportions of total cars passing through the intersection
+
+        Normalized proportions are calculated by dividing the count of cars by the minimal count of cars among the
+        incoming streets, and then performing some operation to assign the time. We checked the following normalization
+        methods - "round", "ceil"
+
         :return: Schedules for the intersections
         """
         schedules = Schedules()
-        # todo - don't consider the last street !!!
         for car in self.cars:
-            # print("car: {}".format(car.car_id))
             car: Car
-            # for strt_idx in range(len(car.path) - 1):  # -1 not to consider the last street
-            #     # print("\tadding to street {}".format(street.name))
-            #     car.path[strt_idx].cars_total += 1
-            for street in car.path:
-                # print("\tadding to street {}".format(street.name))
-                street.cars_total += 1
-        # print("\n")
+            for strt_idx in range(len(car.path) - 1):  # -1 not to consider the last street
+                car.path[strt_idx].cars_total += 1
 
         for intersection in self.intersections:
             total_cars_count = 0
             min_cars = math.inf
             data = list()
-            # print(len(intersection.streets_in))
             for street in intersection.streets_in:
-                # print("\t{}, {}".format(street.name, street.cars_total))
                 total_cars_count += street.cars_total
                 if 0 < street.cars_total < min_cars:
                     min_cars = street.cars_total
-            # print(min_cars)
 
             # normalize by dividing minimum positive time, assign as many seconds as ceil(normalized)
-            # todo - make something better - maybe combine with "add 1 second for every street it's better than"?
+            # todo - consider making something better?
+            #   maybe combine with "add 1 second for every street it's better than"?
             for street in intersection.streets_in:
                 normalized = math.ceil(street.cars_total / min_cars)
                 # normalized = round(street.cars_total / min_cars)
