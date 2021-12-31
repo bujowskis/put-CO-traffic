@@ -91,7 +91,7 @@ class Instance:
 
             time += 1
 
-        # todo - add "cleaning" (reset cars and streets)
+        # todo - add "cleaning" (reset cars and streets) OR pass cars and streets in non-destructive way
         return score[0]
 
     def uniform_schedules(self) -> Schedules:
@@ -107,6 +107,26 @@ class Instance:
                 # only their names
             schedules.add_schedule(i.id, data)
 
+        schedules.add_functional_schedule()
+        return schedules
+
+    def intelligent_uniform_schedules(self) -> Schedules:
+        """
+        creates "intelligent" uniform schedules - every street that does have some cars passing through it gets exactly
+        one second in its respective intersection's schedule
+
+        :@todo - make sure it works before using
+        """
+        schedules = Schedules()
+        for intersection in self.intersections:
+            data = list()
+            for street in intersection.streets_in:
+                if street.cars_total:
+                    data.append((street, 1))
+            if len(data):
+                schedules.add_schedule(intersection.id, data)
+
+        schedules.add_functional_schedule()
         return schedules
 
     def greedy(self) -> Schedules:
@@ -123,10 +143,6 @@ class Instance:
         :return: Schedules for the intersections
         """
         schedules = Schedules()
-        for car in self.cars:
-            car: Car
-            for strt_idx in range(len(car.path) - 1):  # -1 not to consider the last street
-                car.path[strt_idx].cars_total += 1
 
         for intersection in self.intersections:
             total_cars_count = 0
@@ -137,12 +153,12 @@ class Instance:
                 if 0 < street.cars_total < min_cars:
                     min_cars = street.cars_total
 
-            # normalize by dividing minimum positive time, assign as many seconds as round(normalized_proportion)
+            # normalize by dividing minimum positive time
             for street in intersection.streets_in:
-                # normalized = math.ceil(street.cars_total / min_cars)
-                normalized = round(street.cars_total / min_cars)
+                # normalized = math.ceil(street.cars_total / min_cars)  # by ceiling
+                normalized = round(street.cars_total / min_cars)  # by rounding
                 if normalized != 0:
-                    data.append((street, math.ceil(street.cars_total / min_cars)))
+                    data.append((street, normalized))
             if len(data):
                 schedules.add_schedule(intersection.id, data)
 
