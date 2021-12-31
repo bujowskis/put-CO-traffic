@@ -1,5 +1,5 @@
 import time
-import inputreader
+import inputreader3 as inputreader
 
 # firstly, we load the instance of a problem from a file
 

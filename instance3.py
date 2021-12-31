@@ -1,29 +1,25 @@
 import math
-
 from objects3 import *
 
 
 # contains all objects needed for the simulation
 class Instance:
     """
-    Contains all the information describing the simulation
+    Contains all the information describing the given instance
     """
-
     def __init__(self):
-        self.duration = 0  # (1 <= D <= 10^4)
-        self.no_intersections = 0  # (2 <= I <= 10^5)
-        self.no_streets = 0  # (2 <= S <= 10^5)
-        self.no_cars = 0  # (1 <= V <= 10^3)
-        self.bonus = 0  # (1 <= F <= 10^3)
+        self.duration = 0           # (1 <= D <= 10^4)
+        self.no_intersections = 0   # (2 <= I <= 10^5)
+        self.no_streets = 0         # (2 <= S <= 10^5)
+        self.no_cars = 0            # (1 <= V <= 10^3)
+        self.bonus = 0              # (1 <= F <= 10^3)
         self.streets = dict()
-        self.cars = set()
-        self.intersections = None  # list
-        self.schedules = None  # todo - is even needed? we generate schedules_dict using greedy and xxx
-        self.time = 0
+        self.cars = list()
+        self.intersections = None   # list todo - set?
 
     def simulate(self, schedules: Schedules, do_print=False) -> int:
         """
-        Simulates the instance specified by Instance's parameters, using the given schedule
+        Simulates the instance using the given schedule
 
         works by iterating over all cars for each second of the simulation, skipping cars whenever possible, to save on
         execution time
@@ -35,18 +31,53 @@ class Instance:
         time = 0
         while time < self.duration:
             for car in self.cars:
+                if car.finished:
+                    # the car already reached its destination
+                    continue
+                if car.deep_in_queue:
+                    # the car is waiting in queue and is not the first one
+                    continue
                 if car.next_time != time:
+                    # it's not time for the car's action
                     continue
-                if car.in_queue:
-                    # todo - at least leading's car waiting time / waiting time of car in front
-                    #   may not be worth it, since this already skips the car if still in queue
-                    car.next_time += 1
-                    continue
-                # if green, close  # todo - add mechanism of remembering "I can go for sure"?
-                till_green = schedules.timeTillGreen()  # fixme - either make function work without intersection, or make Car know the intersection
+                if car.driving:
+                    # the car just arrived at end of the street
+                    car.driving = False
+                    car.path[car.current_position].queue.append(car)
+                    if len(car.path[car.current_position].queue) == 1:
+                        # the car is the first one to go next; it can go through the next procedure
+                        pass
+                    else:
+                        # the car has to wait for cars ahead
+                        car.deep_in_queue = True
+                        continue
+                # the car is the first at end of its street, waiting for green
+                till_green = schedules.timeTillGreen(car.path[car.current_position], time)
                 if not till_green:
-                    #
-        # todo - once car on final street, check if time left > time needed: add points
+                    # car proceeds to next street
+                    car.path[car.current_position].queue.pop(0)
+                    # if there's any, update the car behind it
+                    if len(car.path[car.current_position].queue):
+                        car.path[car.current_position].queue[0].deep_in_queue = False
+                        car.path[car.current_position].queue[0].next_time = time + 1
+
+                    car.current_position += 1
+                    if car.current_position == car.last_position:
+                        time_at_end = time + car.path[car.current_position].drive_time
+                        if time_at_end <= self.duration:
+                            # the car will get to destination before end of simulation
+                            score += self.bonus + self.duration - time_at_end
+                        # no matter if the car made it on time, it's no longer needed to consider it
+                        car.finished = True
+                    else:
+                        car.driving = True
+                        car.next_time = time + car.path[car.current_position].drive_time
+                else:
+                    # wait with next action until the next green
+                    car.next_time = time + till_green
+                    continue
+
+            time += 1
 
         print(f'score: {score}')
         return score
@@ -108,6 +139,7 @@ class Instance:
             if len(data):
                 schedules.add_schedule(intersection.id, data)
 
+        schedules.add_functional_schedule()
         return schedules
 
     def xxx(self) -> Schedules:  # todo - choose algorithm
