@@ -14,6 +14,6 @@ schedules_uniform.export('schedule_1.txt')
 
 # now evaluate the performance
 start_time = time.time()
-score1 = instance1.simulate(schedules_uniform, do_print=False)
+score1 = instance1.simulate(schedules_uniform)
 print(score1)
 print(f'time elapsed: {time.time() - start_time}')

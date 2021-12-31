@@ -29,7 +29,7 @@ def readInput(filepath) -> ins.Instance:
         for i in range(simulation.no_streets):
             line = file.readline().split()
             street = obj.Street(line[2], int(line[3]))
-            simulation.intersections[int(line[1])].streets_in.add(street)
+            simulation.intersections[int(line[1])].streets_in.append(street)
             street.intersection_at_end = int(line[1])
             simulation.streets[line[2]] = street
 

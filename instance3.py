@@ -13,11 +13,11 @@ class Instance:
         self.no_streets = 0         # (2 <= S <= 10^5)
         self.no_cars = 0            # (1 <= V <= 10^3)
         self.bonus = 0              # (1 <= F <= 10^3)
-        self.streets = dict()
-        self.cars = list()
-        self.intersections = None   # list todo - set?
+        self.streets = dict()       # dictionary of streets, mapping their names to their respective object
+        self.cars = list()          # list of all cars
+        self.intersections = None   # list of intersections, in order with respect to their id's
 
-    def simulate(self, schedules: Schedules, do_print=False) -> int:  # todo - remove do_print
+    def simulate(self, schedules: Schedules) -> int:
         """
         Simulates the instance using the given schedule
 
@@ -27,7 +27,27 @@ class Instance:
 
         :return: obtained score
         """
-        score = 0
+        def carGo(car):
+            # car proceeds to next street
+            car.path[car.current_position].queue.pop(0)
+            # if there's any, update the car behind it
+            if len(car.path[car.current_position].queue):
+                car.path[car.current_position].queue[0].deep_in_queue = False
+                car.path[car.current_position].queue[0].next_time = time + 1
+
+            car.current_position += 1
+            if car.current_position == car.last_position:
+                time_at_end = time + car.path[car.current_position].drive_time
+                if time_at_end <= self.duration:
+                    # the car will get to destination before end of simulation
+                    score[0] += self.bonus + self.duration - time_at_end
+                # no matter if the car made it on time, it's no longer needed to consider it
+                car.finished = True
+            else:
+                car.driving = True
+                car.next_time = time + car.path[car.current_position].drive_time
+
+        score = [0]
         time = 0
         while time < self.duration:
             for car in self.cars:
@@ -51,36 +71,28 @@ class Instance:
                         # the car has to wait for cars ahead
                         car.deep_in_queue = True
                         continue
+                if car.certain_go:
+                    # it's certain the car can go now todo - does it really help?
+                    car.certain_go = False
+                    carGo(car)
+                    continue
+                # else:
+                #     till_green = schedules.timeTillGreen(car.path[car.current_position], time)
+
                 # the car is the first at end of its street, waiting for green
                 till_green = schedules.timeTillGreen(car.path[car.current_position], time)
                 if not till_green:
-                    # car proceeds to next street
-                    car.path[car.current_position].queue.pop(0)
-                    # if there's any, update the car behind it
-                    if len(car.path[car.current_position].queue):
-                        car.path[car.current_position].queue[0].deep_in_queue = False
-                        car.path[car.current_position].queue[0].next_time = time + 1
-
-                    car.current_position += 1
-                    if car.current_position == car.last_position:
-                        time_at_end = time + car.path[car.current_position].drive_time
-                        if time_at_end <= self.duration:
-                            # the car will get to destination before end of simulation
-                            score += self.bonus + self.duration - time_at_end
-                        # no matter if the car made it on time, it's no longer needed to consider it
-                        car.finished = True
-                    else:
-                        car.driving = True
-                        car.next_time = time + car.path[car.current_position].drive_time
+                    carGo(car)
                 else:
                     # wait with next action until the next green
                     car.next_time = time + till_green
+                    car.certain_go = True
                     continue
 
             time += 1
 
         # todo - add "cleaning" (reset cars and streets)
-        return score
+        return score[0]
 
     def uniform_schedules(self) -> Schedules:
         """
@@ -106,8 +118,7 @@ class Instance:
         of green for each street according to the normalized proportions of total cars passing through the intersection
 
         Normalized proportions are calculated by dividing the count of cars by the minimal count of cars among the
-        incoming streets, and then performing some operation to assign the time. We checked the following normalization
-        methods - "round", "ceil"
+        incoming streets, and then performing some operation to assign the time.
 
         :return: Schedules for the intersections
         """
@@ -126,12 +137,10 @@ class Instance:
                 if 0 < street.cars_total < min_cars:
                     min_cars = street.cars_total
 
-            # normalize by dividing minimum positive time, assign as many seconds as ceil(normalized)
-            # todo - consider making something better?
-            #   maybe combine with "add 1 second for every street it's better than"?
+            # normalize by dividing minimum positive time, assign as many seconds as round(normalized_proportion)
             for street in intersection.streets_in:
-                normalized = math.ceil(street.cars_total / min_cars)
-                # normalized = round(street.cars_total / min_cars)
+                # normalized = math.ceil(street.cars_total / min_cars)
+                normalized = round(street.cars_total / min_cars)
                 if normalized != 0:
                     data.append((street, math.ceil(street.cars_total / min_cars)))
             if len(data):
@@ -142,7 +151,7 @@ class Instance:
 
     def xxx(self) -> Schedules:  # todo - choose algorithm
         """
-        Generates schedules_dict for the intersections of the instance specified by Instance's parameters using todo
+        Generates schedules_dict for the intersections of the instance using todo
 
         :return: dict of schedules_dict for the intersections
         """

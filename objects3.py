@@ -14,17 +14,17 @@ class Car:
         self.path = path
         self.last_position = len(path) - 1  # index of the last street
         self.current_position = 0           # index relative to the position in path
-        self.next_time = 0
-        self.deep_in_queue = False
-        self.driving = False
-        self.finished = False
-        # self.certain_go = False           # todo - maybe use this? there may be situations it's certain the car can go
+        self.next_time = 0                  # timestamp on which the next action of the car happens
+        self.deep_in_queue = False          # indicates if there are other cars queued in front of the car
+        self.driving = False                # indicates if the car is/was driving at the given timestamp
+        self.finished = False               # indicates if the car has already reached its destination
+        self.certain_go = False             # indicates if it's certain the car can go, without checking the green light
 
 
 class Intersection:
     def __init__(self, id: int):
         self.id = id
-        self.streets_in = set()
+        self.streets_in = list()
 
 
 class Schedules:
@@ -45,7 +45,7 @@ class Schedules:
         self.schedules_functional = {}
 
     def add_schedule(self, intersection_id, data):
-        self.schedules_dict[intersection_id] = data  # todo - doesn't need to be string
+        self.schedules_dict[intersection_id] = data
 
     def add_functional_schedule(self):
         """
