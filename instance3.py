@@ -1,5 +1,7 @@
 import math
 from objects3 import *
+import random
+from copy import deepcopy
 
 
 class Instance:
@@ -179,13 +181,56 @@ class Instance:
         schedules.add_functional_schedule()
         return schedules
 
-    def xxx(self) -> Schedules:  # todo - choose algorithm
+    def evoKiller(self, pop_size, max_generations) -> Schedules:  # todo - choose algorithm
         """
         Generates schedules_dict for the intersections of the instance using todo
 
         :return: dict of schedules_dict for the intersections
         """
+
+        # TODO: should we return schedules, or pairs (fitness, schedule)?
+        def getInitPopulation():
+            population = []
+            base_uniform_schedules = self.intelligent_uniform_schedules()
+            for i in range(pop_size):
+                new_schedules = Schedules()
+                i,
+
+                for intersection, tuples in base_uniform_schedules.schedules_dict:
+                    # mutate tuples
+                    new_tuples = []
+                    for street, duration in enumerate(tuples):
+                        continue
+                        # new_duration = duration + shift:
+                    new_schedules.add_schedule(new_tuples)
+
+
+
+        
+        def getNextPopulation(old_population):
+            pass
+        
+        def mutateSchedule(schedules):
+            # we need to return the new object and leave the old schedule as it is
+
+            new_schedules = deepcopy(schedules)
+            new_schedules: Schedules
+
+            # TODO: mutate here
+
+            return new_schedules
+        
+
+        
         schedules = Schedules()
-        # todo
+        # create the initial population (uniform schedules with some mutations)
+        
+        population = getInitPopulation()
+
+        generation_counter = 0
+        while generation_counter < max_generations:
+            population = getNextPopulation(population)
+
+
 
         return schedules
