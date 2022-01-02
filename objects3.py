@@ -5,6 +5,8 @@ class Street:
         self.name = name
         self.drive_time = drive_time
         self.queue = list()                 # stores cars waiting in order todo - a regular Queue? list?
+        # todo - remember what's the next car idx for a dictionary, which serves the role of queue?
+        #   list of fixed length cars_total?
         self.intersection_at_end = None     # to access the schedule
         self.cars_total = 0
 

@@ -16,6 +16,7 @@ def main():
         print(file)
         instance = inputreader3.readInput("example-graphs/{}".format(file))
         schedules_greedy = instance.greedy()
+        schedules_greedy.export(f'{file[0]}-greedy.txt')
         start_time = time.time()
         score = instance.simulate(schedules_greedy)
         print(score)
@@ -25,9 +26,10 @@ def main():
     for file in files:
         print(file)
         instance = inputreader3.readInput("example-graphs/{}".format(file))
-        schedules_greedy = instance.intelligent_uniform_schedules()
+        schedules_intelligent = instance.intelligent_uniform_schedules()
+        schedules_intelligent.export(f'{file[0]}-intelligent.txt')
         start_time = time.time()
-        score = instance.simulate(schedules_greedy)
+        score = instance.simulate(schedules_intelligent)
         print(score)
         print("\ttime elapsed: {}".format(time.time() - start_time))
 
