@@ -20,11 +20,9 @@ class Instance:
 
     def simulate(self, schedules: Schedules) -> int:
         """
-        Simulates the instance using the given schedule
-
-        works by iterating over all cars for each second of the simulation, skipping cars whenever possible, to save on
-        execution time
-            todo - not each, but shortest time until change? is it worth it?
+        Simulates the instance using the given schedule. Qorks by iterating over all cars for each second of the
+        simulation, skipping cars whenever possible, to save on execution time
+        todo - consider if skipping to minimum time action is worth it
 
         :return: obtained score
         """
@@ -42,16 +40,12 @@ class Instance:
             else:
                 car.driving = True
                 car.next_time = time + car.path[car.current_position].drive_time
-
-        # # todo - remove after done testing
-        # print("before simulate:")
-        # for street in self.streets.values():
-        #     if street.queue[0]:
-        #         print("{} - {}".format(street.name, street.queue))
-        # print("\n")
+                if car.next_time not in action_times:
+                    action_times.add(car.next_time)
 
         score = [0]
         time = 0
+        action_times = {self.duration}
         while time < self.duration:
             for car in self.cars:
                 if car.finished:
@@ -80,10 +74,14 @@ class Instance:
                 else:
                     # wait with next action until the next green
                     car.next_time = time + till_green
+                    if car.next_time not in action_times:
+                        action_times.add(car.next_time)
                     car.certain_go = True
                     continue
 
-            time += 1
+            next_action = min(action_times)
+            action_times.discard(next_action)
+            time = next_action
 
         # cleanup states of cars and streets
         for car in self.cars:
@@ -99,13 +97,6 @@ class Instance:
             street.queue_next = street.init_queue_next
             for i in range(street.init_queue_next, street.cars_total):
                 street.queue[i] = None
-
-        # # todo - remove after done testing
-        # print("after simulate:")
-        # for street in self.streets.values():
-        #     if street.queue[0]:
-        #         print("{} - {}".format(street.name, street.queue))
-        # print("\n")
 
         # todo - consider passing cars and streets in non-destructive way instead of cleanup
         return score[0]
@@ -130,8 +121,6 @@ class Instance:
         """
         creates "intelligent" uniform schedules - every street that does have some cars passing through it gets exactly
         one second in its respective intersection's schedule
-
-        :@todo - make sure it works before using
         """
         schedules = Schedules()
         for intersection in self.intersections:

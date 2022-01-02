@@ -1,7 +1,0 @@
-5 4 5 1 1000
-2 0 rue-de-londres 1
-0 1 rue-d-amsterdam 1
-3 1 rue-d-athenes 1
-2 3 rue-de-rome 2
-1 2 rue-de-moscou 3
-3 rue-de-moscou rue-de-rome rue-d-athenes
