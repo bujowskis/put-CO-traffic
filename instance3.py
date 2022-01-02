@@ -2,7 +2,7 @@ import math
 from objects3 import *
 import random
 from copy import deepcopy
-
+import time
 
 class Instance:
     """
@@ -170,56 +170,96 @@ class Instance:
         schedules.add_functional_schedule()
         return schedules
 
-    def evoKiller(self, pop_size, max_generations) -> Schedules:  # todo - choose algorithm
+
+
+    def evoKiller(self, pop_size, max_generations) -> (Schedules, int):
         """
         Generates schedules_dict for the intersections of the instance using todo
 
         :return: dict of schedules_dict for the intersections
         """
+        def blindMutateSchedules(old_schedules: Schedules):
+            new_schedules = Schedules()
 
-        # TODO: should we return schedules, or pairs (fitness, schedule)?
-        def getInitPopulation():
-            population = []
-            base_uniform_schedules = self.intelligent_uniform_schedules()
-            for i in range(pop_size):
-                new_schedules = Schedules()
-                i,
-
-                for intersection, tuples in base_uniform_schedules.schedules_dict:
-                    # mutate tuples
-                    new_tuples = []
-                    for street, duration in enumerate(tuples):
-                        continue
-                        # new_duration = duration + shift:
-                    new_schedules.add_schedule(new_tuples)
-
-
-
-        
-        def getNextPopulation(old_population):
-            pass
-        
-        def mutateSchedule(schedules):
-            # we need to return the new object and leave the old schedule as it is
-
-            new_schedules = deepcopy(schedules)
-            new_schedules: Schedules
-
-            # TODO: mutate here
+            for intersection, tuples in old_schedules.schedules_dict.items():
+                shifts = random.choices([-2, -1, 0, 1, 2, 3, 4],
+                                        weights=[1, 2, 8, 4, 2, 1, 1], k=len(tuples))
+                # mutate tuples
+                new_tuples = []
+                for j, tuple_ in enumerate(tuples):
+                    street_name, duration = tuple_
+                    new_duration = max(duration + shifts[j], 1)
+                    new_tuples.append((street_name, new_duration))
+                new_schedules.add_schedule(intersection, new_tuples)
+            new_schedules.add_functional_schedule()
 
             return new_schedules
-        
 
-        
-        schedules = Schedules()
+        def getInitPopulation():
+            population = []
+            scores = []
+            base_uniform_schedules = self.intelligent_uniform_schedules()
+            for i in range(pop_size):
+                new_schedules = blindMutateSchedules(base_uniform_schedules)
+                score = self.simulate(new_schedules)
+                nonlocal best_score
+                if score > best_score:
+                    best_score = score
+                    nonlocal best_individual
+                    best_individual = new_schedules
+                population.append(new_schedules)
+                scores.append(score)
+            return population, scores
+
+        def getNextPopulation(old_population: list, old_scores: list):
+            """
+            Returns the next population (based on requests from previous simulation)
+            """
+            # TODO: for now the next population is created by blind mutation
+            new_population = []
+            max_score = max(old_scores)
+            min_score = min(old_scores)
+            try:
+                weights = [((i-min_score)/(max_score-min_score))**4 for i in old_scores]  # kind of normalization
+            except ZeroDivisionError:
+                weights = [1 for _ in range(pop_size)]
+            new_population = []
+            new_scores = []
+            # randomly choose items from old population to be selected and mutated
+            # to form a new population
+            new_candidates = random.choices(old_population, weights=weights, k=pop_size)
+            for candidate in new_candidates:
+                # copy the candidate, mutate it, evaluate and add to the new_population
+                new_schedules = blindMutateSchedules(candidate)
+                new_population.append(new_schedules)
+                score = self.simulate(new_schedules)
+                nonlocal best_score
+                if score > best_score:
+                    best_score = score
+                    nonlocal best_individual
+                    best_individual= new_schedules
+                new_scores.append(score)
+
+            return new_population, new_scores
+
+
+        start_time = time.time()
+        best_individual = None
+        best_score = 0
+
         # create the initial population (uniform schedules with some mutations)
-        
-        population = getInitPopulation()
+        # evaluation is performed within the below function
+        # population is a pair (score, schedules_object)
+        population, scores = getInitPopulation()  # DONE
+
+
 
         generation_counter = 0
-        while generation_counter < max_generations:
-            population = getNextPopulation(population)
+        while generation_counter < max_generations and time.time() - start_time < 5*60:
 
+            population, scores = getNextPopulation(population, scores)
+            # track of the best solution is implemented in the inner function
 
+            generation_counter += 1
 
-        return schedules
+        return best_individual, best_score
