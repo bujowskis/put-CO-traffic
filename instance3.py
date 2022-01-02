@@ -2,8 +2,6 @@ import math
 from objects3 import *
 
 
-
-# contains all objects needed for the simulation
 class Instance:
     """
     Contains all the information describing the given instance
