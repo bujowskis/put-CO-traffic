@@ -26,14 +26,9 @@ class Instance:
 
         :return: obtained score
         """
-        def carGo(car):
+        def carGo(car: Car):
             # car proceeds to next street
-            car.path[car.current_position].queue.pop(0)
-            # if there's any, update the car behind it
-            if len(car.path[car.current_position].queue):
-                car.path[car.current_position].queue[0].deep_in_queue = False
-                car.path[car.current_position].queue[0].next_time = time + 1
-
+            car.path[car.current_position].popCar(time)
             car.current_position += 1
             if car.current_position == car.last_position:
                 time_at_end = time + car.path[car.current_position].drive_time
@@ -45,6 +40,13 @@ class Instance:
             else:
                 car.driving = True
                 car.next_time = time + car.path[car.current_position].drive_time
+
+        # # todo - remove after done testing
+        # print("before simulate:")
+        # for street in self.streets.values():
+        #     if street.queue[0]:
+        #         print("{} - {}".format(street.name, street.queue))
+        # print("\n")
 
         score = [0]
         time = 0
@@ -61,23 +63,14 @@ class Instance:
                     continue
                 if car.driving:
                     # the car just arrived at end of the street
-                    car.driving = False
-                    car.path[car.current_position].queue.append(car)
-                    if len(car.path[car.current_position].queue) == 1:
-                        # the car is the first one to go next; it can go through the next procedure
-                        pass
-                    else:
-                        # the car has to wait for cars ahead
-                        car.deep_in_queue = True
+                    car.path[car.current_position].putCar(car)
+                    if car.deep_in_queue:
                         continue
                 if car.certain_go:
-                    # it's certain the car can go now todo - does it really help?
+                    # it's certain the car can go now
                     car.certain_go = False
                     carGo(car)
                     continue
-                # else:
-                #     till_green = schedules.timeTillGreen(car.path[car.current_position], time)
-
                 # the car is the first at end of its street, waiting for green
                 till_green = schedules.timeTillGreen(car.path[car.current_position], time)
                 if not till_green:
@@ -90,7 +83,29 @@ class Instance:
 
             time += 1
 
-        # todo - add "cleaning" (reset cars and streets) OR pass cars and streets in non-destructive way
+        # cleanup states of cars and streets
+        for car in self.cars:
+            car: Car
+            car.deep_in_queue = car.ini_deep_in_queue
+            car.driving = False
+            car.finished = False
+            car.certain_go = False
+            car.next_time = 0
+            car.current_position = 0
+        for street in self.streets.values():
+            street.queue_first = 0
+            street.queue_next = street.init_queue_next
+            for i in range(street.init_queue_next, street.cars_total):
+                street.queue[i] = None
+
+        # # todo - remove after done testing
+        # print("after simulate:")
+        # for street in self.streets.values():
+        #     if street.queue[0]:
+        #         print("{} - {}".format(street.name, street.queue))
+        # print("\n")
+
+        # todo - consider passing cars and streets in non-destructive way instead of cleanup
         return score[0]
 
     def uniform_schedules(self) -> Schedules:
