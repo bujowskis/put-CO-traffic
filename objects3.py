@@ -1,4 +1,4 @@
-
+from collections import defaultdict
 
 class Car:
     def __init__(self, path):
@@ -33,6 +33,7 @@ class Street:
         # todo - remember what's the next car idx for a dictionary, which serves the role of queue?
         self.intersection_at_end = None     # to access the schedule
         self.cars_total = 0
+        self.requests = 0                   # total time that cars were waiting on that street
 
     def popCar(self, time: int = 0):
         """
@@ -77,6 +78,8 @@ class Schedules:
     def __init__(self):
         self.schedules_dict = {}
         self.schedules_functional = {}
+        self.score = 0
+        #self.requests = defaultdict(lambda: 0) # maybe it will be better to store requests as fields of streets
 
     def add_schedule(self, intersection_id, data):
         self.schedules_dict[intersection_id] = data

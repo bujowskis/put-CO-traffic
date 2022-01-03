@@ -10,5 +10,7 @@ def test():
 
     print(f'time elapsed: {time.time() - start_time}')
 
+    score_greedy = instance1.simulate(schedules_evo)
+    print(f'greedy score = {score_greedy}')
 
 test()

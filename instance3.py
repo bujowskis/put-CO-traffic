@@ -121,8 +121,8 @@ class Instance:
         def carGo(car: Car):
             # car proceeds to next street
             car.path[car.current_position].popCar(time)
-            requests[car.path[car.current_position].name] += 1
-            car.entered_queue = time - car.entered_queue
+            requests[car.path[car.current_position].name] += time - car.entered_queue
+            car.entered_queue = time
             car.current_position += 1
             if car.current_position == car.last_position:
                 time_at_end = time + car.path[car.current_position].drive_time
@@ -301,6 +301,27 @@ class Instance:
 
             return new_schedules
 
+        def smartMutation(old_schedules: Schedules, requests: defaultdict) -> Schedules:
+
+
+            new_schedules = Schedules()
+
+
+            # iterate over all the intersection in the old schedule
+
+            for intersection_id, tuples in old_schedules.schedules_dict.items():
+                if len(tuples) == 1:
+                    # if just one street, make it always green
+                    new_schedules.add_schedule(intersection_id, [(tuples[0][0], self.duration)])
+                    continue
+
+                new_tuples = None   # TODO: continue (smart mutation, that allows to mutate all the streets
+                                    # not only the most and least occupied ones
+            
+
+            return new_schedules
+
+
         def requestBasedMutation(old_schedules: Schedules, requests: defaultdict):
             """
             Creates NEW schedules based on the old ones.
@@ -434,7 +455,7 @@ class Instance:
         population, scores = getInitPopulation()  # DONE
 
         generation_counter = 1
-        while generation_counter < max_generations and time.time() - start_time < 5*60:
+        while generation_counter < max_generations and time.time() - start_time < 0.3*60:
 
             population, scores = getNextPopulation(population, scores)
             # track of the best solution is implemented in the inner function
