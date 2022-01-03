@@ -12,6 +12,7 @@ class Car:
         self.finished = False               # indicates if the car has already reached its destination
         self.certain_go = False             # indicates if it's certain the car can go, without checking the green light
 
+        self.entered_queue = 0              # indicates the timestamp in which the car entered the street's queue
 
 class Intersection:
     def __init__(self, id: int):
@@ -87,6 +88,7 @@ class Schedules:
         for intersection, tuples in self.schedules_dict.items():
             street_intervals = {}
             start = 0
+
             for street, duration in tuples:
                 street_intervals[street] = (start, start + duration - 1)
                 start += duration
