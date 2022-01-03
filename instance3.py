@@ -181,12 +181,12 @@ class Instance:
         """
         all_scores = []
         best_individual = None
-
-
+        best_score = 0
+        simulation_times = []
 
         def blindMutatedSchedules(old_schedules: Schedules):
             """
-            Creates new schedules based on the old ones.
+            Creates NEW schedules based on the old ones.
             Does not copy the old schedules, neither modify them
             """
             new_schedules = Schedules()
@@ -247,7 +247,7 @@ class Instance:
             new_candidates = random.choices(old_population, weights=weights, k=pop_size-1) + [best_individual]
             begin_time = time.time()
             for candidate in new_candidates:
-                # copy the candidate, mutate it, evaluate and add to the new_population
+                # copy the candidate, mutate the copy, evaluate and add to the new_population
                 new_schedules = blindMutatedSchedules(candidate)
                 new_population.append(new_schedules)
                 score = self.simulate(new_schedules)
@@ -264,17 +264,13 @@ class Instance:
 
 
         start_time = time.time()
-        simulation_times = []
 
-        best_score = 0
 
         # create the initial population (uniform schedules with some mutations)
         # evaluation is performed within the below function
         # population is a pair (score, schedules_object)
 
         population, scores = getInitPopulation()  # DONE
-
-
 
         generation_counter = 0
         while generation_counter < max_generations and time.time() - start_time < 0.5*60:
