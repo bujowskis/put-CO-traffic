@@ -331,6 +331,7 @@ class Instance:
 
                 # now, with some probability, increase the duration on street that had the most requests
                 # TODO: find out, what function will yield the best results
+
                 try:
                     prob = max(waiting_times) / (sum(waiting_times) + max(waiting_times))
                 except ZeroDivisionError:
@@ -363,9 +364,9 @@ class Instance:
             begin_time = time.time()
             population = []
             scores = []
-            base_uniform_schedules = self.intelligent_uniform_schedules()
+            base_schedules = self.greedy()
             for i in range(pop_size):
-                new_schedules = blindMutation(base_uniform_schedules)
+                new_schedules = blindMutation(base_schedules)
                 score, requests = self.simulateWithRequests(new_schedules)
                 nonlocal best_score
                 if score > best_score:
@@ -396,7 +397,8 @@ class Instance:
             # randomly choose items from old population to be selected and mutated
             # to form a new population
             nonlocal best_individual
-            new_candidates = random.choices(old_population, weights=weights, k=pop_size-1) + [best_individual]
+            nonlocal best_score
+            new_candidates = random.choices(old_population, weights=weights, k=pop_size-1)
             begin_time = time.time()
             for candidate in new_candidates:
 
@@ -405,11 +407,16 @@ class Instance:
                 score, new_requests = self.simulateWithRequests(new_schedules)
                 new_population.append((new_schedules, new_requests))
 
-                nonlocal best_score
+
                 if score > best_score:
                     best_score = score
                     best_individual = (new_schedules, new_requests)
                 new_scores.append(score)
+
+
+            # always add current best to the population
+            new_scores.append(best_score)
+            new_population.append(best_individual)
 
             all_scores.append(scores)
             simulation_times.append(time.time() - begin_time)
@@ -426,14 +433,14 @@ class Instance:
 
         population, scores = getInitPopulation()  # DONE
 
-        generation_counter = 0
-        while generation_counter < max_generations and time.time() - start_time < 0.5*60:
-            #print(f"{generation_counter+2} population")
+        generation_counter = 1
+        while generation_counter < max_generations and time.time() - start_time < 5*60:
+
             population, scores = getNextPopulation(population, scores)
             # track of the best solution is implemented in the inner function
 
             generation_counter += 1
-            #print(f"end of {generation_counter+2} population")
+
 
         print(f'total time: {time.time() - start_time}\n'
               f'time spent on simulations: {sum(simulation_times)}\n'
@@ -444,6 +451,6 @@ class Instance:
         flat_scores = [item for sublist in all_scores for item in sublist]
         times = [x//pop_size for x in range(len(flat_scores))]
 
-        plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9)
+        plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter, 100])
         plt.show()
         return best_individual[0], best_score
