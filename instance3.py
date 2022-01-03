@@ -3,6 +3,7 @@ from objects3 import *
 import random
 from copy import deepcopy
 import time
+import matplotlib.pyplot as plt
 
 class Instance:
     """
@@ -174,33 +175,46 @@ class Instance:
 
     def evoKiller(self, pop_size, max_generations) -> (Schedules, int):
         """
-        Generates schedules_dict for the intersections of the instance using todo
+        Returns the best schedule found by doing some mutations
 
-        :return: dict of schedules_dict for the intersections
+
         """
-        def blindMutateSchedules(old_schedules: Schedules):
+        all_scores = []
+        best_individual = None
+
+
+
+        def blindMutatedSchedules(old_schedules: Schedules):
+            """
+            Creates new schedules based on the old ones.
+            Does not copy the old schedules, neither modify them
+            """
             new_schedules = Schedules()
 
             for intersection, tuples in old_schedules.schedules_dict.items():
-                shifts = random.choices([-2, -1, 0, 1, 2, 3, 4],
-                                        weights=[1, 2, 8, 4, 2, 1, 1], k=len(tuples))
+                shifts = random.choices([-2, -1, 0, 1, 2],
+                                        weights=[1, 2, 5, 2, 1], k=len(tuples))
                 # mutate tuples
                 new_tuples = []
                 for j, tuple_ in enumerate(tuples):
                     street_name, duration = tuple_
                     new_duration = max(duration + shifts[j], 1)
                     new_tuples.append((street_name, new_duration))
+                # we give some small chance of shuffling the order of lights
+                if random.random() < 0.07:
+                    random.shuffle(new_tuples)
                 new_schedules.add_schedule(intersection, new_tuples)
             new_schedules.add_functional_schedule()
 
             return new_schedules
 
         def getInitPopulation():
+            begin_time = time.time()
             population = []
             scores = []
             base_uniform_schedules = self.intelligent_uniform_schedules()
             for i in range(pop_size):
-                new_schedules = blindMutateSchedules(base_uniform_schedules)
+                new_schedules = blindMutatedSchedules(base_uniform_schedules)
                 score = self.simulate(new_schedules)
                 nonlocal best_score
                 if score > best_score:
@@ -209,6 +223,8 @@ class Instance:
                     best_individual = new_schedules
                 population.append(new_schedules)
                 scores.append(score)
+            simulation_times.append(time.time() - begin_time)
+            all_scores.append(scores)
             return population, scores
 
         def getNextPopulation(old_population: list, old_scores: list):
@@ -227,39 +243,55 @@ class Instance:
             new_scores = []
             # randomly choose items from old population to be selected and mutated
             # to form a new population
-            new_candidates = random.choices(old_population, weights=weights, k=pop_size)
+            nonlocal best_individual
+            new_candidates = random.choices(old_population, weights=weights, k=pop_size-1) + [best_individual]
+            begin_time = time.time()
             for candidate in new_candidates:
                 # copy the candidate, mutate it, evaluate and add to the new_population
-                new_schedules = blindMutateSchedules(candidate)
+                new_schedules = blindMutatedSchedules(candidate)
                 new_population.append(new_schedules)
                 score = self.simulate(new_schedules)
                 nonlocal best_score
                 if score > best_score:
                     best_score = score
-                    nonlocal best_individual
-                    best_individual= new_schedules
+                    best_individual = new_schedules
                 new_scores.append(score)
+
+            all_scores.append(scores)
+            simulation_times.append(time.time() - begin_time)
 
             return new_population, new_scores
 
 
         start_time = time.time()
-        best_individual = None
+        simulation_times = []
+
         best_score = 0
 
         # create the initial population (uniform schedules with some mutations)
         # evaluation is performed within the below function
         # population is a pair (score, schedules_object)
+
         population, scores = getInitPopulation()  # DONE
 
 
 
         generation_counter = 0
-        while generation_counter < max_generations and time.time() - start_time < 5*60:
+        while generation_counter < max_generations and time.time() - start_time < 0.5*60:
 
             population, scores = getNextPopulation(population, scores)
             # track of the best solution is implemented in the inner function
 
             generation_counter += 1
+        print(f'total time: {time.time() - start_time}\n'
+              f'time spent on simulations: {sum(simulation_times)}\n'
+              f'time spent on other stuff: {time.time() - start_time- sum(simulation_times)}')
 
+        # plot the improvement
+        # flatten the scores
+        flat_scores = [item for sublist in all_scores for item in sublist]
+        times = [x//pop_size for x in range(len(flat_scores))]
+
+        plt.hist2d(x= times, y= flat_scores, cmap='YlOrRd', cmin=0.9)
+        plt.show()
         return best_individual, best_score
