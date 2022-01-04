@@ -128,7 +128,7 @@ class Schedules:
 
     def export(self, filename):
         with open(filename, 'w') as out_file:
-            out_file.write(f'{len(self.schedules_dict.keys())}\n')
+            out_file.write(f'{len(self.schedules_dict.keys())}\n')  # fixme - change to count of intersectins WITH schedules
             for intersection_id in self.schedules_dict.keys():
                 out_file.write(f'{intersection_id}\n{len(self.schedules_dict[intersection_id])}\n')
                 for i in self.schedules_dict[intersection_id]:

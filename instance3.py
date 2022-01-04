@@ -1,7 +1,6 @@
 import math
 from objects3 import *
 import random
-from copy import deepcopy
 import time
 import matplotlib.pyplot as plt
 from collections import defaultdict
@@ -25,7 +24,6 @@ class Instance:
         """
         Simulates the instance using the given schedule. Qorks by iterating over all cars for each second of the
         simulation, skipping cars whenever possible, to save on execution time
-        todo - consider if skipping to minimum time action is worth it
 
         :return: obtained score
         """
@@ -101,20 +99,17 @@ class Instance:
             for i in range(street.init_queue_next, street.cars_total):
                 street.queue[i] = None
 
-        # todo - consider passing cars and streets in non-destructive way instead of cleanup
         return score[0]
 
     def simulateWithRequests(self, schedules: Schedules) -> (int, dict):
         """
-        Simulates the instance using the given schedule. Qorks by iterating over all cars for each second of the
+        Simulates the instance using the given schedule. Works by iterating over all cars for each second of the
         simulation, skipping cars whenever possible, to save on execution time
-        todo - consider if skipping to minimum time action is worth it
 
         In this approach we additionally keep track of how much time in total did cars spent waiting
         in each street's queue.
 
-
-        :return: obtained score
+        :return: obtained score, dict of time
         """
         requests = defaultdict(lambda: 0)    # key: street_name; value: total waiting time (in seconds)
 
@@ -179,6 +174,8 @@ class Instance:
 
         # cleanup states of cars and streets
         for car in self.cars:
+            if not car.finished and not car.driving:
+                requests[car.path[car.current_position].name] += time - car.entered_queue
             car: Car
             car.deep_in_queue = car.ini_deep_in_queue
             car.driving = False
@@ -192,24 +189,7 @@ class Instance:
             for i in range(street.init_queue_next, street.cars_total):
                 street.queue[i] = None
 
-        # todo - consider passing cars and streets in non-destructive way instead of cleanup
         return score[0], requests
-
-    def uniform_schedules(self) -> Schedules:
-        """
-        this function returns the simplest schedule, that is, each street on each intersection
-        has the green light for 1 second
-        """
-        schedules = Schedules()
-        for i in self.intersections:
-            data = []
-            for street in i.streets_in:
-                data.append((street, 1))  # schedule will store the reference to street objects, not
-                # only their names
-            schedules.add_schedule(i.id, data)
-
-        schedules.add_functional_schedule()
-        return schedules
 
     def intelligent_uniform_schedules(self) -> Schedules:
         """
@@ -264,18 +244,22 @@ class Instance:
         schedules.add_functional_schedule()
         return schedules
 
-
-
-    def evoKiller(self, pop_size, max_generations) -> (Schedules, int):
+    def evoKiller(self, pop_size, max_no_improvement: int = 100, timeout: int = 300) -> (Schedules, int):
         """
-        Returns the best schedule found by doing some mutations
-
-
+        Generates a schedule using Evolutionary Algorithms methods
+        @param pop_size: size of the population
+        @param max_no_improvement: the maximum number of generations without improvement until termination, 100 by
+        default
+        @param timeout: time after the algorithm will terminate regardless of not reaching no improvement limit, 300s
+        by default
+        @return: the best Schedules found
         """
         all_scores = []
         best_individual = None
         best_score = 0
         simulation_times = []
+        prev_best_score = 0  # keep track of generations without improvement
+        no_improvement = 0
 
         def blindMutation(old_schedules: Schedules):
             """
@@ -302,13 +286,8 @@ class Instance:
             return new_schedules
 
         def smartMutation(old_schedules: Schedules, requests: defaultdict) -> Schedules:
-
-
             new_schedules = Schedules()
-
-
             # iterate over all the intersection in the old schedule
-
             for intersection_id, tuples in old_schedules.schedules_dict.items():
                 if len(tuples) == 1:
                     # if just one street, make it always green
@@ -317,10 +296,8 @@ class Instance:
 
                 new_tuples = None   # TODO: continue (smart mutation, that allows to mutate all the streets
                                     # not only the most and least occupied ones
-            
 
             return new_schedules
-
 
         def requestBasedMutation(old_schedules: Schedules, requests: defaultdict):
             """
@@ -349,10 +326,9 @@ class Instance:
                 #     new_schedules.add_schedule(intersection, [(tuples[0][0], self.duration)])
                 #     continue
 
-
                 # now, with some probability, increase the duration on street that had the most requests
                 # TODO: find out, what function will yield the best results
-
+                # fixme
                 try:
                     prob = max(waiting_times) / (sum(waiting_times) + max(waiting_times))
                 except ZeroDivisionError:
@@ -361,7 +337,6 @@ class Instance:
                     new_tuples[waiting_times.index(max(waiting_times))] = \
                         (new_tuples[waiting_times.index(max(waiting_times))][0],
                             new_tuples[waiting_times.index(max(waiting_times))][1] + 1)
-
 
                 # and decrease the duration on street that had the least requests
                 if random.random() < prob:  # FIXME: take the probability regarding the lesst request
@@ -377,26 +352,46 @@ class Instance:
             new_schedules.add_functional_schedule()
             return new_schedules
 
+        def crossover(schedules1: Schedules, schedules2: Schedules):
+            child1, child2 = Schedules(), Schedules()
+            for intersection_id, tuples1 in schedules1.schedules_dict.items():
+                tuples2 = schedules2.schedules_dict[intersection_id]
+                if random.random() < 0.5:
+                    child1.add_schedule(intersection_id, tuples1)
+                    child2.add_schedule(intersection_id, tuples2)
+                else:
+                    child1.add_schedule(intersection_id, tuples2)
+                    child2.add_schedule(intersection_id, tuples1)
+            child1.add_functional_schedule()
+            child2.add_functional_schedule()
+            return child1, child2
 
         def getInitPopulation():
             """
-            Individual in a population is a pair (schedules, requests)
+            individual in a population is a pair (schedules, requests)
             """
             begin_time = time.time()
             population = []
             scores = []
-            base_schedules = self.greedy()
-            for i in range(pop_size):
-                new_schedules = blindMutation(base_schedules)
+            base_schedules_uniform = self.intelligent_uniform_schedules()
+            nonlocal best_score
+            nonlocal best_individual
+            score, requests = self.simulateWithRequests(base_schedules_uniform)
+            if score > best_score:
+                best_score = score
+                best_individual = (base_schedules_uniform, requests)
+            population.append((base_schedules_uniform, requests))
+            scores.append(score)
+            for i in range(pop_size - 1):
+                new_schedules = blindMutation(base_schedules_uniform)
                 score, requests = self.simulateWithRequests(new_schedules)
-                nonlocal best_score
                 if score > best_score:
                     best_score = score
-                    nonlocal best_individual
                     best_individual = (new_schedules, requests)
                 population.append((new_schedules, requests))
                 scores.append(score)
-            simulation_times.append(time.time() - begin_time)
+
+            simulation_times.append(time.time() - begin_time)  # todo - remove me once done
             all_scores.append(scores)
             return population, scores
 
@@ -405,6 +400,7 @@ class Instance:
             Returns the next population and scores (based on requests from previous simulation)
             Individual in a population is a pair (schedules, requests)
             """
+            # todo - implement tournament selection?
             # TODO: for now the next population is created by blind mutation
             new_population = []
             max_score = max(old_scores)
@@ -422,56 +418,49 @@ class Instance:
             new_candidates = random.choices(old_population, weights=weights, k=pop_size-1)
             begin_time = time.time()
             for candidate in new_candidates:
-
                 # copy the candidate, mutate the copy, evaluate and add to the new_population
                 new_schedules = requestBasedMutation(candidate[0], candidate[1])
                 score, new_requests = self.simulateWithRequests(new_schedules)
                 new_population.append((new_schedules, new_requests))
-
 
                 if score > best_score:
                     best_score = score
                     best_individual = (new_schedules, new_requests)
                 new_scores.append(score)
 
-
             # always add current best to the population
             new_scores.append(best_score)
             new_population.append(best_individual)
-
             all_scores.append(scores)
             simulation_times.append(time.time() - begin_time)
 
             return new_population, new_scores
 
-
         start_time = time.time()
-
-
         # create the initial population (uniform schedules with some mutations)
         # evaluation is performed within the below function
         # population is a pair (score, schedules_object)
-
         population, scores = getInitPopulation()  # DONE
-
         generation_counter = 1
-        while generation_counter < max_generations and time.time() - start_time < 0.3*60:
-
+        while time.time() - start_time < timeout and no_improvement < max_no_improvement:
             population, scores = getNextPopulation(population, scores)
             # track of the best solution is implemented in the inner function
-
+            if best_score == prev_best_score:
+                no_improvement += 1
+            else:
+                no_improvement = 0
+                prev_best_score = best_score
             generation_counter += 1
 
-
+        # todo - remove these after done
         print(f'total time: {time.time() - start_time}\n'
               f'time spent on simulations: {sum(simulation_times)}\n'
               f'time spent on other stuff: {time.time() - start_time- sum(simulation_times)}')
-
         # plot the improvement
         # flatten the scores
         flat_scores = [item for sublist in all_scores for item in sublist]
         times = [x//pop_size for x in range(len(flat_scores))]
 
-        plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter, 100])
+        plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter-1, 100])
         plt.show()
         return best_individual[0], best_score
