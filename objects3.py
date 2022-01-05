@@ -1,5 +1,5 @@
 from collections import defaultdict
-
+from copy import deepcopy
 class Car:
     def __init__(self, path):
         self.path = path
@@ -115,7 +115,10 @@ class Schedules:
         #   - e.g. check if it's the only active street in the schedule
         total_time, interval_dict = self.schedules_functional[street.intersection_at_end]
         start, end = interval_dict[street]
-        cycle_time = time_now % total_time  # map current time to time in the cycle
+        try:
+            cycle_time = time_now % total_time  # map current time to time in the cycle
+        except ZeroDivisionError:
+            return
         if start <= cycle_time:
             if cycle_time <= end:
                 return 0  # green now in the cycle
@@ -133,3 +136,19 @@ class Schedules:
                 out_file.write(f'{intersection_id}\n{len(self.schedules_dict[intersection_id])}\n')
                 for i in self.schedules_dict[intersection_id]:
                     out_file.write(f'{i[0].name} {i[1]}\n')
+
+    def copySchedules(self):
+        """
+        returns new schedules with copied schedules_dict
+        """
+        new_schedules = Schedules()
+        for intersection_id, data in self.schedules_dict.items():
+            new_data = []
+            for street, duration in data:
+                new_data.append([street, duration])
+            new_schedules.add_schedule(intersection_id, new_data)
+
+
+        new_schedules.score = self.score
+        return new_schedules
+

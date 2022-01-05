@@ -395,7 +395,7 @@ class Instance:
             all_scores.append(scores)
             return population, scores
 
-        def getNextPopulation(old_population: list, old_scores: list):
+        def getNextPopulationRoulette(old_population: list, old_scores: list):
             """
             Returns the next population and scores (based on requests from previous simulation)
             Individual in a population is a pair (schedules, requests)
@@ -436,6 +436,49 @@ class Instance:
 
             return new_population, new_scores
 
+
+
+        def getNextPopulationTournament_Crossover(old_population: list, old_scores: list):
+            """
+            Individual in a population is a pair(score, schedules)  <--- stick to this
+            No requests evaluated, since crossove
+            """
+            new_population = []
+
+            # first, we merge two lists (schedules, requests) , scores  --> (scores, schedules, requests)
+            candidates = []
+            for i, pair in enumerate(old_population):
+                schedules, requests = pair
+                candidates.append((old_scores[i], schedules, requests))
+
+
+            # then we perform a tournament, crossover the winning pair, mutate it with some probability
+            # and add to the new population
+            for t in range(pop_size/2):
+                participants = random.choices(candidates, k=4)
+                # we choose the best 2 out of k participants
+                parent1, parent2 = sorted(participants, reverse=True)[:2]  # sorts with respect to score
+                child1, child2 = crossover(parent1, parent2)
+
+                # now, mutate the kids
+                if random.random() < 0.4:
+                    child1 = requestBasedMutation(child1, child1)
+
+
+            # after crossing over, mutate some children
+            # for candidate in new_candidates:
+            #     # copy the candidate, mutate the copy, evaluate and add to the new_population
+            #     new_schedules = requestBasedMutation(candidate[0], candidate[1])
+            #     score, new_requests = self.simulateWithRequests(new_schedules)
+            #     new_population.append((new_schedules, new_requests))
+            #
+            #     if score > best_score:
+            #         best_score = score
+            #         best_individual = (new_schedules, new_requests)
+            #     new_scores.append(score)
+
+
+
         start_time = time.time()
         # create the initial population (uniform schedules with some mutations)
         # evaluation is performed within the below function
@@ -443,7 +486,7 @@ class Instance:
         population, scores = getInitPopulation()  # DONE
         generation_counter = 1
         while time.time() - start_time < timeout and no_improvement < max_no_improvement:
-            population, scores = getNextPopulation(population, scores)
+            population, scores = getNextPopulationRoulette(population, scores)
             # track of the best solution is implemented in the inner function
             if best_score == prev_best_score:
                 no_improvement += 1
