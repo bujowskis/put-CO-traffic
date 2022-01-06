@@ -1,4 +1,3 @@
-from collections import defaultdict
 
 class Car:
     def __init__(self, path):
@@ -7,12 +6,12 @@ class Car:
         self.current_position = 0           # index relative to the position in path
         self.next_time = 0                  # timestamp on which the next action of the car happens
         self.deep_in_queue = False          # indicates if there are other cars queued in front of the car
-        self.ini_deep_in_queue: bool       # indicates if the car was deep in queue at the beginning of the simulation
+        self.ini_deep_in_queue: bool        # indicates if the car was deep in queue at the beginning of the simulation
         self.driving = False                # indicates if the car is/was driving at the given timestamp
         self.finished = False               # indicates if the car has already reached its destination
         self.certain_go = False             # indicates if it's certain the car can go, without checking the green light
-
         self.entered_queue = 0              # indicates the timestamp in which the car entered the street's queue
+
 
 class Intersection:
     def __init__(self, id: int):
@@ -40,10 +39,7 @@ class Street:
         Pops the first car waiting in the queue; handles Car.deep_in_queue and Car.next_time method for the next car
         @param time: current time of the simulation; 0 by default
         """
-        #self.queue[self.queue_first] = None
         self.queue_first += 1
-        # if self.queue_first == self.cars_total:
-        #     self.queue_first = 0
         if self.queue[self.queue_first]:
             self.queue[self.queue_first].deep_in_queue = False
             self.queue[self.queue_first].next_time = time + 1
@@ -58,28 +54,24 @@ class Street:
         if not self.queue_next == self.queue_first:
             car.deep_in_queue = True
         self.queue_next += 1
-        # if self.queue_next == self.cars_total:
-        #     self.queue_next = 0
 
 
 class Schedules:
     """
     Schedule is a DICTIONARY of sequences of turning the lights on and off
-
-    schedules_dict is the "readable" form - a dictionary with items in such form for each intersection:
+    - schedules_dict is the "readable" form - a dictionary with items in such form for each intersection:
         - key: intersection_id
         - value: list of tuples: (street_name, duration)
-
-    schedules_functional is the "functional" form - a dictionary of tuples representing the schedule in form
+    - schedules_functional is the "functional" form - a dictionary of tuples representing the schedule in form
                                                             (total_time, streets_intervals)
-    streets_intervals - dictionary with items in form:
-                                                        street: (start_green, end_green)
+        - streets_intervals - dictionary with items in form:
+                                                            street: (start_green, end_green)
     """
     def __init__(self):
         self.schedules_dict = {}
         self.schedules_functional = {}
         self.score = 0
-        #self.requests = defaultdict(lambda: 0) # maybe it will be better to store requests as fields of streets
+        # self.requests = defaultdict(lambda: 0) # todo - maybe it will be better to store requests as fields of streets
 
     def add_schedule(self, intersection_id, data):
         self.schedules_dict[intersection_id] = data
@@ -99,9 +91,16 @@ class Schedules:
 
     def update_readable(self):
         """
-        run to change the "readable" schedule based on changes in the "functional" one
+        run to change the readable schedule based on changes in the functional one
         """
-        pass  # todo - probably needed for xxx algorithm
+        self.schedules_dict = {}
+        for intersection, intervals_tuple in self.schedules_functional.items():
+            total_time, streets_intervals = intervals_tuple
+            if total_time:
+                street_time = []
+                for street, time_intervals in streets_intervals.items():
+                    street_time.append((street, time_intervals[1] - time_intervals[0] + 1))
+                self.schedules_dict[intersection] = street_time
 
     def timeTillGreen(self, street: Street, time_now: int) -> int:
         """
@@ -111,8 +110,7 @@ class Schedules:
         :param time_now: current time of the simulation
         :return: no. of seconds until green light; 0 if it is green now
         """
-        # todo - consider some optimization techniques
-        #   - e.g. check if it's the only active street in the schedule
+        # todo - optimize
         total_time, interval_dict = self.schedules_functional[street.intersection_at_end]
         start, end = interval_dict[street]
         cycle_time = time_now % total_time  # map current time to time in the cycle
@@ -127,8 +125,12 @@ class Schedules:
             return start - cycle_time
 
     def export(self, filename):
+        count = 0
+        for total_time, streets_intervals in self.schedules_functional.values():
+            if total_time:
+                count += 1
         with open(filename, 'w') as out_file:
-            out_file.write(f'{len(self.schedules_dict.keys())}\n')  # fixme - change to count of intersectins WITH schedules
+            out_file.write(f'{count}\n')
             for intersection_id in self.schedules_dict.keys():
                 out_file.write(f'{intersection_id}\n{len(self.schedules_dict[intersection_id])}\n')
                 for i in self.schedules_dict[intersection_id]:

@@ -22,7 +22,7 @@ class Instance:
 
     def simulate(self, schedules: Schedules) -> int:
         """
-        Simulates the instance using the given schedule. Qorks by iterating over all cars for each second of the
+        Simulates the instance using the given schedule. Works by iterating over all cars for each second of the
         simulation, skipping cars whenever possible, to save on execution time
 
         :return: obtained score
@@ -285,6 +285,7 @@ class Instance:
 
             return new_schedules
 
+        # todo - that's something for the future
         def smartMutation(old_schedules: Schedules, requests: defaultdict) -> Schedules:
             new_schedules = Schedules()
             # iterate over all the intersection in the old schedule
@@ -295,7 +296,7 @@ class Instance:
                     continue
 
                 new_tuples = None   # TODO: continue (smart mutation, that allows to mutate all the streets
-                                    # not only the most and least occupied ones
+                                    #   not only the most and least occupied ones
 
             return new_schedules
 
@@ -304,9 +305,7 @@ class Instance:
             Creates NEW schedules based on the old ones.
             Does not copy the old schedules, neither modify them
             Looks for all the request on streets ending at a given intersection,
-
             """
-
             new_schedules = Schedules()
 
             for intersection, tuples in old_schedules.schedules_dict.items():
@@ -339,7 +338,7 @@ class Instance:
                             new_tuples[waiting_times.index(max(waiting_times))][1] + 1)
 
                 # and decrease the duration on street that had the least requests
-                if random.random() < prob:  # FIXME: take the probability regarding the lesst request
+                if random.random() < prob:  # FIXME: take the probability regarding the least request
                     new_tuples[waiting_times.index(min(waiting_times))] = \
                         (new_tuples[waiting_times.index(min(waiting_times))][0],
                             max(new_tuples[waiting_times.index(min(waiting_times))][1]-1, 1))
@@ -352,6 +351,7 @@ class Instance:
             new_schedules.add_functional_schedule()
             return new_schedules
 
+        # todo - that's something for the future
         def crossover(schedules1: Schedules, schedules2: Schedules):
             child1, child2 = Schedules(), Schedules()
             for intersection_id, tuples1 in schedules1.schedules_dict.items():
@@ -367,6 +367,7 @@ class Instance:
             return child1, child2
 
         def getInitPopulation():
+            # todo - add more diverse population
             """
             individual in a population is a pair (schedules, requests)
             """
@@ -402,7 +403,6 @@ class Instance:
             """
             # todo - implement tournament selection?
             # TODO: for now the next population is created by blind mutation
-            new_population = []
             max_score = max(old_scores)
             min_score = min(old_scores)
             try:
@@ -452,7 +452,7 @@ class Instance:
                 prev_best_score = best_score
             generation_counter += 1
 
-        # todo - remove these after done
+        # todo - potentially unnecessary
         print(f'total time: {time.time() - start_time}\n'
               f'time spent on simulations: {sum(simulation_times)}\n'
               f'time spent on other stuff: {time.time() - start_time- sum(simulation_times)}')
@@ -463,4 +463,5 @@ class Instance:
 
         plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter-1, 100])
         plt.show()
+        best_individual[0].update_readable()
         return best_individual[0], best_score
