@@ -244,6 +244,20 @@ class Instance:
         schedules.add_functional_schedule()
         return schedules
 
+    def randomSchedules(self, variance):
+        schedules = Schedules()
+        for intersection in self.intersections:
+            data = list()
+            for street in intersection.streets_in:
+                if street.cars_total:
+                    value = math.ceil(random.expovariate(0.6))
+                    data.append([street, value])
+            if len(data):
+                schedules.add_schedule(intersection.id, data)
+
+        schedules.add_functional_schedule()
+        return schedules
+
     def evoKiller(self, pop_size, max_no_improvement: int = 100, timeout: int = 300) -> (Schedules, int):
         """
         Generates a schedule using Evolutionary Algorithms methods
@@ -367,7 +381,6 @@ class Instance:
             return child1, child2
 
         def getInitPopulation():
-            # todo - add more diverse population
             """
             individual in a population is a pair (schedules, requests)
             """
@@ -377,14 +390,25 @@ class Instance:
             base_schedules_uniform = self.intelligent_uniform_schedules()
             nonlocal best_score
             nonlocal best_individual
+
+            # add 1 uniform schedule
             score, requests = self.simulateWithRequests(base_schedules_uniform)
             if score > best_score:
                 best_score = score
                 best_individual = (base_schedules_uniform, requests)
             population.append((base_schedules_uniform, requests))
             scores.append(score)
-            for i in range(pop_size - 1):
-                new_schedules = blindMutation(base_schedules_uniform)
+
+            a = pop_size // 4
+            for i in range(1, pop_size):
+                if i < a:
+                    # add uniform schedules mutated a little up to 1/4 POPSIZE
+                    new_schedules = blindMutation(base_schedules_uniform)
+                    for j in range(5):  # todo - this could be tinkered with
+                        new_schedules = blindMutation(new_schedules)
+                else:
+                    # fill the rest of the population with random ones
+                    new_schedules = self.randomSchedules(None)
                 score, requests = self.simulateWithRequests(new_schedules)
                 if score > best_score:
                     best_score = score
@@ -402,7 +426,6 @@ class Instance:
             Individual in a population is a pair (schedules, requests)
             """
             # todo - implement tournament selection?
-            # TODO: for now the next population is created by blind mutation
             max_score = max(old_scores)
             min_score = min(old_scores)
             try:
@@ -436,49 +459,6 @@ class Instance:
 
             return new_population, new_scores
 
-
-
-        def getNextPopulationTournament_Crossover(old_population: list, old_scores: list):
-            """
-            Individual in a population is a pair(score, schedules)  <--- stick to this
-            No requests evaluated, since crossove
-            """
-            new_population = []
-
-            # first, we merge two lists (schedules, requests) , scores  --> (scores, schedules, requests)
-            candidates = []
-            for i, pair in enumerate(old_population):
-                schedules, requests = pair
-                candidates.append((old_scores[i], schedules, requests))
-
-
-            # then we perform a tournament, crossover the winning pair, mutate it with some probability
-            # and add to the new population
-            for t in range(pop_size/2):
-                participants = random.choices(candidates, k=4)
-                # we choose the best 2 out of k participants
-                parent1, parent2 = sorted(participants, reverse=True)[:2]  # sorts with respect to score
-                child1, child2 = crossover(parent1, parent2)
-
-                # now, mutate the kids
-                if random.random() < 0.4:
-                    child1 = requestBasedMutation(child1, child1)
-
-
-            # after crossing over, mutate some children
-            # for candidate in new_candidates:
-            #     # copy the candidate, mutate the copy, evaluate and add to the new_population
-            #     new_schedules = requestBasedMutation(candidate[0], candidate[1])
-            #     score, new_requests = self.simulateWithRequests(new_schedules)
-            #     new_population.append((new_schedules, new_requests))
-            #
-            #     if score > best_score:
-            #         best_score = score
-            #         best_individual = (new_schedules, new_requests)
-            #     new_scores.append(score)
-
-
-
         start_time = time.time()
         # create the initial population (uniform schedules with some mutations)
         # evaluation is performed within the below function
@@ -506,5 +486,6 @@ class Instance:
 
         plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter-1, 100])
         plt.show()
+
         best_individual[0].update_readable()
         return best_individual[0], best_score

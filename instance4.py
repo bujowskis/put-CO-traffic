@@ -252,7 +252,6 @@ class Instance:
             """
             individual in a population is a pair (schedules, requests)
             """
-
             first_population = []
             scores = []
             base_schedules_uniform = self.intelligent_uniform_schedules()
@@ -273,7 +272,6 @@ class Instance:
                 if new_individual[0] > best_individual[0]:
                     best_individual = new_individual
                 first_population.append(new_individual)
-
 
             all_scores.append(scores)
             return first_population
