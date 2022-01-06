@@ -49,15 +49,11 @@ def main():
     schedules_intelligent = instance.intelligent_uniform_schedules()
     score_intelligent = instance.simulate(schedules_intelligent)
     print(f"\t\tdone, obtained score: {score_intelligent}")
-    schedules_intelligent.export(f"{file_export_name}-uniform.txt")
-    print("\t\t(schedule exported)")
 
     print("\tgreedy...")
     schedules_greedy = instance.greedy()
     score_greedy = instance.simulate(schedules_greedy)
     print(f"\t\tdone, obtained score: {score_greedy}")
-    schedules_greedy.export(f"{file_export_name}-greedy.txt")
-    print("\t\t(schedule exported)")
 
     print("\tevoKiller...")
     if timeout < 10:
@@ -67,7 +63,7 @@ def main():
     elif timeout < 300:
         print("\t\tIt will take a while. You can probably listen to a whole song while waiting.")
     elif timeout < 600:
-        print(f"\t\tMaybe a short walk? You could try running 2km under {round(timeout / 60)} minutes, I challenge you.")
+        print(f"\t\tMaybe a short walk? You could try running 2km under {round(timeout / 60) + 2} minutes, I challenge you.")
     elif timeout < 1800:
         print("\t\tWow, you really want to see some serious count of generations.")
     elif timeout < 5400:
@@ -80,14 +76,27 @@ def main():
         print("\t\tWhat if I... \"accidentally\" stop it in the middle? Do you trust me? I want to play a game...")
     else:
         print("\t\tYour. Computer. Will. suffer.")
-
     schedules_evo, score_evo = instance.evoKiller(popsize, max_no_impr, timeout)
     score_evo = instance.simulate(schedules_evo)
     print(f"\t\tdone, obtained score: {score_evo}")
-    schedules_evo.export(f"{file_export_name}-evo-{timeout}-{popsize}-{max_no_impr}.txt")
-    print("\t\t(schedule exported)")
 
     print("***** *** All schedules generated")
+    if score_evo > score_greedy and score_evo > score_intelligent:
+        print(f"***** *** the best score obtained: {score_evo}, by evoKiller")
+        print("\texporting this schedule...")
+        schedules_evo.export(f"{file_export_name}-best.txt")
+        print("\t(done)")
+    elif score_greedy > score_intelligent:
+        print(f"***** *** the best score obtained: {score_evo}, by greedy")
+        print("\texporting this schedule...")
+        schedules_greedy.export(f"{file_export_name}-best.txt")
+        print("\t(done)")
+    else:
+        print(f"***** *** the best score obtained: {score_evo}, by intelligent uniform")
+        print("\texporting this schedule...")
+        schedules_intelligent.export(f"{file_export_name}-best.txt")
+        print("\t(done)")
+
     return 0
 
 
