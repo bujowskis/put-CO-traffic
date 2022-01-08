@@ -360,21 +360,17 @@ class Instance:
         threshold_bottom = min(10, highest_time)
 
         for i in range(1, threshold_bottom):
-            print(f'i = {i}')
             schedules_bottom = self.advancedGreedyCutBottom(i)
             score_bottom = self.simulate(schedules_bottom)
             if score_bottom > score_best:
-                print(f'new best from bottom, score = {score_bottom}')
                 score_best = score_bottom
                 schedules_best = schedules_bottom
             go_on = True
             j = 2
             while go_on:
-                print(f'\tj = {j}')
                 schedules_top, go_on = self.advancedGreedyCutTop(schedules_bottom, j)
                 score_top = self.simulate(schedules_top)
                 if score_top > score_best:
-                    print(f'new best from top, score = {score_top}')
                     score_best = score_top
                     schedules_best = schedules_top
                 j += 1
