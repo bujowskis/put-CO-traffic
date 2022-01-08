@@ -49,11 +49,6 @@ def main():
     score_intelligent = instance.simulate(schedules_intelligent)
     print(f"\t\tdone, obtained score: {score_intelligent}")
 
-    print("\tgreedy...")
-    schedules_greedy = instance.greedy()
-    score_greedy = instance.simulate(schedules_greedy)
-    print(f"\t\tdone, obtained score: {score_greedy}")
-
     print("\tadvanced greedy...")
     schedules_advanced_greedy = instance.advancedGreedy()
     score_advanced_greedy = instance.simulate(schedules_advanced_greedy)
@@ -85,26 +80,26 @@ def main():
     print(f"\t\tdone, obtained score: {score_evo}")
 
     print("***** *** All schedules generated")
-    if score_evo > score_greedy and score_evo > score_intelligent and score_evo > score_advanced_greedy:
-        print(f"***** *** the best score obtained: {score_evo}, by evoKiller")
-        print("\texporting this schedule...")
-        schedules_evo.export(f"{file_export_name}-best.txt")
-        print("\t(done)")
-    elif score_greedy > score_intelligent and score_advanced_greedy < score_greedy:
-        print(f"***** *** the best score obtained: {score_evo}, by greedy")
-        print("\texporting this schedule...")
-        schedules_greedy.export(f"{file_export_name}-best.txt")
-        print("\t(done)")
-    elif score_advanced_greedy > score_intelligent:
-        print(f"***** *** the best score obtained: {score_advanced_greedy}, by advanced greedy")
-        print("\texporting this schedule...")
-        schedules_advanced_greedy.export(f'{file_export_name}-best.txt')
-        print("\t(done)")
-    else:
+    scores = [score_evo, score_advanced_greedy, score_intelligent]
+    max_score = max(scores)
+    # go in the order of increasing complexity
+    if score_intelligent == max_score:
         print(f"***** *** the best score obtained: {score_evo}, by intelligent uniform")
         print("\texporting this schedule...")
         schedules_intelligent.export(f"{file_export_name}-best.txt")
         print("\t(done)")
+    elif score_advanced_greedy == max_score:
+        print(f"***** *** the best score obtained: {score_advanced_greedy}, by advanced greedy")
+        print("\texporting this schedule...")
+        schedules_advanced_greedy.export(f'{file_export_name}-best.txt')
+        print("\t(done)")
+    elif score_evo == max_score:
+        print(f"***** *** the best score obtained: {score_evo}, by evoKiller")
+        print("\texporting this schedule...")
+        schedules_evo.export(f"{file_export_name}-best.txt")
+        print("\t(done)")
+    else:
+        raise Exception("the impossible happened")
 
     return 0
 
