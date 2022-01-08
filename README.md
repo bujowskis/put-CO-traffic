@@ -23,7 +23,7 @@ For clarity, we modeled the whole thing in object programming manner, trying to 
 The evaluation function considers each car in each iteration separately, but there are a lot of optimization things we used to speed up the process, such as boolean fields of each car indicating if it can be skipped in a given iteration, or skipping the iterations when we're sure there would be no changes happening. Unfortunately, that's still not enough for true EA. But keep in mind, we have a few ideas on what to try out next.
 
 ### The algorithms
-**IMPORTANT** - see the last section of README to see the additional `advanced greedy` algorithm.
+**IMPORTANT** - see the last section of README to see the additional `advanced greedy` algorithm, and `order`.
 
 In total, there are three algorithms we used for generating the schedules, among which the one yielding the best result is chosen (which in all cases boiled down to Evolutionary Algorithm).
 #### Intelligent uniform
@@ -136,3 +136,11 @@ Output for `e.txt`
 
 Process finished with exit code 0
 ```
+
+## Order
+An additional add-on which can be used by any algorithm, as it's applicable to `Schedules` type object directly. The idea is to order which streets appear first in every cycle, based on how many cars are waiting on the streets at the beginning of the simulation. It's the most simple heuristic which does some ordering, and it's easy to understand - in most cases, it makes the most sense to let the street with the highest initial cars count go first in the schedule.
+
+The idea could surely be implemented in more advanced manner, and I daresay it may be what most of our algorithms are missing - namely, searching the neighbourhood of schedules with shuffled order of streets in the cycle. It's something definitiely worth trying out in the future, but for now we stick to it's simplistic version, which is still very good. In most cases, it **improved the obtained scores by anything between 1-300k points**.
+
+## What now?
+As mentioned before, for now the repository will become dormant, and we're thinking of revisiting it once again in the future. It was a nice journey and we definitely learnt a lot along the way. We're looking forward to more such projects.
