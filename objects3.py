@@ -107,7 +107,10 @@ class Schedules:
         Orders streets in each intersection based on their init_queue_next;
 
         i.e. makes the streets with higher number of initial cars in the queue appear first in the schedule cycle
+
+        @return: ordered Schedule, based on this schedule
         """
+        schedules = Schedules()
         for intersection_id, streets_tuples_list in self.schedules_dict.items():
             priority_queue_values = set()
             priority_queue_items = dict()
@@ -126,8 +129,10 @@ class Schedules:
                 for item in items_list:
                     data.append(item)
             if len(data):  # may be redundant
-                self.schedules_dict[intersection_id] = data
-        self.add_functional_schedule()
+                schedules.add_schedule(intersection_id, data)
+
+        schedules.add_functional_schedule()
+        return schedules
 
     def timeTillGreen(self, street: Street, time_now: int) -> int:
         """

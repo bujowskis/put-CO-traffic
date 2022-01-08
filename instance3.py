@@ -210,7 +210,13 @@ class Instance:
                 schedules.add_schedule(intersection.id, data)
 
         schedules.add_functional_schedule()
-        return schedules
+        score = self.simulate(schedules)
+        schedules_ordered = schedules.order_initqueue_first()
+        score_ordered = self.simulate(schedules_ordered)
+        if score_ordered > score:
+            return schedules_ordered
+        else:
+            return schedules
 
     def greedy(self) -> Schedules:
         """
@@ -245,9 +251,14 @@ class Instance:
             if len(data):
                 schedules.add_schedule(intersection.id, data)
 
-        # todo - order streets according to next_car
         schedules.add_functional_schedule()
-        return schedules
+        score = self.simulate(schedules)
+        schedules_ordered = schedules.order_initqueue_first()
+        score_ordered = self.simulate(schedules_ordered)
+        if score_ordered > score:
+            return schedules_ordered
+        else:
+            return schedules
 
     def advancedGreedyCutBottom(self, threshold_bottom: int = 4) -> Schedules:
         """
@@ -297,7 +308,6 @@ class Instance:
             if len(data):
                 schedules.add_schedule(intersection.id, data)
 
-        # todo - order streets according to next_car
         schedules.add_functional_schedule()
         return schedules
 
@@ -336,7 +346,6 @@ class Instance:
             if len(data):
                 schedules.add_schedule(intersection_id, data)
 
-        # todo - order streets according to next_car
         schedules.add_functional_schedule()
         return schedules, longer_than_second
 
@@ -365,6 +374,11 @@ class Instance:
         for i in range(1, threshold_bottom):
             schedules_bottom = self.advancedGreedyCutBottom(i)
             score_bottom = self.simulate(schedules_bottom)
+            schedules_bottom_ordered = schedules_bottom.order_initqueue_first()
+            score_bottom_ordered = self.simulate(schedules_bottom_ordered)
+            if score_bottom_ordered > score_bottom:
+                schedules_bottom = schedules_bottom_ordered
+                score_bottom = score_bottom_ordered
             if score_bottom > score_best:
                 score_best = score_bottom
                 schedules_best = schedules_bottom
@@ -373,6 +387,11 @@ class Instance:
             while go_on:
                 schedules_top, go_on = self.advancedGreedyCutTop(schedules_bottom, j)
                 score_top = self.simulate(schedules_top)
+                schedules_top_ordered = schedules_top.order_initqueue_first()
+                score_top_ordered = self.simulate(schedules_top_ordered)
+                if score_top_ordered > score_top:
+                    schedules_top = schedules_top_ordered
+                    score_top = score_top_ordered
                 if score_top > score_best:
                     score_best = score_top
                     schedules_best = schedules_top
@@ -624,4 +643,9 @@ class Instance:
         plt.show()
 
         best_individual[0].update_readable()
-        return best_individual[0], best_score
+        best_ordered = best_individual[0].order_initqueue_first()
+        best_ordered_score = self.simulate(best_ordered)
+        if best_ordered_score > best_score:
+            return best_ordered, best_ordered_score
+        else:
+            return best_individual[0], best_score

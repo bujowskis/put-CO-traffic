@@ -14,8 +14,8 @@ def main():
         print(f'\ttime: {time.time() - start}')
         score = instance.simulate(schedules)
         print(f'\tscore: {score}')
-        schedules.order_initqueue_first()
-        score = instance.simulate(schedules)
+        schedules_ordered = schedules.order_initqueue_first()
+        score = instance.simulate(schedules_ordered)
         print(f'\tscore (ordered): {score}')
 
         print("greedy")
@@ -24,8 +24,8 @@ def main():
         print(f'\ttime: {time.time() - start}')
         score = instance.simulate(schedules)
         print(f'\tscore: {score}')
-        schedules.order_initqueue_first()
-        score = instance.simulate(schedules)
+        schedules_ordered = schedules.order_initqueue_first()
+        score = instance.simulate(schedules_ordered)
         print(f'\tscore (ordered): {score}')
 
         print("advanced greedy")
@@ -34,8 +34,8 @@ def main():
         print(f'\ttime: {time.time() - start}')
         score = instance.simulate(schedules)
         print(f'\tscore: {score}')
-        schedules.order_initqueue_first()
-        score = instance.simulate(schedules)
+        schedules_ordered = schedules.order_initqueue_first()
+        score = instance.simulate(schedules_ordered)
         print(f'\tscore (ordered): {score}')
 
 

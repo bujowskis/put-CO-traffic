@@ -48,8 +48,8 @@ cj-da 2
 db-da 1
 31
 2
+baf-db 1
 da-db 1
-baf-db 2
 32
 1
 db-dc 1640
@@ -64,11 +64,11 @@ dd-de 1640
 ee-ed 1640
 44
 2
+bbi-ee 1
 ef-ee 1
-bbi-ee 3
 45
 2
-ee-ef 2
+ee-ef 1
 eg-ef 1
 46
 2
@@ -98,17 +98,17 @@ ff-fe 1
 bci-fe 1
 55
 2
-fe-ff 2
+fe-ff 1
 fg-ff 1
 56
 3
 ff-fg 1
-bda-fg 3
+bda-fg 2
 fh-fg 1
 57
 2
 fi-fh 1
-fg-fh 2
+fg-fh 1
 58
 2
 fh-fi 1
@@ -130,14 +130,14 @@ gd-ge 1640
 gf-gg 1640
 67
 2
-gi-gh 1
+gi-gh 2
 gg-gh 1
 68
 1
 gj-gi 1640
 69
 2
-bed-gj 2
+bed-gj 1
 ha-gj 1
 70
 1
@@ -147,7 +147,7 @@ bee-ha 1640
 a-he 1640
 75
 2
-bej-hf 1
+bej-hf 2
 he-hf 1
 76
 1
@@ -169,7 +169,7 @@ id-ic 1
 83
 2
 ic-id 1
-ie-id 3
+ie-id 2
 84
 2
 bfi-ie 2
@@ -201,8 +201,8 @@ cj-bad 1
 bhh-bad 1
 105
 2
-bhj-baf 2
 bae-baf 1
+bhj-baf 2
 106
 1
 dc-bag 1640
@@ -218,7 +218,7 @@ bie-bba 1640
 111
 2
 bba-bbb 1
-bif-bbb 3
+bif-bbb 2
 112
 1
 bbb-bbc 1640
@@ -250,19 +250,19 @@ bci-bch 1640
 128
 3
 fe-bci 1
-bcj-bci 2
+bcj-bci 1
 cac-bci 1
 129
 1
 cad-bcj 1640
 130
 2
-bcj-bda 1
 fg-bda 1
+bcj-bda 1
 132
 3
-fi-bdc 2
 bdb-bdc 1
+fi-bdc 1
 cag-bdc 1
 133
 1
@@ -299,7 +299,7 @@ he-bei 1640
 ccd-bej 1640
 151
 2
-bfc-bfb 2
+bfc-bfb 1
 hh-bfb 1
 152
 1
@@ -315,7 +315,7 @@ ia-bfe 1640
 bfe-bff 1640
 156
 2
-ic-bfg 3
+ic-bfg 2
 bff-bfg 1
 158
 2
@@ -338,7 +338,7 @@ bgg-bgf 1640
 bgh-bgg 1640
 167
 2
-jd-bgh 2
+jd-bgh 1
 bgi-bgh 1
 168
 2
@@ -361,7 +361,7 @@ baa-bhe 1640
 bhe-bhf 1640
 177
 2
-cfb-bhh 2
+cfb-bhh 1
 bad-bhh 1
 179
 1
@@ -373,10 +373,10 @@ bib-bia 1
 181
 2
 bah-bib 1
-bic-bib 3
+bic-bib 1
 182
 3
-bai-bic 2
+bai-bic 1
 cfg-bic 1
 bib-bic 1
 184
@@ -398,7 +398,7 @@ cgg-bjc 1640
 3
 cgi-bje 1
 bjd-bje 1
-bca-bje 1
+bca-bje 2
 195
 1
 bcb-bjf 1640
@@ -412,11 +412,11 @@ bjj-bji 1
 199
 2
 chd-bjj 1
-bji-bjj 1
+bji-bjj 2
 200
 2
-bjj-caa 2
 bcg-caa 1
+bjj-caa 2
 201
 1
 bch-cab 1640
@@ -425,12 +425,12 @@ bch-cab 1640
 chg-cac 1640
 203
 2
+chh-cad 2
 cae-cad 1
-chh-cad 3
 204
 2
 bda-cae 1
-chi-cae 2
+chi-cae 1
 205
 2
 cae-caf 1
@@ -442,14 +442,14 @@ caf-cag 1
 207
 2
 cai-cah 1
-bdd-cah 3
+bdd-cah 2
 208
 1
 caj-cai 1640
 209
 2
 bdf-caj 1
-cba-caj 2
+cba-caj 1
 210
 2
 cie-cba 1
@@ -461,14 +461,14 @@ cif-cbb 1
 212
 2
 bdi-cbc 1
-cbb-cbc 1
+cbb-cbc 2
 213
 1
 cbe-cbd 1640
 214
 2
-cbf-cbe 2
 bea-cbe 1
+cbf-cbe 1
 215
 1
 beb-cbf 1640
@@ -502,7 +502,7 @@ cci-ccj 1
 cda-ccj 1
 230
 2
-bfg-cda 3
+bfg-cda 1
 ccj-cda 1
 231
 2
@@ -511,7 +511,7 @@ cda-cdb 1
 232
 2
 bfi-cdc 1
-dba-cdc 2
+dba-cdc 1
 233
 1
 bfj-cdd 1640
@@ -550,9 +550,9 @@ ddi-cei 1640
 bhf-cej 1640
 251
 3
-bhh-cfb 1
-cfc-cfb 1
 def-cfb 1
+cfc-cfb 1
+bhh-cfb 1
 252
 1
 deg-cfc 1640
@@ -564,7 +564,7 @@ bhj-cfd 1640
 bia-cfe 1640
 256
 2
-bic-cfg 2
+bic-cfg 1
 dfa-cfg 1
 257
 1
@@ -572,7 +572,7 @@ dff-cfh 1640
 258
 2
 cfj-cfi 1
-cfh-cfi 3
+cfh-cfi 1
 259
 1
 dfh-cfj 1640
@@ -581,12 +581,12 @@ dfh-cfj 1640
 bih-cgb 1640
 264
 2
-dgg-cge 1
 bja-cge 1
+dgg-cge 2
 265
 2
 bjb-cgf 1
-cge-cgf 2
+cge-cgf 1
 266
 2
 cgf-cgg 2
@@ -594,14 +594,14 @@ dgi-cgg 1
 268
 2
 dha-cgi 1
-bje-cgi 1
+bje-cgi 2
 269
 1
 bjf-cgj 1640
 270
 2
-dhg-cha 2
 cgj-cha 1
+dhg-cha 2
 271
 1
 cha-chb 1640
@@ -618,7 +618,7 @@ caa-che 1640
 275
 2
 chg-chf 1
-cab-chf 2
+cab-chf 1
 276
 1
 chh-chg 1640
@@ -627,8 +627,8 @@ chh-chg 1640
 dih-chh 1640
 278
 2
-chj-chi 1
 dii-chi 1
+chj-chi 2
 279
 2
 caf-chj 2
@@ -636,7 +636,7 @@ cia-chj 1
 280
 2
 dja-cia 1
-cag-cia 2
+cag-cia 1
 281
 1
 cah-cib 1640
@@ -655,22 +655,22 @@ cbd-cih 1640
 290
 2
 cbg-cja 1
-eai-cja 3
+eai-cja 2
 291
 2
-cja-cjb 1
 eaj-cjb 1
+cja-cjb 2
 292
 2
 eba-cjc 1
-cjb-cjc 2
+cjb-cjc 1
 299
 1
 ccf-cjj 1640
 300
 3
 dab-daa 1
-cjj-daa 2
+cjj-daa 1
 ccg-daa 1
 301
 1
@@ -681,17 +681,17 @@ dad-dac 1640
 303
 2
 dac-dad 1
-dae-dad 2
+dae-dad 1
 304
 2
 ecc-dae 1
 dad-dae 1
 305
 4
+dag-daf 1
 ecd-daf 1
-dag-daf 2
-cch-daf 1
 dae-daf 1
+cch-daf 1
 306
 2
 dah-dag 2
@@ -718,7 +718,7 @@ dba-dbb 1
 312
 3
 ecg-dbc 1
-dbd-dbc 2
+dbd-dbc 1
 dbb-dbc 1
 313
 2
@@ -729,8 +729,8 @@ dbc-dbd 1
 dbf-dbe 1640
 315
 2
-dbg-dbf 1
 cdd-dbf 1
+dbg-dbf 1
 316
 1
 dbh-dbg 1640
@@ -759,8 +759,8 @@ dce-dcf 2
 dcf-dcg 1640
 327
 2
-dcg-dch 2
 ceb-dch 1
+dcg-dch 1
 328
 1
 dch-dci 1640
@@ -776,18 +776,18 @@ dcj-dda 1640
 edh-ddb 1640
 332
 2
-edi-ddc 2
+edi-ddc 1
 ddb-ddc 1
 333
 1
 ddc-ddd 1640
 334
 2
-ddd-dde 1
+ddd-dde 2
 ddf-dde 1
 335
 2
-dde-ddf 3
+dde-ddf 1
 ddg-ddf 1
 336
 1
@@ -801,9 +801,9 @@ cej-ddj 1
 dea-ddj 2
 340
 3
-eec-dea 2
+eec-dea 1
 deb-dea 1
-ddj-dea 2
+ddj-dea 1
 341
 1
 eed-deb 1640
@@ -813,11 +813,11 @@ ded-dec 1
 deb-dec 2
 343
 2
-dec-ded 3
+dec-ded 2
 dee-ded 1
 344
 2
-ded-dee 2
+ded-dee 1
 def-dee 1
 345
 4
@@ -831,7 +831,7 @@ deh-deg 1640
 347
 2
 cfd-deh 1
-dei-deh 3
+dei-deh 2
 348
 2
 cfe-dei 1
@@ -842,7 +842,7 @@ dei-dej 1640
 350
 2
 cfg-dfa 1
-dej-dfa 2
+dej-dfa 1
 351
 1
 dfa-dfb 1640
@@ -854,8 +854,8 @@ efb-dfd 1640
 dfd-dfe 1640
 355
 2
-efd-dff 2
 dfe-dff 1
+efd-dff 2
 359
 1
 cgb-dfj 1640
@@ -876,10 +876,10 @@ dgc-dgd 1640
 365
 2
 dgg-dgf 1
-efj-dgf 2
+efj-dgf 1
 366
 3
-dgf-dgg 1
+dgf-dgg 2
 dgh-dgg 1
 cge-dgg 1
 367
@@ -888,7 +888,7 @@ dgg-dgh 1
 cgf-dgh 2
 368
 2
-dgh-dgi 3
+dgh-dgi 1
 cgg-dgi 1
 369
 1
@@ -896,18 +896,18 @@ dgi-dgj 1640
 370
 3
 dgj-dha 1
-cgi-dha 2
 dhb-dha 1
+cgi-dha 1
 371
 2
-dha-dhb 2
+dha-dhb 1
 dhc-dhb 1
 372
 1
 egc-dhc 1640
 375
 2
-egf-dhf 1
+egf-dhf 2
 cgj-dhf 1
 376
 2
@@ -924,23 +924,23 @@ dhh-dhi 1640
 dia-dhj 1640
 380
 2
-che-dia 3
+che-dia 1
 egg-dia 1
 381
 1
 egh-dib 1640
 382
 2
-did-dic 1
 dib-dic 1
+did-dic 1
 383
 3
-egj-did 1
-dic-did 1
 die-did 1
+dic-did 1
+egj-did 1
 384
 2
-did-die 2
+did-die 1
 eha-die 1
 385
 2
@@ -961,13 +961,13 @@ dij-dii 1640
 chj-dij 1640
 390
 4
-dij-dja 2
+dij-dja 1
 ehc-dja 1
 cia-dja 1
 djb-dja 1
 391
 2
-dja-djb 3
+dja-djb 2
 djc-djb 1
 392
 2
@@ -975,25 +975,25 @@ djd-djc 1
 djb-djc 2
 393
 2
-djc-djd 2
+djc-djd 1
 dje-djd 1
 394
 3
-djd-dje 2
+djd-dje 1
 ehg-dje 1
 djf-dje 1
 395
 3
-cib-djf 2
+cib-djf 1
 djg-djf 1
 ehh-djf 1
 396
 2
 djh-djg 1
-djf-djg 3
+djf-djg 2
 397
 2
-djg-djh 1
+djg-djh 2
 dji-djh 1
 398
 2
@@ -1001,14 +1001,14 @@ djh-dji 1
 djj-dji 1
 399
 3
-eaa-djj 1
 cif-djj 1
 dji-djj 1
+eaa-djj 1
 400
 3
 djj-eaa 1
 cig-eaa 1
-ehi-eaa 3
+ehi-eaa 1
 401
 1
 eaa-eab 1640
@@ -1031,11 +1031,11 @@ eae-eaf 1
 406
 2
 eah-eag 1
-eaf-eag 2
+eaf-eag 1
 407
 3
-eag-eah 1
 cij-eah 1
+eag-eah 2
 eai-eah 1
 408
 2
@@ -1050,11 +1050,11 @@ ebb-eba 1
 cjc-eba 2
 411
 2
-eba-ebb 2
+eba-ebb 1
 ebc-ebb 1
 412
 2
-ebb-ebc 2
+ebb-ebc 1
 ebd-ebc 1
 413
 1
@@ -1065,8 +1065,8 @@ ebf-ebe 1
 eii-ebe 1
 415
 2
-eij-ebf 2
 ebg-ebf 1
+eij-ebf 2
 418
 1
 daa-ebi 1640
@@ -1079,7 +1079,7 @@ ecd-ecc 1640
 423
 2
 ejf-ecd 1
-daf-ecd 2
+daf-ecd 1
 424
 1
 ejg-ece 1640
@@ -1103,8 +1103,8 @@ edf-ede 1640
 dcf-edf 1640
 436
 2
-dda-edg 2
 fai-edg 1
+dda-edg 2
 437
 1
 edg-edh 1640
@@ -1127,11 +1127,11 @@ fbf-eed 1
 444
 2
 dec-eee 1
-eed-eee 2
+eed-eee 1
 445
 2
 fbh-eef 1
-eee-eef 1
+eee-eef 2
 446
 2
 fbi-eeg 1
@@ -1179,37 +1179,37 @@ dha-ega 1640
 dhb-egb 1640
 462
 2
-egd-egc 3
+egd-egc 2
 fde-egc 1
 463
 2
 ege-egd 1
-fdf-egd 2
+fdf-egd 1
 464
 1
 egf-ege 1640
 465
 2
-fdh-egf 1
+fdh-egf 2
 dhf-egf 1
 466
 2
-dia-egg 1
+dia-egg 2
 egh-egg 1
 467
 2
 fdj-egh 1
-egg-egh 2
+egg-egh 1
 468
 2
 dic-egi 1
-egh-egi 2
+egh-egi 1
 469
 1
 egi-egj 1640
 470
 2
-fec-eha 1
+fec-eha 2
 egj-eha 1
 471
 1
@@ -1222,16 +1222,16 @@ fee-ehc 1640
 ehc-ehd 1640
 476
 3
+ehh-ehg 1
 fei-ehg 1
 dje-ehg 2
-ehh-ehg 1
 477
 1
 ehg-ehh 1640
 478
 2
-eaa-ehi 1
 ffa-ehi 1
+eaa-ehi 1
 480
 1
 ffc-eia 1640
@@ -1249,13 +1249,13 @@ ebc-eig 1640
 eii-eih 1640
 488
 2
-eij-eii 1
 fga-eii 1
+eij-eii 2
 489
 3
-ebf-eij 1
 eii-eij 1
-fgb-eij 1
+ebf-eij 1
+fgb-eij 2
 490
 1
 ebi-eja 1640
@@ -1270,7 +1270,7 @@ ejb-ejc 1640
 ecc-eje 1640
 495
 2
-fgh-ejf 3
+fgh-ejf 2
 ecd-ejf 1
 496
 1
@@ -1319,7 +1319,7 @@ fbf-fbe 1640
 fih-fbf 1640
 518
 2
-fbj-fbi 2
+fbj-fbi 1
 fja-fbi 1
 519
 1
@@ -1350,7 +1350,7 @@ fch-fcg 1
 3
 fcg-fch 1
 fjj-fch 1
-fci-fch 2
+fci-fch 1
 528
 3
 efg-fci 2
@@ -1365,18 +1365,18 @@ fcj-fda 1640
 531
 2
 fda-fdb 1
-efj-fdb 2
+efj-fdb 1
 532
 2
+fdd-fdc 2
 ega-fdc 1
-fdd-fdc 1
 533
 1
 egb-fdd 1640
 534
 2
 gag-fde 1
-egc-fde 3
+egc-fde 1
 535
 1
 fdg-fdf 1640
@@ -1385,8 +1385,8 @@ fdg-fdf 1640
 fdh-fdg 1640
 537
 2
-gaj-fdh 2
-egf-fdh 1
+gaj-fdh 1
+egf-fdh 2
 539
 1
 fea-fdj 1640
@@ -1399,8 +1399,8 @@ egi-fea 1
 fed-fec 1640
 543
 2
+ehb-fed 2
 gbf-fed 1
-ehb-fed 1
 544
 1
 gbg-fee 1640
@@ -1417,7 +1417,7 @@ feh-fei 1
 ehh-fej 1640
 550
 3
-gcc-ffa 1
+gcc-ffa 2
 ehi-ffa 1
 ffb-ffa 1
 551
@@ -1426,7 +1426,7 @@ ffa-ffb 1
 ffc-ffb 2
 552
 2
-ffd-ffc 2
+ffd-ffc 1
 ffb-ffc 1
 553
 1
@@ -1439,8 +1439,8 @@ eic-ffe 1640
 ffi-ffh 1640
 558
 2
-eig-ffi 2
 ffj-ffi 1
+eig-ffi 1
 559
 1
 eih-ffj 1640
@@ -1449,7 +1449,7 @@ eih-ffj 1640
 gdc-fga 1640
 561
 2
-gdd-fgb 1
+gdd-fgb 2
 eij-fgb 1
 563
 1
@@ -1457,7 +1457,7 @@ gdf-fgd 1640
 564
 2
 fgd-fge 1
-ejc-fge 1
+ejc-fge 2
 565
 1
 fge-fgf 1640
@@ -1483,7 +1483,7 @@ fhg-fhf 1640
 fhh-fhg 1640
 577
 2
-fhi-fhh 2
+fhi-fhh 1
 faf-fhh 1
 578
 2
@@ -1510,16 +1510,16 @@ fbc-fie 1640
 gfj-fih 1640
 588
 2
-fih-fii 1
 fbg-fii 1
+fih-fii 2
 589
 2
 fii-fij 1
-fja-fij 2
+fja-fij 1
 590
 2
 fjb-fja 1
-fbi-fja 3
+fbi-fja 1
 591
 2
 fbj-fjb 2
@@ -1537,7 +1537,7 @@ gaa-fjj 1640
 600
 2
 ghc-gaa 1
-fci-gaa 1
+fci-gaa 2
 602
 1
 fda-gac 1640
@@ -1561,7 +1561,7 @@ gag-gah 1640
 608
 4
 gaj-gai 1
-gah-gai 3
+gah-gai 2
 fdg-gai 1
 gia-gai 1
 609
@@ -1575,7 +1575,7 @@ gbb-gba 1640
 fdj-gbb 1640
 612
 2
-gie-gbc 2
+gie-gbc 1
 gbd-gbc 1
 613
 2
@@ -1583,8 +1583,8 @@ gif-gbd 1
 gbe-gbd 2
 614
 4
-fec-gbe 1
 gig-gbe 1
+fec-gbe 1
 gbd-gbe 1
 gbf-gbe 1
 615
@@ -1645,7 +1645,7 @@ gde-gdf 1640
 gdh-gdg 1640
 637
 2
-fgf-gdh 2
+fgf-gdh 1
 gdi-gdh 1
 638
 2
@@ -1657,7 +1657,7 @@ gdi-gdj 1640
 641
 2
 hcb-geb 1
-gea-geb 1
+gea-geb 2
 643
 1
 gee-ged 1640
@@ -1681,14 +1681,14 @@ gej-gfa 1640
 hdf-gfb 1640
 652
 2
-hea-gfc 1
+hea-gfc 2
 fia-gfc 1
 653
 1
 gfc-gfd 1640
 654
 2
-gfd-gfe 3
+gfd-gfe 1
 gff-gfe 1
 655
 1
@@ -1698,7 +1698,7 @@ gfg-gff 1640
 hfa-gfi 1640
 659
 2
-gfi-gfj 2
+gfi-gfj 1
 gga-gfj 1
 660
 1
@@ -1710,7 +1710,7 @@ ggc-ggb 1
 662
 2
 fja-ggc 1
-ggb-ggc 3
+ggb-ggc 1
 663
 2
 ggc-ggd 1
@@ -1721,7 +1721,7 @@ hgd-ggh 1640
 668
 2
 fjg-ggi 1
-ggh-ggi 2
+ggh-ggi 1
 670
 1
 hha-gha 1640
@@ -1749,8 +1749,8 @@ gad-ghf 1640
 gae-ghg 1640
 677
 3
-hib-ghh 3
 ghg-ghh 1
+hib-ghh 2
 ghi-ghh 1
 678
 3
@@ -1763,7 +1763,7 @@ hid-ghj 1640
 680
 3
 gai-gia 1
-ghj-gia 2
+ghj-gia 1
 hie-gia 1
 681
 1
@@ -1781,7 +1781,7 @@ gid-gie 1640
 685
 2
 gie-gif 1
-gbd-gif 1
+gbd-gif 2
 686
 1
 hje-gig 1640
@@ -1795,11 +1795,11 @@ iaa-gii 1
 gij-gii 2
 689
 2
-gja-gij 1
+gja-gij 2
 gii-gij 1
 690
 2
-gjb-gja 2
+gjb-gja 1
 gij-gja 1
 691
 2
@@ -1823,7 +1823,7 @@ ibd-gjh 1640
 699
 2
 gch-gjj 1
-ibf-gjj 3
+ibf-gjj 1
 700
 1
 hab-haa 1640
@@ -1837,7 +1837,7 @@ had-hac 1
 icc-hac 2
 703
 3
-hac-had 2
+hac-had 1
 gdb-had 1
 icd-had 1
 704
@@ -1891,16 +1891,16 @@ ged-hcd 1640
 iec-hci 1640
 729
 2
-hci-hcj 1
 ied-hcj 1
+hci-hcj 2
 730
 2
 hcj-hda 1
 iee-hda 2
 731
 2
+hda-hdb 1
 geh-hdb 1
-hda-hdb 3
 732
 1
 hdb-hdc 1640
@@ -1922,10 +1922,10 @@ iei-hdi 1640
 739
 2
 hdi-hdj 1
-iej-hdj 1
+iej-hdj 2
 740
 2
-hdj-hea 2
+hdj-hea 1
 heb-hea 1
 741
 2
@@ -1934,7 +1934,7 @@ gfd-heb 1
 742
 2
 heb-hec 1
-gfe-hec 2
+gfe-hec 1
 743
 1
 hec-hed 1640
@@ -1951,15 +1951,15 @@ ifc-heg 1
 747
 2
 ifd-heh 1
-heg-heh 2
+heg-heh 1
 748
 3
-heh-hei 2
 ife-hei 1
+heh-hei 2
 hej-hei 1
 749
 2
-hei-hej 3
+hei-hej 2
 hfa-hej 1
 750
 2
@@ -1977,7 +1977,7 @@ hfd-hfe 1640
 755
 3
 ggd-hff 1
-hfe-hff 3
+hfe-hff 1
 ifh-hff 1
 756
 2
@@ -1988,16 +1988,16 @@ hff-hfg 2
 hfi-hfh 1640
 758
 2
-iga-hfi 2
+iga-hfi 1
 hfj-hfi 1
 759
 2
 hga-hfj 1
-hfi-hfj 2
+hfi-hfj 1
 760
 2
 igc-hga 1
-hfj-hga 1
+hfj-hga 2
 761
 1
 hga-hgb 1640
@@ -2029,14 +2029,14 @@ igi-hha 1640
 773
 2
 hhe-hhd 1
-ghd-hhd 2
+ghd-hhd 1
 774
 2
 hhf-hhe 1
 hhd-hhe 2
 775
 3
-hhe-hhf 2
+hhe-hhf 1
 igj-hhf 1
 ghf-hhf 1
 776
@@ -2047,33 +2047,33 @@ hhf-hhg 1640
 ihb-hhh 1640
 778
 2
-hhj-hhi 3
+hhj-hhi 1
 hhh-hhi 1
 779
 2
-hia-hhj 3
+hia-hhj 1
 hhi-hhj 1
 780
 4
 hib-hia 1
 hhj-hia 1
 ghg-hia 1
-ihe-hia 3
+ihe-hia 1
 781
 2
+ghh-hib 2
 hia-hib 1
-ghh-hib 1
 782
 2
 hid-hic 1
-hib-hic 3
+hib-hic 1
 783
 2
-hic-hid 2
+hic-hid 1
 hie-hid 1
 784
 2
-hif-hie 1
+hif-hie 2
 gia-hie 1
 785
 3
@@ -2088,7 +2088,7 @@ hif-hig 1640
 hig-hih 1640
 790
 3
-hjb-hja 2
+hjb-hja 1
 iia-hja 2
 gic-hja 1
 791
@@ -2107,7 +2107,7 @@ hjd-hje 1640
 3
 gih-hjf 1
 hje-hjf 1
-iib-hjf 1
+iib-hjf 2
 797
 1
 hji-hjh 1640
@@ -2117,10 +2117,10 @@ hjj-hji 1640
 799
 2
 iif-hjj 1
-iaa-hjj 2
+iaa-hjj 1
 800
 2
-gii-iaa 2
+gii-iaa 1
 hjj-iaa 1
 802
 1
@@ -2134,7 +2134,7 @@ iaf-iae 1640
 805
 2
 iae-iaf 1
-gjd-iaf 2
+gjd-iaf 1
 806
 1
 iah-iag 1640
@@ -2154,26 +2154,26 @@ ibb-iba 1
 iaj-iba 2
 811
 2
-iba-ibb 2
+iba-ibb 1
 gjf-ibb 1
 812
 1
 ibb-ibc 1640
 813
 2
-ibc-ibd 2
+ibc-ibd 1
 ibe-ibd 1
 814
 2
-ibf-ibe 1
 ibd-ibe 1
+ibf-ibe 1
 815
 2
 ibe-ibf 1
 gjj-ibf 1
 820
 2
-haa-ica 2
+haa-ica 1
 iji-ica 1
 821
 1
@@ -2198,7 +2198,7 @@ hah-icj 1640
 834
 2
 hbg-ide 1
-idf-ide 2
+idf-ide 1
 835
 1
 idg-idf 1640
@@ -2207,8 +2207,8 @@ idg-idf 1640
 idh-idg 1640
 837
 2
-hbj-idh 1
 idi-idh 2
+hbj-idh 1
 838
 1
 jbc-idi 1640
@@ -2259,8 +2259,8 @@ ifj-ifi 1
 hfg-ifi 2
 859
 2
+ifi-ifj 1
 iga-ifj 1
-ifi-ifj 2
 860
 2
 ifj-iga 1
@@ -2291,8 +2291,8 @@ igh-igi 1640
 iha-igj 1640
 870
 2
-jee-iha 1
 hhg-iha 1
+jee-iha 1
 871
 1
 iha-ihb 1640
@@ -2306,7 +2306,7 @@ jeh-ihd 1640
 3
 ihd-ihe 1
 hia-ihe 1
-jei-ihe 2
+jei-ihe 1
 875
 1
 ihg-ihf 1640
@@ -2319,10 +2319,10 @@ hih-ihh 1640
 880
 2
 jfe-iia 1
-hja-iia 2
+hja-iia 1
 881
 2
-iic-iib 2
+iic-iib 1
 hjf-iib 1
 882
 1
@@ -2353,13 +2353,13 @@ jha-ijg 1640
 ijg-ijh 1640
 898
 3
+ica-iji 1
+ijh-iji 2
 jhc-iji 1
-ijh-iji 1
-ica-iji 2
 899
 2
+icf-ijj 1
 jhd-ijj 1
-icf-ijj 3
 902
 1
 ici-jac 1640
@@ -2376,7 +2376,7 @@ jah-jai 1
 909
 2
 jai-jaj 1
-jid-jaj 2
+jid-jaj 1
 910
 1
 jaj-jba 1640
@@ -2419,7 +2419,7 @@ jcb-jcc 1640
 923
 2
 iej-jcd 1
-jce-jcd 3
+jce-jcd 2
 924
 1
 jji-jce 1640
@@ -2429,7 +2429,7 @@ jjj-jcf 1640
 927
 2
 baab-jch 1
-jci-jch 1
+jci-jch 2
 928
 2
 jcj-jci 1
@@ -2437,14 +2437,14 @@ ife-jci 1
 929
 2
 jda-jcj 1
-jci-jcj 2
+jci-jcj 1
 930
 2
-jcj-jda 3
+jcj-jda 2
 ifg-jda 1
 931
 2
-baaf-jdb 1
+baaf-jdb 2
 ifh-jdb 1
 932
 1
@@ -2472,7 +2472,7 @@ jeb-jec 1640
 babh-jed 1640
 944
 3
-iha-jee 1
+iha-jee 2
 jef-jee 1
 jed-jee 1
 945
@@ -2480,7 +2480,7 @@ jed-jee 1
 jeg-jef 1640
 946
 3
-ihc-jeg 1
+ihc-jeg 2
 baca-jeg 1
 jeh-jeg 1
 947
@@ -2489,14 +2489,14 @@ jeg-jeh 1
 jei-jeh 1
 948
 2
-bacc-jei 2
 ihe-jei 1
+bacc-jei 1
 949
 1
 jfa-jej 1640
 950
 2
-bace-jfa 2
+bace-jfa 1
 jfb-jfa 1
 951
 1
@@ -2509,8 +2509,8 @@ jfb-jfc 1640
 jfc-jfd 1640
 954
 3
-jfd-jfe 3
 baci-jfe 1
+jfd-jfe 2
 iia-jfe 1
 955
 1
@@ -2533,7 +2533,7 @@ jga-jfj 2
 bade-jga 1640
 961
 2
-iih-jgb 2
+iih-jgb 1
 jgc-jgb 1
 962
 1
@@ -2549,23 +2549,23 @@ jge-jgf 1640
 jgf-jgg 1640
 969
 2
-baed-jgj 2
 jgi-jgj 1
+baed-jgj 1
 970
 1
 jgj-jha 1640
 972
 2
 baeg-jhc 1
-iji-jhc 3
+iji-jhc 1
 973
 2
-ijj-jhd 1
+ijj-jhd 2
 jhe-jhd 1
 974
 2
 baei-jhe 1
-jhd-jhe 1
+jhd-jhe 2
 976
 1
 jac-jhg 1640
@@ -2586,20 +2586,20 @@ jag-jia 1640
 baff-jib 1640
 982
 2
-jai-jic 2
 jib-jic 1
+jai-jic 1
 983
 2
 bafh-jid 1
-jic-jid 1
+jic-jid 2
 984
 2
 jba-jie 1
-jid-jie 1
+jid-jie 2
 985
 2
 bafj-jif 1
-jbb-jif 1
+jbb-jif 2
 986
 1
 jif-jig 1640
@@ -2611,16 +2611,16 @@ jbe-jii 1640
 jbf-jij 1640
 990
 2
-bage-jja 3
+bage-jja 1
 jjb-jja 1
 991
 2
 jja-jjb 1
-jjc-jjb 1
+jjc-jjb 2
 992
 2
-bagg-jjc 2
 jbi-jjc 1
+bagg-jjc 1
 993
 1
 jbj-jjd 1640
@@ -2642,7 +2642,7 @@ baaa-jjj 1640
 1000
 2
 baab-baaa 1
-bahe-baaa 3
+bahe-baaa 2
 1001
 1
 jch-baab 1640
@@ -2652,7 +2652,7 @@ jda-baae 1640
 1005
 2
 bahj-baaf 1
-jdb-baaf 2
+jdb-baaf 1
 1007
 1
 jdd-baah 1640
@@ -2671,19 +2671,19 @@ babd-babc 1640
 babe-babd 1640
 1014
 2
-babf-babe 2
 baii-babe 1
+babf-babe 2
 1015
 2
 babg-babf 1
-jeb-babf 2
+jeb-babf 1
 1016
 2
-baja-babg 1
+baja-babg 2
 jec-babg 1
 1017
 2
-babi-babh 2
+babi-babh 1
 bajb-babh 1
 1018
 1
@@ -2712,11 +2712,11 @@ baji-bace 1640
 bbab-bach 1640
 1028
 2
-jfe-baci 2
+jfe-baci 1
 bach-baci 1
 1029
 2
-jff-bacj 2
+jff-bacj 1
 bbad-bacj 1
 1030
 1
@@ -2743,7 +2743,7 @@ bbbb-badh 1
 1038
 2
 bbbc-badi 1
-badh-badi 2
+badh-badi 1
 1040
 1
 jgg-baea 1640
@@ -2763,17 +2763,17 @@ baee-baef 1640
 1046
 2
 baef-baeg 1
-jhc-baeg 1
+jhc-baeg 2
 1048
 2
-jhe-baei 3
+jhe-baei 2
 bbcc-baei 1
 1051
 1
 jhh-bafb 1640
 1052
 2
-bafb-bafc 2
+bafb-bafc 1
 jhi-bafc 1
 1055
 1
@@ -2783,26 +2783,26 @@ bafg-baff 1640
 bbde-bafg 1640
 1057
 2
-bafg-bafh 2
-jid-bafh 2
+bafg-bafh 1
+jid-bafh 1
 1058
 1
 jie-bafi 1640
 1059
 2
-bbdh-bafj 3
+bbdh-bafj 2
 bafi-bafj 1
 1060
 1
 jig-baga 1640
 1062
 2
-bbee-bagc 3
 jii-bagc 1
+bbee-bagc 2
 1063
 2
 jij-bagd 1
-bagc-bagd 1
+bagc-bagd 2
 1064
 1
 bagd-bage 1640
@@ -2821,7 +2821,7 @@ bbfe-bagi 1640
 1069
 3
 baha-bagj 1
-bagi-bagj 2
+bagi-bagj 1
 jjf-bagj 1
 1070
 2
@@ -2845,7 +2845,7 @@ baae-bahi 1640
 1079
 2
 baaf-bahj 1
-bbhd-bahj 3
+bbhd-bahj 1
 1081
 1
 baah-baib 1640
@@ -2861,7 +2861,7 @@ babf-baij 1640
 1090
 2
 babg-baja 1
-bbii-baja 2
+bbii-baja 1
 1091
 2
 bajc-bajb 2
@@ -2874,11 +2874,11 @@ bbje-bajc 1640
 babj-bajd 1640
 1094
 2
-baca-baje 2
 bbjg-baje 1
+baca-baje 1
 1095
 2
-bbjh-bajf 1
+bbjh-bajf 2
 bacb-bajf 1
 1096
 2
@@ -2887,11 +2887,11 @@ bbji-bajg 1
 1097
 2
 baji-bajh 1
-bacd-bajh 1
+bacd-bajh 2
 1098
 2
 bace-baji 1
-bcae-baji 2
+bcae-baji 1
 1099
 1
 baji-bajj 1640
@@ -2903,8 +2903,8 @@ bajj-bbaa 1640
 bbaa-bbab 1640
 1102
 2
+baci-bbac 2
 bbab-bbac 1
-baci-bbac 3
 1103
 1
 bcbd-bbad 1640
@@ -2925,15 +2925,15 @@ bcbi-bbai 1640
 badf-bbaj 1640
 1110
 2
-bcce-bbba 1
+bcce-bbba 2
 bbaj-bbba 1
 1111
 1
 bbba-bbbb 1640
 1112
 2
-badi-bbbc 1
 bccg-bbbc 1
+badi-bbbc 1
 1114
 1
 baea-bbbe 1640
@@ -2961,9 +2961,9 @@ bafc-bbcg 1640
 bbcg-bbch 1640
 1128
 3
+bafe-bbci 1
 bbch-bbci 1
 bbcj-bbci 2
-bafe-bbci 1
 1129
 1
 bbda-bbcj 1640
@@ -2973,18 +2973,18 @@ bbdb-bbda 1640
 1131
 2
 bcej-bbdb 1
-bbdc-bbdb 2
+bbdc-bbdb 1
 1132
 1
 bcfa-bbdc 1640
 1133
 2
 bcfb-bbdd 1
-bbde-bbdd 3
+bbde-bbdd 2
 1134
 2
+bbdf-bbde 1
 bbdd-bbde 1
-bbdf-bbde 2
 1135
 2
 bbdg-bbdf 2
@@ -3014,10 +3014,10 @@ bcfg-bbec 1640
 1143
 2
 bbee-bbed 1
-bbec-bbed 2
+bbec-bbed 1
 1144
 2
-bbed-bbee 2
+bbed-bbee 1
 bbef-bbee 1
 1145
 1
@@ -3027,8 +3027,8 @@ bagd-bbef 1640
 bbef-bbeg 1640
 1147
 2
-bbeg-bbeh 1
 bagf-bbeh 1
+bbeg-bbeh 1
 1148
 1
 bbeh-bbei 1640
@@ -3043,7 +3043,7 @@ bcgd-bbfd 1
 1154
 2
 bbfd-bbfe 1
-bbff-bbfe 2
+bbff-bbfe 1
 1155
 1
 bagj-bbff 1640
@@ -3053,18 +3053,18 @@ baha-bbfg 1640
 1157
 2
 bbfi-bbfh 1
-bbfg-bbfh 2
+bbfg-bbfh 1
 1158
 2
-bbfj-bbfi 3
+bbfj-bbfi 1
 bbfh-bbfi 1
 1159
 1
 bbga-bbfj 1640
 1160
 2
-bbgb-bbga 2
 bbfj-bbga 1
+bbgb-bbga 2
 1161
 2
 bbga-bbgb 1
@@ -3074,7 +3074,7 @@ bbgc-bbgb 1
 bbgd-bbgc 1640
 1163
 2
-bcgj-bbgd 3
+bcgj-bbgd 1
 bahd-bbgd 1
 1164
 1
@@ -3098,7 +3098,7 @@ bbhb-bbhc 1640
 3
 bahj-bbhd 1
 bbhc-bbhd 1
-bchf-bbhd 1
+bchf-bbhd 2
 1175
 1
 baib-bbhf 1640
@@ -3119,9 +3119,9 @@ bbic-bbid 1640
 baij-bbih 1640
 1188
 3
-bcic-bbii 2
-bbih-bbii 1
 baja-bbii 1
+bcic-bbii 1
+bbih-bbii 1
 1189
 2
 bcid-bbij 1
@@ -3132,21 +3132,21 @@ bbij-bbja 1640
 1191
 2
 bbjc-bbjb 1
-bbja-bbjb 2
+bbja-bbjb 1
 1192
 1
 bbjd-bbjc 1640
 1193
 2
 bbjc-bbjd 1
-bajb-bbjd 1
+bajb-bbjd 2
 1195
 1
 bajd-bbjf 1640
 1196
 2
 baje-bbjg 1
-bbjf-bbjg 3
+bbjf-bbjg 1
 1197
 1
 bbjg-bbjh 1640
@@ -3161,11 +3161,11 @@ bcaa-bbjj 2
 bbji-bbjj 1
 1200
 2
-bcab-bcaa 1
 bbjj-bcaa 1
+bcab-bcaa 1
 1201
 2
-bcjb-bcab 2
+bcjb-bcab 1
 bcac-bcab 1
 1202
 2
@@ -3199,7 +3199,7 @@ bcbc-bcbd 1640
 bbag-bcbg 1640
 1217
 2
-bcbg-bcbh 2
+bcbg-bcbh 1
 bbah-bcbh 2
 1218
 2
@@ -3210,7 +3210,7 @@ bcbh-bcbi 1
 bcca-bcbj 1640
 1220
 2
-bccb-bcca 2
+bccb-bcca 1
 bdac-bcca 1
 1221
 1
@@ -3221,15 +3221,15 @@ bdae-bccc 1640
 1223
 2
 bcce-bccd 1
-bccc-bccd 2
+bccc-bccd 1
 1224
 3
-bccf-bcce 1
 bbba-bcce 1
-bccd-bcce 2
+bccf-bcce 1
+bccd-bcce 1
 1225
 2
-bcce-bccf 2
+bcce-bccf 1
 bccg-bccf 1
 1226
 2
@@ -3245,7 +3245,7 @@ bbbe-bcci 1
 1229
 2
 bcci-bccj 1
-bdah-bccj 2
+bdah-bccj 1
 1230
 1
 bccj-bcda 1640
@@ -3268,13 +3268,13 @@ bceb-bcea 1640
 1241
 2
 bdbf-bceb 1
-bcec-bceb 2
+bcec-bceb 1
 1242
 1
 bced-bcec 1640
 1243
 2
-bbcb-bced 3
+bbcb-bced 1
 bdbh-bced 1
 1244
 1
@@ -3300,8 +3300,8 @@ bbdd-bcfb 2
 bdcd-bcfb 1
 1252
 2
-bbdi-bcfc 2
 bdce-bcfc 1
+bbdi-bcfc 2
 1254
 1
 bcff-bcfe 1640
@@ -3318,15 +3318,15 @@ bbed-bcfh 1640
 1259
 2
 bbej-bcfj 1
-bddb-bcfj 1
+bddb-bcfj 2
 1260
 1
 bcfj-bcga 1640
 1261
 3
+bddd-bcgb 2
 bcga-bcgb 1
 bcgc-bcgb 1
-bddd-bcgb 2
 1262
 2
 bcgd-bcgc 1
@@ -3335,7 +3335,7 @@ bcgb-bcgc 1
 3
 bddf-bcgd 1
 bbfd-bcgd 1
-bcgc-bcgd 3
+bcgc-bcgd 1
 1267
 1
 bbgb-bcgh 1640
@@ -3358,7 +3358,7 @@ bchf-bche 1640
 1275
 2
 bdeh-bchf 1
-bbhd-bchf 3
+bbhd-bchf 1
 1279
 1
 bdfb-bchj 1640
@@ -3367,7 +3367,7 @@ bdfb-bchj 1640
 bchj-bcia 1640
 1282
 2
-bcid-bcic 3
+bcid-bcic 1
 bdfe-bcic 1
 1283
 2
@@ -3385,20 +3385,20 @@ bbjd-bcih 1640
 1288
 3
 bdga-bcii 1
-bcij-bcii 2
+bcij-bcii 1
 bbji-bcii 1
 1289
 2
 bbjj-bcij 1
-bcja-bcij 2
+bcja-bcij 1
 1290
 1
 bcaa-bcja 1640
 1291
 3
+bcjc-bcjb 1
 bcja-bcjb 1
 bdgd-bcjb 1
-bcjc-bcjb 1
 1292
 1
 bcjb-bcjc 1640
@@ -3412,22 +3412,22 @@ bdgg-bcje 1
 bcjf-bcje 1
 1295
 2
-bcje-bcjf 1
 bcjg-bcjf 1
+bcje-bcjf 1
 1296
 2
 bcjh-bcjg 2
 bcjf-bcjg 1
 1297
 2
-bcji-bcjh 2
+bcji-bcjh 1
 bdgj-bcjh 1
 1298
 1
 bcjj-bcji 1640
 1299
 2
-bdhb-bcjj 1
+bdhb-bcjj 2
 bcbd-bcjj 1
 1300
 1
@@ -3453,7 +3453,7 @@ bdaj-bdai 1640
 1309
 2
 bdba-bdaj 1
-bcdb-bdaj 2
+bcdb-bdaj 1
 1310
 2
 bdic-bdba 1
@@ -3467,7 +3467,7 @@ bdbd-bdbc 1
 bcdi-bdbc 1
 1313
 2
-bcdj-bdbd 2
+bcdj-bdbd 1
 bdbc-bdbd 1
 1314
 1
@@ -3484,7 +3484,7 @@ bceg-bdbi 1640
 1319
 2
 bceh-bdbj 1
-bdbi-bdbj 1
+bdbi-bdbj 2
 1320
 1
 bdcb-bdca 1640
@@ -3510,8 +3510,8 @@ bdce-bdcf 1640
 beaa-bdci 1640
 1330
 2
-beac-bdda 1
 bcfi-bdda 1
+beac-bdda 1
 1331
 1
 bdda-bddb 1640
@@ -3521,7 +3521,7 @@ bcga-bddc 1640
 1333
 3
 bddc-bddd 1
-bcgb-bddd 2
+bcgb-bddd 1
 beaf-bddd 1
 1335
 1
@@ -3532,7 +3532,7 @@ beba-bddi 1640
 1339
 2
 bcgh-bddj 1
-bddi-bddj 1
+bddi-bddj 2
 1340
 1
 bddj-bdea 1640
@@ -3573,12 +3573,12 @@ bece-bdfc 1640
 becg-bdfe 1640
 1355
 2
-bdfg-bdff 2
+bdfg-bdff 1
 bech-bdff 1
 1356
 2
 bcie-bdfg 1
-beci-bdfg 3
+beci-bdfg 2
 1357
 1
 bcif-bdfh 1640
@@ -3590,8 +3590,8 @@ bdfh-bdfi 1640
 bcih-bdfj 1640
 1360
 2
-bedc-bdga 1
 bcii-bdga 2
+bedc-bdga 1
 1363
 1
 bdge-bdgd 1640
@@ -3601,7 +3601,7 @@ bedg-bdge 1640
 1366
 2
 bedi-bdgg 1
-bcje-bdgg 2
+bcje-bdgg 1
 1367
 1
 bcjf-bdgh 1640
@@ -3611,7 +3611,7 @@ beeb-bdgj 1640
 1371
 2
 bcjj-bdhb 1
-beed-bdhb 3
+beed-bdhb 2
 1372
 2
 bdaa-bdhc 2
@@ -3634,8 +3634,8 @@ bdaf-bdhh 1
 befa-bdhi 1640
 1379
 2
-bdia-bdhj 2
 bdhi-bdhj 1
+bdia-bdhj 2
 1380
 3
 befc-bdia 1
@@ -3646,12 +3646,12 @@ bdai-bdia 1
 bdaj-bdib 1640
 1382
 3
-bdid-bdic 1
-bdib-bdic 2
 bdba-bdic 1
+bdib-bdic 2
+bdid-bdic 1
 1383
 2
-bdic-bdid 1
+bdic-bdid 2
 beff-bdid 1
 1384
 1
@@ -3686,12 +3686,12 @@ begi-bdjg 1640
 bdcf-bdjh 1640
 1398
 2
-bdjh-bdji 1
 bdcg-bdji 1
+bdjh-bdji 1
 1399
 2
 bdji-bdjj 1
-behb-bdjj 1
+behb-bdjj 2
 1400
 1
 bdjj-beaa 1640
@@ -3701,7 +3701,7 @@ behe-beac 1640
 1403
 2
 bddb-bead 1
-beae-bead 3
+beae-bead 2
 1404
 1
 beaf-beae 1640
@@ -3749,8 +3749,8 @@ becc-becd 1640
 bejg-bece 1640
 1426
 2
+bech-becg 1
 beji-becg 1
-bech-becg 3
 1427
 3
 becg-bech 1
@@ -3765,14 +3765,14 @@ bfab-becj 1640
 1430
 2
 becj-beda 1
-bdfi-beda 1
+bdfi-beda 2
 1431
 2
 bdfj-bedb 1
 beda-bedb 1
 1432
 2
-bdga-bedc 2
+bdga-bedc 1
 bedd-bedc 1
 1433
 3
@@ -3794,11 +3794,11 @@ bfaj-bedh 1640
 1438
 2
 bfba-bedi 1
-bdgg-bedi 2
+bdgg-bedi 1
 1439
 2
+bdgh-bedj 1
 bedi-bedj 1
-bdgh-bedj 2
 1440
 1
 bfbc-beea 1640
@@ -3811,7 +3811,7 @@ beea-beeb 1
 beeb-beec 1640
 1443
 2
-beec-beed 2
+beec-beed 1
 bdhb-beed 1
 1444
 1
@@ -3854,7 +3854,7 @@ bdie-befg 1640
 bfcj-befh 1640
 1458
 2
-bdig-befi 2
+bdig-befi 1
 befh-befi 1
 1459
 2
@@ -3862,7 +3862,7 @@ befi-befj 1
 bega-befj 1
 1460
 2
-bfdc-bega 1
+bfdc-bega 2
 befj-bega 1
 1461
 1
@@ -3873,16 +3873,16 @@ bfdi-begc 1640
 1463
 2
 begc-begd 1
-bege-begd 1
+bege-begd 2
 1464
 3
+begf-bege 1
 bdjc-bege 1
 begd-bege 1
-begf-bege 1
 1466
 2
-begh-begg 2
 bfec-begg 2
+begh-begg 1
 1468
 1
 begj-begi 1640
@@ -3907,18 +3907,18 @@ bffj-behf 1
 bead-behf 2
 1476
 2
-behf-behg 1
+behf-behg 2
 beae-behg 1
 1477
 2
-behg-behh 1
+behg-behh 2
 beaf-behh 1
 1478
 1
 behh-behi 1640
 1479
 2
-bfgd-behj 2
+bfgd-behj 1
 behi-behj 1
 1482
 1
@@ -3928,8 +3928,8 @@ beid-beic 1640
 beie-beid 1640
 1484
 2
-beif-beie 2
 beid-beie 1
+beif-beie 2
 1485
 1
 bfhd-beif 1640
@@ -3951,7 +3951,7 @@ bebj-bejb 1640
 1492
 2
 bejd-bejc 1
-beca-bejc 2
+beca-bejc 1
 1494
 1
 bfja-beje 1640
@@ -3964,32 +3964,32 @@ bfji-beji 1640
 1499
 2
 bech-bejj 1
-bfjj-bejj 3
+bfjj-bejj 2
 1501
 2
+bfac-bfab 2
 bgab-bfab 1
-bfac-bfab 3
 1502
 1
 bfad-bfac 1640
 1503
 2
 bgad-bfad 1
-bedb-bfad 2
+bedb-bfad 1
 1504
 1
 bfaf-bfae 1640
 1505
 2
 bgaj-bfaf 1
-bedd-bfaf 3
+bedd-bfaf 2
 1506
 1
 bfaf-bfag 1640
 1507
 2
 bfag-bfah 1
-bgbb-bfah 1
+bgbb-bfah 2
 1509
 1
 bgbd-bfaj 1640
@@ -3998,15 +3998,15 @@ bgbd-bfaj 1640
 bfbb-bfba 1640
 1511
 2
-bgbj-bfbb 1
 bedj-bfbb 2
+bgbj-bfbb 1
 1512
 1
 bfbb-bfbc 1640
 1513
 2
 bfbc-bfbd 1
-bgcb-bfbd 3
+bgcb-bfbd 1
 1515
 1
 beed-bfbf 1640
@@ -4055,7 +4055,7 @@ befg-bfci 1640
 bfdd-bfdc 1640
 1533
 2
-bgfd-bfdd 2
+bgfd-bfdd 1
 begb-bfdd 1
 1536
 1
@@ -4066,10 +4066,10 @@ bfdg-bfdh 1640
 1538
 2
 bfdh-bfdi 1
-bfdj-bfdi 2
+bfdj-bfdi 1
 1539
 2
-begd-bfdj 1
+begd-bfdj 2
 bfea-bfdj 1
 1540
 1
@@ -4080,10 +4080,10 @@ bfea-bfeb 1640
 1542
 2
 bfed-bfec 1
-bfeb-bfec 2
+bfeb-bfec 1
 1543
 3
-bggb-bfed 1
+bggb-bfed 2
 bfee-bfed 1
 bfec-bfed 1
 1544
@@ -4092,7 +4092,7 @@ bfed-bfee 1
 bfef-bfee 2
 1545
 2
-bggd-bfef 1
+bggd-bfef 2
 bfee-bfef 1
 1546
 1
@@ -4103,7 +4103,7 @@ bfeg-bfeh 1
 bggf-bfeh 1
 1548
 2
-bggg-bfei 1
+bggg-bfei 2
 bfeh-bfei 1
 1549
 1
@@ -4113,8 +4113,8 @@ bfei-bfej 1640
 bffb-bffc 1640
 1553
 2
-behd-bffd 1
 bffc-bffd 1
+behd-bffd 2
 1554
 1
 bffd-bffe 1640
@@ -4131,8 +4131,8 @@ bghc-bffi 1
 bffh-bffi 1
 1559
 2
-bffi-bffj 2
 behf-bffj 1
+bffi-bffj 2
 1560
 1
 behg-bfga 1640
@@ -4154,20 +4154,20 @@ bghe-bfge 1640
 beie-bfhc 1640
 1573
 2
-bfhe-bfhd 3
 beif-bfhd 1
+bfhe-bfhd 2
 1574
 3
-bgia-bfhe 3
+bgia-bfhe 1
 bfhf-bfhe 1
 bfhd-bfhe 1
 1575
 2
 bfhe-bfhf 1
-bfhg-bfhf 2
+bfhg-bfhf 1
 1576
 2
-bfhh-bfhg 2
+bfhh-bfhg 1
 bfhf-bfhg 1
 1577
 2
@@ -4196,15 +4196,15 @@ bgig-bfie 1640
 bfie-bfif 1640
 1586
 2
-bfif-bfig 1
 bgii-bfig 2
+bfif-bfig 1
 1587
 1
 bfig-bfih 1640
 1588
 2
-bfih-bfii 3
 bejc-bfii 1
+bfih-bfii 1
 1589
 1
 bfii-bfij 1640
@@ -4213,8 +4213,8 @@ bfii-bfij 1640
 bfij-bfja 1640
 1598
 2
-bgjg-bfji 1
 bfjj-bfji 2
+bgjg-bfji 1
 1599
 3
 bfji-bfjj 1
@@ -4223,7 +4223,7 @@ bgaa-bfjj 1
 1600
 2
 bfaa-bgaa 1
-bfjj-bgaa 1
+bfjj-bgaa 2
 1601
 1
 bgaa-bgab 1640
@@ -4240,21 +4240,21 @@ bgag-bgaf 1640
 1606
 2
 bhaa-bgag 1
-bgah-bgag 3
+bgah-bgag 2
 1607
 2
-bgai-bgah 1
+bgai-bgah 2
 bgag-bgah 1
 1608
 2
-bfae-bgai 3
+bfae-bgai 2
 bgah-bgai 1
 1609
 1
 bgai-bgaj 1640
 1611
 2
-bgbc-bgbb 2
+bgbc-bgbb 1
 bfah-bgbb 1
 1612
 2
@@ -4270,25 +4270,25 @@ bgbf-bgbe 2
 bgbd-bgbe 1
 1615
 3
+bgbg-bgbf 2
 bhaf-bgbf 1
 bgbe-bgbf 1
-bgbg-bgbf 2
 1616
 3
-bgbf-bgbg 1
 bgbh-bgbg 2
+bgbf-bgbg 1
 bhag-bgbg 1
 1617
 2
+bgbi-bgbh 1
 bgbg-bgbh 1
-bgbi-bgbh 2
 1618
 2
 bgbh-bgbi 1
 bgbj-bgbi 2
 1619
 3
-bfbb-bgbj 3
+bfbb-bgbj 1
 bgca-bgbj 1
 bgbi-bgbj 1
 1620
@@ -4297,16 +4297,16 @@ bgcb-bgca 1640
 1621
 2
 bfbd-bgcb 1
-bgcc-bgcb 2
+bgcc-bgcb 1
 1622
 2
 bgcb-bgcc 1
-bgcd-bgcc 2
+bgcd-bgcc 1
 1623
 4
 bfbf-bgcd 1
 bgcc-bgcd 1
-bhaj-bgcd 2
+bhaj-bgcd 1
 bgce-bgcd 1
 1624
 2
@@ -4319,11 +4319,11 @@ bgce-bgcf 1
 1626
 2
 bhbc-bgcg 1
-bgcf-bgcg 2
+bgcf-bgcg 1
 1627
 2
 bhbd-bgch 1
-bgcg-bgch 3
+bgcg-bgch 1
 1628
 3
 bgch-bgci 1
@@ -4338,7 +4338,7 @@ bgci-bgcj 2
 bgdb-bgda 1640
 1631
 2
-bfbj-bgdb 2
+bfbj-bgdb 1
 bgdc-bgdb 1
 1632
 2
@@ -4346,7 +4346,7 @@ bgdd-bgdc 1
 bgdb-bgdc 2
 1633
 3
-bgdc-bgdd 2
+bgdc-bgdd 1
 bhbf-bgdd 1
 bfcb-bgdd 1
 1634
@@ -4357,11 +4357,11 @@ bhbg-bgde 1640
 bgde-bgdf 1640
 1636
 2
+bgdf-bgdg 1
 bhbi-bgdg 1
-bgdf-bgdg 2
 1637
 2
-bgdg-bgdh 1
+bgdg-bgdh 2
 bgdi-bgdh 1
 1638
 3
@@ -4375,14 +4375,14 @@ bgea-bgdj 1
 1640
 2
 bgeb-bgea 1
-bgdj-bgea 2
+bgdj-bgea 1
 1641
 2
-bfcf-bgeb 1
 bgea-bgeb 1
+bfcf-bgeb 1
 1643
 2
-bhcb-bged 2
+bhcb-bged 1
 bfch-bged 1
 1648
 1
@@ -4421,24 +4421,24 @@ bhdj-bggf 1
 bfeh-bggf 1
 1666
 2
-bggf-bggg 2
 bhea-bggg 1
+bggf-bggg 2
 1668
 1
 bhec-bggi 1640
 1669
 2
+bfff-bggj 1
 bggi-bggj 1
-bfff-bggj 2
 1670
 3
+bffg-bgha 1
 bhee-bgha 1
 bggj-bgha 2
-bffg-bgha 1
 1671
 2
-bgha-bghb 3
 bffh-bghb 1
+bgha-bghb 1
 1672
 2
 bghb-bghc 1
@@ -4456,12 +4456,12 @@ bghh-bghg 1640
 1677
 3
 bhfb-bghh 1
-bghi-bghh 2
+bghi-bghh 1
 bghg-bghh 1
 1678
 2
 bfgi-bghi 1
-bhfc-bghi 1
+bhfc-bghi 2
 1679
 1
 bhfd-bghj 1640
@@ -4469,7 +4469,7 @@ bhfd-bghj 1640
 3
 bfhe-bgia 1
 bghj-bgia 1
-bhfe-bgia 2
+bhfe-bgia 1
 1682
 1
 bfhg-bgic 1640
@@ -4487,14 +4487,14 @@ bhga-bgig 1640
 bgig-bgih 1640
 1688
 2
-bhgc-bgii 2
+bhgc-bgii 1
 bgih-bgii 1
 1689
 1
 bfih-bgij 1640
 1690
 2
-bfii-bgja 2
+bfii-bgja 1
 bgij-bgja 1
 1693
 1
@@ -4504,7 +4504,7 @@ bhgh-bgjd 1640
 bgjd-bgje 1640
 1695
 2
-bgje-bgjf 1
+bgje-bgjf 2
 bhgj-bgjf 1
 1696
 1
@@ -4512,8 +4512,8 @@ bgjf-bgjg 1640
 1697
 3
 bgji-bgjh 1
-bgad-bgjh 3
 bhhb-bgjh 1
+bgad-bgjh 2
 1698
 2
 bgjh-bgji 1
@@ -4526,7 +4526,7 @@ bhaa-bgjj 2
 3
 bgjj-bhaa 1
 bhab-bhaa 1
-bgag-bhaa 2
+bgag-bhaa 1
 1701
 1
 bhac-bhab 1640
@@ -4535,8 +4535,8 @@ bhac-bhab 1640
 bhhg-bhac 1640
 1704
 2
-bhhi-bhae 1
 bhad-bhae 1
+bhhi-bhae 1
 1705
 2
 bhae-bhaf 1
@@ -4544,7 +4544,7 @@ bhhj-bhaf 1
 1706
 2
 bgbg-bhag 1
-bhaf-bhag 1
+bhaf-bhag 2
 1707
 2
 bgbh-bhah 2
@@ -4570,12 +4570,12 @@ bhbc-bhbd 1
 bhih-bhbd 1
 1714
 2
-bhbd-bhbe 1
 bgci-bhbe 1
+bhbd-bhbe 2
 1715
 2
-bgdd-bhbf 1
 bhij-bhbf 2
+bgdd-bhbf 1
 1716
 1
 bhbf-bhbg 1640
@@ -4586,13 +4586,13 @@ bhbi-bhbh 1
 1718
 2
 bhbh-bhbi 1
-bhbj-bhbi 3
+bhbj-bhbi 2
 1719
 1
 bgdh-bhbj 1640
 1721
 2
-bhjf-bhcb 2
+bhjf-bhcb 1
 bged-bhcb 1
 1722
 1
@@ -4635,7 +4635,7 @@ bhdj-bhdi 1640
 bhea-bhdj 1640
 1740
 2
-bggg-bhea 3
+bggg-bhea 2
 bibe-bhea 1
 1742
 1
@@ -4678,11 +4678,11 @@ bgif-bhfj 1640
 1760
 2
 bhgb-bhga 1
-bhfj-bhga 2
+bhfj-bhga 1
 1761
 2
 bidf-bhgb 1
-bhga-bhgb 2
+bhga-bhgb 1
 1762
 1
 bhgb-bhgc 1640
@@ -4707,12 +4707,12 @@ bgjh-bhhb 1
 bief-bhhb 2
 1772
 2
+bgji-bhhc 2
 bhhb-bhhc 1
-bgji-bhhc 1
 1773
 2
 bgjj-bhhd 1
-bhhc-bhhd 1
+bhhc-bhhd 2
 1776
 1
 bifa-bhhg 1640
@@ -4722,16 +4722,16 @@ bifb-bhhh 1640
 1778
 3
 bifc-bhhi 1
-bhhh-bhhi 1
+bhhh-bhhi 2
 bhhj-bhhi 1
 1779
 3
+bhhi-bhhj 2
 bhia-bhhj 1
-bhhi-bhhj 1
 bhaf-bhhj 1
 1780
 2
-bhib-bhia 2
+bhib-bhia 1
 bhhj-bhia 1
 1781
 2
@@ -4746,7 +4746,7 @@ bhie-bhid 1640
 1784
 2
 bhif-bhie 1
-bifi-bhie 3
+bifi-bhie 2
 1785
 1
 bhbb-bhif 1640
@@ -4764,15 +4764,15 @@ bigc-bhii 2
 3
 bhja-bhij 1
 bhbf-bhij 1
-bigd-bhij 2
+bigd-bhij 1
 1790
 2
-bhjb-bhja 3
+bhjb-bhja 1
 bhij-bhja 1
 1791
 3
 bhbh-bhjb 1
-bhjc-bhjb 2
+bhjc-bhjb 1
 bhja-bhjb 1
 1792
 1
@@ -4828,7 +4828,7 @@ bibd-bibc 1640
 biih-bibd 1640
 1814
 2
-bhea-bibe 2
+bhea-bibe 1
 biii-bibe 1
 1816
 1
@@ -4850,19 +4850,19 @@ bicc-bicb 1640
 bicd-bicc 1640
 1823
 2
-bijh-bicd 2
+bijh-bicd 1
 bice-bicd 1
 1824
 2
+bicd-bice 1
 biji-bice 1
-bicd-bice 2
 1825
 2
 bhfb-bicf 1
-bice-bicf 2
+bice-bicf 1
 1826
 2
-bicf-bicg 3
+bicf-bicg 2
 bhfc-bicg 1
 1827
 1
@@ -4882,20 +4882,20 @@ bida-bidb 1
 bhfh-bidb 1
 1835
 2
+bidg-bidf 1
 bjaj-bidf 1
-bidg-bidf 2
 1836
 2
 bjba-bidg 1
-bidh-bidg 2
+bidh-bidg 1
 1837
 2
-bhgd-bidh 1
+bhgd-bidh 2
 bidi-bidh 1
 1838
 2
-bhge-bidi 1
 bidh-bidi 1
+bhge-bidi 1
 1840
 1
 bjbe-biea 1640
@@ -4908,7 +4908,7 @@ biee-bied 1640
 1844
 2
 bjbi-biee 1
-bhha-biee 2
+bhha-biee 1
 1845
 2
 bjbj-bief 1
@@ -4927,12 +4927,12 @@ biei-biej 1640
 bjce-bifa 1640
 1851
 2
-bifc-bifb 3
+bifc-bifb 1
 bjcf-bifb 1
 1852
 2
 bifd-bifc 1
-bhhi-bifc 2
+bhhi-bifc 1
 1853
 1
 bife-bifd 1640
@@ -4941,11 +4941,11 @@ bife-bifd 1640
 biff-bife 1640
 1855
 2
-bhib-biff 1
 bjcj-biff 1
+bhib-biff 1
 1856
 2
-biff-bifg 1
+biff-bifg 2
 bhic-bifg 1
 1857
 1
@@ -4961,12 +4961,12 @@ bifi-bifj 1640
 bifj-biga 1640
 1861
 2
-biga-bigb 2
+biga-bigb 1
 bigc-bigb 1
 1862
 3
 bhii-bigc 1
-bjdg-bigc 2
+bjdg-bigc 1
 bigb-bigc 1
 1863
 1
@@ -4994,19 +4994,19 @@ biha-bigj 1640
 bihb-biha 1640
 1871
 3
-bjef-bihb 1
-bihc-bihb 1
 bhjh-bihb 1
+bihc-bihb 1
+bjef-bihb 1
 1872
 2
 bjeg-bihc 1
-bihb-bihc 2
+bihb-bihc 1
 1873
 1
 bhjj-bihd 1640
 1876
 2
-biac-bihg 3
+biac-bihg 1
 bjfa-bihg 1
 1877
 1
@@ -5020,7 +5020,7 @@ biib-biia 1640
 1881
 2
 biah-biib 1
-biic-biib 2
+biic-biib 1
 1882
 1
 biai-biic 1640
@@ -5032,20 +5032,20 @@ bjgb-biid 1640
 biid-biie 1640
 1885
 2
-bibb-biif 2
+bibb-biif 1
 biig-biif 1
 1886
 2
 biih-biig 1
-biif-biig 2
+biif-biig 1
 1887
 2
+biii-biih 1
 biig-biih 1
-biii-biih 2
 1888
 2
-bibe-biii 2
-biih-biii 2
+bibe-biii 1
+biih-biii 1
 1891
 2
 bijc-bijb 1
@@ -5060,19 +5060,19 @@ bjib-bijf 1
 1896
 2
 bicc-bijg 1
-bijf-bijg 3
+bijf-bijg 1
 1897
 2
 bjid-bijh 1
-bijg-bijh 3
+bijg-bijh 1
 1898
 1
 bijj-biji 1640
 1899
 3
-bjif-bijj 1
 bjaa-bijj 1
-bicf-bijj 2
+bjif-bijj 1
+bicf-bijj 1
 1900
 1
 bicg-bjaa 1640
@@ -5094,11 +5094,11 @@ bjaj-bjai 1640
 1909
 2
 bjba-bjaj 1
-bidf-bjaj 2
+bidf-bjaj 1
 1910
 2
 bjbb-bjba 1
-caae-bjba 2
+caae-bjba 1
 1911
 1
 bidh-bjbb 1640
@@ -5129,7 +5129,7 @@ cacc-bjca 1640
 biej-bjcd 1640
 1925
 2
-bifb-bjcf 2
+bifb-bjcf 1
 cadb-bjcf 1
 1927
 1
@@ -5139,7 +5139,7 @@ cadd-bjch 1640
 bjch-bjci 1640
 1929
 2
-bjda-bjcj 2
+bjda-bjcj 1
 bjci-bjcj 1
 1930
 2
@@ -5165,12 +5165,12 @@ bjdf-bjde 1640
 bigb-bjdf 1640
 1936
 2
-caeg-bjdg 3
+caeg-bjdg 2
 bigc-bjdg 1
 1937
 2
 bjdi-bjdh 1
-cafb-bjdh 2
+cafb-bjdh 1
 1938
 1
 bige-bjdi 1640
@@ -5179,8 +5179,8 @@ bige-bjdi 1640
 bigf-bjdj 1640
 1940
 2
-bjdj-bjea 1
 bigg-bjea 1
+bjdj-bjea 2
 1942
 1
 cafg-bjec 1640
@@ -5221,7 +5221,7 @@ bjfi-bjfj 1640
 bjfj-bjga 1640
 1961
 2
-bjga-bjgb 2
+bjga-bjgb 1
 bjgc-bjgb 1
 1962
 1
@@ -5257,13 +5257,13 @@ caij-bjhj 1640
 1980
 2
 bjhj-bjia 1
-bjib-bjia 2
+bjib-bjia 1
 1981
 4
 bjia-bjib 1
+bjic-bjib 1
 bijf-bjib 1
 cajb-bjib 1
-bjic-bjib 1
 1982
 1
 bijg-bjic 1640
@@ -5275,24 +5275,24 @@ bjie-bjid 1640
 bjif-bjie 1640
 1985
 2
+bijj-bjif 2
 bjig-bjif 1
-bijj-bjif 3
 1986
 3
-bjif-bjig 3
+bjif-bjig 2
 bjih-bjig 1
 cajc-bjig 1
 1987
 2
 bjii-bjih 1
-bjig-bjih 3
+bjig-bjih 2
 1988
 1
 bjij-bjii 1640
 1989
 2
-bjja-bjij 2
 cajf-bjij 1
+bjja-bjij 1
 1990
 2
 bjij-bjja 1
@@ -5300,7 +5300,7 @@ bjjb-bjja 2
 1991
 3
 cajh-bjjb 1
-bjjc-bjjb 3
+bjjc-bjjb 1
 bjja-bjjb 1
 1992
 2
@@ -5331,14 +5331,14 @@ cbaa-bjji 1640
 3
 bjah-caab 1
 cbad-caab 1
-caac-caab 1
+caac-caab 2
 2002
 2
-caad-caac 3
+caad-caac 2
 caab-caac 1
 2003
 2
-caae-caad 2
+caae-caad 1
 caac-caad 1
 2004
 3
@@ -5371,12 +5371,12 @@ cbaj-cabb 1640
 bjbh-cabf 1640
 2016
 2
-cabf-cabg 2
+cabf-cabg 1
 cbba-cabg 1
 2017
 2
 cbbb-cabh 1
-cabg-cabh 1
+cabg-cabh 2
 2018
 1
 cabh-cabi 1640
@@ -5405,21 +5405,21 @@ bjcd-cacf 1640
 2029
 2
 cbbj-cacj 1
-cada-cacj 2
+cada-cacj 1
 2030
 2
-cadb-cada 1
 cacj-cada 1
+cadb-cada 1
 2031
 4
 cadc-cadb 1
-bjcf-cadb 1
+bjcf-cadb 2
 cada-cadb 1
 cbcb-cadb 1
 2032
 2
-cadb-cadc 2
 cadd-cadc 1
+cadb-cadc 1
 2033
 2
 cadc-cadd 1
@@ -5434,7 +5434,7 @@ bjcj-cadf 1640
 4
 bjda-cadg 1
 cadh-cadg 1
-cadf-cadg 2
+cadf-cadg 1
 cbcc-cadg 1
 2037
 2
@@ -5445,14 +5445,14 @@ cbcd-cadh 1
 cadj-cadi 1640
 2039
 2
-caea-cadj 1
 cbcf-cadj 1
+caea-cadj 1
 2040
 1
 cbcg-caea 1640
 2041
 3
-caea-caeb 3
+caea-caeb 2
 bjdb-caeb 1
 caec-caeb 1
 2042
@@ -5462,7 +5462,7 @@ caeb-caec 1
 2043
 2
 bjdd-caed 1
-caec-caed 2
+caec-caed 1
 2044
 1
 caed-caee 1640
@@ -5477,20 +5477,20 @@ cbci-caeg 2
 bjdg-caeg 1
 2047
 2
-caeg-caeh 2
+caeg-caeh 1
 caei-caeh 1
 2048
 2
-caeh-caei 3
+caeh-caei 2
 caej-caei 1
 2049
 2
 cafa-caej 1
-caei-caej 3
+caei-caej 1
 2050
 2
 cbdc-cafa 1
-cafb-cafa 2
+cafb-cafa 1
 2051
 4
 cafa-cafb 1
@@ -5512,7 +5512,7 @@ cafe-caff 1640
 2056
 2
 cbde-cafg 1
-caff-cafg 2
+caff-cafg 1
 2059
 1
 caga-cafj 1640
@@ -5527,12 +5527,12 @@ cagc-cagb 1640
 cagd-cagc 1640
 2063
 2
-cage-cagd 1
 cagc-cagd 1
+cage-cagd 1
 2064
 2
+bjeg-cage 1
 cagf-cage 1
-bjeg-cage 2
 2065
 1
 bjeh-cagf 1640
@@ -5546,7 +5546,7 @@ cbee-caha 1640
 3
 cbef-cahb 1
 caha-cahb 1
-cahc-cahb 2
+cahc-cahb 1
 2072
 1
 cahd-cahc 1640
@@ -5569,7 +5569,7 @@ cahi-cahh 1640
 cahj-cahi 1640
 2079
 2
-bjgb-cahj 1
+bjgb-cahj 2
 cbfb-cahj 1
 2080
 1
@@ -5577,7 +5577,7 @@ cbfc-caia 1640
 2081
 2
 caia-caib 2
-caic-caib 2
+caic-caib 1
 2082
 1
 caid-caic 1640
@@ -5613,7 +5613,7 @@ caje-cajd 1
 2094
 2
 bjii-caje 1
-cajd-caje 2
+cajd-caje 1
 2095
 2
 cbgh-cajf 1
@@ -5627,8 +5627,8 @@ bjjg-caji 1
 cbha-caji 1
 2099
 2
-caji-cajj 1
 bjjh-cajj 1
+caji-cajj 2
 2100
 1
 cbhc-cbaa 1640
@@ -5654,8 +5654,8 @@ cbag-cbah 1640
 caba-cbai 1640
 2109
 2
+cbib-cbaj 1
 cbai-cbaj 1
-cbib-cbaj 3
 2110
 2
 cbbb-cbba 1
@@ -5669,7 +5669,7 @@ cbba-cbbb 1
 2112
 2
 cbie-cbbc 1
-cbbd-cbbc 1
+cbbd-cbbc 2
 2113
 1
 cbbe-cbbd 1640
@@ -5679,8 +5679,8 @@ cbbf-cbbe 2
 caca-cbbe 1
 2115
 2
+cacb-cbbf 1
 cbbe-cbbf 1
-cacb-cbbf 2
 2116
 1
 cbbh-cbbg 1640
@@ -5702,7 +5702,7 @@ cada-cbca 1640
 cbjd-cbcb 1640
 2122
 2
-cadg-cbcc 2
+cadg-cbcc 1
 cbje-cbcc 1
 2123
 1
@@ -5729,19 +5729,19 @@ caej-cbdb 1
 ccad-cbdb 1
 2132
 2
-cbdb-cbdc 3
+cbdb-cbdc 2
 cafa-cbdc 1
 2133
 1
 ccaf-cbdd 1640
 2134
 2
-cafg-cbde 2
+cafg-cbde 1
 ccag-cbde 1
 2136
 2
 cbdh-cbdg 1
-ccai-cbdg 2
+ccai-cbdg 1
 2137
 2
 cafj-cbdh 1
@@ -5767,7 +5767,7 @@ ccbf-cbed 1640
 cbed-cbee 1640
 2145
 3
-cahb-cbef 3
+cahb-cbef 1
 ccbh-cbef 1
 cbee-cbef 1
 2146
@@ -5778,7 +5778,7 @@ ccbi-cbeg 1640
 cbeg-cbeh 1640
 2148
 2
-cahg-cbei 1
+cahg-cbei 2
 cbeh-cbei 1
 2149
 1
@@ -5798,12 +5798,12 @@ caib-cbfd 1640
 cbfg-cbff 1640
 2156
 3
-cbfh-cbfg 2
-ccci-cbfg 1
 caie-cbfg 1
+cbfh-cbfg 1
+ccci-cbfg 1
 2157
 2
-caif-cbfh 3
+caif-cbfh 1
 cccj-cbfh 1
 2158
 1
@@ -5847,12 +5847,12 @@ cajj-cbhb 1640
 cbhd-cbhc 1640
 2173
 2
-cbhe-cbhd 3
+cbhe-cbhd 2
 ccef-cbhd 1
 2174
 2
-cbac-cbhe 2
 cbhf-cbhe 1
+cbac-cbhe 1
 2175
 1
 cceh-cbhf 1640
@@ -5861,8 +5861,8 @@ cceh-cbhf 1640
 ccei-cbhg 1640
 2177
 2
-cbhg-cbhh 2
 ccej-cbhh 1
+cbhg-cbhh 1
 2179
 3
 cbhi-cbhj 1
@@ -5874,14 +5874,14 @@ cbhj-cbia 1640
 2181
 2
 cbaj-cbib 1
-cbia-cbib 2
+cbia-cbib 1
 2182
 2
 ccfe-cbic 1
-cbba-cbic 1
+cbba-cbic 2
 2183
 2
-cbbb-cbid 3
+cbbb-cbid 1
 cbie-cbid 1
 2184
 1
@@ -5905,10 +5905,10 @@ cbjb-cbjc 2
 2193
 2
 cbjc-cbjd 1
-ccgf-cbjd 3
+ccgf-cbjd 1
 2194
 2
-cbcc-cbje 1
+cbcc-cbje 2
 ccgg-cbje 1
 2195
 1
@@ -5918,10 +5918,10 @@ cbje-cbjf 1640
 cbjf-cbjg 1640
 2197
 4
-cbjg-cbjh 2
 ccgj-cbjh 1
 cbji-cbjh 1
 cbcf-cbjh 1
+cbjg-cbjh 2
 2198
 2
 cbjj-cbji 1
@@ -5936,7 +5936,7 @@ ccab-ccaa 1640
 2201
 2
 cchd-ccab 1
-ccac-ccab 3
+ccac-ccab 1
 2202
 2
 cbda-ccac 1
@@ -5951,20 +5951,20 @@ cbdc-ccae 1640
 2205
 2
 cchh-ccaf 1
-ccae-ccaf 3
+ccae-ccaf 2
 2206
 2
 ccah-ccag 1
-cbde-ccag 1
+cbde-ccag 2
 2207
 3
 cchj-ccah 1
-ccag-ccah 2
+ccag-ccah 1
 ccai-ccah 1
 2208
 2
-cbdg-ccai 1
 ccah-ccai 2
+cbdg-ccai 1
 2210
 1
 cbdi-ccba 1640
@@ -5976,7 +5976,7 @@ ccba-ccbb 1640
 ccbd-ccbc 1640
 2213
 2
-cbeb-ccbd 3
+cbeb-ccbd 2
 ccif-ccbd 1
 2214
 1
@@ -5991,7 +5991,7 @@ ccbh-ccbg 1640
 2217
 2
 ccij-ccbh 1
-cbef-ccbh 3
+cbef-ccbh 2
 2218
 1
 ccja-ccbi 1640
@@ -6000,7 +6000,7 @@ ccja-ccbi 1640
 cbei-ccca 1640
 2221
 3
-cbej-cccb 2
+cbej-cccb 1
 cccc-cccb 1
 ccca-cccb 1
 2222
@@ -6014,27 +6014,27 @@ ccjf-cccd 2
 2224
 2
 cbfc-ccce 1
-cccf-ccce 1
+cccf-ccce 2
 2225
 3
-ccjh-cccf 2
+ccjh-cccf 1
 cbfd-cccf 1
 cccg-cccf 1
 2226
 2
 ccji-cccg 1
-ccch-cccg 2
+ccch-cccg 1
 2227
 2
-cbff-ccch 1
+cbff-ccch 2
 cccg-ccch 1
 2228
 2
 ccch-ccci 1
-cccj-ccci 2
+cccj-ccci 1
 2229
 2
-cdab-cccj 1
+cdab-cccj 2
 ccci-cccj 1
 2230
 1
@@ -6044,9 +6044,9 @@ cbfi-ccda 1640
 ccdc-ccdb 1640
 2232
 3
+cbga-ccdc 1
 ccdd-ccdc 1
 cdae-ccdc 1
-cbga-ccdc 1
 2233
 1
 cbgb-ccdd 1640
@@ -6061,18 +6061,18 @@ cbge-ccdg 1640
 cdaj-ccdh 1640
 2238
 2
-cdba-ccdi 1
 ccdh-ccdi 1
+cdba-ccdi 1
 2239
 1
 ccdi-ccdj 1640
 2240
 2
 cdbc-ccea 1
-ccdj-ccea 3
+ccdj-ccea 1
 2241
 2
-cbgj-cceb 1
+cbgj-cceb 2
 ccea-cceb 1
 2242
 1
@@ -6082,7 +6082,7 @@ cdbe-ccec 1640
 cbhb-cced 1640
 2245
 2
-cbhd-ccef 2
+cbhd-ccef 1
 cceg-ccef 1
 2246
 1
@@ -6093,7 +6093,7 @@ cceg-cceh 1640
 2251
 2
 ccfc-ccfb 1
-cdcd-ccfb 2
+cdcd-ccfb 1
 2252
 1
 ccfd-ccfc 1640
@@ -6102,7 +6102,7 @@ ccfd-ccfc 1640
 cbib-ccfd 1640
 2254
 2
-cbic-ccfe 3
+cbic-ccfe 1
 ccff-ccfe 1
 2255
 3
@@ -6112,11 +6112,11 @@ ccfe-ccff 1
 2256
 2
 ccfh-ccfg 1
-ccff-ccfg 3
+ccff-ccfg 1
 2257
 3
 cbif-ccfh 1
-ccfg-ccfh 1
+ccfg-ccfh 2
 cdcj-ccfh 1
 2258
 1
@@ -6124,7 +6124,7 @@ cbig-ccfi 1640
 2259
 2
 ccfi-ccfj 1
-cbih-ccfj 1
+cbih-ccfj 2
 2260
 2
 ccgb-ccga 1
@@ -6137,11 +6137,11 @@ ccge-ccgd 1640
 cddg-ccge 1640
 2265
 2
-cddh-ccgf 1
+cddh-ccgf 2
 cbjd-ccgf 1
 2266
 3
-cddi-ccgg 3
+cddi-ccgg 1
 cbje-ccgg 1
 ccgh-ccgg 1
 2267
@@ -6160,14 +6160,14 @@ cbjh-ccgj 1
 cbjj-cchb 1640
 2273
 2
-cdef-cchd 2
 cche-cchd 1
+cdef-cchd 2
 2274
 1
 ccac-cche 1640
 2275
 2
-cchg-cchf 2
+cchg-cchf 1
 ccad-cchf 1
 2276
 1
@@ -6178,7 +6178,7 @@ ccaf-cchh 2
 cchg-cchh 1
 2279
 2
-ccia-cchj 2
+ccia-cchj 1
 cdfb-cchj 1
 2280
 1
@@ -6204,7 +6204,7 @@ ccih-ccii 1640
 2289
 2
 ccbh-ccij 1
-cdgb-ccij 3
+cdgb-ccij 1
 2290
 1
 cdgg-ccja 1640
@@ -6223,7 +6223,7 @@ cdhb-ccjf 1640
 2296
 2
 ccce-ccjg 1
-ccjh-ccjg 2
+ccjh-ccjg 1
 2297
 2
 cdhh-ccjh 2
@@ -6243,12 +6243,12 @@ cdaa-cdab 2
 cdib-cdab 1
 2302
 2
-cdig-cdac 1
 ccda-cdac 2
+cdig-cdac 1
 2303
 2
 ccdb-cdad 1
-cdac-cdad 1
+cdac-cdad 2
 2304
 1
 cdad-cdae 1640
@@ -6274,7 +6274,7 @@ cdaj-cdba 1
 cdbc-cdbb 1640
 2312
 2
-cdbd-cdbc 1
+cdbd-cdbc 2
 ceaa-cdbc 1
 2313
 1
@@ -6288,22 +6288,22 @@ cdbf-cdbe 1
 3
 cdbe-cdbf 1
 cced-cdbf 1
-cdbg-cdbf 3
+cdbg-cdbf 2
 2316
 2
-cdbh-cdbg 2
+cdbh-cdbg 1
 cdbf-cdbg 1
 2317
 2
 ceaj-cdbh 1
-ccef-cdbh 2
+ccef-cdbh 1
 2318
 2
 ceba-cdbi 2
 cdbh-cdbi 1
 2323
 3
-cebj-cdcd 1
+cebj-cdcd 2
 ccfb-cdcd 1
 cdce-cdcd 1
 2324
@@ -6314,15 +6314,15 @@ cdcf-cdce 1640
 cecb-cdcf 1640
 2327
 2
-cech-cdch 1
+cech-cdch 2
 cdci-cdch 1
 2328
 1
 cdcj-cdci 1640
 2329
 2
-ccfh-cdcj 3
 cecj-cdcj 1
+ccfh-cdcj 2
 2331
 1
 ccfj-cddb 1640
@@ -6338,7 +6338,7 @@ cddh-cddg 1640
 2337
 2
 ccgf-cddh 1
-ceeb-cddh 2
+ceeb-cddh 1
 2338
 3
 ceeg-cddi 2
@@ -6351,8 +6351,8 @@ cdea-cddj 2
 2340
 3
 ceei-cdea 1
-ccgi-cdea 1
 cddj-cdea 1
+ccgi-cdea 1
 2341
 1
 cdea-cdeb 1640
@@ -6364,24 +6364,24 @@ cchb-cded 1640
 cdef-cdee 1640
 2345
 2
-cchd-cdef 1
 cdeg-cdef 1
+cchd-cdef 1
 2346
 2
-cdeh-cdeg 1
 cefi-cdeg 1
+cdeh-cdeg 1
 2347
 2
-cdeg-cdeh 1
+cdeg-cdeh 2
 cchf-cdeh 1
 2348
 2
 cdeh-cdei 1
-cdej-cdei 3
+cdej-cdei 2
 2349
 2
 cchh-cdej 1
-cegb-cdej 2
+cegb-cdej 1
 2350
 1
 cegg-cdfa 1640
@@ -6396,7 +6396,7 @@ cdfd-cdfc 1640
 2353
 2
 cegj-cdfd 1
-cdfe-cdfd 2
+cdfe-cdfd 1
 2354
 1
 ceha-cdfe 1640
@@ -6415,7 +6415,7 @@ cdfi-cdfh 1
 3
 cehi-cdfi 1
 cdfj-cdfi 1
-cdfh-cdfi 1
+cdfh-cdfi 2
 2359
 1
 ccih-cdfj 1640
@@ -6424,7 +6424,7 @@ ccih-cdfj 1640
 ccii-cdga 1640
 2361
 3
-ceib-cdgb 2
+ceib-cdgb 1
 ccij-cdgb 1
 cdga-cdgb 1
 2363
@@ -6435,14 +6435,14 @@ ceif-cdgd 1640
 cdgd-cdge 1640
 2365
 3
+cdgg-cdgf 2
 ceih-cdgf 1
-cdgg-cdgf 1
 cdge-cdgf 1
 2366
 3
 ceii-cdgg 1
 cdgf-cdgg 1
-cdgh-cdgg 2
+cdgh-cdgg 1
 2367
 2
 ccjb-cdgh 1
@@ -6471,10 +6471,10 @@ cdhe-cdhf 1640
 2376
 2
 ccjg-cdhg 1
-cdhf-cdhg 2
+cdhf-cdhg 1
 2377
 2
-cdhg-cdhh 3
+cdhg-cdhh 2
 ccjh-cdhh 1
 2378
 1
@@ -6488,28 +6488,28 @@ cdhj-cdia 1640
 2381
 3
 cejf-cdib 1
-cdab-cdib 1
+cdab-cdib 2
 cdia-cdib 1
 2382
 1
 cdib-cdic 1640
 2383
 2
-cdic-cdid 2
 cejh-cdid 1
+cdic-cdid 1
 2384
 1
 cdif-cdie 1640
 2385
 2
-cdig-cdif 2
 cejj-cdif 1
+cdig-cdif 2
 2386
 4
-cdif-cdig 1
-cdac-cdig 2
-cdih-cdig 1
 cfaa-cdig 1
+cdih-cdig 1
+cdac-cdig 1
+cdif-cdig 1
 2387
 1
 cdad-cdih 1640
@@ -6525,7 +6525,7 @@ cdij-cdja 1640
 2391
 2
 cdja-cdjb 1
-cdjc-cdjb 2
+cdjc-cdjb 1
 2392
 2
 cfac-cdjc 1
@@ -6535,12 +6535,12 @@ cdjb-cdjc 1
 cdjc-cdjd 1640
 2394
 2
-cdjf-cdje 1
+cdjf-cdje 2
 cdjd-cdje 1
 2395
 2
 cdje-cdjf 1
-cdjg-cdjf 3
+cdjg-cdjf 2
 2396
 2
 cdjf-cdjg 1
@@ -6551,7 +6551,7 @@ cdji-cdjh 1640
 2398
 2
 cdjj-cdji 1
-cdba-cdji 3
+cdba-cdji 1
 2399
 1
 ceaa-cdjj 1640
@@ -6583,8 +6583,8 @@ ceaf-ceag 1
 cdbf-ceah 1640
 2408
 2
-cdbg-ceai 2
 ceah-ceai 1
+cdbg-ceai 1
 2409
 2
 ceai-ceaj 2
@@ -6613,7 +6613,7 @@ cebg-cebh 1640
 cebh-cebi 1640
 2419
 2
-cebi-cebj 2
+cebi-cebj 1
 cdcd-cebj 1
 2420
 1
@@ -6638,16 +6638,16 @@ cech-cecg 1
 cfce-cecg 1
 2427
 3
-cdch-cech 1
 cecg-cech 1
+cdch-cech 1
 ceci-cech 2
 2428
 1
 cecj-ceci 1640
 2429
 2
-cdcj-cecj 2
 ceci-cecj 1
+cdcj-cecj 1
 2431
 1
 cddb-cedb 1640
@@ -6664,7 +6664,7 @@ cddc-cedg 1
 cedf-cedg 1
 2437
 2
-cedg-cedh 2
+cedg-cedh 1
 cddd-cedh 1
 2438
 1
@@ -6682,15 +6682,15 @@ cfdb-ceeb 1
 ceea-ceeb 2
 2443
 2
-cfdd-ceed 2
 ceee-ceed 1
+cfdd-ceed 1
 2444
 2
+ceef-ceee 1
 ceed-ceee 1
-ceef-ceee 2
 2445
 2
-ceeg-ceef 2
+ceeg-ceef 1
 ceee-ceef 1
 2446
 4
@@ -6706,12 +6706,12 @@ cddj-ceeh 1640
 ceej-ceei 1640
 2449
 2
+cefa-ceej 2
 cdeb-ceej 1
-cefa-ceej 1
 2450
 2
 ceej-cefa 1
-cefb-cefa 3
+cefb-cefa 2
 2451
 3
 cded-cefb 1
@@ -6731,10 +6731,10 @@ cfec-cefg 1
 2457
 2
 cdef-cefh 1
-cefg-cefh 1
+cefg-cefh 2
 2458
 2
-cefj-cefi 2
+cefj-cefi 1
 cefh-cefi 1
 2459
 2
@@ -6742,8 +6742,8 @@ cega-cefj 2
 cefi-cefj 1
 2460
 2
-cefj-cega 1
 cdei-cega 1
+cefj-cega 1
 2461
 3
 cega-cegb 1
@@ -6751,11 +6751,11 @@ cfed-cegb 1
 cegc-cegb 2
 2462
 2
-cegd-cegc 1
+cegd-cegc 2
 cegb-cegc 1
 2463
 2
-cfef-cegd 3
+cfef-cegd 2
 cegc-cegd 1
 2464
 1
@@ -6778,9 +6778,9 @@ ceha-cegj 1640
 cehb-ceha 1640
 2471
 3
-cfej-cehb 1
-cdff-cehb 1
 cehc-cehb 1
+cdff-cehb 1
+cfej-cehb 1
 2474
 1
 cehf-cehe 1640
@@ -6789,7 +6789,7 @@ cehf-cehe 1640
 cehg-cehf 1640
 2476
 2
-cffe-cehg 2
+cffe-cehg 1
 cehh-cehg 1
 2477
 1
@@ -6822,8 +6822,8 @@ ceie-ceif 1640
 ceih-ceig 1640
 2487
 2
-cdgf-ceih 2
 ceig-ceih 1
+cdgf-ceih 1
 2488
 1
 cfgc-ceii 1640
@@ -6856,7 +6856,7 @@ cfha-cejg 1640
 2497
 2
 cejg-cejh 1
-cdid-cejh 3
+cdid-cejh 1
 2498
 2
 cdie-ceji 1
@@ -6872,7 +6872,7 @@ cfhe-cfaa 1640
 cfac-cfab 1640
 2502
 2
-cfad-cfac 3
+cfad-cfac 2
 cfhg-cfac 1
 2503
 2
@@ -6880,7 +6880,7 @@ cfae-cfad 1
 cdjd-cfad 1
 2504
 3
-cdje-cfae 2
+cdje-cfae 1
 cfad-cfae 1
 cfhi-cfae 1
 2505
@@ -6889,7 +6889,7 @@ cfae-cfaf 1640
 2506
 2
 cfaf-cfag 1
-cdjg-cfag 2
+cdjg-cfag 1
 2508
 1
 ceac-cfai 1640
@@ -6902,7 +6902,7 @@ cfif-cfbb 1640
 2512
 2
 cfig-cfbc 1
-ceag-cfbc 2
+ceag-cfbc 1
 2513
 1
 cfih-cfbd 1640
@@ -6914,12 +6914,12 @@ cfbf-cfbe 1640
 cfbg-cfbf 1640
 2516
 2
-cfja-cfbg 1
 cebe-cfbg 1
+cfja-cfbg 2
 2519
 2
+cecb-cfbj 2
 cfca-cfbj 1
-cecb-cfbj 1
 2520
 1
 cfje-cfca 1640
@@ -6928,17 +6928,17 @@ cfje-cfca 1640
 cfcc-cfcb 1640
 2522
 2
-cfcd-cfcc 2
+cfcd-cfcc 1
 cfjg-cfcc 1
 2523
 3
 cfce-cfcd 1
 cfjh-cfcd 1
-cecf-cfcd 3
+cecf-cfcd 2
 2524
 2
-cfji-cfce 1
 cfcd-cfce 2
+cfji-cfce 1
 2525
 1
 cedb-cfcf 1640
@@ -6956,12 +6956,12 @@ ceeb-cfdb 1
 cgaf-cfdb 1
 2532
 2
-cfdb-cfdc 2
 cgag-cfdc 1
+cfdb-cfdc 1
 2533
 2
-cfdc-cfdd 1
 ceed-cfdd 2
+cfdc-cfdd 1
 2535
 1
 cgaj-cfdf 1640
@@ -6973,7 +6973,7 @@ cfdf-cfdg 1640
 cefb-cfdh 1640
 2538
 2
-cfdj-cfdi 3
+cfdj-cfdi 2
 cfdh-cfdi 1
 2539
 2
@@ -6987,8 +6987,8 @@ cfeb-cfea 1640
 cfec-cfeb 1640
 2542
 2
-cgbg-cfec 3
 cefg-cfec 1
+cgbg-cfec 2
 2543
 2
 cgbh-cfed 1
@@ -7006,7 +7006,7 @@ cegg-cfei 1640
 2549
 2
 cehb-cfej 1
-cgcd-cfej 1
+cgcd-cfej 2
 2550
 1
 cfej-cffa 1640
@@ -7029,7 +7029,7 @@ cehg-cffe 1
 ceib-cfff 1640
 2556
 2
-cfff-cffg 2
+cfff-cffg 1
 cgda-cffg 1
 2557
 1
@@ -7042,7 +7042,7 @@ cgdc-cffi 1640
 ceif-cffj 1640
 2560
 2
-ceig-cfga 2
+ceig-cfga 1
 cffj-cfga 1
 2562
 1
@@ -7052,8 +7052,8 @@ cgdg-cfgc 1640
 ceij-cfgd 1640
 2564
 2
+cgdi-cfge 2
 cfgd-cfge 1
-cgdi-cfge 1
 2566
 2
 cgea-cfgg 1
@@ -7084,12 +7084,12 @@ cgfa-cfhg 1640
 cgfb-cfhh 1640
 2578
 2
-cfhj-cfhi 1
+cfhj-cfhi 2
 cfhh-cfhi 1
 2579
 2
 cfaf-cfhj 1
-cgfd-cfhj 1
+cgfd-cfhj 2
 2580
 1
 cfag-cfia 1640
@@ -7098,7 +7098,7 @@ cfag-cfia 1640
 cfic-cfib 1640
 2582
 2
-cfid-cfic 3
+cfid-cfic 2
 cfai-cfic 1
 2583
 1
@@ -7108,8 +7108,8 @@ cfie-cfid 1640
 cfba-cfie 1640
 2585
 2
-cfie-cfif 3
 cgfj-cfif 1
+cfie-cfif 2
 2586
 2
 cfbc-cfig 1
@@ -7131,7 +7131,7 @@ cfij-cfja 1640
 cfbj-cfjd 1640
 2594
 3
-cfjf-cfje 1
+cfjf-cfje 2
 cggi-cfje 1
 cfjd-cfje 1
 2595
@@ -7139,7 +7139,7 @@ cfjd-cfje 1
 cfjg-cfjf 1640
 2596
 2
-cfcc-cfjg 3
+cfcc-cfjg 2
 cgha-cfjg 1
 2597
 1
@@ -7161,11 +7161,11 @@ cgad-cgac 1640
 cgae-cgad 1640
 2604
 2
-cghi-cgae 1
 cfda-cgae 1
+cghi-cgae 1
 2605
 2
-cgag-cgaf 2
+cgag-cgaf 1
 cghj-cgaf 1
 2606
 1
@@ -7178,8 +7178,8 @@ cfdd-cgah 1640
 cgid-cgaj 1640
 2613
 2
+cgih-cgbd 2
 cfdj-cgbd 1
-cgih-cgbd 1
 2614
 1
 cgbd-cgbe 1640
@@ -7188,7 +7188,7 @@ cgbd-cgbe 1640
 cgbe-cgbf 1640
 2616
 2
-cgbf-cgbg 2
+cgbf-cgbg 1
 cfec-cgbg 1
 2617
 1
@@ -7199,7 +7199,7 @@ cfef-cgbj 1640
 2620
 2
 cgbj-cgca 1
-cgje-cgca 2
+cgje-cgca 1
 2621
 1
 cgcc-cgcb 1640
@@ -7223,7 +7223,7 @@ chac-cgci 1640
 cgdb-cgda 1640
 2631
 2
-cffh-cgdb 2
+cffh-cgdb 1
 chaf-cgdb 1
 2632
 1
@@ -7233,9 +7233,9 @@ cgdd-cgdc 1640
 cgde-cgdd 1640
 2634
 3
-cfga-cgde 2
 cgdd-cgde 1
 cgdf-cgde 1
+cfga-cgde 2
 2635
 1
 chaj-cgdf 1640
@@ -7248,11 +7248,11 @@ chbb-cgdh 1640
 2638
 2
 cfge-cgdi 1
-cgdh-cgdi 2
+cgdh-cgdi 1
 2639
 2
-cgea-cgdj 1
 cgdi-cgdj 2
+cgea-cgdj 1
 2640
 2
 cfgg-cgea 1
@@ -7280,7 +7280,7 @@ chcd-cgej 1
 cfhf-cgej 2
 2650
 2
-cgej-cgfa 1
+cgej-cgfa 2
 cgfb-cgfa 1
 2651
 1
@@ -7294,7 +7294,7 @@ cfhj-cgfd 1
 chch-cgfd 2
 2654
 2
-cgfd-cgfe 2
+cgfd-cgfe 1
 cfia-cgfe 1
 2655
 2
@@ -7321,26 +7321,26 @@ chdf-cggb 1640
 2662
 2
 cfii-cggc 1
-chdg-cggc 2
+chdg-cggc 1
 2663
 1
 cggc-cggd 1640
 2667
 2
 cggi-cggh 1
-cheb-cggh 2
+cheb-cggh 1
 2668
 4
-cfje-cggi 1
-cggh-cggi 1
 cggj-cggi 1
 chec-cggi 1
+cfje-cggi 1
+cggh-cggi 1
 2669
 1
 cggi-cggj 1640
 2670
 3
-cghb-cgha 1
+cghb-cgha 2
 cggj-cgha 1
 cfjg-cgha 1
 2671
@@ -7352,17 +7352,17 @@ chef-cghb 1
 cheg-cghc 1640
 2674
 2
-chei-cghe 3
+chei-cghe 2
 cghf-cghe 1
 2675
 4
 cgab-cghf 1
 cghg-cghf 1
-chej-cghf 2
+chej-cghf 1
 cghe-cghf 1
 2676
 2
-cghf-cghg 3
+cghf-cghg 1
 cgac-cghg 1
 2677
 1
@@ -7391,8 +7391,8 @@ cgig-cgif 1640
 cgih-cgig 1640
 2687
 2
-chgb-cgih 2
 cgbd-cgih 1
+chgb-cgih 1
 2690
 1
 cgbg-cgja 1640
@@ -7410,7 +7410,7 @@ cgjf-cgje 1
 2695
 2
 cgje-cgjf 1
-cgcb-cgjf 2
+cgcb-cgjf 1
 2696
 1
 cgcc-cgjg 1640
@@ -7426,17 +7426,17 @@ cgcf-cgjj 1640
 2701
 2
 cgch-chab 1
-chhf-chab 2
+chhf-chab 1
 2702
 1
 chab-chac 1640
 2704
 2
-chaf-chae 2
 chad-chae 1
+chaf-chae 1
 2705
 2
-cgdb-chaf 3
+cgdb-chaf 1
 chhj-chaf 1
 2708
 1
@@ -7462,7 +7462,7 @@ ciaa-chbi 2
 chbj-chbi 1
 2719
 2
-chbi-chbj 2
+chbi-chbj 1
 cgef-chbj 1
 2720
 1
@@ -7475,7 +7475,7 @@ cgeh-chcb 1640
 ciae-chcc 1640
 2723
 2
-ciaj-chcd 3
+ciaj-chcd 1
 cgej-chcd 1
 2724
 1
@@ -7486,7 +7486,7 @@ chcg-chcf 1640
 2726
 3
 cibc-chcg 1
-chch-chcg 1
+chch-chcg 2
 cgfc-chcg 1
 2727
 1
@@ -7508,8 +7508,8 @@ chdc-chdb 1
 cicb-chdb 1
 2732
 2
-chdd-chdc 1
 chdb-chdc 1
+chdd-chdc 2
 2733
 1
 chde-chdd 1640
@@ -7519,24 +7519,24 @@ cgga-chde 1640
 2735
 2
 chdg-chdf 1
-cicj-chdf 3
+cicj-chdf 2
 2736
 2
+chdf-chdg 1
 chdh-chdg 1
-chdf-chdg 2
 2737
 2
 cggd-chdh 1
-cidb-chdh 2
+cidb-chdh 1
 2741
 3
 cidj-cheb 1
 cggh-cheb 1
-chec-cheb 3
+chec-cheb 1
 2742
 2
 ched-chec 1
-cggi-chec 3
+cggi-chec 1
 2743
 1
 cieb-ched 1640
@@ -7547,14 +7547,14 @@ cied-chef 1
 cheg-chef 2
 2746
 2
-ciee-cheg 1
+ciee-cheg 2
 chef-cheg 1
 2747
 1
 chei-cheh 1640
 2748
 2
-cifa-chei 1
+cifa-chei 2
 cghe-chei 1
 2749
 1
@@ -7632,7 +7632,7 @@ chai-chic 1640
 chic-chid 1640
 2784
 2
-chid-chie 3
+chid-chie 1
 cjac-chie 1
 2788
 1
@@ -7645,15 +7645,15 @@ chii-chij 1640
 chbd-chjb 1640
 2792
 2
+chjd-chjc 1
 chjb-chjc 1
-chjd-chjc 2
 2793
 2
-chjc-chjd 1
+chjc-chjd 2
 chje-chjd 1
 2794
 2
-cjai-chje 2
+cjai-chje 1
 chjd-chje 1
 2795
 1
@@ -7678,17 +7678,17 @@ chbi-ciaa 1
 ciac-ciab 1640
 2802
 2
-ciad-ciac 2
-chca-ciac 2
+ciad-ciac 1
+chca-ciac 1
 2803
 2
-chcb-ciad 3
+chcb-ciad 1
 ciac-ciad 1
 2804
 3
 ciad-ciae 1
 cjbe-ciae 1
-ciaf-ciae 2
+ciaf-ciae 1
 2805
 2
 ciae-ciaf 1
@@ -7705,7 +7705,7 @@ ciai-ciah 1640
 ciaj-ciai 1640
 2809
 2
-ciba-ciaj 1
+ciba-ciaj 2
 chcd-ciaj 1
 2810
 2
@@ -7717,7 +7717,7 @@ chcf-cibb 1640
 2814
 2
 chci-cibe 1
-cjca-cibe 2
+cjca-cibe 1
 2815
 1
 cibe-cibf 1640
@@ -7732,8 +7732,8 @@ cibi-cibh 1640
 cibj-cibi 1640
 2819
 2
-chcj-cibj 2
 cjcf-cibj 1
+chcj-cibj 1
 2821
 1
 cicc-cicb 1640
@@ -7747,7 +7747,7 @@ cicc-cicd 1
 cice-cicd 2
 2824
 2
-cjcg-cice 3
+cjcg-cice 1
 cicd-cice 1
 2826
 1
@@ -7764,14 +7764,14 @@ cjdb-cicj 1640
 2831
 2
 cidc-cidb 1
-chdh-cidb 2
+chdh-cidb 1
 2832
 2
-cidd-cidc 2
+cidd-cidc 1
 cidb-cidc 1
 2833
 2
-cidc-cidd 1
+cidc-cidd 2
 cide-cidd 1
 2834
 2
@@ -7782,23 +7782,23 @@ cjdc-cide 2
 cide-cidf 1640
 2839
 2
-cheb-cidj 1
+cheb-cidj 2
 cjdh-cidj 1
 2841
 2
 ched-cieb 1
-ciec-cieb 2
+ciec-cieb 1
 2842
 1
 cieb-ciec 1640
 2843
 2
-ciec-cied 2
+ciec-cied 1
 chef-cied 1
 2844
 2
 cied-ciee 1
-cjdi-ciee 2
+cjdi-ciee 1
 2845
 1
 ciee-cief 1640
@@ -7807,12 +7807,12 @@ ciee-cief 1640
 cjea-cieg 1640
 2847
 3
+cjeb-cieh 1
 cieg-cieh 1
 ciei-cieh 1
-cjeb-cieh 1
 2848
 2
-cieh-ciei 2
+cieh-ciei 1
 ciej-ciei 1
 2849
 4
@@ -7839,7 +7839,7 @@ cjee-cife 1
 2855
 2
 cjef-ciff 1
-cifg-ciff 1
+cifg-ciff 2
 2856
 1
 cifh-cifg 1640
@@ -7851,7 +7851,7 @@ cifi-cifh 1640
 cifj-cifi 1640
 2859
 2
-cjej-cifj 1
+cjej-cifj 2
 chfd-cifj 1
 2861
 1
@@ -7867,7 +7867,7 @@ cigc-cigd 1640
 cigd-cige 1640
 2865
 2
-cige-cigf 2
+cige-cigf 1
 cjfb-cigf 1
 2866
 2
@@ -7875,20 +7875,20 @@ cigf-cigg 1
 cigh-cigg 1
 2867
 2
-cigg-cigh 2
 cigi-cigh 1
+cigg-cigh 1
 2868
 2
-cigh-cigi 3
+cigh-cigi 1
 cigj-cigi 1
 2869
 3
 chfj-cigj 1
-cigi-cigj 3
+cigi-cigj 2
 cjff-cigj 1
 2874
 2
-cihf-cihe 2
+cihf-cihe 1
 chge-cihe 1
 2875
 2
@@ -7896,8 +7896,8 @@ cihe-cihf 1
 cihg-cihf 2
 2876
 2
-cihf-cihg 1
 cjfi-cihg 2
+cihf-cihg 1
 2877
 1
 cihg-cihh 1640
@@ -7906,25 +7906,25 @@ cihg-cihh 1640
 cihh-cihi 1640
 2879
 3
-ciia-cihj 1
 chgf-cihj 1
 cjgb-cihj 1
+ciia-cihj 1
 2880
 2
-cihj-ciia 2
+cihj-ciia 1
 ciib-ciia 1
 2881
 3
 ciic-ciib 1
 chgh-ciib 1
-ciia-ciib 1
+ciia-ciib 2
 2882
 1
 ciid-ciic 1640
 2883
 2
 ciie-ciid 1
-chgj-ciid 3
+chgj-ciid 2
 2884
 2
 cjgc-ciie 2
@@ -7938,7 +7938,7 @@ ciij-ciii 1640
 2889
 2
 cija-ciij 1
-cjgh-ciij 2
+cjgh-ciij 1
 2890
 3
 cijb-cija 1
@@ -7950,7 +7950,7 @@ cija-cijb 1
 cijc-cijb 1
 2892
 2
-cijb-cijc 2
+cijb-cijc 1
 cijd-cijc 1
 2893
 1
@@ -7976,7 +7976,7 @@ cijj-ciji 1
 2899
 2
 ciji-cijj 1
-cjaa-cijj 3
+cjaa-cijj 2
 2900
 2
 cijj-cjaa 1
@@ -7997,10 +7997,10 @@ cjaj-cjai 1640
 2909
 2
 cjib-cjaj 1
-cjba-cjaj 2
+cjba-cjaj 1
 2910
 2
-cjic-cjba 3
+cjic-cjba 1
 chjg-cjba 1
 2911
 1
@@ -8013,8 +8013,8 @@ chji-cjbc 1640
 cjif-cjbd 1640
 2914
 2
-ciae-cjbe 1
 cjbf-cjbe 1
+ciae-cjbe 1
 2915
 1
 cjih-cjbf 1640
@@ -8034,7 +8034,7 @@ cibf-cjcb 1640
 3
 cjje-cjcc 1
 cjcb-cjcc 1
-cibg-cjcc 3
+cibg-cjcc 2
 2923
 1
 cjcc-cjcd 1640
@@ -8067,7 +8067,7 @@ cjdd-cjdc 1640
 2933
 2
 daaf-cjdd 1
-cidf-cjdd 2
+cidf-cjdd 1
 2935
 1
 cjdg-cjdf 1640
@@ -8076,15 +8076,15 @@ cjdg-cjdf 1640
 cjdh-cjdg 1640
 2937
 2
-cidj-cjdh 1
 daaj-cjdh 1
+cidj-cjdh 2
 2938
 1
 daba-cjdi 1640
 2939
 3
-cjea-cjdj 1
 cief-cjdj 1
+cjea-cjdj 1
 cjdi-cjdj 2
 2940
 2
@@ -8092,9 +8092,9 @@ cjeb-cjea 1
 cjdj-cjea 2
 2941
 3
-cjea-cjeb 1
 dabd-cjeb 1
 cieh-cjeb 1
+cjea-cjeb 1
 2942
 1
 ciei-cjec 1640
@@ -8125,8 +8125,8 @@ cigg-cjfc 1640
 dacg-cjfe 1640
 2955
 2
-cigj-cjff 2
 cjfe-cjff 1
+cigj-cjff 1
 2956
 1
 cihe-cjfg 1640
@@ -8138,16 +8138,16 @@ cjfj-cjfi 1640
 cjga-cjfj 1640
 2960
 3
-cjgb-cjga 1
 dadc-cjga 1
+cjgb-cjga 1
 cihi-cjga 1
 2961
 2
+cihj-cjgb 1
 cjga-cjgb 1
-cihj-cjgb 2
 2962
 2
-dade-cjgc 2
+dade-cjgc 1
 ciie-cjgc 1
 2963
 1
@@ -8157,7 +8157,7 @@ cjgc-cjgd 1640
 cjgd-cjge 1640
 2965
 2
-cjgg-cjgf 2
+cjgg-cjgf 1
 ciih-cjgf 1
 2966
 1
@@ -8170,7 +8170,7 @@ dadj-cjgh 1640
 daea-cjgi 1640
 2969
 2
-cjha-cjgj 2
+cjha-cjgj 1
 cjgi-cjgj 1
 2970
 1
@@ -8178,7 +8178,7 @@ cjhb-cjha 1640
 2971
 2
 daed-cjhb 1
-cijh-cjhb 3
+cijh-cjhb 2
 2974
 2
 cjac-cjhe 2
@@ -8191,13 +8191,13 @@ cjhe-cjhf 1640
 daej-cjhh 1640
 2980
 2
-cjai-cjia 3
+cjai-cjia 1
 cjib-cjia 1
 2981
 3
 cjaj-cjib 1
-dafd-cjib 1
 cjia-cjib 1
+dafd-cjib 2
 2982
 1
 dafe-cjic 1640
@@ -8207,7 +8207,7 @@ cjbb-cjid 1640
 2984
 3
 cjid-cjie 1
-cjbc-cjie 3
+cjbc-cjie 1
 dafg-cjie 1
 2985
 1
@@ -8217,7 +8217,7 @@ cjie-cjif 1640
 cjbe-cjig 1640
 2987
 2
-cjig-cjih 2
+cjig-cjih 1
 cjii-cjih 1
 2988
 1
@@ -8234,7 +8234,7 @@ cjja-cjjb 1640
 2992
 2
 dage-cjjc 1
-cjjd-cjjc 1
+cjjd-cjjc 2
 2993
 1
 cjje-cjjd 1640
@@ -8254,8 +8254,8 @@ cjce-cjjg 2
 daha-cjji 1640
 3002
 2
-dahe-daac 1
 daab-daac 1
+dahe-daac 1
 3003
 2
 daac-daad 2
@@ -8266,18 +8266,18 @@ daag-daaf 1
 cjdd-daaf 1
 3006
 2
-daah-daag 2
+daah-daag 1
 dahi-daag 1
 3007
 2
+cjdf-daah 2
 daag-daah 1
-cjdf-daah 1
 3008
 1
 daah-daai 1640
 3009
 2
-daib-daaj 1
+daib-daaj 2
 daai-daaj 1
 3010
 1
@@ -8306,10 +8306,10 @@ dajd-dacb 1640
 3023
 2
 dace-dacd 1
-dajf-dacd 2
+dajf-dacd 1
 3024
 2
-cjfc-dace 2
+cjfc-dace 1
 dajg-dace 1
 3025
 1
@@ -8339,14 +8339,14 @@ dadh-dadg 1
 3037
 2
 cjgf-dadh 1
-dadg-dadh 2
+dadg-dadh 1
 3038
 1
 dadh-dadi 1640
 3039
 2
-dadi-dadj 1
 dbbb-dadj 1
+dadi-dadj 1
 3040
 2
 dbbc-daea 1
@@ -8362,12 +8362,12 @@ dbbe-daec 1640
 daec-daed 1640
 3046
 2
-daeh-daeg 1
 dbbi-daeg 1
+daeh-daeg 1
 3047
 3
-cjhf-daeh 1
 dbbj-daeh 1
+cjhf-daeh 1
 daeg-daeh 1
 3048
 1
@@ -8375,11 +8375,11 @@ daeh-daei 1640
 3049
 2
 dbcb-daej 1
-daei-daej 1
+daei-daej 2
 3052
 2
 dbce-dafc 1
-cjia-dafc 2
+cjia-dafc 1
 3053
 1
 dafc-dafd 1640
@@ -8394,7 +8394,7 @@ dbci-dafg 1640
 cjif-dafh 1640
 3059
 2
-cjih-dafj 2
+cjih-dafj 1
 dbdb-dafj 1
 3060
 1
@@ -8431,16 +8431,16 @@ dahb-daha 1640
 dahc-dahb 1640
 3072
 2
-dbee-dahc 2
+dbee-dahc 1
 dahd-dahc 1
 3073
 2
-dahc-dahd 1
 dahe-dahd 1
+dahc-dahd 1
 3074
 2
 daac-dahe 1
-dahd-dahe 2
+dahd-dahe 1
 3075
 1
 daad-dahf 1640
@@ -8449,8 +8449,8 @@ daad-dahf 1640
 daaf-dahh 1640
 3078
 2
-daag-dahi 3
 dahh-dahi 1
+daag-dahi 1
 3080
 1
 dbfc-daia 1640
@@ -8460,7 +8460,7 @@ daia-daib 1640
 3082
 2
 daid-daic 1
-dbfe-daic 3
+dbfe-daic 2
 3083
 1
 dabb-daid 1640
@@ -8477,7 +8477,7 @@ dabe-daig 2
 3088
 2
 dbga-daii 1
-daij-daii 3
+daij-daii 2
 3089
 3
 dabh-daij 1
@@ -8486,7 +8486,7 @@ daja-daij 1
 3090
 2
 daij-daja 1
-dbgc-daja 2
+dbgc-daja 1
 3092
 1
 daca-dajc 1640
@@ -8534,15 +8534,15 @@ dbhj-dbah 1640
 dadg-dbai 1640
 3110
 2
-dbic-dbba 1
 dadi-dbba 2
+dbic-dbba 1
 3111
 2
-dbid-dbbb 2
+dbid-dbbb 1
 dbba-dbbb 1
 3112
 2
-daea-dbbc 1
+daea-dbbc 2
 dbbd-dbbc 1
 3113
 2
@@ -8550,7 +8550,7 @@ dbbe-dbbd 1
 dbif-dbbd 1
 3114
 2
-dbbf-dbbe 3
+dbbf-dbbe 1
 dbbd-dbbe 1
 3115
 2
@@ -8558,17 +8558,17 @@ dbih-dbbf 1
 dbbg-dbbf 2
 3116
 3
-dbbf-dbbg 1
-dbii-dbbg 2
 dbbh-dbbg 1
+dbbf-dbbg 1
+dbii-dbbg 1
 3117
 1
 dbbg-dbbh 1640
 3119
 3
+dbjf-dbbj 2
 dbca-dbbj 1
-daeh-dbbj 2
-dbjf-dbbj 1
+daeh-dbbj 1
 3120
 1
 dbcb-dbca 1640
@@ -8596,22 +8596,22 @@ dbci-dbch 1640
 dbcj-dbci 1640
 3129
 2
-dafh-dbcj 2
 dcaj-dbcj 1
+dafh-dbcj 2
 3130
 1
 dcbe-dbda 1640
 3131
 2
-dcbf-dbdb 1
 dbda-dbdb 2
+dcbf-dbdb 1
 3133
 1
 dagb-dbdd 1640
 3134
 2
 dbdf-dbde 1
-dbdd-dbde 3
+dbdd-dbde 2
 3135
 1
 dagd-dbdf 1640
@@ -8627,8 +8627,8 @@ dccf-dbdh 1640
 dbdj-dbdi 1640
 3139
 2
-dagh-dbdj 2
 dbea-dbdj 1
+dagh-dbdj 2
 3141
 1
 dagj-dbeb 1640
@@ -8637,12 +8637,12 @@ dagj-dbeb 1640
 dcde-dbec 1640
 3143
 2
-dbec-dbed 2
 dahb-dbed 1
+dbec-dbed 2
 3144
 2
 dbef-dbee 1
-dbed-dbee 2
+dbed-dbee 1
 3145
 1
 dbeg-dbef 1640
@@ -8657,8 +8657,8 @@ dahf-dbeh 1640
 dcef-dbej 1640
 3150
 2
-dahi-dbfa 1
 dbej-dbfa 1
+dahi-dbfa 1
 3151
 1
 dbfa-dbfb 1640
@@ -8667,7 +8667,7 @@ dbfa-dbfb 1640
 dbfb-dbfc 1640
 3154
 2
-dcfe-dbfe 2
+dcfe-dbfe 1
 daic-dbfe 1
 3155
 1
@@ -8682,7 +8682,7 @@ dcfi-dbfi 1
 3160
 2
 dcge-dbga 1
-daii-dbga 1
+daii-dbga 2
 3161
 1
 daij-dbgb 1640
@@ -8696,12 +8696,12 @@ dbge-dbgd 1
 3164
 2
 dbgf-dbge 1
-dbgd-dbge 2
+dbgd-dbge 1
 3165
 3
-dcgj-dbgf 1
+dajd-dbgf 2
 dbge-dbgf 1
-dajd-dbgf 1
+dcgj-dbgf 1
 3166
 1
 daje-dbgg 1640
@@ -8711,11 +8711,11 @@ dchf-dbgh 1640
 3168
 2
 dchg-dbgi 1
-dbgj-dbgi 2
+dbgj-dbgi 1
 3169
 2
 dbgi-dbgj 1
-dchh-dbgj 2
+dchh-dbgj 1
 3170
 1
 dbhb-dbha 1640
@@ -8727,8 +8727,8 @@ dajj-dbhb 1640
 dbab-dbhd 1640
 3174
 2
-dbhd-dbhe 1
 dcig-dbhe 2
+dbhd-dbhe 1
 3175
 1
 dbhe-dbhf 1640
@@ -8745,27 +8745,27 @@ dcjf-dbhj 1640
 dbai-dbia 1640
 3182
 2
-dbba-dbic 2
 dcji-dbic 1
+dbba-dbic 2
 3183
 1
 dcjj-dbid 1640
 3184
 2
 dbbc-dbie 1
-dbif-dbie 2
+dbif-dbie 1
 3185
 2
 ddaf-dbif 1
-dbbd-dbif 2
+dbbd-dbif 1
 3186
 2
-ddag-dbig 1
+ddag-dbig 2
 dbih-dbig 1
 3187
 2
-dbig-dbih 2
 dbbf-dbih 1
+dbig-dbih 2
 3188
 1
 ddai-dbii 1640
@@ -8787,11 +8787,11 @@ dbjc-dbjd 1640
 3194
 2
 dbjd-dbje 1
-dbjf-dbje 1
+dbjf-dbje 2
 3195
 2
-dbje-dbjf 1
 dbbj-dbjf 1
+dbje-dbjf 1
 3199
 2
 dcaa-dbjj 1
@@ -8802,19 +8802,19 @@ dbjj-dcaa 1
 dcab-dcaa 1
 3201
 2
-dcaa-dcab 3
 dcac-dcab 1
+dcaa-dcab 2
 3202
 2
 ddca-dcac 1
-dcad-dcac 3
+dcad-dcac 2
 3203
 1
 dcae-dcad 1640
 3204
 2
 ddcc-dcae 1
-dbce-dcae 1
+dbce-dcae 2
 3209
 1
 dbcj-dcaj 1640
@@ -8829,9 +8829,9 @@ dcbd-dcbc 1640
 ddch-dcbd 1640
 3214
 3
-ddci-dcbe 1
 dcbd-dcbe 1
-dcbf-dcbe 2
+ddci-dcbe 1
+dcbf-dcbe 1
 3215
 1
 dcbg-dcbf 1640
@@ -8846,16 +8846,16 @@ dcbi-dcbh 1640
 dbde-dcbi 1640
 3219
 3
-dcca-dcbj 1
 dcbi-dcbj 2
 ddcj-dcbj 1
+dcca-dcbj 1
 3220
 2
-dccb-dcca 1
+dccb-dcca 2
 dcbj-dcca 1
 3221
 3
-dccc-dccb 2
+dccc-dccb 1
 dddb-dccb 1
 dcca-dccb 1
 3222
@@ -8864,19 +8864,19 @@ dccd-dccc 1
 dccb-dccc 1
 3223
 2
+dcce-dccd 1
 dccc-dccd 1
-dcce-dccd 2
 3224
 3
 dccd-dcce 1
-ddde-dcce 1
+ddde-dcce 2
 dccf-dcce 1
 3225
 1
 dccg-dccf 1640
 3226
 2
-dcch-dccg 2
+dcch-dccg 1
 dbdi-dccg 1
 3227
 1
@@ -8886,8 +8886,8 @@ dcci-dcch 1640
 dccj-dcci 1640
 3229
 3
-dbeb-dccj 1
 dddf-dccj 1
+dbeb-dccj 2
 dcda-dccj 1
 3230
 2
@@ -8896,7 +8896,7 @@ dccj-dcda 1
 3231
 2
 dcda-dcdb 1
-dcdc-dcdb 2
+dcdc-dcdb 1
 3232
 1
 dcdd-dcdc 1640
@@ -8939,20 +8939,20 @@ dcfc-dcfb 1
 ddej-dcfb 1
 3252
 2
-ddfa-dcfc 1
+ddfa-dcfc 2
 dcfb-dcfc 1
 3253
 2
-ddfb-dcfd 2
+ddfb-dcfd 1
 dcfc-dcfd 1
 3254
 3
+dbfe-dcfe 1
 dcfd-dcfe 1
 dcff-dcfe 1
-dbfe-dcfe 1
 3255
 2
-dcfg-dcff 1
+dcfg-dcff 2
 dbff-dcff 1
 3256
 1
@@ -8962,12 +8962,12 @@ dcfh-dcfg 1640
 dcfi-dcfh 1640
 3258
 3
+dcfh-dcfi 1
 dbfi-dcfi 2
 dcfj-dcfi 1
-dcfh-dcfi 1
 3259
 2
-ddfd-dcfj 2
+ddfd-dcfj 1
 dcfi-dcfj 1
 3260
 1
@@ -8986,16 +8986,16 @@ dcge-dcgd 1640
 3
 dbga-dcge 1
 dcgf-dcge 1
-ddfi-dcge 3
+ddfi-dcge 2
 3265
 3
-dbgb-dcgf 1
 dcge-dcgf 2
+dbgb-dcgf 1
 dcgg-dcgf 1
 3266
 2
-dcgf-dcgg 3
 dcgh-dcgg 1
+dcgf-dcgg 1
 3267
 3
 dcgg-dcgh 2
@@ -9010,23 +9010,23 @@ dbgf-dcgj 1
 dcha-dcgj 1
 3270
 2
-dcgj-dcha 3
+dcgj-dcha 2
 ddga-dcha 1
 3271
 1
 ddgb-dchb 1640
 3272
 2
+dchd-dchc 1
 dchb-dchc 1
-dchd-dchc 2
 3273
 2
+dche-dchd 1
 dchc-dchd 1
-dche-dchd 2
 3274
 2
 dbgg-dche 1
-dchd-dche 2
+dchd-dche 1
 3275
 1
 dche-dchf 1640
@@ -9039,60 +9039,60 @@ dchi-dchh 1640
 3278
 2
 dbha-dchi 1
-dchj-dchi 2
+dchj-dchi 1
 3279
 3
-dbhb-dchj 1
 dchi-dchj 1
+dbhb-dchj 1
 dcia-dchj 1
 3280
 3
 ddgg-dcia 1
-dchj-dcia 2
+dchj-dcia 1
 dcib-dcia 1
 3281
 2
-dcia-dcib 2
 dcic-dcib 1
+dcia-dcib 1
 3282
 1
 dcib-dcic 1640
 3283
 2
-ddgj-dcid 2
+ddgj-dcid 1
 dcic-dcid 1
 3284
 3
-dcid-dcie 2
 ddha-dcie 1
 dcif-dcie 1
+dcid-dcie 2
 3285
 2
 dcie-dcif 1
 dbhd-dcif 1
 3286
 2
-dcif-dcig 2
+dcif-dcig 1
 dbhe-dcig 1
 3287
 1
 dcig-dcih 1640
 3288
 3
+dcij-dcii 1
 dcih-dcii 1
 dbhg-dcii 1
-dcij-dcii 1
 3289
 2
 dcii-dcij 1
-ddhb-dcij 1
+ddhb-dcij 2
 3290
 1
 dcij-dcja 1640
 3292
 2
-ddhe-dcjc 1
 dcjd-dcjc 2
+ddhe-dcjc 1
 3293
 2
 dcjc-dcjd 1
@@ -9104,7 +9104,7 @@ dcjd-dcje 1
 ddhg-dcje 1
 3295
 2
-dcjg-dcjf 1
+dcjg-dcjf 2
 dcje-dcjf 1
 3296
 2
@@ -9113,22 +9113,22 @@ dbia-dcjg 2
 3297
 2
 dcjg-dcjh 1
-dcji-dcjh 1
+dcji-dcjh 2
 3298
 2
-dcjh-dcji 1
 dbic-dcji 1
+dcjh-dcji 1
 3299
 2
-ddaa-dcjj 2
 dcji-dcjj 1
+ddaa-dcjj 1
 3300
 1
 ddab-ddaa 1640
 3301
 2
 ddhj-ddab 1
-ddac-ddab 3
+ddac-ddab 1
 3302
 3
 ddad-ddac 2
@@ -9146,8 +9146,8 @@ dbie-ddae 2
 ddaf-ddae 1
 3305
 2
+ddae-ddaf 2
 ddag-ddaf 1
-ddae-ddaf 1
 3306
 2
 ddaf-ddag 1
@@ -9157,9 +9157,9 @@ dbig-ddag 1
 ddaj-ddai 1640
 3309
 3
+ddba-ddaj 1
 ddid-ddaj 1
 dbij-ddaj 1
-ddba-ddaj 1
 3310
 1
 ddaj-ddba 1640
@@ -9181,7 +9181,7 @@ dcab-ddbj 1640
 3320
 3
 ddje-ddca 1
-dcac-ddca 1
+dcac-ddca 2
 ddbj-ddca 1
 3321
 1
@@ -9208,7 +9208,7 @@ dcbe-ddci 1
 3329
 2
 dead-ddcj 1
-dcbj-ddcj 2
+dcbj-ddcj 1
 3331
 1
 dddc-dddb 1640
@@ -9221,25 +9221,25 @@ ddde-dddd 1640
 3334
 2
 dcce-ddde 1
-deai-ddde 3
+deai-ddde 2
 3335
 1
 dddg-dddf 1640
 3336
 2
 dddh-dddg 1
-dcda-dddg 3
+dcda-dddg 2
 3337
 2
-dddg-dddh 2
 dcdb-dddh 1
+dddg-dddh 2
 3338
 1
 dddh-dddi 1640
 3339
 2
 debd-dddj 1
-dddi-dddj 2
+dddi-dddj 1
 3340
 1
 dddj-ddea 1640
@@ -9255,25 +9255,25 @@ dcfa-ddei 1
 ddeh-ddei 1
 3349
 2
-dcfb-ddej 1
+dcfb-ddej 2
 ddei-ddej 1
 3350
 1
 ddfb-ddfa 1640
 3351
 3
-decf-ddfb 1
-ddfc-ddfb 2
 dcfd-ddfb 1
+ddfc-ddfb 1
+decf-ddfb 1
 3352
 2
 dcfe-ddfc 1
-ddfb-ddfc 1
+ddfb-ddfc 2
 3353
 3
 dcfj-ddfd 1
 ddfe-ddfd 1
-dech-ddfd 3
+dech-ddfd 1
 3354
 1
 ddff-ddfe 1640
@@ -9288,7 +9288,7 @@ dcgc-ddfg 1640
 dedc-ddfi 1640
 3360
 2
-dede-ddga 3
+dede-ddga 1
 dcha-ddga 1
 3361
 3
@@ -9311,18 +9311,18 @@ dcia-ddgg 1
 deec-ddgi 1640
 3369
 2
+ddgi-ddgj 1
 ddha-ddgj 1
-ddgi-ddgj 3
 3370
 2
-dcie-ddha 1
+dcie-ddha 2
 deee-ddha 1
 3371
 1
 deef-ddhb 1640
 3372
 2
-ddhb-ddhc 2
+ddhb-ddhc 1
 dcja-ddhc 1
 3373
 1
@@ -9351,7 +9351,7 @@ defd-ddhj 1640
 ddib-ddia 1640
 3381
 2
-deff-ddib 2
+deff-ddib 1
 ddic-ddib 1
 3382
 1
@@ -9362,7 +9362,7 @@ ddie-ddid 1640
 3384
 2
 ddba-ddie 1
-defi-ddie 2
+defi-ddie 1
 3386
 1
 ddih-ddig 1640
@@ -9384,26 +9384,26 @@ degg-ddjc 1640
 3394
 2
 degi-ddje 1
-ddca-ddje 2
+ddca-ddje 1
 3398
 1
 ddce-ddji 1640
 3400
 2
-deab-deaa 1
 dehe-deaa 1
+deab-deaa 2
 3401
 2
-ddch-deab 2
+ddch-deab 1
 deaa-deab 1
 3402
 2
 dehg-deac 1
-deab-deac 2
+deab-deac 1
 3403
 2
 deae-dead 1
-ddcj-dead 1
+ddcj-dead 2
 3404
 1
 deaf-deae 1640
@@ -9416,13 +9416,13 @@ deai-deah 1640
 3408
 2
 ddde-deai 1
-deic-deai 2
+deic-deai 1
 3409
 1
 deid-deaj 1640
 3410
 2
-deie-deba 1
+deie-deba 2
 deaj-deba 1
 3411
 1
@@ -9444,9 +9444,9 @@ ddeb-debf 1640
 debi-debh 1640
 3421
 3
-decc-decb 1
 ddeh-decb 1
-dejf-decb 2
+decc-decb 1
+dejf-decb 1
 3422
 2
 decb-decc 1
@@ -9454,18 +9454,18 @@ ddei-decc 1
 3423
 2
 decc-decd 1
-ddej-decd 1
+ddej-decd 2
 3424
 1
 deji-dece 1640
 3425
 2
-dece-decf 2
+dece-decf 1
 decg-decf 1
 3426
 2
 dfaa-decg 1
-ddfc-decg 3
+ddfc-decg 2
 3427
 2
 ddfd-dech 1
@@ -9488,14 +9488,14 @@ dfah-dedd 1640
 3434
 2
 dedf-dede 1
-dedd-dede 3
+dedd-dede 1
 3435
 2
-ddgb-dedf 1
 dede-dedf 1
+ddgb-dedf 2
 3440
 2
-ddgg-deea 3
+ddgg-deea 2
 dfbe-deea 1
 3441
 1
@@ -9505,18 +9505,18 @@ deea-deeb 1640
 deeb-deec 1640
 3443
 4
-ddgj-deed 1
-deec-deed 1
+ddgj-deed 2
 dfbh-deed 1
+deec-deed 1
 deee-deed 1
 3444
 2
 ddha-deee 1
-deed-deee 3
+deed-deee 1
 3445
 2
-dfbj-deef 2
-deeg-deef 2
+dfbj-deef 1
+deeg-deef 1
 3446
 1
 dfca-deeg 1640
@@ -9526,16 +9526,16 @@ deej-deei 1
 ddhe-deei 2
 3449
 3
-ddhf-deej 1
-deei-deej 2
 defa-deej 1
+deei-deej 2
+ddhf-deej 1
 3450
 1
 deej-defa 1640
 3451
 2
+ddhh-defb 2
 dfcf-defb 1
-ddhh-defb 1
 3452
 2
 defb-defc 1
@@ -9549,12 +9549,12 @@ dfcj-deff 1640
 3456
 2
 deff-defg 1
-dfda-defg 2
+dfda-defg 1
 3458
 3
-dfdc-defi 1
-defj-defi 3
+defj-defi 1
 ddie-defi 1
+dfdc-defi 1
 3459
 1
 dfdd-defj 1640
@@ -9564,10 +9564,10 @@ degd-degc 1640
 3463
 2
 ddij-degd 1
-dege-degd 1
+dege-degd 2
 3464
 2
-degd-dege 1
+degd-dege 2
 dfdi-dege 1
 3466
 1
@@ -9577,7 +9577,7 @@ degh-degg 1640
 degi-degh 1640
 3468
 3
-ddje-degi 1
+ddje-degi 2
 dfec-degi 1
 degj-degi 1
 3469
@@ -9597,11 +9597,11 @@ ddji-dehc 1
 3473
 2
 dehe-dehd 1
-dehc-dehd 1
+dehc-dehd 2
 3474
 2
 dehd-dehe 1
-deaa-dehe 1
+deaa-dehe 2
 3476
 1
 dffa-dehg 1640
@@ -9638,7 +9638,7 @@ debf-deij 1640
 3495
 2
 decb-dejf 1
-dejg-dejf 3
+dejg-dejf 2
 3496
 1
 dejh-dejg 1640
@@ -9650,21 +9650,21 @@ decd-dejh 1
 3498
 2
 dfhc-deji 1
-dejh-deji 2
+dejh-deji 1
 3499
 1
 deji-dejj 1640
 3500
 2
 dejj-dfaa 1
-decg-dfaa 3
+decg-dfaa 2
 3501
 1
 dech-dfab 1640
 3502
 2
 dfhg-dfac 1
-dfab-dfac 1
+dfab-dfac 2
 3507
 1
 dfib-dfah 1640
@@ -9673,9 +9673,9 @@ dfib-dfah 1640
 dede-dfai 1640
 3509
 3
-dfid-dfaj 1
 dfba-dfaj 1
-dedf-dfaj 2
+dfid-dfaj 1
+dedf-dfaj 1
 3510
 1
 dfaj-dfba 1640
@@ -9698,14 +9698,14 @@ deed-dfbh 1640
 3519
 2
 dfca-dfbj 1
-dfjd-dfbj 2
+dfjd-dfbj 1
 3520
 1
 dfcb-dfca 1640
 3521
 2
 dfcc-dfcb 1
-dfjf-dfcb 2
+dfjf-dfcb 1
 3522
 1
 deei-dfcc 1640
@@ -9715,7 +9715,7 @@ defa-dfce 1640
 3525
 2
 dfjj-dfcf 1
-dfcg-dfcf 2
+dfcg-dfcf 1
 3526
 1
 defc-dfcg 1640
@@ -9724,7 +9724,7 @@ defc-dfcg 1640
 defd-dfch 1640
 3528
 2
-dfch-dfci 1
+dfch-dfci 2
 dgac-dfci 1
 3529
 1
@@ -9732,19 +9732,19 @@ dfci-dfcj 1640
 3530
 2
 defg-dfda 1
-dfcj-dfda 2
+dfcj-dfda 1
 3532
 2
 dfdd-dfdc 1
-defi-dfdc 1
+defi-dfdc 2
 3533
 2
-dfdc-dfdd 1
 dgah-dfdd 1
+dfdc-dfdd 1
 3538
 2
-dgbc-dfdi 1
 dege-dfdi 1
+dgbc-dfdi 1
 3539
 1
 dfea-dfdj 1640
@@ -9754,7 +9754,7 @@ dgbi-dfea 2
 degg-dfea 1
 3541
 2
-degh-dfeb 2
+degh-dfeb 1
 dfea-dfeb 1
 3542
 1
@@ -9786,7 +9786,7 @@ dffc-dffd 2
 dgdj-dffd 1
 3555
 2
-dgeb-dfff 2
+dgeb-dfff 1
 deib-dfff 1
 3556
 1
@@ -9805,8 +9805,8 @@ dfga-dffj 1640
 dfgb-dfga 1640
 3561
 2
-deih-dfgb 2
 dfgc-dfgb 1
+deih-dfgb 2
 3562
 1
 dgfc-dfgc 1640
@@ -9824,7 +9824,7 @@ dfgj-dfha 1640
 dggj-dfhb 1640
 3572
 2
-deji-dfhc 2
+deji-dfhc 1
 dgha-dfhc 1
 3574
 1
@@ -9838,12 +9838,12 @@ dghi-dfhg 1
 dfic-dfib 1640
 3582
 2
-dfid-dfic 2
+dfid-dfic 1
 dfai-dfic 1
 3583
 2
 dfaj-dfid 1
-dgij-dfid 1
+dgij-dfid 2
 3585
 1
 dfbb-dfif 1640
@@ -9859,14 +9859,14 @@ dfbh-dfjb 1640
 3593
 2
 dfbj-dfjd 1
-dhah-dfjd 2
+dhah-dfjd 1
 3595
 2
-dfjg-dfjf 3
+dfjg-dfjf 1
 dhaj-dfjf 1
 3596
 2
-dfjh-dfjg 2
+dfjh-dfjg 1
 dhba-dfjg 1
 3597
 1
@@ -9896,12 +9896,12 @@ dfda-dgae 1640
 dhci-dgag 1640
 3607
 2
+dgag-dgah 1
 dfdd-dgah 1
-dgag-dgah 3
 3612
 3
 dgbd-dgbc 1
-dfdi-dgbc 2
+dfdi-dgbc 1
 dhda-dgbc 1
 3613
 1
@@ -9917,8 +9917,8 @@ dgbg-dgbf 1640
 dgbh-dgbg 1640
 3617
 2
-dfdj-dgbh 1
 dhdf-dgbh 1
+dfdj-dgbh 1
 3618
 1
 dgbh-dgbi 1640
@@ -9933,9 +9933,9 @@ dgbj-dgca 1640
 dgca-dgcb 1640
 3622
 3
-dhdg-dgcc 1
 dgcd-dgcc 1
 dgcb-dgcc 1
+dhdg-dgcc 1
 3623
 2
 dgcc-dgcd 1
@@ -9954,7 +9954,7 @@ dgch-dgcg 1
 dhea-dgcg 1
 3627
 2
-dgcg-dgch 2
+dgcg-dgch 1
 dheb-dgch 1
 3628
 1
@@ -9983,9 +9983,9 @@ dgdf-dgde 1640
 dhef-dgdf 1640
 3637
 3
+dgdg-dgdh 1
 dheh-dgdh 2
 dgdi-dgdh 1
-dgdg-dgdh 1
 3638
 2
 dgdh-dgdi 1
@@ -10003,7 +10003,7 @@ dgea-dgeb 1640
 3642
 2
 dgeb-dgec 1
-dffg-dgec 2
+dffg-dgec 1
 3643
 1
 dgec-dged 1640
@@ -10036,8 +10036,8 @@ dgfb-dgfa 1640
 dfgb-dgfb 1640
 3652
 2
-dgfd-dgfc 3
 dhfe-dgfc 1
+dgfd-dgfc 2
 3653
 1
 dgfe-dgfd 1640
@@ -10063,9 +10063,9 @@ dhga-dggc 1640
 dggc-dggd 1640
 3664
 3
-dhgc-dgge 1
-dggd-dgge 2
 dggf-dgge 1
+dggd-dgge 2
+dhgc-dgge 1
 3665
 1
 dgge-dggf 1640
@@ -10075,21 +10075,21 @@ dggf-dggg 1640
 3667
 3
 dhgf-dggh 1
-dggi-dggh 1
+dggi-dggh 2
 dggg-dggh 1
 3668
 3
 dggh-dggi 1
 dfha-dggi 1
-dggj-dggi 2
+dggj-dggi 1
 3669
 2
 dgha-dggj 1
 dggi-dggj 1
 3670
 2
-dfhc-dgha 2
 dggj-dgha 1
+dfhc-dgha 2
 3672
 1
 dfhe-dghc 1640
@@ -10108,7 +10108,7 @@ dfhg-dghi 1
 dghj-dghi 1
 3679
 2
-dgia-dghj 2
+dgia-dghj 1
 dghi-dghj 1
 3680
 2
@@ -10116,7 +10116,7 @@ dghj-dgia 1
 dgib-dgia 1
 3681
 2
-dgic-dgib 2
+dgic-dgib 1
 dgia-dgib 1
 3682
 2
@@ -10134,11 +10134,11 @@ dgif-dgie 1
 dgig-dgif 1640
 3686
 2
-dgih-dgig 1
 dhhg-dgig 1
+dgih-dgig 1
 3687
 3
-dfib-dgih 2
+dfib-dgih 1
 dgig-dgih 1
 dgii-dgih 1
 3688
@@ -10162,8 +10162,8 @@ dfig-dgjc 1
 dgjd-dgjc 1
 3693
 3
-dgje-dgjd 2
 dhhj-dgjd 1
+dgje-dgjd 1
 dgjc-dgjd 1
 3694
 2
@@ -10180,7 +10180,7 @@ dgjh-dgjg 2
 3697
 2
 dhid-dgjh 1
-dgji-dgjh 3
+dgji-dgjh 2
 3698
 2
 dgjj-dgji 1
@@ -10196,18 +10196,18 @@ dhab-dhaa 1640
 dfjb-dhab 1640
 3704
 2
-dhig-dhae 2
 dhad-dhae 1
+dhig-dhae 1
 3705
 1
 dhae-dhaf 1640
 3706
 2
-dhaf-dhag 1
+dhaf-dhag 2
 dhah-dhag 1
 3707
 3
-dhai-dhah 1
+dhai-dhah 2
 dhij-dhah 1
 dfjd-dhah 1
 3708
@@ -10217,7 +10217,7 @@ dhaj-dhai 2
 3709
 2
 dhai-dhaj 1
-dfjf-dhaj 2
+dfjf-dhaj 1
 3710
 1
 dhbb-dhba 1640
@@ -10228,7 +10228,7 @@ dhbc-dhbb 1640
 3
 dhbd-dhbc 1
 dfji-dhbc 1
-dhja-dhbc 2
+dhja-dhbc 1
 3713
 1
 dhbe-dhbd 1640
@@ -10241,11 +10241,11 @@ dhbg-dhbf 1640
 3716
 2
 dhje-dhbg 1
-dhbh-dhbg 1
+dhbh-dhbg 2
 3717
 2
 dfjj-dhbh 1
-dhbi-dhbh 3
+dhbi-dhbh 2
 3718
 1
 dhbj-dhbi 1640
@@ -10254,16 +10254,16 @@ dhbj-dhbi 1640
 dhca-dhbj 1640
 3720
 2
-dhcb-dhca 3
 dhbj-dhca 1
+dhcb-dhca 2
 3721
 2
 dhca-dhcb 1
-dhcc-dhcb 2
+dhcc-dhcb 1
 3722
 3
 dhcb-dhcc 1
-dhcd-dhcc 2
+dhcd-dhcc 1
 dgae-dhcc 1
 3723
 1
@@ -10279,13 +10279,13 @@ dhce-dhcf 1640
 dhcf-dhcg 1640
 3727
 3
-dhcg-dhch 1
 dhci-dhch 1
-diab-dhch 1
+dhcg-dhch 1
+diab-dhch 2
 3728
 2
 dhch-dhci 1
-dhcj-dhci 1
+dhcj-dhci 2
 3729
 1
 dgah-dhcj 1640
@@ -10295,12 +10295,12 @@ dhdb-dhda 1
 dgbc-dhda 2
 3731
 3
-dhda-dhdb 2
+dhda-dhdb 1
 diad-dhdb 1
 dhdc-dhdb 1
 3732
 2
-dhdb-dhdc 1
+dhdb-dhdc 2
 dgbe-dhdc 1
 3734
 1
@@ -10322,7 +10322,7 @@ diba-dhdi 1640
 dgcf-dhdj 1640
 3740
 2
-dibc-dhea 3
+dibc-dhea 2
 dhdj-dhea 1
 3741
 1
@@ -10338,17 +10338,17 @@ dheg-dhef 1640
 dheh-dheg 1640
 3747
 2
-dgdh-dheh 2
+dgdh-dheh 1
 dibj-dheh 1
 3749
 2
 dged-dhej 1
-dhfa-dhej 1
+dhfa-dhej 2
 3750
 3
-dgee-dhfa 1
-dhej-dhfa 1
 dhfb-dhfa 1
+dgee-dhfa 2
+dhej-dhfa 1
 3751
 3
 dhfc-dhfb 2
@@ -10357,7 +10357,7 @@ dhfa-dhfb 1
 3752
 2
 dice-dhfc 1
-dhfb-dhfc 1
+dhfb-dhfc 2
 3753
 1
 dicf-dhfd 1640
@@ -10372,8 +10372,8 @@ dida-dhfi 1640
 didc-dhga 1640
 3761
 2
+didd-dhgb 2
 dhgc-dhgb 1
-didd-dhgb 1
 3762
 2
 dgge-dhgc 1
@@ -10386,27 +10386,27 @@ dggf-dhgd 1640
 dhgf-dhge 1640
 3765
 2
-dggh-dhgf 2
+dggh-dhgf 1
 didh-dhgf 1
 3766
 2
 dhgh-dhgg 1
-dghc-dhgg 3
+dghc-dhgg 1
 3767
 2
-dhgg-dhgh 1
 dghd-dhgh 1
+dhgg-dhgh 1
 3768
 1
 dhgh-dhgi 1640
 3769
 2
 dhha-dhgj 1
-dhgi-dhgj 1
+dhgi-dhgj 2
 3770
 2
-diec-dhha 1
 dhgj-dhha 1
+diec-dhha 1
 3772
 1
 dhhd-dhhc 1640
@@ -10415,7 +10415,7 @@ dhhd-dhhc 1640
 dhhe-dhhd 1640
 3774
 2
-dieg-dhhe 3
+dieg-dhhe 1
 dgie-dhhe 1
 3779
 1
@@ -10425,8 +10425,8 @@ difb-dhhj 1640
 difc-dhia 1640
 3781
 2
+dhic-dhib 1
 dgjf-dhib 1
-dhic-dhib 2
 3782
 1
 dgjg-dhic 1640
@@ -10441,22 +10441,22 @@ difg-dhie 1640
 dhie-dhif 1640
 3786
 2
-dhae-dhig 1
 dhif-dhig 2
+dhae-dhig 1
 3787
 1
 dhii-dhih 1640
 3788
 2
-dhag-dhii 2
+dhag-dhii 1
 diga-dhii 1
 3789
 1
 dhii-dhij 1640
 3790
 2
-digc-dhja 2
 dhjb-dhja 1
+digc-dhja 1
 3791
 1
 dhbd-dhjb 1640
@@ -10474,17 +10474,17 @@ digh-dhjf 1640
 dhcc-dhjg 1640
 3797
 2
-dhji-dhjh 3
+dhji-dhjh 2
 dhjg-dhjh 1
 3798
 3
 dhjh-dhji 1
-dhjj-dhji 2
+dhjj-dhji 1
 diha-dhji 1
 3799
 2
 diaa-dhjj 1
-dihb-dhjj 2
+dihb-dhjj 1
 3800
 3
 dhjj-diaa 1
@@ -10499,7 +10499,7 @@ dhch-diab 1
 diae-diad 1640
 3804
 2
-dihg-diae 3
+dihg-diae 1
 dhdc-diae 1
 3805
 1
@@ -10518,10 +10518,10 @@ dibb-diba 1640
 3811
 2
 diba-dibb 1
-diid-dibb 2
+diid-dibb 1
 3812
 2
-diie-dibc 3
+diie-dibc 2
 dhea-dibc 1
 3813
 1
@@ -10534,8 +10534,8 @@ dhed-dibf 1640
 diij-dibh 1640
 3818
 2
-dibh-dibi 1
 dibj-dibi 1
+dibh-dibi 1
 3819
 1
 dibi-dibj 1640
@@ -10550,13 +10550,13 @@ dhej-dicb 1640
 dije-dicc 1640
 3823
 3
-dhfb-dicd 1
 dicc-dicd 1
-dijf-dicd 2
+dhfb-dicd 1
+dijf-dicd 1
 3824
 2
 dijg-dice 1
-dicd-dice 3
+dicd-dice 2
 3825
 1
 dice-dicf 1640
@@ -10574,7 +10574,7 @@ djac-dida 1640
 djae-didc 1640
 3833
 2
-didc-didd 1
+didc-didd 2
 dhgb-didd 1
 3835
 1
@@ -10582,7 +10582,7 @@ dhgd-didf 1640
 3836
 2
 didf-didg 1
-dhge-didg 3
+dhge-didg 1
 3837
 1
 didg-didh 1640
@@ -10608,7 +10608,7 @@ dieg-dief 1640
 3846
 2
 dhhe-dieg 1
-dieh-dieg 1
+dieh-dieg 2
 3847
 1
 diei-dieh 1640
@@ -10617,12 +10617,12 @@ diei-dieh 1640
 djca-diei 1640
 3851
 2
+djcd-difb 1
 difc-difb 1
-djcd-difb 2
 3852
 2
 difd-difc 1
-difb-difc 3
+difb-difc 2
 3853
 2
 dhib-difd 1
@@ -10645,8 +10645,8 @@ difi-difj 1
 dhih-difj 1
 3860
 2
-djdc-diga 1
 digb-diga 1
+djdc-diga 1
 3861
 1
 dhij-digb 1640
@@ -10664,33 +10664,33 @@ digf-dige 1640
 3865
 2
 djdh-digf 1
-dhjd-digf 1
+dhjd-digf 2
 3866
 1
 digf-digg 1640
 3867
 2
-digg-digh 2
+digg-digh 1
 djdj-digh 1
 3868
 1
 dhjg-digi 1640
 3870
 3
+digj-diha 1
 djec-diha 2
 dihb-diha 1
-digj-diha 1
 3871
 2
 dihc-dihb 1
-diha-dihb 2
+diha-dihb 1
 3872
 1
 djee-dihc 1640
 3876
 2
 diae-dihg 1
-djei-dihg 1
+djei-dihg 2
 3877
 1
 djej-dihh 1640
@@ -10702,14 +10702,14 @@ djfa-dihi 1640
 diah-dihj 1640
 3883
 3
-djff-diid 1
 diie-diid 1
+djff-diid 1
 dibb-diid 1
 3884
 3
 dibc-diie 1
 djfg-diie 1
-diid-diie 2
+diid-diie 1
 3886
 1
 diih-diig 1640
@@ -10723,7 +10723,7 @@ diij-diii 1
 djga-diii 2
 3889
 2
-dija-diij 3
+dija-diij 1
 diii-diij 1
 3890
 1
@@ -10741,7 +10741,7 @@ dicd-dijf 1
 3896
 2
 dijf-dijg 1
-dijh-dijg 1
+dijh-dijg 2
 3897
 2
 dicf-dijh 1
@@ -10757,12 +10757,12 @@ djhc-djaa 1640
 djhe-djac 1640
 3904
 2
+djaf-djae 1
 djhg-djae 1
-djaf-djae 2
 3905
 2
-djhh-djaf 3
 didd-djaf 1
+djhh-djaf 2
 3907
 1
 djai-djah 1640
@@ -10771,7 +10771,7 @@ djai-djah 1640
 didg-djai 1640
 3910
 2
-djic-djba 2
+djic-djba 1
 didi-djba 1
 3911
 3
@@ -10780,7 +10780,7 @@ didj-djbb 1
 djba-djbb 2
 3912
 2
-djbb-djbc 2
+djbb-djbc 1
 djbd-djbc 1
 3913
 2
@@ -10789,7 +10789,7 @@ djbc-djbd 2
 3914
 2
 djbf-djbe 1
-djbd-djbe 2
+djbd-djbe 1
 3915
 3
 djih-djbf 1
@@ -10797,12 +10797,12 @@ died-djbf 1
 djbe-djbf 1
 3916
 2
-diee-djbg 1
 djbh-djbg 1
+diee-djbg 2
 3917
 2
 dief-djbh 1
-djbg-djbh 3
+djbg-djbh 1
 3918
 1
 djbh-djbi 1640
@@ -10812,11 +10812,11 @@ djjc-djca 1640
 3922
 2
 djcd-djcc 1
-djje-djcc 2
+djje-djcc 1
 3923
 2
 difb-djcd 1
-djcc-djcd 2
+djcc-djcd 1
 3925
 1
 difd-djcf 1640
@@ -10832,7 +10832,7 @@ difj-djdb 1640
 3932
 2
 diga-djdc 1
-djdd-djdc 1
+djdd-djdc 2
 3933
 2
 digb-djdd 1
@@ -10840,16 +10840,16 @@ eaaf-djdd 1
 3934
 3
 eaag-djde 1
-djdf-djde 2
+djdf-djde 1
 digc-djde 1
 3935
 2
 djdg-djdf 1
-eaah-djdf 1
+eaah-djdf 2
 3939
 2
 eabb-djdj 1
-digh-djdj 1
+digh-djdj 2
 3940
 1
 digi-djea 1640
@@ -10861,14 +10861,14 @@ eabe-djec 1640
 djec-djed 1640
 3944
 2
+djed-djee 1
 eabg-djee 1
-djed-djee 2
 3946
 1
 eacc-djeg 1640
 3947
 2
-djeg-djeh 2
+djeg-djeh 1
 djei-djeh 1
 3948
 2
@@ -10876,31 +10876,31 @@ djeh-djei 1
 dihg-djei 1
 3949
 2
-djfa-djej 2
+djfa-djej 1
 eacf-djej 1
 3950
 1
 djfb-djfa 1640
 3951
 2
-each-djfb 1
+each-djfb 2
 dihj-djfb 1
 3952
 1
 eadc-djfc 1640
 3953
 2
+djfc-djfd 1
 djfe-djfd 1
-djfc-djfd 2
 3954
 2
 djff-djfe 1
 djfd-djfe 1
 3955
 3
-diid-djff 1
-djfe-djff 3
 eadf-djff 1
+djfe-djff 2
+diid-djff 1
 3956
 3
 djff-djfg 1
@@ -10908,15 +10908,15 @@ diie-djfg 1
 eadg-djfg 1
 3958
 2
-diig-djfi 3
+diig-djfi 1
 eaec-djfi 1
 3959
 1
 djfi-djfj 1640
 3960
 2
-djfj-djga 1
 djgb-djga 1
+djfj-djga 1
 3964
 1
 dijc-djge 1640
@@ -10935,8 +10935,8 @@ eafh-djgj 1
 dijh-djgj 2
 3970
 2
-djhb-djha 2
-eagc-djha 2
+djhb-djha 1
+eagc-djha 1
 3971
 1
 dijj-djhb 1640
@@ -10945,26 +10945,26 @@ dijj-djhb 1640
 eagg-djhe 1640
 3976
 2
-djae-djhg 1
+djae-djhg 2
 djhh-djhg 1
 3977
 1
 eahd-djhh 1640
 3979
 2
-djah-djhj 1
 djia-djhj 1
+djah-djhj 1
 3980
 2
-djai-djia 1
+djai-djia 2
 djib-djia 1
 3981
 2
 eahh-djib 1
-djia-djib 2
+djia-djib 1
 3982
 2
-eaic-djic 3
+eaic-djic 2
 djid-djic 1
 3983
 1
@@ -10978,7 +10978,7 @@ eaif-djif 1
 djie-djif 2
 3987
 2
-djbf-djih 2
+djbf-djih 1
 eaih-djih 1
 3988
 1
@@ -11008,8 +11008,8 @@ djcf-djjh 1640
 ebbc-eaaa 1640
 4003
 2
-djdb-eaad 1
 eaae-eaad 2
+djdb-eaad 1
 4004
 1
 djdc-eaae 1640
@@ -11024,11 +11024,11 @@ eaah-eaag 1
 3
 eaag-eaah 1
 eaai-eaah 1
-ebcd-eaah 2
+ebcd-eaah 1
 4008
 2
 eaaj-eaai 1
-eaah-eaai 1
+eaah-eaai 2
 4009
 2
 ebcf-eaaj 1
@@ -11038,8 +11038,8 @@ eaai-eaaj 2
 eaaj-eaba 1640
 4011
 2
-djdj-eabb 3
 eaba-eabb 1
+djdj-eabb 1
 4012
 1
 djea-eabc 1640
@@ -11066,19 +11066,19 @@ ebea-eabi 1640
 4019
 2
 eabi-eabj 1
-ebeb-eabj 1
+ebeb-eabj 2
 4020
 2
-eabj-eaca 1
 eacb-eaca 1
+eabj-eaca 2
 4021
 2
 eacc-eacb 1
-eaca-eacb 2
+eaca-eacb 1
 4022
 2
 eacd-eacc 1
-eacb-eacc 3
+eacb-eacc 2
 4023
 1
 djeh-eacd 1640
@@ -11091,28 +11091,28 @@ eace-eacf 1640
 4027
 2
 djfb-each 1
-eaci-each 3
+eaci-each 2
 4028
 1
 eacj-eaci 1640
 4029
 2
+ebeh-eacj 2
 eada-eacj 1
-ebeh-eacj 1
 4030
 2
-eadb-eada 1
 eacj-eada 1
+eadb-eada 1
 4031
 3
 ebej-eadb 1
 eada-eadb 1
-eadc-eadb 1
+eadc-eadb 2
 4032
 3
-eadd-eadc 1
 eadb-eadc 1
-ebfa-eadc 3
+ebfa-eadc 2
+eadd-eadc 1
 4033
 1
 djfd-eadd 1640
@@ -11130,16 +11130,16 @@ eadh-eadg 1
 djfg-eadg 1
 4037
 2
-ebfb-eadh 2
+ebfb-eadh 1
 eadg-eadh 1
 4038
 1
 eadh-eadi 1640
 4039
 3
-eadi-eadj 1
-ebfd-eadj 3
+ebfd-eadj 1
 eaea-eadj 1
+eadi-eadj 1
 4040
 2
 eaeb-eaea 1
@@ -11150,11 +11150,11 @@ eaea-eaeb 2
 ebff-eaeb 1
 4042
 2
-eaeb-eaec 2
+eaeb-eaec 1
 djfi-eaec 1
 4052
 2
-djge-eafc 2
+djge-eafc 1
 eafd-eafc 1
 4053
 1
@@ -11171,26 +11171,26 @@ djgj-eafh 1
 eafi-eafh 1
 4058
 2
-eafj-eafi 2
+eafj-eafi 1
 ebge-eafi 1
 4059
 2
-eaga-eafj 1
 eafi-eafj 1
+eaga-eafj 1
 4060
 2
 eafj-eaga 1
-eagb-eaga 3
+eagb-eaga 2
 4061
 2
+ebgh-eagb 1
 eagc-eagb 1
-ebgh-eagb 2
 4062
 4
-eagb-eagc 1
 eagd-eagc 1
+eagb-eagc 1
 djha-eagc 1
-ebgi-eagc 1
+ebgi-eagc 2
 4066
 1
 eagh-eagg 1640
@@ -11208,8 +11208,8 @@ eaha-eahb 1640
 eahb-eahc 1640
 4073
 2
+eahc-eahd 1
 eahe-eahd 1
-eahc-eahd 2
 4074
 1
 eahf-eahe 1640
@@ -11229,8 +11229,8 @@ djib-eahh 1
 ebhg-eahi 1640
 4079
 3
-eahi-eahj 1
 eaia-eahj 1
+eahi-eahj 1
 ebhh-eahj 2
 4080
 1
@@ -11260,8 +11260,8 @@ djih-eaih 2
 eaii-eaih 1
 4088
 2
+eaih-eaii 1
 ebic-eaii 1
-eaih-eaii 2
 4089
 1
 eaii-eaij 1640
@@ -11276,7 +11276,7 @@ ebif-eajb 2
 4092
 2
 djii-eajc 1
-eajb-eajc 3
+eajb-eajc 2
 4093
 1
 eajc-eajd 1640
@@ -11294,38 +11294,38 @@ djjc-eajg 1640
 eajg-eajh 1640
 4102
 2
-ebad-ebac 3
 djje-ebac 1
+ebad-ebac 2
 4103
 2
-ebae-ebad 1
+ebae-ebad 2
 ebac-ebad 1
 4104
 3
-djjg-ebae 3
+djjg-ebae 1
 ebad-ebae 1
 ebaf-ebae 1
 4105
 2
 ebae-ebaf 1
-ebag-ebaf 1
+ebag-ebaf 2
 4106
 2
-ebah-ebag 2
+ebah-ebag 1
 ebaf-ebag 1
 4107
 3
 ebag-ebah 1
 ebai-ebah 1
-ebjd-ebah 3
+ebjd-ebah 2
 4108
 1
 ebje-ebai 1640
 4112
 3
-ebbd-ebbc 1
-ebji-ebbc 1
 ebbb-ebbc 1
+ebbd-ebbc 2
+ebji-ebbc 1
 4113
 1
 ebbe-ebbd 1640
@@ -11340,15 +11340,15 @@ eaad-ebbf 1640
 eaae-ebbg 1640
 4117
 2
+ebbg-ebbh 2
 ebbi-ebbh 1
-ebbg-ebbh 1
 4118
 2
 ebbh-ebbi 1
 ebbj-ebbi 1
 4119
 2
-ecab-ebbj 2
+ecab-ebbj 1
 ebbi-ebbj 1
 4120
 2
@@ -11361,7 +11361,7 @@ ebcc-ebcb 1
 4122
 2
 eaag-ebcc 1
-ebcb-ebcc 2
+ebcb-ebcc 1
 4123
 1
 ebcc-ebcd 1640
@@ -11375,7 +11375,7 @@ ebcg-ebcf 1
 4126
 2
 ebcf-ebcg 1
-ebch-ebcg 1
+ebch-ebcg 2
 4127
 2
 eabb-ebch 2
@@ -11411,8 +11411,8 @@ ebde-ebdf 2
 ebdh-ebdg 1640
 4137
 2
-ebdi-ebdh 1
 eabh-ebdh 1
+ebdi-ebdh 1
 4138
 2
 ecbc-ebdi 1
@@ -11420,14 +11420,14 @@ ebdh-ebdi 1
 4141
 2
 eabj-ebeb 1
-ecbf-ebeb 3
+ecbf-ebeb 1
 4142
 1
 eaca-ebec 1640
 4143
 2
-ebec-ebed 2
 ebee-ebed 1
+ebec-ebed 1
 4145
 1
 each-ebef 1640
@@ -11436,7 +11436,7 @@ each-ebef 1640
 eccb-ebeh 1640
 4149
 2
-eadb-ebej 3
+eadb-ebej 1
 ebfa-ebej 1
 4150
 1
@@ -11445,22 +11445,22 @@ ecce-ebfa 1640
 3
 eadh-ebfb 1
 ebfc-ebfb 1
-eccf-ebfb 2
+eccf-ebfb 1
 4152
 2
 ebfb-ebfc 2
 ebfd-ebfc 1
 4153
 2
-ebfc-ebfd 1
+ebfc-ebfd 2
 eadj-ebfd 1
 4155
 2
-ebfg-ebff 3
+ebfg-ebff 1
 eaeb-ebff 1
 4156
 2
-eaec-ebfg 3
+eaec-ebfg 1
 ecda-ebfg 1
 4157
 1
@@ -11475,15 +11475,15 @@ eafh-ebgd 1640
 3
 ebgf-ebge 1
 ecdi-ebge 1
-ebgd-ebge 2
+ebgd-ebge 1
 4165
 2
 eafj-ebgf 1
-ebgg-ebgf 2
+ebgg-ebgf 1
 4166
 2
 ebgf-ebgg 1
-eaga-ebgg 1
+eaga-ebgg 2
 4167
 2
 eceb-ebgh 1
@@ -11493,12 +11493,12 @@ ebgg-ebgh 1
 ebgh-ebgi 1640
 4170
 2
-ebhb-ebha 1
 ebgj-ebha 1
+ebhb-ebha 1
 4171
 2
-ebha-ebhb 2
 eagj-ebhb 1
+ebha-ebhb 1
 4172
 1
 eceg-ebhc 1640
@@ -11507,20 +11507,20 @@ eceg-ebhc 1640
 eahb-ebhd 1640
 4175
 2
-eahh-ebhf 2
+eahh-ebhf 1
 ecej-ebhf 1
 4176
 2
+ecfa-ebhg 2
 ebhh-ebhg 1
-ecfa-ebhg 1
 4177
 2
 eahj-ebhh 1
-ecfb-ebhh 2
+ecfb-ebhh 1
 4179
 2
 ecfd-ebhj 1
-eaib-ebhj 1
+eaib-ebhj 2
 4180
 1
 ebhj-ebia 1640
@@ -11532,12 +11532,12 @@ eaih-ebib 1640
 ebid-ebic 1640
 4183
 2
-ebie-ebid 1
 ecfh-ebid 1
+ebie-ebid 1
 4184
 2
-ebid-ebie 3
 eaja-ebie 1
+ebid-ebie 1
 4185
 2
 ebie-ebif 1
@@ -11554,7 +11554,7 @@ ebac-ebjc 1640
 4193
 2
 ebah-ebjd 1
-ecgh-ebjd 3
+ecgh-ebjd 1
 4194
 1
 ebjf-ebje 1640
@@ -11566,8 +11566,8 @@ ecgj-ebjf 1640
 ebji-ebjh 1640
 4198
 2
-ebbc-ebji 3
 echc-ebji 1
+ebbc-ebji 1
 4199
 2
 echd-ebjj 1
@@ -11575,11 +11575,11 @@ ecaa-ebjj 1
 4200
 2
 ebbi-ecaa 1
-ebjj-ecaa 2
+ebjj-ecaa 1
 4201
 2
 echf-ecab 1
-ecaa-ecab 3
+ecaa-ecab 1
 4202
 1
 ebca-ecac 1640
@@ -11601,19 +11601,19 @@ ecaj-ecba 1
 ecie-ecba 2
 4212
 2
-ecig-ecbc 1
 ebdi-ecbc 1
+ecig-ecbc 1
 4214
 1
 ecbf-ecbe 1640
 4215
 3
-ebeb-ecbf 1
 ecbg-ecbf 1
+ebeb-ecbf 1
 ecij-ecbf 2
 4216
 2
-ebec-ecbg 3
+ebec-ecbg 2
 ecbh-ecbg 1
 4217
 1
@@ -11636,7 +11636,7 @@ ebej-eccd 1640
 4224
 2
 ecji-ecce 1
-eccd-ecce 3
+eccd-ecce 1
 4225
 1
 eccg-eccf 1640
@@ -11651,12 +11651,12 @@ eccj-ecci 1640
 ebff-eccj 1640
 4230
 2
-eccj-ecda 2
 edae-ecda 1
+eccj-ecda 1
 4231
 2
 ebfh-ecdb 1
-ecdc-ecdb 3
+ecdc-ecdb 2
 4232
 2
 ecdd-ecdc 2
@@ -11675,7 +11675,7 @@ ebgc-ecdg 1640
 4238
 2
 ecdj-ecdi 1
-ebge-ecdi 2
+ebge-ecdi 1
 4239
 1
 edbd-ecdj 1640
@@ -11690,11 +11690,11 @@ ecee-eced 1640
 ebha-ecee 1640
 4245
 2
-edbj-ecef 1
+edbj-ecef 2
 ebhb-ecef 1
 4246
 2
-eceh-eceg 1
+eceh-eceg 2
 ecef-eceg 1
 4247
 2
@@ -11702,12 +11702,12 @@ edcb-eceh 1
 ebhd-eceh 1
 4249
 2
-ebhf-ecej 2
 edcd-ecej 1
+ebhf-ecej 2
 4250
 3
 edce-ecfa 1
-ecej-ecfa 2
+ecej-ecfa 1
 ebhg-ecfa 1
 4251
 2
@@ -11718,12 +11718,12 @@ ecfc-ecfb 1
 ecfd-ecfc 1640
 4253
 3
-ebhj-ecfd 2
 ecfe-ecfd 1
 edch-ecfd 1
+ebhj-ecfd 1
 4255
 2
-ebib-ecff 3
+ebib-ecff 1
 ecfg-ecff 1
 4256
 2
@@ -11731,9 +11731,9 @@ ecfh-ecfg 2
 edda-ecfg 1
 4257
 3
-ecfg-ecfh 1
-eddb-ecfh 1
 ecfi-ecfh 1
+ecfg-ecfh 1
+eddb-ecfh 2
 4258
 1
 eddc-ecfi 1640
@@ -11751,9 +11751,9 @@ ebjb-ecgf 1640
 ecgf-ecgg 1640
 4267
 3
+ecgi-ecgh 1
 edeb-ecgh 1
 ebjd-ecgh 1
-ecgi-ecgh 2
 4268
 1
 edec-ecgi 1640
@@ -11767,14 +11767,14 @@ ecgj-echa 1640
 3
 echa-echb 1
 echc-echb 1
-ebjh-echb 3
+ebjh-echb 1
 4272
 2
 ebji-echc 2
 echb-echc 1
 4273
 2
-edeh-echd 2
+edeh-echd 1
 ebjj-echd 1
 4275
 1
@@ -11782,7 +11782,7 @@ echg-echf 1640
 4276
 2
 edfa-echg 1
-ecac-echg 1
+ecac-echg 2
 4280
 2
 ecib-ecia 1
@@ -11798,13 +11798,13 @@ ecib-ecic 1640
 edfh-ecid 1640
 4284
 3
+edfi-ecie 1
 ecid-ecie 2
 ecba-ecie 1
-edfi-ecie 1
 4286
 2
 ecbc-ecig 1
-ecih-ecig 3
+ecih-ecig 2
 4287
 1
 edgb-ecih 1640
@@ -11834,8 +11834,8 @@ edhb-ecjh 2
 ecjg-ecjh 1
 4298
 2
+ecce-ecji 2
 ecjh-ecji 1
-ecce-ecji 1
 4300
 1
 edab-edaa 1640
@@ -11848,7 +11848,7 @@ ecci-edac 1640
 4304
 2
 edhi-edae 1
-ecda-edae 2
+ecda-edae 1
 4305
 1
 ecdb-edaf 1640
@@ -11901,7 +11901,7 @@ edce-edcd 1640
 4324
 3
 edcf-edce 1
-ecfa-edce 3
+ecfa-edce 2
 edji-edce 1
 4325
 3
@@ -11926,7 +11926,7 @@ edda-edcj 1
 eead-edcj 1
 4330
 2
-edcj-edda 2
+edcj-edda 1
 ecfg-edda 1
 4331
 2
@@ -11937,12 +11937,12 @@ edda-eddb 2
 eddd-eddc 1640
 4333
 2
+eeah-eddd 1
 ecfj-eddd 1
-eeah-eddd 2
 4335
 2
 ecgb-eddf 1
-eeaj-eddf 1
+eeaj-eddf 2
 4336
 1
 eddf-eddg 1640
@@ -11954,15 +11954,15 @@ eddg-eddh 1640
 eddh-eddi 1640
 4339
 2
-ecgf-eddj 2
 eddi-eddj 1
+ecgf-eddj 1
 4340
 1
 ecgg-edea 1640
 4341
 2
-eebf-edeb 2
 ecgh-edeb 1
+eebf-edeb 1
 4342
 2
 eebg-edec 2
@@ -11992,7 +11992,7 @@ echf-edej 1
 4350
 2
 edfb-edfa 1
-edej-edfa 1
+edej-edfa 2
 4351
 2
 edfa-edfb 1
@@ -12005,16 +12005,16 @@ edfe-edfd 1640
 ecia-edfe 1640
 4356
 3
-edfh-edfg 1
-ecic-edfg 1
 eeda-edfg 2
+ecic-edfg 1
+edfh-edfg 1
 4357
 2
 edfi-edfh 1
-edfg-edfh 2
+edfg-edfh 1
 4358
 2
-ecie-edfi 2
+ecie-edfi 1
 edfh-edfi 1
 4360
 1
@@ -12028,19 +12028,19 @@ eedg-edgc 1
 ecii-edgc 1
 4363
 2
-eedh-edgd 1
 edgc-edgd 1
+eedh-edgd 1
 4364
 2
-edgf-edge 3
+edgf-edge 2
 edgd-edge 1
 4365
 2
 edge-edgf 1
-edgg-edgf 1
+edgg-edgf 2
 4366
 2
-eeea-edgg 2
+eeea-edgg 1
 ecjc-edgg 1
 4368
 1
@@ -12051,7 +12051,7 @@ eeei-edha 1640
 4371
 2
 ecjh-edhb 1
-eeej-edhb 2
+eeej-edhb 1
 4372
 1
 ecji-edhc 1640
@@ -12061,7 +12061,7 @@ eefh-edhf 2
 edhg-edhf 1
 4376
 2
-edac-edhg 2
+edac-edhg 1
 eefi-edhg 1
 4377
 1
@@ -12069,20 +12069,20 @@ edhg-edhh 1640
 4378
 3
 edhh-edhi 1
-edae-edhi 2
+edae-edhi 1
 eega-edhi 1
 4379
 2
 edia-edhj 1
-edaf-edhj 2
+edaf-edhj 1
 4380
 2
-edhj-edia 1
+edhj-edia 2
 edag-edia 1
 4382
 2
-edai-edic 1
 edib-edic 1
+edai-edic 1
 4385
 1
 edbb-edif 1640
@@ -12106,8 +12106,8 @@ edjc-edjd 1640
 edca-edje 1640
 4395
 2
-edjg-edjf 1
 edje-edjf 1
+edjg-edjf 1
 4396
 1
 eeja-edjg 1640
@@ -12123,24 +12123,24 @@ edjh-edji 1640
 eeab-eeaa 1640
 4401
 2
+edch-eeab 2
 eeac-eeab 1
-edch-eeab 1
 4402
 2
-efaa-eeac 2
 eeab-eeac 1
+efaa-eeac 1
 4403
 2
 edcj-eead 1
-efaf-eead 2
+efaf-eead 1
 4404
 2
-edda-eeae 2
+edda-eeae 1
 eead-eeae 1
 4407
 2
-efaj-eeah 2
 eeai-eeah 1
+efaj-eeah 2
 4409
 1
 efbf-eeaj 1640
@@ -12156,7 +12156,7 @@ eddj-eebd 2
 eebc-eebd 1
 4414
 2
-eebd-eebe 3
+eebd-eebe 1
 edea-eebe 1
 4415
 1
@@ -12179,11 +12179,11 @@ edeh-eecb 1640
 4422
 2
 edei-eecc 1
-efdg-eecc 1
+efdg-eecc 2
 4423
 2
 eecc-eecd 1
-efdh-eecd 3
+efdh-eecd 1
 4425
 2
 edfb-eecf 1
@@ -12218,12 +12218,12 @@ edgd-eedh 1
 eedi-eedh 1
 4438
 2
-edge-eedi 2
+edge-eedi 1
 eedh-eedi 1
 4439
 2
 edgf-eedj 1
-eedi-eedj 2
+eedi-eedj 1
 4440
 3
 eedj-eeea 1
@@ -12239,16 +12239,16 @@ effj-eeeb 2
 eeed-eeec 1640
 4443
 2
-eeee-eeed 1
+eeee-eeed 2
 efgb-eeed 1
 4444
 3
 efgc-eeee 1
-eeed-eeee 3
+eeed-eeee 2
 eeef-eeee 1
 4445
 2
-eeee-eeef 2
+eeee-eeef 1
 eeeg-eeef 1
 4446
 2
@@ -12262,16 +12262,16 @@ eeeg-eeeh 1640
 eeeh-eeei 1640
 4449
 2
-eefa-eeej 3
+eefa-eeej 1
 edhb-eeej 1
 4450
 3
 edhc-eefa 1
-eefb-eefa 2
 eeej-eefa 1
+eefb-eefa 2
 4451
 2
-efgf-eefb 2
+efgf-eefb 1
 eefa-eefb 1
 4452
 1
@@ -12284,8 +12284,8 @@ eefc-eefd 1640
 eefd-eefe 1640
 4455
 2
-efgj-eeff 2
-eefe-eeff 1
+eefe-eeff 2
+efgj-eeff 1
 4456
 1
 eeff-eefg 1640
@@ -12332,7 +12332,7 @@ eeha-eehb 1640
 edif-eehf 1640
 4480
 2
-eeib-eeia 2
+eeib-eeia 1
 efic-eeia 1
 4481
 1
@@ -12357,12 +12357,12 @@ eeif-eeig 1640
 edjf-eeij 1640
 4490
 2
-eejb-eeja 2
-eeij-eeja 2
+eejb-eeja 1
+eeij-eeja 1
 4491
 2
 efij-eejb 1
-eeja-eejb 2
+eeja-eejb 1
 4492
 1
 efja-eejc 1640
@@ -12374,7 +12374,7 @@ eejc-eejd 1640
 eejd-eeje 1640
 4495
 3
-efjd-eejf 1
+efjd-eejf 2
 eeje-eejf 1
 edjh-eejf 1
 4496
@@ -12391,10 +12391,10 @@ eejh-eeji 1640
 eeji-eejj 1640
 4500
 4
-eejj-efaa 1
 efje-efaa 1
 efab-efaa 1
 eeac-efaa 2
+eejj-efaa 1
 4501
 2
 efac-efab 1
@@ -12412,27 +12412,27 @@ efaf-efae 1
 4505
 3
 efag-efaf 1
-efae-efaf 2
+efae-efaf 1
 eead-efaf 1
 4506
 3
 efah-efag 1
-eeae-efag 1
+eeae-efag 2
 efaf-efag 1
 4507
 2
 eeaf-efah 1
-efag-efah 1
+efag-efah 2
 4508
 1
 efah-efai 1640
 4509
 2
 efba-efaj 1
-efai-efaj 3
+efai-efaj 1
 4510
 2
-efbb-efba 1
+efbb-efba 2
 efaj-efba 1
 4511
 1
@@ -12505,17 +12505,17 @@ eecc-efdg 1
 efdf-efdg 1
 4537
 2
-efdi-efdh 2
+efdi-efdh 1
 eecd-efdh 1
 4538
 2
-efdj-efdi 1
+efdj-efdi 2
 efdh-efdi 1
 4539
 3
-eecf-efdj 2
-efdi-efdj 1
 efea-efdj 1
+eecf-efdj 1
+efdi-efdj 1
 4540
 3
 efeb-efea 1
@@ -12530,13 +12530,13 @@ efed-efec 1640
 4543
 2
 efee-efed 1
-egcb-efed 2
+egcb-efed 1
 4544
 1
 efef-efee 1640
 4545
 2
-eech-efef 2
+eech-efef 1
 efeg-efef 1
 4546
 1
@@ -12547,7 +12547,7 @@ efei-efeh 1640
 4548
 2
 eeda-efei 1
-efej-efei 1
+efej-efei 2
 4549
 3
 effa-efej 2
@@ -12556,19 +12556,19 @@ eedb-efej 1
 4550
 2
 efej-effa 1
-effb-effa 2
+effb-effa 1
 4551
 2
-effa-effb 2
-effc-effb 1
+effc-effb 2
+effa-effb 1
 4552
 3
 egcg-effc 1
-effd-effc 2
+effd-effc 1
 effb-effc 1
 4553
 2
-effe-effd 1
+effe-effd 2
 effc-effd 1
 4554
 2
@@ -12586,7 +12586,7 @@ efff-effg 1640
 effj-effi 1640
 4559
 2
-egdb-effj 2
+egdb-effj 1
 eeeb-effj 1
 4560
 1
@@ -12599,7 +12599,7 @@ efga-efgb 1640
 egde-efgc 1640
 4565
 2
-efgg-efgf 2
+efgg-efgf 1
 egdh-efgf 1
 4566
 2
@@ -12636,7 +12636,7 @@ efia-efhj 1
 efhi-efhj 1
 4580
 2
-efib-efia 2
+efib-efia 1
 efhj-efia 1
 4581
 1
@@ -12650,7 +12650,7 @@ egfg-efie 1640
 4585
 2
 eeid-efif 1
-efie-efif 3
+efie-efif 2
 4586
 1
 efif-efig 1640
@@ -12661,7 +12661,7 @@ eeif-efih 1
 4589
 2
 eejb-efij 1
-efja-efij 1
+efja-efij 2
 4590
 1
 eggc-efja 1640
@@ -12677,11 +12677,11 @@ efab-efjf 1640
 4596
 2
 efjh-efjg 1
-efjf-efjg 2
+efjf-efjg 1
 4597
 2
 efad-efjh 1
-eggj-efjh 2
+eggj-efjh 1
 4598
 1
 egha-efji 1640
@@ -12690,12 +12690,12 @@ egha-efji 1640
 efba-egaa 1640
 4602
 2
-eghe-egac 2
 efbc-egac 1
+eghe-egac 1
 4603
 2
-eghf-egad 1
 egac-egad 1
+eghf-egad 1
 4605
 1
 eghh-egaf 1640
@@ -12718,22 +12718,22 @@ egba-egbb 1640
 4612
 2
 egbd-egbc 1
-efda-egbc 2
+efda-egbc 1
 4613
 1
 efdb-egbd 1640
 4615
 2
 egih-egbf 1
-egbg-egbf 2
+egbg-egbf 1
 4616
 2
 egii-egbg 1
-efde-egbg 2
+efde-egbg 1
 4618
 2
+efea-egbi 1
 egja-egbi 1
-efea-egbi 2
 4619
 1
 egjb-egbj 1640
@@ -12746,8 +12746,8 @@ egcc-egcb 1
 egca-egcb 1
 4622
 2
-egcb-egcc 1
 egje-egcc 1
+egcb-egcc 2
 4624
 2
 effa-egce 1
@@ -12757,14 +12757,14 @@ egcf-egce 1
 effb-egcf 1640
 4626
 2
-egji-egcg 3
 egch-egcg 1
+egji-egcg 1
 4627
 1
 effd-egch 1640
 4628
 2
-ehaa-egci 1
+ehaa-egci 2
 egcj-egci 1
 4629
 2
@@ -12773,7 +12773,7 @@ ehab-egcj 2
 4630
 2
 effi-egda 1
-ehac-egda 2
+ehac-egda 1
 4631
 1
 egda-egdb 1640
@@ -12794,12 +12794,12 @@ ehaj-egdh 1640
 egdj-egdi 1640
 4639
 2
-efgh-egdj 1
 ehbb-egdj 2
+efgh-egdj 1
 4641
 2
 ehbd-egeb 1
-efgj-egeb 1
+efgj-egeb 2
 4642
 1
 efha-egec 1640
@@ -12817,8 +12817,8 @@ efhf-egeh 1640
 efhj-egfb 1640
 4652
 2
-efia-egfc 1
 egfd-egfc 1
+efia-egfc 2
 4653
 1
 egfc-egfd 1640
@@ -12832,7 +12832,7 @@ ehch-egff 2
 4656
 2
 ehci-egfg 1
-egff-egfg 3
+egff-egfg 1
 4658
 2
 efig-egfi 1
@@ -12844,16 +12844,16 @@ ehdb-egfj 1
 egfi-egfj 2
 4660
 2
-eggb-egga 1
 efii-egga 1
+eggb-egga 2
 4661
 2
 efij-eggb 1
-egga-eggb 1
+egga-eggb 2
 4662
 2
 eggb-eggc 1
-eggd-eggc 1
+eggd-eggc 2
 4663
 1
 ehdf-eggd 1640
@@ -12904,7 +12904,7 @@ egah-eghj 1640
 4680
 2
 egai-egia 1
-eghj-egia 2
+eghj-egia 1
 4681
 1
 egia-egib 1640
@@ -12917,12 +12917,12 @@ egib-egic 1
 egbc-egie 1640
 4685
 2
-ehfh-egif 1
 egie-egif 2
+ehfh-egif 1
 4686
 2
 egih-egig 1
-egif-egig 3
+egif-egig 2
 4687
 3
 egbf-egih 1
@@ -12930,19 +12930,19 @@ ehfj-egih 1
 egig-egih 1
 4688
 2
-ehga-egii 2
 egij-egii 1
+ehga-egii 2
 4690
 2
 ehgc-egja 1
-egbi-egja 2
+egbi-egja 1
 4691
 1
 egja-egjb 1640
 4694
 2
-egcc-egje 3
 egjf-egje 1
+egcc-egje 2
 4695
 1
 egje-egjf 1640
@@ -12955,7 +12955,7 @@ egji-egjh 1640
 4698
 2
 egcg-egji 1
-ehha-egji 2
+ehha-egji 1
 4699
 1
 ehhb-egjj 1640
@@ -12977,7 +12977,7 @@ ehac-ehad 2
 4704
 2
 ehad-ehae 1
-ehaf-ehae 2
+ehaf-ehae 1
 4705
 1
 ehag-ehaf 1640
@@ -12996,7 +12996,7 @@ ehie-ehbc 1640
 4713
 2
 ehbc-ehbd 1
-egeb-ehbd 1
+egeb-ehbd 2
 4715
 1
 eged-ehbf 1640
@@ -13005,8 +13005,8 @@ eged-ehbf 1640
 ehbf-ehbg 1640
 4717
 2
+ehbg-ehbh 1
 ehij-ehbh 1
-ehbg-ehbh 3
 4718
 2
 ehbh-ehbi 2
@@ -13026,11 +13026,11 @@ ehcd-ehcc 1640
 4723
 2
 egfb-ehcd 1
-ehjf-ehcd 2
+ehjf-ehcd 1
 4724
 2
 egfc-ehce 1
-ehcd-ehce 1
+ehcd-ehce 2
 4725
 2
 ehce-ehcf 1
@@ -13046,8 +13046,8 @@ ehcg-ehch 1640
 eiaa-ehci 1640
 4730
 2
+egfi-ehda 1
 eiac-ehda 1
-egfi-ehda 2
 4731
 2
 ehda-ehdb 1
@@ -13071,7 +13071,7 @@ ehdg-ehdh 1640
 4738
 2
 ehdj-ehdi 1
-eiba-ehdi 1
+eiba-ehdi 2
 4739
 1
 ehea-ehdj 1640
@@ -13090,12 +13090,12 @@ eibe-ehec 1640
 eghb-ehed 1640
 4745
 2
-eibh-ehef 2
+eibh-ehef 1
 eghd-ehef 1
 4746
 2
+ehef-eheg 1
 eheh-eheg 1
-ehef-eheg 2
 4747
 2
 eheg-eheh 2
@@ -13103,7 +13103,7 @@ eghf-eheh 1
 4748
 2
 ehej-ehei 1
-eica-ehei 3
+eica-ehei 1
 4749
 2
 eicb-ehej 1
@@ -13126,10 +13126,10 @@ ehfg-ehfh 1640
 4758
 2
 ehfh-ehfi 1
-egig-ehfi 1
+egig-ehfi 2
 4759
 2
-ehfi-ehfj 2
+ehfi-ehfj 1
 egih-ehfj 1
 4760
 1
@@ -13137,21 +13137,21 @@ ehfj-ehga 1640
 4762
 2
 ehgd-ehgc 1
-eide-ehgc 1
+eide-ehgc 2
 4763
 2
-egjb-ehgd 3
+egjb-ehgd 1
 ehge-ehgd 1
 4764
 2
-ehgd-ehge 1
 eidg-ehge 1
+ehgd-ehge 1
 4767
 1
 egjf-ehgh 1640
 4768
 2
-egjg-ehgi 2
+egjg-ehgi 1
 ehgj-ehgi 1
 4769
 1
@@ -13199,19 +13199,19 @@ eigc-ehic 1640
 eigd-ehid 1640
 4784
 2
-ehif-ehie 1
+ehif-ehie 2
 ehid-ehie 1
 4785
 2
-ehbd-ehif 1
+ehbd-ehif 2
 eigf-ehif 1
 4789
 1
 ehja-ehij 1640
 4790
 2
-ehbi-ehja 1
 eihe-ehja 1
+ehbi-ehja 2
 4791
 1
 ehja-ehjb 1640
@@ -13236,7 +13236,7 @@ eijc-eiaa 1640
 4802
 3
 eije-eiac 1
-ehda-eiac 1
+ehda-eiac 2
 eiad-eiac 1
 4803
 1
@@ -13255,7 +13255,7 @@ eiaf-eiag 1640
 ejad-eiah 1640
 4808
 2
-eiaj-eiai 2
+eiaj-eiai 1
 eiah-eiai 1
 4809
 1
@@ -13268,7 +13268,7 @@ eibb-eiba 1640
 eibc-eibb 1640
 4812
 2
-ehea-eibc 2
+ehea-eibc 1
 ejbc-eibc 1
 4813
 1
@@ -13285,7 +13285,7 @@ ejca-eibg 1640
 4817
 3
 eibi-eibh 1
-ehef-eibh 2
+ehef-eibh 1
 eibg-eibh 1
 4818
 3
@@ -13297,7 +13297,7 @@ eibj-eibi 1
 ejcd-eibj 1640
 4820
 2
-eibj-eica 2
+eibj-eica 1
 ehei-eica 1
 4821
 1
@@ -13315,12 +13315,12 @@ eicg-eicf 1
 eice-eicf 2
 4826
 2
-eich-eicg 1
 eicf-eicg 1
+eich-eicg 2
 4827
 2
 eicg-eich 1
-ejdf-eich 1
+ejdf-eich 2
 4828
 1
 ejea-eici 1640
@@ -13337,7 +13337,7 @@ ehfj-eidb 1640
 4832
 2
 eidb-eidc 1
-ehga-eidc 3
+ehga-eidc 1
 4833
 1
 eidc-eidd 1640
@@ -13347,7 +13347,7 @@ ejfa-eide 1640
 4836
 2
 ehge-eidg 1
-eidh-eidg 1
+eidh-eidg 2
 4837
 2
 eidg-eidh 1
@@ -13362,22 +13362,22 @@ ehgh-eidj 1
 ejff-eidj 1
 4840
 2
-ejga-eiea 1
 ehgi-eiea 1
+ejga-eiea 2
 4841
 1
 eiea-eieb 1640
 4842
 2
-eied-eiec 1
 eieb-eiec 2
+eied-eiec 1
 4843
 1
 eiee-eied 1640
 4844
 2
+ejge-eiee 1
 ehhc-eiee 1
-ejge-eiee 2
 4847
 1
 eiei-eieh 1640
@@ -13386,11 +13386,11 @@ eiei-eieh 1640
 eiej-eiei 1640
 4849
 2
-eifa-eiej 1
 ejhb-eiej 1
+eifa-eiej 1
 4850
 2
-eifb-eifa 2
+eifb-eifa 1
 eiej-eifa 1
 4851
 1
@@ -13411,7 +13411,7 @@ eife-eiff 1
 4856
 2
 eiff-eifg 1
-eifh-eifg 1
+eifh-eifg 2
 4857
 1
 ejhf-eifh 1640
@@ -13427,8 +13427,8 @@ ehia-eiga 1
 eiga-eigb 1640
 4862
 3
-eigb-eigc 1
 ehic-eigc 1
+eigb-eigc 1
 eigd-eigc 2
 4863
 2
@@ -13436,11 +13436,11 @@ eige-eigd 1
 eigc-eigd 2
 4864
 2
-ehie-eige 2
+ehie-eige 1
 eigd-eige 1
 4865
 2
-eigg-eigf 2
+eigg-eigf 1
 eige-eigf 1
 4866
 1
@@ -13453,7 +13453,7 @@ eigj-eigi 1640
 eiha-eigj 1640
 4870
 2
-eihb-eiha 2
+eihb-eiha 1
 ejie-eiha 1
 4871
 1
@@ -13485,7 +13485,7 @@ ejjc-eiig 1640
 4887
 2
 eiig-eiih 1
-ejjd-eiih 2
+ejjd-eiih 1
 4888
 1
 eiih-eiii 1640
@@ -13505,10 +13505,10 @@ eije-eijd 1640
 4894
 2
 eiac-eije 1
-eijf-eije 2
+eijf-eije 1
 4895
 2
-eije-eijf 1
+eije-eijf 2
 eijg-eijf 1
 4896
 1
@@ -13519,8 +13519,8 @@ eiji-eijh 1640
 4898
 3
 eijj-eiji 1
-faaa-eiji 2
 eijh-eiji 1
+faaa-eiji 2
 4899
 1
 eiji-eijj 1640
@@ -13546,11 +13546,11 @@ faae-ejag 1
 4907
 2
 ejag-ejah 1
-ejai-ejah 3
+ejai-ejah 2
 4908
 2
 ejah-ejai 1
-faag-ejai 2
+faag-ejai 1
 4909
 1
 ejai-ejaj 1640
@@ -13565,34 +13565,34 @@ ejbd-ejbc 1640
 ejbe-ejbd 1640
 4914
 2
-ejbf-ejbe 2
+ejbf-ejbe 1
 eibe-ejbe 1
 4915
 4
 ejbe-ejbf 1
-faaj-ejbf 1
-ejbg-ejbf 1
 eibf-ejbf 1
+ejbg-ejbf 1
+faaj-ejbf 1
 4916
 2
-ejbf-ejbg 2
+ejbf-ejbg 1
 ejbh-ejbg 1
 4917
 1
 ejbi-ejbh 1640
 4918
 2
-ejbj-ejbi 1
 fabc-ejbi 1
+ejbj-ejbi 1
 4919
 2
 fabd-ejbj 1
-ejbi-ejbj 2
+ejbi-ejbj 1
 4920
 3
 ejcb-ejca 1
 fabe-ejca 1
-ejbj-ejca 2
+ejbj-ejca 1
 4921
 1
 eibh-ejcb 1640
@@ -13607,17 +13607,17 @@ ejce-ejcd 1
 ejcc-ejcd 1
 4924
 3
-ejcd-ejce 1
 eica-ejce 1
-ejcf-ejce 2
+ejcd-ejce 1
+ejcf-ejce 1
 4925
 2
 ejce-ejcf 1
-fabf-ejcf 3
+fabf-ejcf 1
 4935
 2
 eich-ejdf 1
-ejdg-ejdf 2
+ejdg-ejdf 1
 4936
 1
 ejdh-ejdg 1640
@@ -13644,17 +13644,17 @@ ejec-ejed 1640
 ejed-ejee 1640
 4945
 3
+ejee-ejef 1
 eidd-ejef 1
-ejee-ejef 2
 ejeg-ejef 1
 4946
 2
 ejeh-ejeg 1
-ejef-ejeg 2
+ejef-ejeg 1
 4947
 2
 facj-ejeh 1
-ejeg-ejeh 3
+ejeg-ejeh 2
 4950
 1
 fadc-ejfa 1640
@@ -13665,11 +13665,11 @@ eidi-ejfe 1640
 4
 ejfg-ejff 1
 ejfe-ejff 1
-eidj-ejff 3
+eidj-ejff 2
 fadd-ejff 1
 4956
 2
-ejff-ejfg 1
+ejff-ejfg 2
 fade-ejfg 1
 4957
 1
@@ -13679,12 +13679,12 @@ ejfi-ejfh 1640
 ejfj-ejfi 1640
 4959
 2
-ejga-ejfj 1
 fadh-ejfj 1
+ejga-ejfj 2
 4960
 2
+fadi-ejga 1
 eiea-ejga 1
-fadi-ejga 2
 4964
 1
 ejgf-ejge 1640
@@ -13714,15 +13714,15 @@ faef-ejhb 1640
 eifg-ejhe 1640
 4975
 2
-faej-ejhf 3
+faej-ejhf 1
 ejhg-ejhf 1
 4976
 1
 ejhh-ejhg 1640
 4977
 2
-eifj-ejhh 1
 fafb-ejhh 1
+eifj-ejhh 1
 4978
 1
 ejhh-ejhi 1640
@@ -13745,13 +13745,13 @@ eiha-ejie 1
 4987
 2
 ejii-ejih 1
-eihh-ejih 1
+eihh-ejih 2
 4988
 1
 ejij-ejii 1640
 4989
 2
-fagd-ejij 2
+fagd-ejij 1
 ejja-ejij 1
 4990
 1
@@ -13820,7 +13820,7 @@ fabe-fabd 1640
 5014
 2
 ejca-fabe 1
-faii-fabe 3
+faii-fabe 1
 5015
 1
 faij-fabf 1640
@@ -13838,7 +13838,7 @@ faca-fabj 1640
 faje-faca 1640
 5021
 2
-ejdf-facb 3
+ejdf-facb 1
 facc-facb 1
 5022
 1
@@ -13851,8 +13851,8 @@ facf-face 1640
 fajj-facf 1640
 5027
 2
-ejef-fach 3
 fbab-fach 1
+ejef-fach 2
 5028
 1
 fach-faci 1640
@@ -13860,11 +13860,11 @@ fach-faci 1640
 3
 faci-facj 1
 ejeh-facj 1
-fada-facj 3
+fada-facj 1
 5030
 2
 fbae-fada 1
-facj-fada 2
+facj-fada 1
 5032
 1
 fbag-fadc 1640
@@ -13873,8 +13873,8 @@ fbag-fadc 1640
 fbah-fadd 1640
 5034
 2
-ejfg-fade 1
 fadf-fade 1
+ejfg-fade 1
 5035
 1
 fade-fadf 1640
@@ -13893,7 +13893,7 @@ faeb-faea 1640
 5041
 2
 ejgh-faeb 1
-fbbf-faeb 2
+fbbf-faeb 1
 5042
 1
 ejgi-faec 1640
@@ -13908,8 +13908,8 @@ fbca-faeg 1640
 ejhe-faei 1640
 5049
 2
-faei-faej 1
 fbcd-faej 2
+faei-faej 1
 5051
 1
 fbcf-fafb 1640
@@ -13960,7 +13960,7 @@ faia-fahj 1640
 5080
 2
 fahj-faia 1
-faib-faia 2
+faib-faia 1
 5081
 1
 faic-faib 1640
@@ -13976,20 +13976,20 @@ faie-faid 2
 5084
 3
 faid-faie 1
-fbfi-faie 2
+fbfi-faie 1
 faba-faie 1
 5085
 1
 faie-faif 1640
 5086
 3
-fbga-faig 1
 faih-faig 1
+fbga-faig 2
 faif-faig 1
 5087
 2
 fabd-faih 1
-faii-faih 1
+faii-faih 2
 5088
 1
 fbgc-faii 1640
@@ -14002,7 +14002,7 @@ fajb-faja 1640
 5091
 2
 fbgf-fajb 1
-fabh-fajb 3
+fabh-fajb 1
 5092
 1
 fajd-fajc 1640
@@ -14020,8 +14020,8 @@ facb-fajf 1640
 fbhd-fajj 1640
 5101
 2
-fbhf-fbab 2
-fach-fbab 1
+fbhf-fbab 1
+fach-fbab 2
 5102
 1
 fbab-fbac 1640
@@ -14031,7 +14031,7 @@ fbhh-fbad 1640
 5104
 3
 fbad-fbae 1
-fbhi-fbae 3
+fbhi-fbae 1
 fada-fbae 1
 5105
 1
@@ -14047,14 +14047,14 @@ fbib-fbah 1640
 fadf-fbaj 1640
 5110
 2
-fadg-fbba 2
+fadg-fbba 1
 fbaj-fbba 1
 5111
 1
 fbif-fbbb 1640
 5112
 2
-fbig-fbbc 1
+fbig-fbbc 2
 fbbb-fbbc 1
 5113
 1
@@ -14093,7 +14093,7 @@ faff-fbcj 2
 5130
 2
 fafg-fbda 1
-fbcj-fbda 1
+fbcj-fbda 2
 5134
 1
 faga-fbde 1640
@@ -14118,8 +14118,8 @@ fahj-fbfd 1
 fbfc-fbfd 2
 5154
 2
-faia-fbfe 1
 fbfd-fbfe 1
+faia-fbfe 1
 5156
 2
 fcda-fbfg 1
@@ -14127,19 +14127,19 @@ faic-fbfg 1
 5157
 2
 fcdb-fbfh 1
-faid-fbfh 1
+faid-fbfh 2
 5158
 2
-fbfj-fbfi 1
 fcdc-fbfi 1
+fbfj-fbfi 1
 5159
 2
 fbga-fbfj 1
 fbfi-fbfj 2
 5160
 2
-fbfj-fbga 2
-faig-fbga 1
+faig-fbga 2
+fbfj-fbga 1
 5161
 1
 fbga-fbgb 1640
@@ -14151,14 +14151,14 @@ fbgb-fbgc 1640
 fbgd-fbge 1640
 5165
 4
-fcdj-fbgf 1
 fbge-fbgf 1
+fcdj-fbgf 1
 fajb-fbgf 1
 fbgg-fbgf 1
 5166
 2
 fbgh-fbgg 1
-fajc-fbgg 3
+fajc-fbgg 1
 5167
 1
 fbgg-fbgh 1640
@@ -14223,11 +14223,11 @@ fbja-fbjb 1640
 fcgi-fbje 1640
 5197
 2
-fbcd-fbjh 2
 fbji-fbjh 1
+fbcd-fbjh 1
 5198
 3
-fchg-fbji 3
+fchg-fbji 1
 fbjh-fbji 1
 fbjj-fbji 1
 5199
@@ -14275,7 +14275,7 @@ fccf-fccg 2
 5227
 2
 fcci-fcch 1
-fbfd-fcch 1
+fbfd-fcch 2
 5228
 2
 fcch-fcci 1
@@ -14285,25 +14285,25 @@ fbfe-fcci 1
 fcci-fccj 1640
 5230
 2
-fccj-fcda 1
 fbfg-fcda 1
+fccj-fcda 2
 5231
 2
+fbfh-fcdb 1
 fcdc-fcdb 1
-fbfh-fcdb 2
 5232
 1
 fdde-fcdc 1640
 5239
 2
 fcdi-fcdj 1
-fbgf-fcdj 2
+fbgf-fcdj 1
 5240
 1
 fcdj-fcea 1640
 5241
 2
-fbgh-fceb 3
+fbgh-fceb 1
 fcea-fceb 1
 5242
 1
@@ -14316,22 +14316,22 @@ fbgj-fced 1640
 fdfg-fceg 1640
 5247
 2
-fceg-fceh 1
 fcei-fceh 1
+fceg-fceh 1
 5248
 1
 fdfi-fcei 1640
 5249
 2
-fcfa-fcej 2
+fcfa-fcej 1
 fdgd-fcej 1
 5250
 1
 fbhg-fcfa 1640
 5253
 2
-fcfe-fcfd 3
 fdgh-fcfd 1
+fcfe-fcfd 1
 5254
 1
 fdgi-fcfe 1640
@@ -14374,7 +14374,7 @@ fdii-fcha 2
 fchb-fcha 1
 5271
 2
-fcha-fchb 3
+fcha-fchb 2
 fchc-fchb 1
 5272
 2
@@ -14382,16 +14382,16 @@ fchd-fchc 1
 fchb-fchc 2
 5273
 3
-fdjb-fchd 1
 fchc-fchd 1
 fche-fchd 1
+fdjb-fchd 2
 5274
 2
 fchf-fche 1
 fchd-fche 2
 5275
 2
-fche-fchf 3
+fche-fchf 1
 fbjh-fchf 1
 5276
 1
@@ -14399,7 +14399,7 @@ fchf-fchg 1640
 5278
 2
 fdjc-fchi 1
-fcaa-fchi 2
+fcaa-fchi 1
 5279
 1
 fchi-fchj 1640
@@ -14409,21 +14409,21 @@ fdje-fcia 1
 fcib-fcia 1
 5281
 3
-fcic-fcib 1
 fdjf-fcib 1
+fcic-fcib 1
 fcia-fcib 1
 5282
 2
 fcib-fcic 1
-fcid-fcic 2
+fcid-fcic 1
 5283
 3
 fcic-fcid 1
 fcie-fcid 1
-fdjh-fcid 2
+fdjh-fcid 1
 5284
 2
-fcac-fcie 1
+fcac-fcie 2
 fcif-fcie 1
 5285
 1
@@ -14436,8 +14436,8 @@ fcih-fcig 1640
 fcii-fcih 1640
 5288
 2
-fcag-fcii 1
 fdji-fcii 1
+fcag-fcii 1
 5293
 1
 fcje-fcjd 1640
@@ -14455,8 +14455,8 @@ fcjf-fcjg 1640
 fcjg-fcjh 1640
 5298
 3
-fcjh-fcji 2
 fcjj-fcji 1
+fcjh-fcji 1
 feae-fcji 1
 5299
 1
@@ -14489,25 +14489,25 @@ fdcb-fdca 1640
 fdcc-fdcb 1640
 5322
 2
+feca-fdcc 1
 fdcd-fdcc 1
-feca-fdcc 2
 5323
 2
-fdcc-fdcd 1
 fccf-fdcd 1
+fdcc-fdcd 2
 5327
 1
 fccj-fdch 1640
 5328
 2
 fcda-fdci 1
-fdch-fdci 2
+fdch-fdci 1
 5332
 1
 fddd-fddc 1640
 5333
 2
-fcdb-fddd 1
+fcdb-fddd 2
 fech-fddd 1
 5334
 1
@@ -14537,8 +14537,8 @@ fedf-fdej 1
 fdfd-fdfc 1640
 5353
 2
+fced-fdfd 2
 fedj-fdfd 1
-fced-fdfd 3
 5354
 1
 fdfd-fdfe 1640
@@ -14559,7 +14559,7 @@ fdgb-fdga 1640
 fdgc-fdgb 1640
 5362
 2
-feee-fdgc 2
+feee-fdgc 1
 fdgd-fdgc 1
 5363
 2
@@ -14570,11 +14570,11 @@ feef-fdgd 1
 fdgj-fdgi 1640
 5369
 2
-fdha-fdgj 3
 feeh-fdgj 1
+fdha-fdgj 1
 5370
 2
-fdhb-fdha 3
+fdhb-fdha 2
 fdgj-fdha 1
 5371
 2
@@ -14582,7 +14582,7 @@ fdhc-fdhb 2
 fdha-fdhb 1
 5372
 2
-fefa-fdhc 2
+fefa-fdhc 1
 fdhb-fdhc 1
 5373
 1
@@ -14607,8 +14607,8 @@ fdib-fdia 2
 fefe-fdia 1
 5381
 2
-fdic-fdib 2
-fdia-fdib 2
+fdic-fdib 1
+fdia-fdib 1
 5382
 3
 fefg-fdic 1
@@ -14617,8 +14617,8 @@ fdid-fdic 2
 5383
 3
 fdic-fdid 1
+fefh-fdid 1
 fcgb-fdid 1
-fefh-fdid 2
 5384
 1
 fdid-fdie 1640
@@ -14627,18 +14627,18 @@ fdid-fdie 1640
 fdie-fdif 1640
 5387
 2
-fefj-fdih 1
+fefj-fdih 2
 fcgj-fdih 1
 5388
 1
 fdih-fdii 1640
 5391
 2
-fegd-fdjb 2
+fegd-fdjb 1
 fchd-fdjb 1
 5392
 2
-fege-fdjc 2
+fege-fdjc 1
 fdjd-fdjc 1
 5393
 1
@@ -14648,7 +14648,7 @@ fchj-fdjd 1640
 fcia-fdje 1640
 5396
 2
-fcic-fdjg 2
+fcic-fdjg 1
 fegi-fdjg 1
 5397
 1
@@ -14669,14 +14669,14 @@ fdjj-feaa 1640
 feaa-feab 1640
 5402
 2
-feab-feac 2
+feab-feac 1
 fead-feac 1
 5403
 1
 fcjd-fead 1640
 5404
 2
-fcji-feae 1
+fcji-feae 2
 fehg-feae 1
 5405
 1
@@ -14707,12 +14707,12 @@ fdbi-febg 1640
 feij-febh 1640
 5419
 2
-fejb-febj 2
+fejb-febj 1
 fdcb-febj 1
 5420
 2
 febj-feca 1
-fejc-feca 3
+fejc-feca 2
 5422
 1
 fdci-fecc 1640
@@ -14722,41 +14722,41 @@ fecc-fecd 1640
 5425
 2
 fejh-fecf 1
-fecg-fecf 2
+fecg-fecf 1
 5426
 3
-fddc-fecg 3
+fddc-fecg 1
 fecf-fecg 1
 fech-fecg 1
 5427
 2
-fejj-fech 2
+fejj-fech 1
 fecg-fech 1
 5431
 1
 ffad-fedb 1640
 5432
 2
+fedd-fedc 1
 fedb-fedc 1
-fedd-fedc 2
 5433
 2
-fded-fedd 3
+fded-fedd 2
 fedc-fedd 1
 5435
 2
 ffah-fedf 1
-fdej-fedf 2
+fdej-fedf 1
 5436
 2
 fedf-fedg 1
-ffai-fedg 2
+ffai-fedg 1
 5437
 1
 fedg-fedh 1640
 5438
 2
-fdfc-fedi 3
+fdfc-fedi 1
 fedh-fedi 1
 5439
 1
@@ -14772,8 +14772,8 @@ feec-feeb 1640
 fdga-feec 1640
 5444
 2
-fdgc-feee 1
 feef-feee 2
+fdgc-feee 1
 5445
 1
 ffbh-feef 1640
@@ -14785,17 +14785,17 @@ ffcc-fefa 1640
 fdhd-fefb 1640
 5452
 2
-fefd-fefc 2
 ffce-fefc 1
+fefd-fefc 1
 5453
 3
-fefc-fefd 1
 fefe-fefd 1
+fefc-fefd 1
 ffcf-fefd 1
 5454
 2
 fefd-fefe 1
-fdia-fefe 2
+fdia-fefe 1
 5455
 1
 ffch-feff 1640
@@ -14808,14 +14808,14 @@ feff-fefg 1
 ffcj-fefh 1640
 5458
 3
+fdig-fefi 1
 fefj-fefi 1
 ffda-fefi 1
-fdig-fefi 1
 5459
 3
 fdih-fefj 1
 fega-fefj 1
-fefi-fefj 1
+fefi-fefj 2
 5460
 1
 ffdc-fega 1640
@@ -14824,16 +14824,16 @@ ffdc-fega 1640
 fegd-fegc 1640
 5463
 2
-ffdf-fegd 2
+ffdf-fegd 1
 fdjb-fegd 1
 5464
 2
-fegf-fege 3
+fegf-fege 1
 fdjc-fege 1
 5465
 2
 fegg-fegf 1
-fdjd-fegf 1
+fdjd-fegf 2
 5466
 1
 fdje-fegg 1640
@@ -14860,11 +14860,11 @@ fehd-fehc 1640
 5473
 2
 fehe-fehd 1
-ffef-fehd 2
+ffef-fehd 1
 5474
 2
 ffeg-fehe 1
-feac-fehe 2
+feac-fehe 1
 5476
 3
 ffei-fehg 1
@@ -14872,15 +14872,15 @@ fehh-fehg 1
 feae-fehg 1
 5477
 2
-ffej-fehh 3
+ffej-fehh 2
 fehg-fehh 1
 5478
 1
 fehh-fehi 1640
 5480
 2
-fffc-feia 2
 feib-feia 1
+fffc-feia 2
 5481
 1
 feia-feib 1640
@@ -14899,8 +14899,8 @@ febg-feii 1
 feii-feij 1640
 5491
 2
+ffgd-fejb 1
 febj-fejb 1
-ffgd-fejb 2
 5492
 1
 fejb-fejc 1640
@@ -14909,9 +14909,9 @@ fejb-fejc 1640
 ffgg-feje 1640
 5495
 3
-feje-fejf 1
-fecd-fejf 1
 ffgh-fejf 1
+feje-fejf 1
+fecd-fejf 2
 5496
 1
 fejf-fejg 1640
@@ -14921,8 +14921,8 @@ fejg-fejh 1
 fecf-fejh 2
 5499
 2
-fech-fejj 1
 ffhb-fejj 1
+fech-fejj 1
 5503
 1
 ffhf-ffad 1640
@@ -14943,11 +14943,11 @@ ffag-ffah 1640
 ffah-ffai 1640
 5509
 2
-fedh-ffaj 1
+fedh-ffaj 2
 ffba-ffaj 1
 5510
 2
-fedi-ffba 3
+fedi-ffba 1
 ffaj-ffba 1
 5516
 1
@@ -14969,20 +14969,20 @@ ffcf-ffce 1640
 5525
 2
 fefd-ffcf 1
-ffjh-ffcf 2
+ffjh-ffcf 1
 5527
 1
 ffjj-ffch 1640
 5528
 2
 fefg-ffci 1
-fgaa-ffci 2
+fgaa-ffci 1
 5529
 1
 ffci-ffcj 1640
 5530
 2
-fgac-ffda 2
+fgac-ffda 1
 fefi-ffda 1
 5531
 1
@@ -14995,7 +14995,7 @@ fgae-ffdc 1640
 fgaf-ffdd 1640
 5534
 2
-ffdd-ffde 3
+ffdd-ffde 2
 fegc-ffde 1
 5535
 1
@@ -15022,7 +15022,7 @@ ffef-ffee 1640
 5545
 2
 fgbh-ffef 1
-ffeg-ffef 1
+ffeg-ffef 2
 5546
 1
 fehe-ffeg 1640
@@ -15033,15 +15033,15 @@ fehg-ffei 1
 5549
 2
 fgcb-ffej 1
-fffa-ffej 1
+fffa-ffej 2
 5550
 3
-fgcc-fffa 2
 fffb-fffa 1
+fgcc-fffa 1
 fehi-fffa 1
 5552
 2
-fgce-fffc 1
+fgce-fffc 2
 feia-fffc 1
 5554
 1
@@ -15070,12 +15070,12 @@ fgdc-ffga 2
 feij-ffgb 1640
 5562
 2
-ffgb-ffgc 2
+ffgb-ffgc 1
 fgde-ffgc 1
 5563
 3
-ffgc-ffgd 1
 fgdf-ffgd 1
+ffgc-ffgd 2
 ffge-ffgd 1
 5564
 2
@@ -15092,14 +15092,14 @@ fgdi-ffgg 1640
 fejf-ffgh 1640
 5568
 2
-ffgj-ffgi 2
+ffgj-ffgi 1
 ffgh-ffgi 1
 5569
 1
 fejh-ffgj 1640
 5571
 2
-fged-ffhb 1
+fged-ffhb 2
 fejj-ffhb 1
 5575
 1
@@ -15110,14 +15110,14 @@ ffae-ffhg 1640
 5577
 2
 ffhg-ffhh 1
-ffaf-ffhh 2
+ffaf-ffhh 1
 5578
 1
 fgfa-ffhi 1640
 5581
 2
 ffic-ffib 1
-ffaj-ffib 1
+ffaj-ffib 2
 5582
 1
 ffba-ffic 1640
@@ -15126,12 +15126,12 @@ ffba-ffic 1640
 ffic-ffid 1640
 5586
 2
-ffih-ffig 2
 ffbe-ffig 1
+ffih-ffig 2
 5587
 2
-ffig-ffih 1
 ffii-ffih 1
+ffig-ffih 1
 5588
 1
 fgga-ffii 1640
@@ -15153,30 +15153,30 @@ ffjb-ffjc 1640
 ffjc-ffjd 1640
 5594
 2
-ffcc-ffje 2
+ffcc-ffje 1
 ffjd-ffje 1
 5595
 1
 fggh-ffjf 1640
 5596
 2
-fggi-ffjg 2
 ffce-ffjg 1
+fggi-ffjg 1
 5597
 1
 ffjg-ffjh 1640
 5599
 2
+fgaa-ffjj 1
 fghb-ffjj 1
-fgaa-ffjj 3
 5600
 2
 ffci-fgaa 1
-fghc-fgaa 1
+fghc-fgaa 2
 5602
 2
-fghi-fgac 2
 ffda-fgac 1
+fghi-fgac 2
 5603
 1
 ffdb-fgad 1640
@@ -15202,7 +15202,7 @@ ffeb-fgbd 1640
 3
 ffec-fgbe 1
 fgji-fgbe 1
-fgbf-fgbe 2
+fgbf-fgbe 1
 5615
 1
 ffed-fgbf 1640
@@ -15222,7 +15222,7 @@ fhaj-fgcb 1640
 4
 fgcb-fgcc 1
 fffa-fgcc 1
-fhba-fgcc 1
+fhba-fgcc 2
 fgcd-fgcc 1
 5623
 2
@@ -15230,9 +15230,9 @@ fgcc-fgcd 1
 fgce-fgcd 2
 5624
 3
-fgcd-fgce 1
 fffc-fgce 1
 fhbc-fgce 1
+fgcd-fgce 2
 5626
 1
 fhbi-fgcg 1640
@@ -15251,7 +15251,7 @@ fgdb-fgda 1
 fffj-fgdb 1640
 5632
 2
-ffga-fgdc 2
+ffga-fgdc 1
 fhci-fgdc 1
 5633
 1
@@ -15267,7 +15267,7 @@ ffgd-fgdf 1640
 fgdh-fgdg 1640
 5637
 2
-fhdd-fgdh 3
+fhdd-fgdh 1
 ffgf-fgdh 1
 5638
 1
@@ -15282,14 +15282,14 @@ fgeb-fgea 1
 5641
 2
 fgec-fgeb 1
-fgea-fgeb 2
+fgea-fgeb 1
 5642
 2
 fged-fgec 1
 fgeb-fgec 2
 5643
 2
-fgec-fged 3
+fgec-fged 1
 ffhb-fged 1
 5645
 1
@@ -15341,22 +15341,22 @@ fhhi-fggc 1640
 5666
 2
 fhic-fggg 1
-ffje-fggg 1
+ffje-fggg 2
 5667
 2
 fggg-fggh 1
 fhid-fggh 1
 5668
 2
+ffjg-fggi 1
 fhii-fggi 1
-ffjg-fggi 2
 5670
 1
 fhja-fgha 1640
 5671
 3
 fhjb-fghb 1
-fgha-fghb 2
+fgha-fghb 1
 ffjj-fghb 1
 5672
 1
@@ -15400,7 +15400,7 @@ fgif-fgie 1640
 5685
 2
 fgie-fgif 1
-fgig-fgif 2
+fgig-fgif 1
 5686
 2
 fiae-fgig 1
@@ -15426,14 +15426,14 @@ fgjf-fgje 1640
 fgjg-fgjf 1640
 5696
 2
+fiba-fgjg 1
 fgjh-fgjg 1
-fiba-fgjg 3
 5697
 1
 fgji-fgjh 1640
 5698
 2
-fgbe-fgji 2
+fgbe-fgji 1
 fibc-fgji 1
 5700
 1
@@ -15444,8 +15444,8 @@ fhaa-fhab 1
 fhac-fhab 1
 5702
 2
-fhad-fhac 1
 fhab-fhac 1
+fhad-fhac 1
 5703
 2
 fhac-fhad 1
@@ -15453,20 +15453,20 @@ fhae-fhad 1
 5704
 3
 fibe-fhae 2
-fhad-fhae 2
+fhad-fhae 1
 fhaf-fhae 1
 5705
 2
-fhag-fhaf 1
+fhag-fhaf 2
 fhae-fhaf 1
 5706
 2
-fhaf-fhag 2
+fhaf-fhag 1
 fhah-fhag 1
 5707
 2
-fhag-fhah 1
 fibh-fhah 2
+fhag-fhah 1
 5708
 3
 fhaj-fhai 1
@@ -15475,22 +15475,22 @@ fgca-fhai 1
 5709
 2
 fhba-fhaj 1
-fhai-fhaj 2
+fhai-fhaj 1
 5710
 3
 fhbb-fhba 1
-fhaj-fhba 2
 fgcc-fhba 1
+fhaj-fhba 2
 5711
 1
 fgcd-fhbb 1640
 5712
 2
 fhbb-fhbc 1
-fhbd-fhbc 3
+fhbd-fhbc 2
 5713
 2
-fhbc-fhbd 2
+fhbc-fhbd 1
 fibj-fhbd 1
 5714
 1
@@ -15498,7 +15498,7 @@ fhbd-fhbe 1640
 5715
 2
 fhbe-fhbf 1
-ficb-fhbf 2
+ficb-fhbf 1
 5716
 1
 fhbf-fhbg 1640
@@ -15508,7 +15508,7 @@ fhbg-fhbh 1640
 5718
 3
 fhbj-fhbi 1
-fice-fhbi 2
+fice-fhbi 1
 fhbh-fhbi 1
 5719
 1
@@ -15528,7 +15528,7 @@ fgdb-fhcd 1640
 5724
 2
 fhcf-fhce 1
-fhcd-fhce 2
+fhcd-fhce 1
 5725
 2
 fhcg-fhcf 1
@@ -15556,7 +15556,7 @@ fgdf-fhdb 1640
 5733
 2
 fgdh-fhdd 1
-fidb-fhdd 3
+fidb-fhdd 1
 5734
 1
 fhdd-fhde 1640
@@ -15577,7 +15577,7 @@ fhdj-fhdi 2
 5739
 2
 fhea-fhdj 1
-fgdj-fhdj 2
+fgdj-fhdj 1
 5740
 1
 fgea-fhea 1640
@@ -15586,8 +15586,8 @@ fgea-fhea 1640
 fged-fhed 1640
 5744
 2
-fidi-fhee 2
 fhed-fhee 1
+fidi-fhee 2
 5745
 1
 fhee-fhef 1640
@@ -15628,7 +15628,7 @@ fief-fhff 1640
 5758
 2
 fhfj-fhfi 1
-fiei-fhfi 2
+fiei-fhfi 1
 5759
 1
 fhga-fhfj 1640
@@ -15647,16 +15647,16 @@ fgff-fhgd 1
 fhge-fhgd 1
 5764
 2
-fhgf-fhge 1
+fhgf-fhge 2
 fifa-fhge 1
 5765
 2
 fhge-fhgf 1
-fhgg-fhgf 3
+fhgg-fhgf 2
 5766
 2
 fhgf-fhgg 1
-fhgh-fhgg 2
+fhgh-fhgg 1
 5767
 1
 fhgi-fhgh 1640
@@ -15675,8 +15675,8 @@ fhhb-fhha 1
 fgfi-fhha 1
 5771
 2
-fhha-fhhb 2
-fhhc-fhhb 2
+fhhc-fhhb 1
+fhha-fhhb 1
 5772
 1
 fhhd-fhhc 1640
@@ -15719,7 +15719,7 @@ fghb-fhjb 1
 fhjc-fhjb 2
 5792
 2
-fhjd-fhjc 2
+fhjd-fhjc 1
 fhjb-fhjc 2
 5793
 2
@@ -15744,7 +15744,7 @@ fhji-fhjj 1640
 3
 fihe-fiaa 1
 fghi-fiaa 1
-fhjj-fiaa 2
+fhjj-fiaa 1
 5804
 3
 fiaf-fiae 1
@@ -15752,37 +15752,37 @@ fgig-fiae 1
 fihi-fiae 2
 5805
 2
-fiag-fiaf 2
+fiag-fiaf 1
 fiae-fiaf 1
 5806
 3
 fiaf-fiag 1
-fiia-fiag 2
+fiia-fiag 1
 fgii-fiag 1
 5807
 2
-fiai-fiah 1
+fiai-fiah 2
 fgjd-fiah 1
 5808
 2
-fgje-fiai 2
+fgje-fiai 1
 fiah-fiai 1
 5810
 2
 fibb-fiba 1
-fiie-fiba 2
+fiie-fiba 1
 5812
 2
 fgji-fibc 2
 fiig-fibc 1
 5814
 3
-fiii-fibe 1
-fhae-fibe 3
+fhae-fibe 1
 fibf-fibe 1
+fiii-fibe 1
 5815
 2
-fibe-fibf 3
+fibe-fibf 2
 fiij-fibf 1
 5816
 1
@@ -15797,7 +15797,7 @@ fhai-fibi 1640
 5819
 2
 fhbd-fibj 1
-fijd-fibj 1
+fijd-fibj 2
 5820
 1
 fije-fica 1640
@@ -15846,15 +15846,15 @@ fhdf-fidd 1
 fidd-fide 1640
 5836
 2
-fhdi-fidg 3
 fjba-fidg 1
+fhdi-fidg 1
 5838
 2
-fhee-fidi 2
+fhee-fidi 1
 fjbc-fidi 1
 5841
 2
-fheh-fieb 2
+fheh-fieb 1
 fjbf-fieb 1
 5842
 1
@@ -15876,7 +15876,7 @@ fieh-fieg 1640
 fiei-fieh 1640
 5848
 2
-fjcc-fiei 1
+fjcc-fiei 2
 fhfi-fiei 1
 5849
 2
@@ -15884,14 +15884,14 @@ fjcd-fiej 1
 fhgd-fiej 1
 5850
 2
-fjce-fifa 2
 fiej-fifa 1
+fjce-fifa 1
 5851
 1
 fifa-fifb 1640
 5852
 2
-fhgg-fifc 1
+fhgg-fifc 2
 fifb-fifc 1
 5853
 1
@@ -15914,14 +15914,14 @@ fifj-figa 1640
 5861
 2
 fhid-figb 1
-fjdf-figb 2
+fjdf-figb 1
 5866
 1
 fjea-figg 1640
 5867
 2
-fjeb-figh 2
 figi-figh 1
+fjeb-figh 2
 5868
 2
 figh-figi 1
@@ -15940,8 +15940,8 @@ fiaa-fihe 1640
 fihg-fihf 1640
 5876
 2
-fihh-fihg 1
 fjfa-fihg 1
+fihh-fihg 1
 5877
 2
 fjfb-fihh 2
@@ -15968,13 +15968,13 @@ fiai-fiic 1640
 fjfi-fiie 1640
 5885
 2
+fiig-fiif 2
 fiie-fiif 1
-fiig-fiif 3
 5886
 3
 fjga-fiig 1
 fiif-fiig 1
-fibc-fiig 1
+fibc-fiig 2
 5888
 1
 fiij-fiii 1640
@@ -15987,7 +15987,7 @@ fijb-fija 1
 fjge-fija 1
 5891
 2
-fibh-fijb 3
+fibh-fijb 2
 fijc-fijb 1
 5892
 1
@@ -16021,7 +16021,7 @@ fich-fjab 1640
 fjae-fjad 1640
 5904
 2
-fida-fjae 3
+fida-fjae 1
 fjhi-fjae 1
 5905
 1
@@ -16031,7 +16031,7 @@ fjag-fjaf 1640
 fjia-fjag 1640
 5907
 2
-fjag-fjah 2
+fjag-fjah 1
 fidd-fjah 1
 5908
 1
@@ -16049,7 +16049,7 @@ fjif-fjbb 1640
 5912
 2
 fjbb-fjbc 1
-fidi-fjbc 2
+fidi-fjbc 1
 5913
 1
 fjbc-fjbd 1640
@@ -16081,14 +16081,14 @@ fiej-fjcd 1640
 5924
 2
 fjji-fjce 1
-fjcd-fjce 3
+fjcd-fjce 1
 5925
 1
 fjce-fjcf 1640
 5926
 2
 fifc-fjcg 1
-fjcf-fjcg 3
+fjcf-fjcg 2
 5927
 1
 fjcg-fjch 1640
@@ -16118,8 +16118,8 @@ gabd-fjdj 1640
 fjdj-fjea 1640
 5941
 3
-figh-fjeb 1
 gabf-fjeb 1
+figh-fjeb 1
 fjec-fjeb 1
 5942
 1
@@ -16133,7 +16133,7 @@ fjef-fjee 1640
 5945
 2
 fjeg-fjef 1
-gabj-fjef 3
+gabj-fjef 1
 5946
 1
 fjeh-fjeg 1640
@@ -16149,10 +16149,10 @@ fihf-fjej 1640
 5951
 2
 gacf-fjfb 1
-fjfc-fjfb 3
+fjfc-fjfb 1
 5952
 2
-gacg-fjfc 1
+gacg-fjfc 2
 fihi-fjfc 1
 5953
 2
@@ -16161,7 +16161,7 @@ fjfe-fjfd 1
 5954
 2
 fiia-fjfe 1
-fjfd-fjfe 1
+fjfd-fjfe 2
 5955
 1
 fiib-fjff 1640
@@ -16175,11 +16175,11 @@ gada-fjfg 1
 fjfg-fjfh 1640
 5958
 2
-fjfh-fjfi 2
+fjfh-fjfi 1
 fjfj-fjfi 1
 5959
 3
-fjga-fjfj 2
+fjga-fjfj 1
 fiif-fjfj 1
 gadd-fjfj 1
 5960
@@ -16203,13 +16203,13 @@ gadj-fjgf 1640
 gaea-fjgg 1640
 5967
 2
-gaeb-fjgh 2
 fijd-fjgh 1
+gaeb-fjgh 2
 5968
 3
-fjgh-fjgi 1
-gaec-fjgi 1
 fjgj-fjgi 1
+fjgh-fjgi 1
+gaec-fjgi 2
 5969
 1
 fijf-fjgj 1640
@@ -16219,7 +16219,7 @@ fjhc-fjhb 1640
 5972
 2
 fiji-fjhc 1
-gaeg-fjhc 2
+gaeg-fjhc 1
 5973
 1
 fijj-fjhd 1640
@@ -16287,7 +16287,7 @@ fjjh-fjji 1640
 6001
 2
 gaac-gaab 1
-fjch-gaab 3
+fjch-gaab 2
 6002
 1
 fjci-gaac 1640
@@ -16306,7 +16306,7 @@ gaah-gaai 1640
 6010
 3
 gabb-gaba 1
-gaie-gaba 1
+gaie-gaba 2
 fjdg-gaba 1
 6011
 1
@@ -16361,11 +16361,11 @@ gacg-gach 1
 gbaf-gach 1
 6030
 2
-fjfg-gada 1
+fjfg-gada 2
 gbbc-gada 1
 6033
 2
-fjfj-gadd 3
+fjfj-gadd 2
 gbbf-gadd 1
 6034
 1
@@ -16377,7 +16377,7 @@ gadh-gadg 1
 6037
 2
 fjgd-gadh 1
-gadg-gadh 1
+gadg-gadh 2
 6038
 1
 gadh-gadi 1640
@@ -16400,7 +16400,7 @@ fjgi-gaec 1
 gaec-gaed 1640
 6046
 2
-gbdg-gaeg 2
+gbdg-gaeg 1
 fjhc-gaeg 1
 6047
 1
@@ -16410,7 +16410,7 @@ fjhd-gaeh 1640
 fjhe-gaei 1640
 6051
 2
-fjhh-gafb 3
+fjhh-gafb 2
 gbef-gafb 1
 6052
 1
@@ -16420,7 +16420,7 @@ gafb-gafc 1640
 gbfb-gafd 1640
 6054
 2
-gafd-gafe 3
+gafd-gafe 1
 gbfc-gafe 1
 6056
 1
@@ -16446,7 +16446,7 @@ gaga-gagb 1640
 fjja-gage 1640
 6068
 2
-fjje-gagi 2
+fjje-gagi 1
 gbhe-gagi 1
 6069
 2
@@ -16480,7 +16480,7 @@ gaig-gaif 1640
 6086
 2
 gaih-gaig 1
-gcae-gaig 3
+gcae-gaig 1
 6087
 1
 gabd-gaih 1640
@@ -16489,7 +16489,7 @@ gabd-gaih 1640
 gabf-gaij 1640
 6090
 2
-gabg-gaja 3
+gabg-gaja 2
 gajb-gaja 1
 6091
 1
@@ -16508,16 +16508,16 @@ gajd-gaje 1640
 gaje-gajf 1640
 6096
 2
-gcbe-gajg 2
+gcbe-gajg 1
 gajf-gajg 1
 6100
 3
-gbab-gbaa 1
 gajj-gbaa 1
-gcbi-gbaa 2
+gbab-gbaa 1
+gcbi-gbaa 1
 6101
 2
-gbaa-gbab 3
+gbaa-gbab 2
 gacd-gbab 1
 6102
 1
@@ -16546,7 +16546,7 @@ gbai-gbah 1640
 gbaj-gbai 1640
 6110
 2
-gbbb-gbba 2
+gbbb-gbba 1
 gcce-gbba 1
 6111
 2
@@ -16554,8 +16554,8 @@ gbbc-gbbb 1
 gbba-gbbb 1
 6112
 2
-gada-gbbc 2
 gbbb-gbbc 1
+gada-gbbc 1
 6115
 2
 gbbe-gbbf 1
@@ -16566,8 +16566,8 @@ gbbh-gbbg 1
 gbbf-gbbg 1
 6117
 2
-gbbi-gbbh 1
 gcch-gbbh 1
+gbbi-gbbh 1
 6118
 2
 gcci-gbbi 2
@@ -16579,7 +16579,7 @@ gbbi-gbbj 1
 6120
 2
 gbcb-gbca 1
-gbbj-gbca 1
+gbbj-gbca 2
 6121
 3
 gbca-gbcb 2
@@ -16587,14 +16587,14 @@ gbcc-gbcb 1
 gcdb-gbcb 1
 6122
 2
-gbcb-gbcc 2
+gbcb-gbcc 1
 gadg-gbcc 1
 6123
 1
 gbcc-gbcd 1640
 6124
 2
-gadi-gbce 2
+gadi-gbce 1
 gbcd-gbce 1
 6125
 1
@@ -16614,8 +16614,8 @@ gbch-gbci 2
 gcde-gbci 1
 6129
 2
-gbci-gbcj 1
 gcdf-gbcj 1
+gbci-gbcj 1
 6130
 1
 gbcj-gbda 1640
@@ -16629,26 +16629,26 @@ gbdb-gbdc 1
 gbdd-gbdc 2
 6133
 2
-gbde-gbdd 3
+gbde-gbdd 2
 gaed-gbdd 1
 6134
 2
-gbdf-gbde 3
+gbdf-gbde 2
 gbdd-gbde 1
 6135
 2
-gbdg-gbdf 2
+gbdg-gbdf 1
 gbde-gbdf 1
 6136
 4
 gbdh-gbdg 1
-gbdf-gbdg 1
+gbdf-gbdg 2
 gaeg-gbdg 1
 gcdi-gbdg 1
 6137
 2
 gcdj-gbdh 1
-gbdi-gbdh 3
+gbdi-gbdh 1
 6138
 1
 gbdj-gbdi 1640
@@ -16674,7 +16674,7 @@ gafc-gbeg 1640
 6151
 2
 gafd-gbfb 1
-gcej-gbfb 2
+gcej-gbfb 1
 6152
 1
 gbfd-gbfc 1640
@@ -16684,7 +16684,7 @@ gbfe-gbfd 1640
 6154
 2
 gafg-gbfe 1
-gbff-gbfe 2
+gbff-gbfe 1
 6155
 2
 gbfg-gbff 1
@@ -16727,7 +16727,7 @@ gbhc-gbhd 1640
 gbhd-gbhe 1640
 6175
 2
-gbhg-gbhf 2
+gbhg-gbhf 1
 gagj-gbhf 1
 6176
 2
@@ -16739,8 +16739,8 @@ gbhg-gbhh 2
 gbhi-gbhh 1
 6178
 2
-gbhh-gbhi 2
 gbhj-gbhi 1
+gbhh-gbhi 2
 6179
 2
 gbhi-gbhj 2
@@ -16748,15 +16748,15 @@ gbia-gbhj 1
 6180
 2
 gbhj-gbia 1
-gbib-gbia 1
+gbib-gbia 2
 6181
 2
-gcgh-gbib 2
+gcgh-gbib 1
 gbic-gbib 1
 6182
 2
 gahc-gbic 1
-gbid-gbic 2
+gbid-gbic 1
 6183
 1
 gbie-gbid 1640
@@ -16766,7 +16766,7 @@ gbif-gbie 1640
 6185
 2
 gbig-gbif 1
-gahf-gbif 3
+gahf-gbif 2
 6186
 2
 gbif-gbig 2
@@ -16783,7 +16783,7 @@ gbii-gbij 1640
 6190
 2
 gchc-gbja 1
-gbij-gbja 3
+gbij-gbja 2
 6191
 1
 gbja-gbjb 1640
@@ -16798,17 +16798,17 @@ gbji-gbjh 1640
 gchg-gbji 1640
 6199
 2
-gcaa-gbjj 1
 gbji-gbjj 1
+gcaa-gbjj 1
 6200
 3
 gcab-gcaa 1
-gchi-gcaa 2
+gchi-gcaa 1
 gbjj-gcaa 1
 6201
 2
 gcac-gcab 1
-gcaa-gcab 2
+gcaa-gcab 1
 6202
 1
 gaie-gcac 1640
@@ -16830,7 +16830,7 @@ gaij-gcbb 1
 gaja-gcbc 1640
 6214
 2
-gcig-gcbe 2
+gcig-gcbe 1
 gajg-gcbe 1
 6215
 1
@@ -16840,16 +16840,16 @@ gcbe-gcbf 1640
 gcbf-gcbg 1640
 6218
 2
-gcja-gcbi 2
+gcja-gcbi 1
 gbaa-gcbi 1
 6220
 2
 gbag-gcca 1
-gcjc-gcca 3
+gcjc-gcca 1
 6221
 2
 gbah-gccb 1
-gcca-gccb 2
+gcca-gccb 1
 6222
 1
 gccd-gccc 1640
@@ -16860,32 +16860,32 @@ gcce-gccd 1
 6224
 2
 gccd-gcce 1
-gbba-gcce 3
+gbba-gcce 1
 6226
 2
 gcji-gccg 1
-gbbg-gccg 3
+gbbg-gccg 2
 6227
 3
-gccg-gcch 1
-gcjj-gcch 2
 gcci-gcch 1
+gccg-gcch 1
+gcjj-gcch 1
 6228
 2
 gccj-gcci 1
-gcch-gcci 1
+gcch-gcci 2
 6229
 2
 gbbj-gccj 1
-gdab-gccj 3
+gdab-gccj 2
 6231
 2
 gbcb-gcdb 1
-gdad-gcdb 1
+gdad-gcdb 2
 6232
 2
 gbcg-gcdc 1
-gdae-gcdc 2
+gdae-gcdc 1
 6233
 1
 gcdc-gcdd 1640
@@ -16905,12 +16905,12 @@ gcdh-gcdg 1640
 gbdb-gcdh 1640
 6238
 2
+gdba-gcdi 2
 gbdg-gcdi 1
-gdba-gcdi 3
 6239
 2
 gcdi-gcdj 1
-gdbb-gcdj 2
+gdbb-gcdj 1
 6241
 1
 gcec-gceb 1640
@@ -16929,7 +16929,7 @@ gcej-gcei 1640
 6249
 2
 gbfb-gcej 1
-gdcb-gcej 3
+gdcb-gcej 2
 6250
 1
 gbfg-gcfa 1640
@@ -16938,7 +16938,7 @@ gbfg-gcfa 1640
 gdcg-gcfe 1640
 6256
 2
-gbgg-gcfg 3
+gbgg-gcfg 1
 gdci-gcfg 1
 6257
 1
@@ -16951,16 +16951,16 @@ gcfh-gcfi 1640
 gddd-gcgb 1640
 6262
 2
-gcgd-gcgc 3
+gcgd-gcgc 2
 gdde-gcgc 1
 6263
 2
 gbhh-gcgd 1
-gddf-gcgd 3
+gddf-gcgd 2
 6265
 2
 gbhj-gcgf 1
-gcgg-gcgf 3
+gcgg-gcgf 1
 6266
 2
 gcgh-gcgg 1
@@ -16974,12 +16974,12 @@ gbib-gcgh 1
 gbig-gcgi 1640
 6269
 2
-gcgi-gcgj 3
+gcgi-gcgj 2
 gcha-gcgj 1
 6270
 2
 gdec-gcha 1
-gcgj-gcha 1
+gcgj-gcha 2
 6272
 1
 gdee-gchc 1640
@@ -16992,19 +16992,19 @@ gbjg-gche 1640
 6275
 3
 gche-gchf 1
-gdeh-gchf 2
+gdeh-gchf 1
 gbjh-gchf 1
 6276
 2
-gchf-gchg 3
+gchf-gchg 2
 gchh-gchg 1
 6277
 2
+gchg-gchh 2
 gbjj-gchh 1
-gchg-gchh 3
 6278
 2
-gchh-gchi 3
+gchh-gchi 2
 gcaa-gchi 1
 6279
 1
@@ -17014,8 +17014,8 @@ gchi-gchj 1640
 gcib-gcia 1640
 6281
 2
-gdfd-gcib 2
 gcic-gcib 1
+gdfd-gcib 2
 6282
 1
 gdfe-gcic 1640
@@ -17025,14 +17025,14 @@ gcbb-gcif 1640
 6286
 2
 gdfi-gcig 1
-gcih-gcig 2
+gcih-gcig 1
 6287
 1
 gcii-gcih 1640
 6288
 3
 gcih-gcii 1
-gdga-gcii 2
+gdga-gcii 1
 gcbg-gcii 1
 6289
 1
@@ -17072,7 +17072,7 @@ gdhb-gcjj 1640
 gdhc-gdaa 1640
 6301
 2
-gdhd-gdab 3
+gdhd-gdab 2
 gdaa-gdab 1
 6302
 1
@@ -17089,12 +17089,12 @@ gdhg-gdae 1640
 gdag-gdaf 1640
 6306
 2
+gdah-gdag 2
 gcde-gdag 1
-gdah-gdag 1
 6307
 2
-gdag-gdah 1
 gdai-gdah 1
+gdag-gdah 1
 6308
 1
 gcdg-gdai 1640
@@ -17104,8 +17104,8 @@ gdic-gdba 1
 gdbb-gdba 1
 6311
 3
-gdba-gdbb 1
 gcdj-gdbb 1
+gdba-gdbb 1
 gdbc-gdbb 1
 6312
 2
@@ -17114,7 +17114,7 @@ gdbb-gdbc 1
 6313
 2
 gdbe-gdbd 1
-gceb-gdbd 1
+gceb-gdbd 2
 6314
 1
 gcec-gdbe 1640
@@ -17127,7 +17127,7 @@ gdbg-gdbh 1640
 6320
 2
 gcei-gdca 1
-gdjc-gdca 3
+gdjc-gdca 2
 6321
 1
 gdca-gdcb 1640
@@ -17145,8 +17145,8 @@ gdjj-gdch 1640
 geaa-gdci 1640
 6329
 2
-gdci-gdcj 2
 gcfh-gdcj 1
+gdci-gdcj 1
 6330
 2
 gdcj-gdda 1
@@ -17215,8 +17215,8 @@ gcif-gdfh 1640
 gdfj-gdfi 1640
 6360
 2
-gedc-gdga 1
 gdgb-gdga 1
+gedc-gdga 2
 6362
 1
 gcja-gdgc 1640
@@ -17243,7 +17243,7 @@ gcjh-gdgj 1640
 gcji-gdha 1640
 6371
 4
-gdhc-gdhb 1
+gdhc-gdhb 2
 gcjj-gdhb 1
 geed-gdhb 1
 gdha-gdhb 1
@@ -17265,7 +17265,7 @@ gdhh-gdhg 1640
 6377
 2
 gdaf-gdhh 1
-geej-gdhh 2
+geej-gdhh 1
 6379
 1
 gdah-gdhj 1640
@@ -17280,13 +17280,13 @@ gdia-gdib 1640
 gefe-gdic 1640
 6384
 2
-gdif-gdie 3
+gdif-gdie 1
 gdbc-gdie 1
 6385
 3
 gdie-gdif 1
 gdbd-gdif 1
-gefh-gdif 3
+gefh-gdif 1
 6386
 1
 gdif-gdig 1640
@@ -17320,8 +17320,8 @@ gdjg-gdjh 1640
 gehb-gdjj 1640
 6400
 2
-gehc-geaa 3
 geab-geaa 1
+gehc-geaa 2
 6401
 1
 gehd-geab 1640
@@ -17345,7 +17345,7 @@ gdde-geag 1
 3
 geag-geah 1
 geai-geah 1
-gehj-geah 2
+gehj-geah 1
 6408
 1
 geaj-geai 1640
@@ -17357,7 +17357,7 @@ gddh-geaj 1640
 gddi-geba 1640
 6411
 2
-geid-gebb 2
+geid-gebb 1
 geba-gebb 1
 6413
 1
@@ -17368,13 +17368,13 @@ gebf-gebe 1
 gebd-gebe 2
 6415
 3
-gebe-gebf 1
 gded-gebf 1
+gebe-gebf 1
 gebg-gebf 1
 6416
 2
 geii-gebg 1
-gdee-gebg 3
+gdee-gebg 2
 6417
 1
 geij-gebh 1640
@@ -17382,17 +17382,17 @@ geij-gebh 1640
 3
 gejb-gebj 1
 gdeh-gebj 1
-geca-gebj 2
+geca-gebj 1
 6420
 3
-gejc-geca 1
+gejc-geca 2
 gebj-geca 1
 gecb-geca 1
 6421
 3
+gdej-gecb 1
 gejd-gecb 1
 geca-gecb 1
-gdej-gecb 1
 6422
 1
 gecb-gecc 1640
@@ -17418,7 +17418,7 @@ gfah-gedb 2
 gedc-gedb 1
 6432
 2
-gedb-gedc 3
+gedb-gedc 1
 gfai-gedc 1
 6433
 1
@@ -17429,11 +17429,11 @@ gdgd-gedf 1640
 6436
 2
 gedh-gedg 1
-gfbg-gedg 2
+gfbg-gedg 1
 6437
 2
 gedi-gedh 1
-gdgf-gedh 2
+gdgf-gedh 1
 6438
 1
 gfbi-gedi 1640
@@ -17471,13 +17471,13 @@ geff-gefe 1640
 gefg-geff 1640
 6456
 2
-gfei-gefg 3
 gdie-gefg 1
+gfei-gefg 1
 6457
 3
+gfej-gefh 1
 gefi-gefh 1
 gefg-gefh 1
-gfej-gefh 1
 6458
 1
 gffa-gefi 1640
@@ -17502,10 +17502,10 @@ gege-gegf 1640
 gdje-gegg 1640
 6467
 4
+gdjf-gegh 1
 gegg-gegh 1
 gfgh-gegh 1
 gegi-gegh 1
-gdjf-gegh 1
 6468
 1
 gegj-gegi 1640
@@ -17517,7 +17517,7 @@ gdjh-gegj 1640
 gegj-geha 1640
 6471
 2
-geha-gehb 3
+geha-gehb 2
 gfhb-gehb 1
 6472
 1
@@ -17533,27 +17533,27 @@ gehg-gehf 1640
 gehh-gehg 1640
 6477
 2
-gfib-gehh 1
 geaf-gehh 1
+gfib-gehh 2
 6478
 2
 geag-gehi 1
 gfig-gehi 1
 6479
 2
-gehi-gehj 2
 geah-gehj 1
+gehi-gehj 1
 6483
 2
 gfjb-geid 1
-gebb-geid 2
+gebb-geid 1
 6484
 2
 gebc-geie 1
-gfjg-geie 1
+gfjg-geie 2
 6485
 2
-geie-geif 2
+geie-geif 1
 geig-geif 1
 6486
 1
@@ -17574,12 +17574,12 @@ ggah-gejb 1
 gebj-gejb 1
 6492
 2
-gejd-gejc 3
+gejd-gejc 1
 gejb-gejc 1
 6493
 3
 gejc-gejd 1
-geje-gejd 2
+geje-gejd 1
 gecb-gejd 1
 6494
 2
@@ -17622,13 +17622,13 @@ gfba-gfaj 1
 gedd-gfaj 1
 6510
 2
-gfbb-gfba 1
 gfaj-gfba 1
+gfbb-gfba 1
 6511
 3
 gfbc-gfbb 1
 gedf-gfbb 1
-gfba-gfbb 2
+gfba-gfbb 1
 6512
 1
 ggda-gfbc 1640
@@ -17638,11 +17638,11 @@ gfbf-gfbe 1
 ggdc-gfbe 2
 6515
 2
-gfbe-gfbf 2
+gfbe-gfbf 1
 gfbg-gfbf 1
 6516
 3
-gfbf-gfbg 2
+gfbf-gfbg 1
 ggde-gfbg 1
 gedg-gfbg 1
 6517
@@ -17650,8 +17650,8 @@ gedg-gfbg 1
 gfbg-gfbh 1640
 6518
 2
-gfbh-gfbi 1
 gfbj-gfbi 1
+gfbh-gfbi 1
 6519
 1
 gfbi-gfbj 1640
@@ -17661,7 +17661,7 @@ gfbj-gfca 1640
 6521
 2
 geeb-gfcb 1
-gfca-gfcb 2
+gfca-gfcb 1
 6522
 1
 gfcb-gfcc 1640
@@ -17672,23 +17672,23 @@ ggdh-gfcd 2
 6524
 2
 gfcf-gfce 1
-gfcd-gfce 3
+gfcd-gfce 2
 6525
 3
-gfce-gfcf 3
+gfce-gfcf 1
 gfcg-gfcf 1
 ggdj-gfcf 1
 6526
 2
-gfch-gfcg 2
+gfch-gfcg 1
 geec-gfcg 1
 6527
 1
 gfci-gfch 1640
 6528
 2
-geee-gfci 1
 gfcj-gfci 1
+geee-gfci 1
 6529
 2
 gfci-gfcj 1
@@ -17696,10 +17696,10 @@ gfda-gfcj 2
 6530
 2
 gfcj-gfda 1
-gfdb-gfda 3
+gfdb-gfda 1
 6531
 2
-ggeb-gfdb 2
+ggeb-gfdb 1
 gfda-gfdb 1
 6532
 1
@@ -17715,7 +17715,7 @@ gfdf-gfde 1640
 ggef-gfdf 1640
 6536
 2
-geei-gfdg 2
+geei-gfdg 1
 gfdh-gfdg 1
 6537
 1
@@ -17731,9 +17731,9 @@ gfea-gfdj 1640
 gfeb-gfea 1640
 6541
 3
-gefd-gfeb 1
 ggeh-gfeb 1
-gfec-gfeb 1
+gfec-gfeb 2
+gefd-gfeb 1
 6542
 2
 gfeb-gfec 1
@@ -17750,12 +17750,12 @@ gfeh-gfeg 1
 6547
 2
 gfei-gfeh 1
-gfeg-gfeh 3
+gfeg-gfeh 1
 6548
 3
 gefg-gfei 1
 gfeh-gfei 1
-gfej-gfei 1
+gfej-gfei 2
 6549
 1
 gffa-gfej 1640
@@ -17764,8 +17764,8 @@ gffa-gfej 1640
 gffb-gffa 1640
 6551
 2
+gefj-gffb 1
 ggfd-gffb 1
-gefj-gffb 3
 6552
 1
 gffb-gffc 1640
@@ -17778,7 +17778,7 @@ gegf-gfgb 1640
 6562
 2
 gfgb-gfgc 1
-ggga-gfgc 3
+ggga-gfgc 2
 6563
 1
 gfgc-gfgd 1640
@@ -17787,16 +17787,16 @@ gfgc-gfgd 1640
 gfgd-gfge 1640
 6565
 2
-gfge-gfgf 2
 gggd-gfgf 1
+gfge-gfgf 1
 6566
 2
+gfgf-gfgg 2
 gfgh-gfgg 1
-gfgf-gfgg 3
 6567
 2
-gfgg-gfgh 2
 gegh-gfgh 1
+gfgg-gfgh 1
 6568
 1
 gfgh-gfgi 1640
@@ -17817,7 +17817,7 @@ gfhe-gfhf 1640
 gfhf-gfhg 1640
 6577
 2
-gfhi-gfhh 3
+gfhi-gfhh 1
 gfhg-gfhh 1
 6578
 1
@@ -17827,7 +17827,7 @@ gfhj-gfhi 1640
 gehf-gfhj 1640
 6581
 2
-gghb-gfib 2
+gghb-gfib 1
 gehh-gfib 1
 6582
 1
@@ -17844,7 +17844,7 @@ gghe-gfie 1
 gfie-gfif 1640
 6586
 3
-gfif-gfig 3
+gfif-gfig 2
 gehi-gfig 1
 gfih-gfig 1
 6587
@@ -17867,7 +17867,7 @@ gghh-gfjb 2
 6596
 2
 gfjh-gfjg 1
-ggic-gfjg 1
+ggic-gfjg 2
 6597
 1
 geif-gfjh 1640
@@ -17879,7 +17879,7 @@ gfjh-gfji 1640
 gfji-gfjj 1640
 6600
 2
-geii-ggaa 3
+geii-ggaa 2
 gfjj-ggaa 1
 6601
 1
@@ -17893,16 +17893,16 @@ ggad-ggac 1
 ggae-ggad 1640
 6604
 2
-ggig-ggae 1
 ggaf-ggae 1
+ggig-ggae 1
 6605
 1
 ggih-ggaf 1640
 6606
 3
-ggaf-ggag 3
 ggah-ggag 1
 ggii-ggag 1
+ggaf-ggag 1
 6607
 2
 ggai-ggah 1
@@ -17913,16 +17913,16 @@ ggaj-ggai 1640
 6609
 2
 gejd-ggaj 1
-ggba-ggaj 2
+ggba-ggaj 1
 6610
 3
 ggaj-ggba 1
+ggbb-ggba 1
 geje-ggba 1
-ggbb-ggba 2
 6611
 3
+ggij-ggbb 2
 gejf-ggbb 1
-ggij-ggbb 1
 ggba-ggbb 1
 6612
 2
@@ -17930,17 +17930,17 @@ ggbd-ggbc 2
 ggbb-ggbc 1
 6613
 3
-ggbc-ggbd 1
 ggbe-ggbd 2
 ggjb-ggbd 1
+ggbc-ggbd 1
 6614
 2
 ggbd-ggbe 1
-ggbf-ggbe 3
+ggbf-ggbe 1
 6615
 2
 ggbe-ggbf 1
-ggbg-ggbf 1
+ggbg-ggbf 2
 6616
 1
 ggje-ggbg 1640
@@ -17964,8 +17964,8 @@ gfac-ggce 1640
 ggce-ggcf 1640
 6626
 3
-ggcf-ggcg 1
 ghaa-ggcg 1
+ggcf-ggcg 1
 ggch-ggcg 1
 6627
 3
@@ -17974,8 +17974,8 @@ gfaf-ggch 1
 ggci-ggch 1
 6628
 2
+ggch-ggci 2
 gfag-ggci 1
-ggch-ggci 1
 6629
 1
 gfbb-ggcj 1640
@@ -17988,26 +17988,26 @@ ggda-ggdb 1640
 6632
 3
 gfbe-ggdc 1
-ggdb-ggdc 1
 ghag-ggdc 2
+ggdb-ggdc 1
 6634
 1
 ghai-ggde 1640
 6636
 2
+gfcc-ggdg 2
 ggdh-ggdg 1
-gfcc-ggdg 3
 6637
 2
 gfcd-ggdh 1
-ghbb-ggdh 2
+ghbb-ggdh 1
 6639
 2
-gfcf-ggdj 2
+gfcf-ggdj 1
 ghbd-ggdj 1
 6641
 3
-ghbf-ggeb 2
+ghbf-ggeb 1
 ggec-ggeb 1
 gfdb-ggeb 1
 6642
@@ -18027,8 +18027,8 @@ ghcb-ggeh 1640
 gfec-ggei 1640
 6649
 2
-gfed-ggej 1
 ggfa-ggej 2
+gfed-ggej 1
 6650
 3
 ghce-ggfa 1
@@ -18036,25 +18036,25 @@ ggfb-ggfa 2
 ggej-ggfa 1
 6651
 2
-ggfc-ggfb 1
+ggfc-ggfb 2
 ggfa-ggfb 1
 6652
 3
+gfeg-ggfc 2
 ggfb-ggfc 1
 ghcg-ggfc 1
-gfeg-ggfc 1
 6653
 1
 ggfe-ggfd 1640
 6654
 3
 ggfd-ggfe 1
+ghci-ggfe 2
 gffc-ggfe 1
-ghci-ggfe 1
 6660
 2
 ghde-ggga 1
-gfgc-ggga 3
+gfgc-ggga 1
 6661
 1
 ggga-gggb 1640
@@ -18064,7 +18064,7 @@ ghdh-gggd 1
 gfgf-gggd 1
 6664
 2
-gggd-ggge 1
+gggd-ggge 2
 gfgg-ggge 1
 6665
 1
@@ -18098,9 +18098,9 @@ ghfb-gghh 1640
 ghfc-gghi 1640
 6679
 4
-ghfd-gghj 2
-ggia-gghj 1
 gfjd-gghj 1
+ghfd-gghj 1
+ggia-gghj 1
 gghi-gghj 1
 6680
 2
@@ -18127,12 +18127,12 @@ ggif-ggig 1
 ggih-ggig 1
 6687
 2
-ggig-ggih 2
+ggig-ggih 1
 ggii-ggih 1
 6688
 2
+ghgc-ggii 2
 ggag-ggii 1
-ghgc-ggii 3
 6689
 1
 ghgd-ggij 1640
@@ -18141,8 +18141,8 @@ ghgd-ggij 1640
 ggbc-ggja 1640
 6691
 2
-ggbd-ggjb 1
 ggja-ggjb 1
+ggbd-ggjb 1
 6693
 1
 ggbf-ggjd 1640
@@ -18164,8 +18164,8 @@ ggjj-ggji 1640
 ghaa-ggjj 1640
 6700
 2
-ggcg-ghaa 1
 ghhe-ghaa 1
+ggcg-ghaa 1
 6702
 1
 ggci-ghac 1640
@@ -18175,14 +18175,14 @@ ghhh-ghad 1
 ggcj-ghad 1
 6704
 2
-ghad-ghae 2
+ghad-ghae 1
 ghaf-ghae 1
 6705
 1
 ggdb-ghaf 1640
 6706
 2
-ghah-ghag 2
+ghah-ghag 1
 ggdc-ghag 1
 6707
 1
@@ -18205,10 +18205,10 @@ ghif-ghbb 1
 6713
 2
 ghih-ghbd 1
-ggdj-ghbd 3
+ggdj-ghbd 2
 6715
 2
-ggeb-ghbf 3
+ggeb-ghbf 1
 ghbg-ghbf 1
 6716
 1
@@ -18235,18 +18235,18 @@ ghcc-ghcd 1640
 6724
 2
 ggfa-ghce 1
-ghcd-ghce 2
+ghcd-ghce 1
 6726
 1
 giaa-ghcg 1640
 6728
 2
+ggfe-ghci 2
 ghcj-ghci 1
-ggfe-ghci 1
 6729
 3
-ghda-ghcj 1
 giad-ghcj 1
+ghda-ghcj 1
 ghci-ghcj 1
 6730
 1
@@ -18275,14 +18275,14 @@ ggge-ghdi 1640
 gggf-ghdj 1640
 6742
 2
-ghed-ghec 1
 gggi-ghec 1
+ghed-ghec 1
 6743
 1
 gibh-ghed 1640
 6745
 2
-gheg-ghef 1
+gheg-ghef 2
 gibj-ghef 1
 6746
 1
@@ -18305,14 +18305,14 @@ gicf-ghfb 1640
 ghfb-ghfc 1640
 6753
 2
-gich-ghfd 2
 gghj-ghfd 1
+gich-ghfd 1
 6757
 1
 gidb-ghfh 1640
 6758
 2
-ggie-ghfi 3
+ggie-ghfi 2
 ghfh-ghfi 1
 6759
 1
@@ -18325,7 +18325,7 @@ ghfj-ghga 1640
 gidg-ghgc 1640
 6763
 2
-ghge-ghgd 3
+ghge-ghgd 1
 gidh-ghgd 1
 6764
 1
@@ -18339,7 +18339,7 @@ gieb-ghgh 1640
 6768
 2
 ggje-ghgi 1
-ghgh-ghgi 3
+ghgh-ghgi 1
 6770
 1
 ggjg-ghha 1640
@@ -18352,13 +18352,13 @@ ggjh-ghhb 2
 ggji-ghhc 1640
 6774
 3
+giei-ghhe 1
 ghaa-ghhe 1
-giei-ghhe 2
 ghhf-ghhe 1
 6775
 2
 ghhe-ghhf 1
-ghhg-ghhf 2
+ghhg-ghhf 1
 6776
 2
 ghac-ghhg 2
@@ -18381,12 +18381,12 @@ giff-ghib 1640
 gifg-ghic 1640
 6783
 2
-ghaj-ghid 2
+ghaj-ghid 1
 gifh-ghid 1
 6784
 2
 ghba-ghie 1
-ghid-ghie 3
+ghid-ghie 2
 6785
 1
 gifj-ghif 1640
@@ -18404,12 +18404,12 @@ ghbf-ghij 1640
 ghij-ghja 1640
 6791
 2
-ghja-ghjb 2
+ghja-ghjb 1
 ghjc-ghjb 1
 6792
 2
 ghjb-ghjc 1
-ghjd-ghjc 2
+ghjd-ghjc 1
 6793
 2
 ghbj-ghjd 1
@@ -18434,8 +18434,8 @@ ghcj-giad 1640
 gihi-giae 1640
 6807
 2
-giib-giah 1
 ghdd-giah 1
+giib-giah 1
 6809
 1
 ghdf-giaj 1640
@@ -18450,11 +18450,11 @@ giif-gibb 1640
 ghdi-gibc 1640
 6813
 2
-gibe-gibd 3
+gibe-gibd 1
 ghdj-gibd 1
 6814
 2
-giii-gibe 1
+giii-gibe 2
 gibf-gibe 1
 6815
 2
@@ -18462,9 +18462,9 @@ gibg-gibf 1
 gibe-gibf 2
 6816
 3
-ghec-gibg 1
-gibf-gibg 1
 gija-gibg 1
+ghec-gibg 1
+gibf-gibg 2
 6817
 1
 gijb-gibh 1640
@@ -18480,11 +18480,11 @@ gicc-gicb 1640
 6822
 2
 ghei-gicc 1
-gijg-gicc 2
+gijg-gicc 1
 6823
 2
 gicc-gicd 1
-gice-gicd 1
+gice-gicd 2
 6824
 2
 gicd-gice 1
@@ -18494,7 +18494,7 @@ ghfa-gice 2
 gijj-gicf 1640
 6827
 2
-gici-gich 1
+gici-gich 2
 ghfd-gich 1
 6828
 1
@@ -18511,8 +18511,8 @@ gidd-gide 1
 gjba-gidg 1640
 6837
 2
-ghgd-gidh 2
-gjbb-gidh 2
+ghgd-gidh 1
+gjbb-gidh 1
 6841
 1
 gjbf-gieb 1640
@@ -18542,10 +18542,10 @@ ghhg-gifa 1640
 6851
 2
 gjcj-gifb 1
-ghhh-gifb 2
+ghhh-gifb 1
 6852
 2
-gifd-gifc 2
+gifd-gifc 1
 ghhi-gifc 1
 6853
 1
@@ -18584,8 +18584,8 @@ gjej-gigd 1640
 gigd-gige 1640
 6865
 2
+gige-gigf 2
 ghjb-gigf 1
-gige-gigf 1
 6866
 1
 ghjc-gigg 1640
@@ -18614,7 +18614,7 @@ giah-giib 1
 6882
 2
 giib-giic 1
-gjia-giic 2
+gjia-giic 1
 6883
 1
 giaj-giid 1640
@@ -18630,12 +18630,12 @@ gibc-giig 1
 gjie-giig 1
 6887
 2
-gjij-giih 2
+gjij-giih 1
 gibd-giih 1
 6888
 2
 giij-giii 1
-giih-giii 1
+giih-giii 2
 6890
 1
 gibg-gija 1640
@@ -18654,14 +18654,14 @@ gijf-gije 1
 6895
 2
 gijg-gijf 1
-gicb-gijf 2
+gicb-gijf 1
 6896
 2
 gijh-gijg 2
 haac-gijg 1
 6897
 2
-haad-gijh 3
+haad-gijh 2
 gicd-gijh 1
 6898
 1
@@ -18705,8 +18705,8 @@ gjai-gjaj 1640
 gjaj-gjba 1640
 6911
 2
-hacj-gjbb 1
-gidh-gjbb 2
+hacj-gjbb 2
+gidh-gjbb 1
 6915
 1
 gjbg-gjbf 1640
@@ -18732,7 +18732,7 @@ gieg-gjca 1640
 gjca-gjcb 1640
 6922
 2
-giei-gjcc 2
+giei-gjcc 1
 gjcb-gjcc 1
 6923
 2
@@ -18740,7 +18740,7 @@ gjcc-gjcd 1
 gjce-gjcd 1
 6924
 3
-haec-gjce 2
+haec-gjce 1
 gifa-gjce 1
 gjcd-gjce 1
 6929
@@ -18750,7 +18750,7 @@ gifb-gjcj 2
 haeh-gjcj 1
 6930
 2
-gjcj-gjda 2
+gjcj-gjda 1
 gifc-gjda 1
 6931
 1
@@ -18758,7 +18758,7 @@ gjda-gjdb 1640
 6932
 2
 gife-gjdc 1
-gjdb-gjdc 2
+gjdb-gjdc 1
 6933
 1
 gjdc-gjdd 1640
@@ -18774,7 +18774,7 @@ gjdh-gjdi 1640
 6939
 2
 gjdi-gjdj 1
-gifh-gjdj 1
+gifh-gjdj 2
 6942
 1
 gjed-gjec 1640
@@ -18793,8 +18793,8 @@ gjee-gjef 1640
 gjej-gjei 1640
 6949
 2
+hafj-gjej 2
 gjfa-gjej 1
-hafj-gjej 1
 6950
 1
 gjfb-gjfa 1640
@@ -18808,14 +18808,14 @@ gigg-gjfc 1
 gjfb-gjfc 2
 6953
 2
-gjfc-gjfd 3
+gjfc-gjfd 1
 gigh-gjfd 1
 6954
 4
+gigi-gjfe 1
 gjff-gjfe 1
 haga-gjfe 1
 gjfd-gjfe 1
-gigi-gjfe 1
 6955
 1
 gjfg-gjff 1640
@@ -18827,7 +18827,7 @@ gjfh-gjfg 1
 3
 gjfg-gjfh 1
 hagd-gjfh 1
-gjfi-gjfh 2
+gjfi-gjfh 1
 6958
 1
 gjfj-gjfi 1640
@@ -18844,7 +18844,7 @@ gjgh-gjgi 1640
 6969
 2
 gjha-gjgj 1
-gjgi-gjgj 2
+gjgi-gjgj 1
 6970
 1
 gjhb-gjha 1640
@@ -18853,11 +18853,11 @@ gjhb-gjha 1640
 gjhc-gjhb 1640
 6972
 2
-gjhd-gjhc 1
 gjhb-gjhc 1
+gjhd-gjhc 2
 6973
 3
-gihj-gjhd 2
+gihj-gjhd 1
 gjhc-gjhd 1
 gjhe-gjhd 1
 6974
@@ -18867,7 +18867,7 @@ gjhf-gjhe 1
 6975
 2
 hahd-gjhf 1
-gjhe-gjhf 2
+gjhe-gjhf 1
 6976
 1
 gjhf-gjhg 1640
@@ -18883,11 +18883,11 @@ gjhj-gjhi 2
 gjia-gjhj 1640
 6980
 2
-gjib-gjia 2
+gjib-gjia 1
 giic-gjia 1
 6981
 3
-gjic-gjib 1
+gjic-gjib 2
 giid-gjib 1
 gjia-gjib 1
 6982
@@ -18931,12 +18931,12 @@ gija-gjjc 1640
 6993
 2
 gjje-gjjd 1
-gjjc-gjjd 3
+gjjc-gjjd 1
 6994
 3
-haie-gjje 1
-gjjd-gjje 3
 gjjf-gjje 1
+haie-gjje 1
+gjjd-gjje 2
 6995
 1
 haif-gjjf 1640
@@ -18953,7 +18953,7 @@ haii-gjji 1
 6999
 2
 gijd-gjjj 1
-gjji-gjjj 2
+gjji-gjjj 1
 7000
 1
 haab-haaa 1640
@@ -18965,18 +18965,18 @@ haac-haab 1640
 haad-haac 1640
 7003
 2
-haae-haad 2
 gijh-haad 1
+haae-haad 1
 7004
 4
 haad-haae 1
 giji-haae 1
 haja-haae 1
-haaf-haae 3
+haaf-haae 1
 7005
 2
 haag-haaf 1
-haae-haaf 2
+haae-haaf 1
 7006
 2
 haah-haag 1
@@ -18984,13 +18984,13 @@ haaf-haag 1
 7007
 2
 haag-haah 1
-haai-haah 1
+haai-haah 2
 7008
 1
 haje-haai 1640
 7014
 2
-hajg-habe 1
+hajg-habe 2
 habf-habe 1
 7015
 3
@@ -19000,7 +19000,7 @@ hajh-habf 1
 7016
 2
 haji-habg 1
-habf-habg 1
+habf-habg 2
 7017
 1
 habg-habh 1640
@@ -19021,19 +19021,19 @@ hacd-hace 1640
 hace-hacf 1640
 7026
 2
-hacf-hacg 2
+hacf-hacg 1
 hbae-hacg 1
 7027
 1
 hacg-hach 1640
 7028
 2
-hach-haci 2
+hach-haci 1
 hacj-haci 1
 7029
 4
 haci-hacj 1
-gjbb-hacj 2
+gjbb-hacj 1
 hbah-hacj 1
 hada-hacj 1
 7030
@@ -19056,16 +19056,16 @@ hadf-hade 1640
 hadg-hadf 1640
 7036
 2
-hbba-hadg 2
+hbba-hadg 1
 hadh-hadg 1
 7037
 1
 hbbb-hadh 1640
 7039
 3
+haea-hadj 1
 gjbh-hadj 1
 hbbd-hadj 1
-haea-hadj 1
 7040
 2
 haeb-haea 1
@@ -19083,20 +19083,20 @@ haec-haed 1
 haee-haed 1
 7044
 2
-haef-haee 1
+haef-haee 2
 haed-haee 1
 7045
 2
-haeg-haef 2
 haee-haef 1
+haeg-haef 1
 7046
 2
-hbbi-haeg 2
 haef-haeg 1
+hbbi-haeg 1
 7047
 2
 haeg-haeh 1
-gjcj-haeh 2
+gjcj-haeh 1
 7050
 1
 hbcc-hafa 1640
@@ -19115,7 +19115,7 @@ haff-hafe 1640
 7055
 2
 hbch-haff 1
-gjef-haff 2
+gjef-haff 1
 7056
 1
 haff-hafg 1640
@@ -19130,8 +19130,8 @@ gjei-hafi 1640
 hbdb-hafj 1640
 7060
 2
+gjfe-haga 2
 hbdc-haga 1
-gjfe-haga 1
 7063
 3
 hagc-hagd 1
@@ -19143,7 +19143,7 @@ hagf-hage 1640
 7065
 2
 gjfj-hagf 1
-hbdh-hagf 1
+hbdh-hagf 2
 7069
 1
 hbeb-hagj 1640
@@ -19162,21 +19162,21 @@ hahe-hahf 1640
 7076
 2
 gjhi-hahg 1
-hahf-hahg 2
+hahf-hahg 1
 7077
 1
 hahg-hahh 1640
 7078
 2
-hbfa-hahi 2
 gjie-hahi 1
+hbfa-hahi 2
 7079
 1
 hahi-hahj 1640
 7080
 3
 hahj-haia 1
-gjig-haia 2
+gjig-haia 1
 hbfc-haia 1
 7082
 1
@@ -19188,25 +19188,25 @@ gjje-haie 1
 7085
 2
 haig-haif 1
-haie-haif 1
+haie-haif 2
 7086
 2
-haif-haig 3
 hbfi-haig 1
+haif-haig 1
 7087
 1
 haig-haih 1640
 7088
 2
 haij-haii 1
-haih-haii 3
+haih-haii 2
 7089
 1
 gjjj-haij 1640
 7090
 2
 hajb-haja 1
-hbgc-haja 1
+hbgc-haja 2
 7091
 1
 hajc-hajb 1640
@@ -19218,7 +19218,7 @@ haag-hajc 1640
 haah-hajd 1640
 7094
 2
-hbgg-haje 2
+hbgg-haje 1
 hajf-haje 1
 7095
 1
@@ -19231,7 +19231,7 @@ hajh-hajg 1640
 hbgj-hajh 1640
 7098
 2
-habg-haji 1
+habg-haji 2
 hbha-haji 1
 7099
 1
@@ -19244,11 +19244,11 @@ hbab-hbaa 1
 habi-hbaa 1
 7101
 2
-hbhd-hbab 1
+hbhd-hbab 2
 hbaa-hbab 1
 7104
 2
-hacg-hbae 1
+hacg-hbae 2
 hbhg-hbae 1
 7105
 1
@@ -19261,7 +19261,7 @@ hbaf-hbag 1
 7107
 2
 hbag-hbah 1
-hbhj-hbah 1
+hbhj-hbah 2
 7110
 1
 hbic-hbba 1640
@@ -19271,12 +19271,12 @@ hbbc-hbbb 1
 hbba-hbbb 1
 7112
 2
-hbie-hbbc 3
+hbie-hbbc 1
 hbbb-hbbc 1
 7113
 2
-hadj-hbbd 2
 hbbc-hbbd 1
+hadj-hbbd 1
 7114
 1
 hbig-hbbe 1640
@@ -19286,17 +19286,17 @@ hbbe-hbbf 1640
 7118
 2
 hbbj-hbbi 1
-hbja-hbbi 2
+hbja-hbbi 1
 7119
 1
 haeh-hbbj 1640
 7122
 2
-hbje-hbcc 1
 hbcd-hbcc 1
+hbje-hbcc 2
 7123
 2
-hbce-hbcd 1
+hbce-hbcd 2
 hafb-hbcd 1
 7124
 1
@@ -19307,13 +19307,13 @@ hafe-hbcg 1640
 7127
 2
 hbcg-hbch 1
-hbci-hbch 3
+hbci-hbch 2
 7128
 1
 hbcj-hbci 1640
 7129
 3
-hafh-hbcj 2
+hafh-hbcj 1
 hbda-hbcj 1
 hcab-hbcj 1
 7130
@@ -19324,7 +19324,7 @@ hafi-hbda 1640
 hcad-hbdb 1640
 7132
 2
-haga-hbdc 3
+haga-hbdc 2
 hcae-hbdc 1
 7133
 1
@@ -19334,13 +19334,13 @@ hbdc-hbdd 1640
 hbdd-hbde 1640
 7135
 3
+hbde-hbdf 2
 hagd-hbdf 1
 hbdg-hbdf 1
-hbde-hbdf 2
 7136
 3
 hcai-hbdg 1
-hbdf-hbdg 2
+hbdf-hbdg 1
 hage-hbdg 1
 7137
 1
@@ -19391,20 +19391,20 @@ haii-hbga 1640
 hbga-hbgb 1640
 7162
 2
-hcde-hbgc 2
+hcde-hbgc 1
 hbgd-hbgc 1
 7163
 2
-hbgc-hbgd 2
+hbgc-hbgd 1
 hbge-hbgd 1
 7164
 2
-hbgd-hbge 1
+hbgd-hbge 2
 hcdg-hbge 1
 7165
 2
 hajd-hbgf 1
-hbge-hbgf 2
+hbge-hbgf 1
 7166
 1
 hbgf-hbgg 1640
@@ -19416,9 +19416,9 @@ hcdj-hbgh 1640
 hcea-hbgi 1640
 7169
 3
-hbgi-hbgj 1
-hceb-hbgj 1
 hbha-hbgj 1
+hceb-hbgj 1
+hbgi-hbgj 1
 7170
 2
 haji-hbha 2
@@ -19428,22 +19428,22 @@ hcec-hbha 1
 hbhd-hbhc 1640
 7173
 2
-hcef-hbhd 1
 hbab-hbhd 1
+hcef-hbhd 1
 7176
 2
 hcei-hbhg 1
-hbae-hbhg 3
+hbae-hbhg 1
 7177
 2
-hbhi-hbhh 1
 hbhg-hbhh 2
+hbhi-hbhh 1
 7178
 1
 hbag-hbhi 1640
 7179
 2
-hcfb-hbhj 2
+hcfb-hbhj 1
 hbah-hbhj 1
 7180
 1
@@ -19476,7 +19476,7 @@ hbij-hbii 1640
 hbja-hbij 1640
 7190
 2
-hcgc-hbja 1
+hcgc-hbja 2
 hbbi-hbja 1
 7192
 1
@@ -19487,7 +19487,7 @@ hbjc-hbjd 1640
 7194
 3
 hbjf-hbje 1
-hbcc-hbje 1
+hbcc-hbje 2
 hcgg-hbje 1
 7195
 1
@@ -19503,11 +19503,11 @@ hbch-hbjj 1640
 hbjj-hcaa 1640
 7201
 2
-hbcj-hcab 2
+hbcj-hcab 1
 hcac-hcab 1
 7202
 2
-hche-hcac 1
+hche-hcac 2
 hcab-hcac 1
 7203
 1
@@ -19522,7 +19522,7 @@ hcaj-hcai 1
 7209
 3
 hcai-hcaj 1
-hbdh-hcaj 1
+hbdh-hcaj 2
 hcib-hcaj 1
 7210
 1
@@ -19538,24 +19538,24 @@ hbed-hcbf 1640
 hbee-hcbg 1640
 7217
 3
+hbef-hcbh 1
 hcij-hcbh 2
 hcbg-hcbh 1
-hbef-hcbh 1
 7218
 1
 hcja-hcbi 1640
 7219
 3
-hcbi-hcbj 1
-hcjb-hcbj 1
 hbeh-hcbj 1
+hcbi-hcbj 2
+hcjb-hcbj 1
 7220
 1
 hcbj-hcca 1640
 7221
 2
 hbej-hccb 1
-hcca-hccb 1
+hcca-hccb 2
 7222
 1
 hccd-hccc 1640
@@ -19565,15 +19565,15 @@ hcce-hccd 1640
 7224
 3
 hccf-hcce 1
-hcjg-hcce 1
+hcjg-hcce 2
 hbfc-hcce 1
 7225
 1
 hccg-hccf 1640
 7226
 2
-hbfe-hccg 2
 hcji-hccg 1
+hbfe-hccg 1
 7227
 1
 hccg-hcch 1640
@@ -19606,14 +19606,14 @@ hcdh-hcdg 1640
 hcdi-hcdh 1640
 7238
 2
-hbgg-hcdi 2
+hbgg-hcdi 1
 hdba-hcdi 1
 7239
 1
 hcdi-hcdj 1640
 7240
 2
-hdbc-hcea 2
+hdbc-hcea 1
 hceb-hcea 1
 7241
 3
@@ -19626,8 +19626,8 @@ hced-hcec 2
 hceb-hcec 1
 7243
 3
+hcee-hced 2
 hdbf-hced 1
-hcee-hced 1
 hcec-hced 1
 7244
 3
@@ -19636,19 +19636,19 @@ hdbg-hcee 2
 hced-hcee 1
 7245
 2
-hcee-hcef 1
+hcee-hcef 2
 hdbh-hcef 1
 7248
 1
 hcej-hcei 1640
 7249
 2
+hbhh-hcej 1
 hcfa-hcej 1
-hbhh-hcej 3
 7250
 2
 hcfb-hcfa 1
-hcej-hcfa 1
+hcej-hcfa 2
 7251
 3
 hcfa-hcfb 2
@@ -19669,7 +19669,7 @@ hdcj-hcfh 1640
 7258
 2
 hbig-hcfi 1
-hdde-hcfi 2
+hdde-hcfi 1
 7259
 1
 hcfi-hcfj 1640
@@ -19682,7 +19682,7 @@ hcga-hcgb 1640
 7262
 2
 hddi-hcgc 1
-hcgb-hcgc 3
+hcgb-hcgc 1
 7265
 1
 hbjd-hcgf 1640
@@ -19742,14 +19742,14 @@ hcij-hcii 1640
 3
 hcbh-hcij 1
 hdif-hcij 1
-hcja-hcij 2
+hcja-hcij 1
 7290
 1
 hdig-hcja 1640
 7291
 2
 hdih-hcjb 1
-hcbj-hcjb 2
+hcbj-hcjb 1
 7292
 1
 hcjd-hcjc 1640
@@ -19773,7 +19773,7 @@ hdji-hcji 1640
 hcch-hcjj 1640
 7301
 2
-heaf-hdab 3
+heaf-hdab 1
 hdac-hdab 1
 7302
 2
@@ -19781,20 +19781,20 @@ hdad-hdac 1
 heag-hdac 1
 7303
 2
-hdae-hdad 1
 hcdb-hdad 1
+hdae-hdad 1
 7304
 2
 hdad-hdae 1
-hcdc-hdae 2
+hcdc-hdae 1
 7305
 1
 hcdd-hdaf 1640
 7306
 3
 hdah-hdag 1
-hebe-hdag 1
 hcde-hdag 1
+hebe-hdag 2
 7307
 1
 hdag-hdah 1640
@@ -19803,16 +19803,16 @@ hdag-hdah 1640
 hebh-hdaj 1640
 7310
 2
-hdbb-hdba 1
+hdbb-hdba 2
 hdaj-hdba 1
 7311
 2
 hebj-hdbb 1
-hcdj-hdbb 3
+hcdj-hdbb 2
 7312
 2
 hcea-hdbc 1
-hece-hdbc 1
+hece-hdbc 2
 7313
 1
 hecf-hdbd 1640
@@ -19822,19 +19822,19 @@ hecg-hdbe 1640
 7315
 3
 hdbg-hdbf 1
+hced-hdbf 1
 hdbe-hdbf 1
-hced-hdbf 3
 7316
 1
 hdbh-hdbg 1640
 7317
 2
-hecj-hdbh 2
 hcef-hdbh 1
+hecj-hdbh 2
 7320
 2
 hdcb-hdca 1
-hcei-hdca 3
+hcei-hdca 2
 7321
 1
 hdcc-hdcb 1640
@@ -19848,11 +19848,11 @@ hcfb-hdcd 2
 7324
 2
 hdcf-hdce 1
-heee-hdce 2
+heee-hdce 1
 7325
 2
 hdcg-hdcf 1
-hdce-hdcf 3
+hdce-hdcf 1
 7326
 3
 hdcf-hdcg 1
@@ -19907,7 +19907,7 @@ hdec-hded 1640
 7344
 2
 hegc-hdee 1
-hded-hdee 3
+hded-hdee 2
 7345
 1
 hdee-hdef 1640
@@ -19926,8 +19926,8 @@ hdeh-hdei 1640
 hdei-hdej 1640
 7350
 2
+hdej-hdfa 1
 hege-hdfa 1
-hdej-hdfa 3
 7351
 1
 hdfa-hdfb 1640
@@ -19955,12 +19955,12 @@ hdfj-hdfi 1640
 hegj-hdfj 1640
 7364
 3
-hchg-hdge 1
-hdgf-hdge 2
 hehe-hdge 1
+hdgf-hdge 1
+hchg-hdge 1
 7365
 2
-hdge-hdgf 1
+hdge-hdgf 2
 hdgg-hdgf 1
 7366
 3
@@ -19969,13 +19969,13 @@ hdgh-hdgg 1
 hdgf-hdgg 1
 7367
 3
-hdgi-hdgh 1
+hdgi-hdgh 2
 hdgg-hdgh 1
 hchj-hdgh 1
 7368
 2
+hcia-hdgi 1
 hdgh-hdgi 1
-hcia-hdgi 2
 7369
 3
 hdgi-hdgj 1
@@ -19984,14 +19984,14 @@ hdha-hdgj 1
 7370
 2
 hdgj-hdha 1
-hehg-hdha 3
+hehg-hdha 2
 7371
 1
 hdha-hdhb 1640
 7375
 2
 hdhe-hdhf 1
-hcid-hdhf 1
+hcid-hdhf 2
 7376
 1
 hdhf-hdhg 1640
@@ -20006,22 +20006,22 @@ hcih-hdhj 1640
 hdhj-hdia 1640
 7384
 2
-heig-hdie 3
+heig-hdie 2
 hcii-hdie 1
 7385
 3
 hdig-hdif 1
 hcij-hdif 1
-hdie-hdif 3
+hdie-hdif 1
 7386
 2
 hdih-hdig 1
-hdif-hdig 1
+hdif-hdig 2
 7387
 3
 hdig-hdih 1
 hcjb-hdih 1
-hdii-hdih 2
+hdii-hdih 1
 7388
 1
 hcjc-hdii 1640
@@ -20040,7 +20040,7 @@ hdjc-hdjd 1640
 7394
 2
 hcje-hdje 1
-hejc-hdje 3
+hejc-hdje 1
 7395
 1
 hdje-hdjf 1640
@@ -20053,7 +20053,7 @@ hdjg-hdjh 1640
 7398
 2
 hdjh-hdji 1
-hdjj-hdji 3
+hdjj-hdji 1
 7399
 3
 hcjj-hdjj 1
@@ -20062,7 +20062,7 @@ hdji-hdjj 1
 7400
 2
 heab-heaa 1
-hdjj-heaa 2
+hdjj-heaa 1
 7401
 1
 hejf-heab 1640
@@ -20072,11 +20072,11 @@ hejg-heac 1640
 7403
 2
 heae-head 1
-heac-head 2
+heac-head 1
 7404
 2
 hdaa-heae 1
-head-heae 3
+head-heae 1
 7405
 1
 heae-heaf 1640
@@ -20089,7 +20089,7 @@ hdae-heai 1640
 7409
 3
 hdaf-heaj 1
-heai-heaj 2
+heai-heaj 1
 hejj-heaj 1
 7410
 1
@@ -20108,7 +20108,7 @@ hebf-hebg 1640
 hebg-hebh 1640
 7419
 2
-hdbb-hebj 2
+hdbb-hebj 1
 hfaf-hebj 2
 7420
 1
@@ -20126,11 +20126,11 @@ hfaj-hecd 1640
 7424
 3
 hecd-hece 1
-hdbc-hece 1
+hdbc-hece 2
 hecf-hece 1
 7425
 2
-hecg-hecf 2
+hecg-hecf 1
 hece-hecf 1
 7426
 3
@@ -20145,10 +20145,10 @@ hdbf-hech 1640
 hech-heci 1640
 7429
 4
+heda-hecj 1
 hdbh-hecj 1
 heci-hecj 1
-heda-hecj 1
-hfbb-hecj 1
+hfbb-hecj 2
 7432
 1
 hedd-hedc 1640
@@ -20158,7 +20158,7 @@ hede-hedd 1640
 7434
 2
 hedf-hede 1
-hfbg-hede 3
+hfbg-hede 2
 7435
 1
 hedg-hedf 1640
@@ -20182,7 +20182,7 @@ heee-heed 1640
 3
 hfcc-heee 1
 hdce-heee 1
-heef-heee 1
+heef-heee 2
 7445
 1
 heeg-heef 1640
@@ -20212,7 +20212,7 @@ hfcg-hefc 1640
 hddd-heff 1640
 7456
 2
-heff-hefg 2
+heff-hefg 1
 hfda-hefg 1
 7457
 1
@@ -20229,7 +20229,7 @@ hegc-hegb 1640
 7462
 2
 hegb-hegc 1
-hfdg-hegc 1
+hfdg-hegc 2
 7464
 1
 hfdi-hege 1640
@@ -20258,7 +20258,7 @@ hfee-heha 1
 hfef-hehb 1640
 7474
 2
-hdge-hehe 2
+hdge-hehe 1
 hfei-hehe 1
 7476
 1
@@ -20321,23 +20321,23 @@ heba-hfaa 1640
 hfaa-hfab 1640
 7502
 2
-hfab-hfac 2
 hfad-hfac 1
+hfab-hfac 2
 7503
 2
 hfac-hfad 2
 hfae-hfad 1
 7504
 2
-hfhi-hfae 2
+hfhi-hfae 1
 hfad-hfae 1
 7505
 2
-hfhj-hfaf 1
 hfag-hfaf 2
+hfhj-hfaf 1
 7506
 2
-hfah-hfag 2
+hfah-hfag 1
 hfia-hfag 1
 7507
 1
@@ -20353,7 +20353,7 @@ hfba-hfaj 1640
 hfie-hfba 1640
 7511
 2
-hfif-hfbb 3
+hfif-hfbb 1
 hecj-hfbb 1
 7512
 1
@@ -20401,8 +20401,8 @@ hefg-hfda 1
 hgaf-hfdb 1640
 7533
 2
-hgah-hfdd 2
 hfde-hfdd 1
+hgah-hfdd 2
 7534
 1
 hega-hfde 1640
@@ -20415,8 +20415,8 @@ hege-hfdi 1
 hfdj-hfdi 1
 7539
 2
+hegf-hfdj 1
 hgbd-hfdj 1
-hegf-hfdj 3
 7541
 1
 hegh-hfeb 1640
@@ -20432,7 +20432,7 @@ hgca-hfeg 1640
 7548
 2
 hgcc-hfei 1
-hehe-hfei 1
+hehe-hfei 2
 7549
 1
 hgcd-hfej 1640
@@ -20455,11 +20455,11 @@ hgda-hffg 1
 heic-hffg 1
 7557
 2
-hffg-hffh 3
+hffg-hffh 2
 hffi-hffh 1
 7558
 2
-hffh-hffi 1
+hffh-hffi 2
 hffj-hffi 1
 7559
 1
@@ -20479,7 +20479,7 @@ hgdh-hfgd 1640
 7566
 2
 hgea-hfgg 1
-hejc-hfgg 2
+hejc-hfgg 1
 7567
 1
 hgeb-hfgh 1640
@@ -20501,11 +20501,11 @@ hfhe-hfhd 1640
 7574
 2
 hfhf-hfhe 1
-hfaa-hfhe 3
+hfaa-hfhe 1
 7575
 2
 hgej-hfhf 1
-hfhe-hfhf 3
+hfhe-hfhf 2
 7576
 3
 hfac-hfhg 1
@@ -20529,7 +20529,7 @@ hfic-hfib 1640
 7582
 2
 hgfg-hfic 1
-hfai-hfic 1
+hfai-hfic 2
 7583
 1
 hfic-hfid 1640
@@ -20545,7 +20545,7 @@ hfbc-hfig 1640
 7587
 2
 hfig-hfih 1
-hfii-hfih 1
+hfii-hfih 2
 7588
 2
 hfih-hfii 1
@@ -20559,7 +20559,7 @@ hgge-hfja 1640
 7591
 2
 hfbh-hfjb 1
-hfjc-hfjb 1
+hfjc-hfjb 2
 7592
 4
 hfjb-hfjc 1
@@ -20580,8 +20580,8 @@ hgha-hfjg 1640
 hghd-hfjj 1640
 7600
 2
-hghe-hgaa 3
 hfcg-hgaa 1
+hghe-hgaa 1
 7601
 1
 hgaa-hgab 1640
@@ -20600,15 +20600,15 @@ hghj-hgaf 1
 hgah-hgag 1640
 7607
 2
-hgai-hgah 1
+hgai-hgah 2
 hfdd-hgah 1
 7608
 1
 hgic-hgai 1640
 7609
 2
-hgai-hgaj 2
 hgid-hgaj 1
+hgai-hgaj 1
 7610
 1
 hgaj-hgba 1640
@@ -20638,15 +20638,15 @@ hgcb-hgca 1640
 hgcc-hgcb 1640
 7622
 2
-hfei-hgcc 2
 hgcb-hgcc 1
+hfei-hgcc 1
 7623
 1
 hgjh-hgcd 1640
 7625
 2
 hgjj-hgcf 1
-hffb-hgcf 1
+hffb-hgcf 2
 7626
 1
 hgcf-hgcg 1640
@@ -20656,7 +20656,7 @@ hgcg-hgch 1640
 7629
 2
 hfff-hgcj 1
-hhad-hgcj 3
+hhad-hgcj 1
 7630
 1
 hgcj-hgda 1640
@@ -20666,7 +20666,7 @@ hhaj-hgdf 1640
 7636
 2
 hgdf-hgdg 1
-hfgc-hgdg 1
+hfgc-hgdg 2
 7637
 1
 hgdg-hgdh 1640
@@ -20675,11 +20675,11 @@ hgdg-hgdh 1640
 hgdh-hgdi 1640
 7639
 2
-hgdi-hgdj 3
+hgdi-hgdj 1
 hgea-hgdj 1
 7640
 2
-hgdj-hgea 3
+hgdj-hgea 1
 hfgg-hgea 1
 7641
 1
@@ -20693,7 +20693,7 @@ hgfa-hgej 1
 hhcd-hgej 1
 7650
 3
-hgfb-hgfa 2
+hgfb-hgfa 1
 hhce-hgfa 1
 hfhg-hgfa 1
 7651
@@ -20705,7 +20705,7 @@ hhch-hgfd 1
 hgfe-hgfd 1
 7654
 2
-hgff-hgfe 1
+hgff-hgfe 2
 hgfd-hgfe 1
 7655
 2
@@ -20729,9 +20729,9 @@ hhdd-hgfj 1640
 hhde-hgga 1640
 7661
 3
-hgga-hggb 1
 hggc-hggb 1
 hfih-hggb 1
+hgga-hggb 1
 7662
 2
 hfii-hggc 2
@@ -20748,20 +20748,20 @@ hhdi-hgge 2
 hfjb-hggf 1640
 7666
 2
-hggh-hggg 3
+hggh-hggg 1
 hfjc-hggg 1
 7667
 2
+hggi-hggh 2
 hggg-hggh 1
-hggi-hggh 1
 7668
 2
 hggh-hggi 1
 hggj-hggi 2
 7669
 2
-hhed-hggj 1
 hggi-hggj 1
+hhed-hggj 1
 7673
 1
 hheh-hghd 1640
@@ -20771,19 +20771,19 @@ hhei-hghe 1640
 7676
 2
 hgac-hghg 1
-hghh-hghg 2
+hghh-hghg 1
 7677
 2
-hghi-hghh 3
+hghi-hghh 2
 hghg-hghh 1
 7678
 2
-hgae-hghi 3
+hgae-hghi 1
 hhfc-hghi 1
 7679
 2
 hhfh-hghj 1
-hgia-hghj 3
+hgia-hghj 2
 7680
 1
 hgib-hgia 1640
@@ -20799,7 +20799,7 @@ hgba-hgie 1640
 7686
 2
 hhgi-hgig 1
-hgbc-hgig 3
+hgbc-hgig 2
 7687
 1
 hgig-hgih 1640
@@ -20848,7 +20848,7 @@ hhbd-hhbc 1640
 hgdj-hhbd 1640
 7715
 2
-hhbg-hhbf 1
+hhbg-hhbf 2
 hibh-hhbf 1
 7716
 1
@@ -20864,8 +20864,8 @@ hhbj-hhbi 1640
 hhca-hhbj 1640
 7720
 2
-hicc-hhca 2
 hgeg-hhca 1
+hicc-hhca 2
 7721
 1
 hhcc-hhcb 1640
@@ -20889,7 +20889,7 @@ hidh-hhch 1
 7729
 2
 hgff-hhcj 1
-hhda-hhcj 2
+hhda-hhcj 1
 7730
 1
 hiea-hhda 1640
@@ -20900,15 +20900,15 @@ hhda-hhdb 1640
 3
 hhdb-hhdc 1
 hiec-hhdc 1
-hgfi-hhdc 2
+hgfi-hhdc 1
 7733
 2
-hieh-hhdd 2
 hhde-hhdd 1
+hieh-hhdd 1
 7734
 2
 hhdf-hhde 1
-hhdd-hhde 1
+hhdd-hhde 2
 7735
 1
 hggb-hhdf 1640
@@ -20931,7 +20931,7 @@ hggf-hhdj 1640
 hhdj-hhea 1640
 7743
 2
-higb-hhed 3
+higb-hhed 2
 hggj-hhed 1
 7744
 1
@@ -20959,7 +20959,7 @@ hghg-hhfa 1640
 hghh-hhfb 1640
 7752
 4
-hhfd-hhfc 1
+hhfd-hhfc 2
 hiha-hhfc 1
 hghi-hhfc 1
 hhfb-hhfc 1
@@ -20975,12 +20975,12 @@ hhfg-hhff 1640
 7756
 2
 hihe-hhfg 1
-hhfh-hhfg 1
+hhfh-hhfg 2
 7757
 3
-hghj-hhfh 2
-hhfg-hhfh 1
 hhfi-hhfh 1
+hghj-hhfh 1
+hhfg-hhfh 1
 7758
 1
 hhfh-hhfi 1640
@@ -20997,30 +20997,30 @@ hhgb-hhga 1
 hhgc-hhgb 1640
 7762
 3
-hhgd-hhgc 2
+hhgd-hhgc 1
 hihg-hhgc 1
 hgie-hhgc 1
 7763
 2
-hhge-hhgd 3
+hhge-hhgd 1
 hhgc-hhgd 1
 7764
 2
 hhgd-hhge 1
-hhgf-hhge 2
+hhgf-hhge 1
 7765
 2
 hhge-hhgf 1
 hihj-hhgf 2
 7767
 2
-hhgi-hhgh 3
+hhgi-hhgh 2
 hiib-hhgh 1
 7768
 3
 hhgh-hhgi 1
-hgig-hhgi 2
-hhgj-hhgi 2
+hgig-hhgi 1
+hhgj-hhgi 1
 7769
 1
 hhha-hhgj 1640
@@ -21029,8 +21029,8 @@ hhha-hhgj 1640
 hhhb-hhha 1640
 7771
 2
+hhhc-hhhb 2
 hgij-hhhb 1
-hhhc-hhhb 1
 7772
 2
 hiic-hhhc 1
@@ -21091,8 +21091,8 @@ hhjh-hhjg 1
 hiji-hhjg 2
 7797
 2
-hhjg-hhjh 2
 hhad-hhjh 1
+hhjg-hhjh 2
 7799
 1
 hiaa-hhjj 1640
@@ -21111,11 +21111,11 @@ hiae-hiaf 1640
 7806
 2
 hiah-hiag 1
-hiaf-hiag 1
+hiaf-hiag 2
 7807
 2
-hiai-hiah 2
-hiag-hiah 2
+hiai-hiah 1
+hiag-hiah 1
 7808
 2
 hhba-hiai 2
@@ -21134,24 +21134,24 @@ hhbd-hibb 1640
 hibb-hibc 1640
 7814
 2
-hibf-hibe 2
+hibf-hibe 1
 hjai-hibe 1
 7815
 2
 hibe-hibf 1
-hibg-hibf 1
+hibg-hibf 2
 7816
 2
 hibf-hibg 1
-hjba-hibg 1
+hjba-hibg 2
 7817
 1
 hibg-hibh 1640
 7822
 3
-hjbc-hicc 1
 hhca-hicc 1
-hicd-hicc 3
+hjbc-hicc 1
+hicd-hicc 1
 7823
 2
 hjbd-hicd 2
@@ -21175,7 +21175,7 @@ hich-hici 1640
 7829
 2
 hida-hicj 1
-hici-hicj 3
+hici-hicj 1
 7831
 1
 hidc-hidb 1640
@@ -21190,16 +21190,16 @@ hjbj-hidd 1640
 hidd-hide 1640
 7835
 2
-hide-hidf 1
 hidg-hidf 2
+hide-hidf 1
 7836
 1
 hidh-hidg 1640
 7837
 3
-hjcd-hidh 1
-hhch-hidh 1
 hidi-hidh 1
+hhch-hidh 1
+hjcd-hidh 1
 7838
 1
 hidj-hidi 1640
@@ -21208,21 +21208,21 @@ hidj-hidi 1640
 hhcj-hidj 1640
 7840
 2
-hidj-hiea 2
+hidj-hiea 1
 hieb-hiea 1
 7841
 2
-hiec-hieb 3
+hiec-hieb 1
 hiea-hieb 1
 7842
 3
-hieb-hiec 1
 hied-hiec 1
-hhdc-hiec 2
+hieb-hiec 1
+hhdc-hiec 1
 7843
 2
 hiec-hied 1
-hiee-hied 2
+hiee-hied 1
 7844
 2
 hjcg-hiee 1
@@ -21232,12 +21232,12 @@ hied-hiee 1
 hiee-hief 1640
 7846
 2
-hieh-hieg 1
+hieh-hieg 2
 hief-hieg 1
 7847
 2
 hjcj-hieh 1
-hiei-hieh 2
+hiei-hieh 1
 7848
 1
 hiej-hiei 1640
@@ -21253,7 +21253,7 @@ hhdh-hifb 1
 hifa-hifb 1
 7852
 4
-hifd-hifc 1
+hifd-hifc 2
 hhdi-hifc 1
 hifb-hifc 1
 hjda-hifc 1
@@ -21284,7 +21284,7 @@ hifi-hifj 1640
 hifj-higa 1640
 7861
 2
-higc-higb 1
+higc-higb 2
 higa-higb 1
 7862
 3
@@ -21331,7 +21331,7 @@ hihh-hihg 1640
 hjej-hihh 1640
 7879
 2
-hiia-hihj 2
+hiia-hihj 1
 hhgf-hihj 1
 7880
 1
@@ -21339,15 +21339,15 @@ hiib-hiia 1640
 7881
 2
 hjfd-hiib 1
-hhgh-hiib 3
+hhgh-hiib 1
 7882
 2
-hhhc-hiic 1
+hhhc-hiic 2
 hjfe-hiic 1
 7884
 2
+hhhe-hiie 1
 hjfg-hiie 1
-hhhe-hiie 2
 7885
 1
 hiie-hiif 1640
@@ -21374,7 +21374,7 @@ hijh-hijg 1640
 hiji-hijh 1640
 7898
 2
-hjha-hiji 3
+hjha-hiji 1
 hhjg-hiji 1
 7900
 1
@@ -21384,7 +21384,7 @@ hiac-hjaa 1640
 hjhd-hjab 1640
 7902
 2
-hjad-hjac 2
+hjad-hjac 1
 hjab-hjac 1
 7903
 1
@@ -21397,7 +21397,7 @@ hiag-hjae 1640
 hibc-hjag 1640
 7907
 2
-hjag-hjah 2
+hjag-hjah 1
 hjai-hjah 1
 7908
 2
@@ -21412,14 +21412,14 @@ hjid-hjbb 1640
 7912
 2
 hjbd-hjbc 1
-hjie-hjbc 1
+hjie-hjbc 2
 7913
 2
 hjbc-hjbd 1
-hjif-hjbd 1
+hjif-hjbd 2
 7914
 2
-hjbd-hjbe 3
+hjbd-hjbe 1
 hice-hjbe 1
 7915
 3
@@ -21428,19 +21428,19 @@ hicf-hjbf 2
 hjih-hjbf 1
 7916
 2
-hjbf-hjbg 1
 hjii-hjbg 1
+hjbf-hjbg 2
 7917
 1
 hjbg-hjbh 1640
 7918
 2
 hjja-hjbi 1
-hjbj-hjbi 2
+hjbj-hjbi 1
 7919
 2
 hjbi-hjbj 1
-hjca-hjbj 3
+hjca-hjbj 1
 7920
 2
 hjcb-hjca 2
@@ -21467,12 +21467,12 @@ hjcf-hjcg 1
 hjcg-hjch 1640
 7928
 2
-hieg-hjci 2
 hjch-hjci 1
+hieg-hjci 1
 7929
 2
+hjci-hjcj 1
 iaab-hjcj 1
-hjci-hjcj 2
 7930
 2
 iaac-hjda 1
@@ -21505,8 +21505,8 @@ iaba-hjdi 1640
 higg-hjea 1640
 7946
 2
-hihe-hjeg 1
 hjef-hjeg 1
+hihe-hjeg 1
 7949
 1
 hjfa-hjej 1640
@@ -21515,15 +21515,15 @@ hjfa-hjej 1640
 hjfb-hjfa 1640
 7951
 2
-iacd-hjfb 3
+iacd-hjfb 2
 hihj-hjfb 1
 7953
 2
-iacf-hjfd 1
 hjfc-hjfd 1
+iacf-hjfd 2
 7954
 2
-hiic-hjfe 2
+hiic-hjfe 1
 hjff-hjfe 1
 7955
 1
@@ -21536,11 +21536,11 @@ iaci-hjfg 1640
 hiif-hjfh 1640
 7958
 2
-hjfh-hjfi 2
+hjfh-hjfi 1
 hiig-hjfi 1
 7959
 2
-hjfi-hjfj 2
+hjfi-hjfj 1
 iadb-hjfj 1
 7960
 1
@@ -21565,14 +21565,14 @@ hijf-hjgh 1640
 iaea-hjgi 1640
 7969
 3
+hjgi-hjgj 1
 hijh-hjgj 1
 iaeb-hjgj 1
-hjgi-hjgj 2
 7970
 3
 iaec-hjha 1
-hjgj-hjha 2
 hjhb-hjha 1
+hjgj-hjha 2
 7972
 1
 hjaa-hjhc 1640
@@ -21581,7 +21581,7 @@ hjaa-hjhc 1640
 iaef-hjhd 1640
 7979
 2
-hjah-hjhj 2
+hjah-hjhj 1
 iafb-hjhj 1
 7980
 1
@@ -21591,8 +21591,8 @@ hjhj-hjia 1640
 iafg-hjie 1640
 7985
 2
+hjie-hjif 1
 hjig-hjif 1
-hjie-hjif 2
 7986
 1
 iafi-hjig 1640
@@ -21606,7 +21606,7 @@ hjjb-hjja 1640
 7992
 2
 iage-hjjc 1
-hjca-hjjc 3
+hjca-hjjc 1
 7994
 2
 iagg-hjje 1
@@ -21631,19 +21631,19 @@ iaaa-hjjj 1640
 hjci-iaaa 1640
 8001
 2
-hjcj-iaab 1
 iahd-iaab 1
+hjcj-iaab 1
 8002
 2
 iaad-iaac 1
 hjda-iaac 2
 8003
 2
-iaac-iaad 1
+iaac-iaad 2
 iaae-iaad 1
 8004
 2
-iahg-iaae 2
+iahg-iaae 1
 iaaf-iaae 1
 8005
 1
@@ -21661,7 +21661,7 @@ iaib-iaaj 1
 8010
 2
 iaic-iaba 1
-iaaj-iaba 2
+iaaj-iaba 1
 8012
 1
 hjea-iabc 1640
@@ -21689,10 +21689,10 @@ iajh-iacf 1640
 8026
 2
 iaji-iacg 1
-hjfe-iacg 2
+hjfe-iacg 1
 8027
 2
-iaci-iach 2
+iaci-iach 1
 iacg-iach 1
 8028
 2
@@ -21704,7 +21704,7 @@ ibac-iada 1640
 8031
 2
 iada-iadb 1
-hjfj-iadb 3
+hjfj-iadb 1
 8035
 1
 iadg-iadf 1640
@@ -21745,12 +21745,12 @@ iaeh-iaei 1640
 iaei-iaej 1640
 8051
 2
-hjhj-iafb 1
 iafa-iafb 1
+hjhj-iafb 1
 8053
 2
 iafe-iafd 1
-ibcf-iafd 2
+ibcf-iafd 1
 8054
 1
 iafd-iafe 1640
@@ -21773,8 +21773,8 @@ hjih-iafj 1
 iage-iagd 1640
 8064
 2
+hjjc-iage 2
 ibdg-iage 1
-hjjc-iage 1
 8066
 1
 ibdi-iagg 1640
@@ -21806,12 +21806,12 @@ iaad-iahf 1640
 ibei-iahg 1640
 8077
 2
-ibej-iahh 3
+ibej-iahh 1
 iahi-iahh 1
 8078
 2
 iahj-iahi 1
-iahh-iahi 2
+iahh-iahi 1
 8079
 1
 iahi-iahj 1640
@@ -21827,7 +21827,7 @@ iaid-iaic 1
 iaie-iaid 1640
 8084
 2
-iabc-iaie 3
+iabc-iaie 2
 iaif-iaie 1
 8085
 1
@@ -21837,7 +21837,7 @@ iabd-iaif 1640
 iaih-iaig 1640
 8087
 2
-iaii-iaih 2
+iaii-iaih 1
 ibgd-iaih 1
 8088
 2
@@ -21846,7 +21846,7 @@ ibge-iaii 1
 8089
 2
 iaii-iaij 1
-iaja-iaij 2
+iaja-iaij 1
 8090
 3
 iaij-iaja 1
@@ -21870,7 +21870,7 @@ iajf-iajg 1640
 8097
 2
 iajg-iajh 1
-ibhh-iajh 2
+ibhh-iajh 1
 8098
 2
 ibic-iaji 1
@@ -21896,23 +21896,23 @@ iadi-ibba 1640
 8111
 3
 ibba-ibbb 1
-ibbc-ibbb 1
+ibbc-ibbb 2
 iadj-ibbb 1
 8112
 1
 ibbd-ibbc 1640
 8113
 3
-ibbe-ibbd 2
+ibbe-ibbd 1
 icaf-ibbd 1
 iaeb-ibbd 1
 8114
 2
 ibbd-ibbe 1
-icag-ibbe 2
+icag-ibbe 1
 8116
 2
-iaee-ibbg 3
+iaee-ibbg 2
 icbc-ibbg 1
 8117
 1
@@ -21937,12 +21937,12 @@ ibcc-ibcd 1
 ibce-ibcd 1
 8124
 2
-ibcd-ibce 2
+ibcd-ibce 1
 ibcf-ibce 1
 8125
 2
-ibce-ibcf 3
 iafd-ibcf 1
+ibce-ibcf 1
 8127
 1
 iaff-ibch 1640
@@ -21962,23 +21962,23 @@ icdf-ibdb 1640
 8134
 2
 icec-ibde 1
-ibdf-ibde 1
+ibdf-ibde 2
 8135
 3
-iagd-ibdf 1
+iagd-ibdf 2
 ibdg-ibdf 1
-ibde-ibdf 2
+ibde-ibdf 1
 8136
 2
-icee-ibdg 1
 ibdf-ibdg 2
+icee-ibdg 1
 8138
 1
 ibdj-ibdi 1640
 8139
 2
 iagh-ibdj 1
-iceh-ibdj 2
+iceh-ibdj 1
 8140
 1
 icfc-ibea 1640
@@ -21997,7 +21997,7 @@ icgd-ibeh 1
 ibeh-ibei 1640
 8149
 2
-icgf-ibej 2
+icgf-ibej 1
 ibei-ibej 1
 8152
 1
@@ -22013,11 +22013,11 @@ ibfd-ibfe 1640
 iaid-ibff 1640
 8159
 2
-icib-ibfj 3
 ibga-ibfj 1
+icib-ibfj 2
 8160
 2
-ibgb-ibga 3
+ibgb-ibga 1
 ibfj-ibga 1
 8161
 2
@@ -22025,9 +22025,9 @@ ibga-ibgb 1
 icid-ibgb 1
 8162
 3
-ibgb-ibgc 2
-iaig-ibgc 1
 ibgd-ibgc 1
+ibgb-ibgc 1
+iaig-ibgc 1
 8163
 2
 ibgc-ibgd 1
@@ -22044,7 +22044,7 @@ ibgg-ibgf 2
 iaja-ibgg 1640
 8167
 2
-ibgg-ibgh 3
+ibgg-ibgh 1
 icif-ibgh 1
 8169
 1
@@ -22058,7 +22058,7 @@ ibhc-ibhb 1640
 8172
 2
 icja-ibhc 1
-iajc-ibhc 2
+iajc-ibhc 1
 8173
 1
 ibhc-ibhd 1640
@@ -22067,8 +22067,8 @@ ibhc-ibhd 1640
 ibhd-ibhe 1640
 8177
 2
-icjb-ibhh 1
 ibhi-ibhh 1
+icjb-ibhh 1
 8178
 1
 ibhj-ibhi 1640
@@ -22080,17 +22080,17 @@ ibia-ibhj 1640
 ibib-ibia 1640
 8181
 2
-ibic-ibib 2
+ibic-ibib 1
 icjf-ibib 1
 8182
 3
+ibib-ibic 1
 icjg-ibic 1
 iaji-ibic 1
-ibib-ibic 1
 8185
 2
-ibig-ibif 2
 ibab-ibif 1
+ibig-ibif 2
 8186
 2
 ibih-ibig 1
@@ -22142,17 +22142,17 @@ icag-icaf 1
 icah-icag 1640
 8207
 4
-idaj-icah 1
 ibbf-icah 1
 icag-icah 1
+idaj-icah 1
 icai-icah 1
 8208
 2
 icah-icai 1
-icaj-icai 3
+icaj-icai 2
 8209
 2
-idbb-icaj 2
+idbb-icaj 1
 icba-icaj 1
 8210
 1
@@ -22161,7 +22161,7 @@ icbb-icba 1640
 3
 icba-icbb 1
 idbd-icbb 1
-icbc-icbb 2
+icbc-icbb 1
 8212
 3
 icbb-icbc 1
@@ -22178,10 +22178,10 @@ icbf-icbe 1
 8215
 2
 ibbj-icbf 2
-icbg-icbf 2
+icbg-icbf 1
 8216
 2
-icbh-icbg 3
+icbh-icbg 2
 icbf-icbg 1
 8217
 3
@@ -22190,17 +22190,17 @@ ibcb-icbh 1
 icbi-icbh 1
 8218
 2
-icbj-icbi 2
+icbj-icbi 1
 icbh-icbi 1
 8219
 3
 idbh-icbj 1
-icca-icbj 2
+icca-icbj 1
 icbi-icbj 1
 8220
 2
 icbj-icca 1
-iccb-icca 2
+iccb-icca 1
 8221
 2
 iccc-iccb 1
@@ -22209,7 +22209,7 @@ icca-iccb 1
 3
 iccb-iccc 1
 iccd-iccc 1
-idca-iccc 3
+idca-iccc 1
 8223
 1
 icce-iccd 1640
@@ -22224,7 +22224,7 @@ iccg-iccf 1640
 icch-iccg 1640
 8227
 2
-ibch-icch 2
+ibch-icch 1
 idcb-icch 1
 8228
 1
@@ -22259,12 +22259,12 @@ icdj-icea 1
 iceb-icea 1
 8241
 2
-icec-iceb 2
+icec-iceb 1
 icea-iceb 1
 8242
 2
 iceb-icec 1
-ibde-icec 3
+ibde-icec 1
 8244
 1
 icef-icee 1640
@@ -22297,7 +22297,7 @@ ibec-icfe 1640
 icfe-icff 1640
 8256
 2
-icfh-icfg 3
+icfh-icfg 2
 icff-icfg 1
 8257
 2
@@ -22329,10 +22329,10 @@ icge-icgf 1
 8266
 2
 icgf-icgg 1
-icgh-icgg 3
+icgh-icgg 1
 8267
 2
-idef-icgh 3
+idef-icgh 1
 icgg-icgh 1
 8268
 1
@@ -22349,7 +22349,7 @@ icha-ichb 1640
 8272
 3
 ichd-ichc 1
-ichb-ichc 1
+ichb-ichc 2
 idfa-ichc 1
 8273
 1
@@ -22375,14 +22375,14 @@ icia-icib 1
 ibfj-icib 1
 8283
 2
-idfh-icid 2
+idfh-icid 1
 ibgb-icid 1
 8284
 1
 ibgc-icie 1640
 8285
 2
-ibgh-icif 2
+ibgh-icif 1
 idfj-icif 1
 8287
 1
@@ -22399,7 +22399,7 @@ idge-icja 1640
 8291
 2
 ibhh-icjb 1
-icjc-icjb 2
+icjc-icjb 1
 8292
 1
 icjd-icjc 1640
@@ -22410,7 +22410,7 @@ icje-icjd 2
 8294
 2
 icjd-icje 1
-icjf-icje 2
+icjf-icje 1
 8295
 2
 idgj-icjf 1
@@ -22421,7 +22421,7 @@ ibic-icjg 1
 idha-icjg 1
 8297
 2
-ibih-icjh 1
+ibih-icjh 2
 idhb-icjh 1
 8299
 1
@@ -22434,7 +22434,7 @@ icac-idai 1640
 idba-idaj 1640
 8310
 2
-idbb-idba 2
+idbb-idba 1
 icai-idba 1
 8311
 2
@@ -22476,7 +22476,7 @@ idjf-idcb 1640
 8322
 2
 idjg-idcc 1
-icci-idcc 2
+icci-idcc 1
 8323
 1
 idcc-idcd 1640
@@ -22486,14 +22486,14 @@ idcf-idce 1640
 8325
 2
 icdb-idcf 1
-idcg-idcf 2
+idcg-idcf 1
 8326
 1
 ieaa-idcg 1640
 8329
 2
 iead-idcj 1
-idda-idcj 3
+idda-idcj 2
 8330
 1
 icea-idda 1640
@@ -22540,8 +22540,8 @@ idfc-idfd 1640
 icia-idfe 1640
 8357
 4
-iedb-idfh 1
 idfg-idfh 1
+iedb-idfh 1
 icid-idfh 1
 idfi-idfh 1
 8358
@@ -22549,11 +22549,11 @@ idfi-idfh 1
 icie-idfi 1640
 8359
 2
-icif-idfj 2
+icif-idfj 1
 idga-idfj 1
 8360
 2
-idfj-idga 3
+idfj-idga 1
 idgb-idga 1
 8361
 2
@@ -22562,7 +22562,7 @@ idgc-idgb 1
 8362
 2
 icii-idgc 1
-idgb-idgc 2
+idgb-idgc 1
 8363
 2
 idgc-idgd 1
@@ -22589,11 +22589,11 @@ ieee-idha 1
 8371
 2
 idhc-idhb 1
-icjh-idhb 2
+icjh-idhb 1
 8372
 2
 ieeg-idhc 1
-idhb-idhc 3
+idhb-idhc 2
 8373
 1
 idhe-idhd 1640
@@ -22618,7 +22618,7 @@ idid-idie 1
 idba-idie 1
 8385
 3
-idie-idif 1
+idie-idif 2
 iefj-idif 1
 idig-idif 1
 8386
@@ -22634,33 +22634,33 @@ idih-idii 1640
 8389
 2
 idbf-idij 1
-iegd-idij 1
+iegd-idij 2
 8390
 1
 idij-idja 1640
 8391
 2
-idja-idjb 2
+idja-idjb 1
 idjc-idjb 1
 8392
 2
 iegg-idjc 1
-idjb-idjc 3
+idjb-idjc 1
 8393
 2
-idjc-idjd 2
+idjc-idjd 1
 idbj-idjd 1
 8394
 1
 idjd-idje 1640
 8395
 2
-idjg-idjf 2
 iegj-idjf 1
+idjg-idjf 1
 8396
 3
 idjf-idjg 1
-idjh-idjg 2
+idjh-idjg 1
 idcc-idjg 1
 8397
 2
@@ -22677,20 +22677,20 @@ idcf-idjj 1640
 iehe-ieaa 1640
 8402
 2
-iehg-ieac 2
 idci-ieac 1
+iehg-ieac 2
 8403
 3
 ieac-iead 1
 ieae-iead 1
-idcj-iead 2
+idcj-iead 1
 8404
 2
 iead-ieae 1
-ieaf-ieae 3
+ieaf-ieae 2
 8405
 2
-ieag-ieaf 1
+ieag-ieaf 2
 ieae-ieaf 1
 8406
 1
@@ -22704,11 +22704,11 @@ idde-ieai 1
 ieic-ieai 1
 8413
 2
-iddj-iebd 1
+iddj-iebd 2
 iebe-iebd 1
 8414
 2
-iebf-iebe 1
+iebf-iebe 2
 iebd-iebe 1
 8415
 1
@@ -22731,15 +22731,15 @@ ideh-iecb 1640
 8422
 2
 iecd-iecc 1
-iejg-iecc 2
+iejg-iecc 1
 8423
 1
 iejh-iecd 1640
 8424
 3
-iecd-iece 1
 ieji-iece 1
-idfa-iece 2
+iecd-iece 1
+idfa-iece 1
 8427
 1
 idfd-iech 1640
@@ -22748,7 +22748,7 @@ idfd-iech 1640
 idfe-ieci 1640
 8431
 2
-idfh-iedb 1
+idfh-iedb 2
 ifaf-iedb 1
 8434
 1
@@ -22761,19 +22761,19 @@ ifbb-iedh 1640
 ieed-ieec 1640
 8443
 2
-ifbh-ieed 3
+ifbh-ieed 1
 idgj-ieed 1
 8444
 2
 ifbi-ieee 1
-ieed-ieee 2
+ieed-ieee 1
 8446
 2
-idhc-ieeg 1
+idhc-ieeg 2
 ifca-ieeg 1
 8448
 2
-ifcc-ieei 2
+ifcc-ieei 1
 ieej-ieei 1
 8449
 1
@@ -22793,11 +22793,11 @@ idie-iefi 1640
 8459
 3
 iefi-iefj 1
-ifdd-iefj 2
+ifdd-iefj 1
 idif-iefj 1
 8460
 2
-iefj-iega 1
+iefj-iega 2
 ifde-iega 1
 8461
 2
@@ -22809,7 +22809,7 @@ iegb-iegc 1640
 8463
 2
 idij-iegd 1
-ifdh-iegd 1
+ifdh-iegd 2
 8466
 1
 iegh-iegg 1640
@@ -22830,7 +22830,7 @@ iehc-iehb 1640
 iehd-iehc 1640
 8473
 2
-ifeh-iehd 3
+ifeh-iehd 1
 idjj-iehd 1
 8474
 1
@@ -22844,12 +22844,12 @@ iffa-iehg 1
 iehf-iehg 1
 8477
 2
-iead-iehh 2
+iead-iehh 1
 iehg-iehh 1
 8478
 2
 iehj-iehi 1
-iehh-iehi 2
+iehh-iehi 1
 8479
 1
 ieaf-iehj 1640
@@ -22874,10 +22874,10 @@ ieij-ieja 1640
 8491
 2
 ieja-iejb 1
-ifgf-iejb 2
+ifgf-iejb 1
 8493
 2
-ieje-iejd 1
+ieje-iejd 2
 ifgh-iejd 1
 8494
 2
@@ -22885,15 +22885,15 @@ ieca-ieje 1
 iejf-ieje 1
 8495
 2
-ifgj-iejf 2
+ifgj-iejf 1
 iejg-iejf 1
 8496
 2
+iejf-iejg 1
 iejh-iejg 1
-iejf-iejg 2
 8497
 2
-ifhb-iejh 2
+ifhb-iejh 1
 ieji-iejh 1
 8498
 1
@@ -22906,15 +22906,15 @@ iech-ifab 1640
 ieci-ifac 1640
 8505
 2
-iedb-ifaf 3
+iedb-ifaf 1
 ifag-ifaf 1
 8506
 1
 ifia-ifag 1640
 8508
 2
-iede-ifai 1
 ifah-ifai 1
+iede-ifai 1
 8511
 1
 ifij-ifbb 1640
@@ -22939,7 +22939,7 @@ ifbg-ifbh 1640
 igaa-ifbi 1640
 8520
 2
-ieeg-ifca 1
+ieeg-ifca 2
 ifcb-ifca 1
 8521
 1
@@ -22966,7 +22966,7 @@ ifde-ifdd 1640
 8534
 2
 igci-ifde 1
-ifdf-ifde 3
+ifdf-ifde 1
 8535
 1
 igcj-ifdf 1640
@@ -22982,19 +22982,19 @@ iegd-ifdh 1
 ifec-ifeb 1640
 8542
 2
-iegi-ifec 2
+iegi-ifec 1
 igea-ifec 1
 8543
 2
 igef-ifed 1
-iegj-ifed 1
+iegj-ifed 2
 8544
 1
 ifed-ifee 1640
 8545
 2
 ifeg-ifef 1
-ifee-ifef 1
+ifee-ifef 2
 8546
 1
 iehc-ifeg 1640
@@ -23012,22 +23012,22 @@ iffb-iffa 1640
 iffc-iffb 1640
 8552
 2
+iehi-iffc 1
 igfi-iffc 1
-iehi-iffc 2
 8553
 1
 iffc-iffd 1640
 8554
 2
 igga-iffe 1
-iffd-iffe 3
+iffd-iffe 2
 8555
 2
 iggf-ifff 1
-ieib-ifff 3
+ieib-ifff 2
 8556
 2
-iggg-iffg 2
+iggg-iffg 1
 ifff-iffg 1
 8565
 1
@@ -23041,7 +23041,7 @@ igif-ifgh 1
 ifgh-ifgi 1640
 8569
 4
-ifha-ifgj 1
+ifha-ifgj 2
 igih-ifgj 1
 iejf-ifgj 1
 ifgi-ifgj 1
@@ -23069,7 +23069,7 @@ ifhh-ifhi 1640
 8579
 2
 ifhi-ifhj 1
-ifaf-ifhj 1
+ifaf-ifhj 2
 8580
 2
 ifhj-ifia 1
@@ -23107,7 +23107,7 @@ ifjd-ifje 1640
 8595
 3
 ifbd-ifjf 1
-ihaj-ifjf 2
+ihaj-ifjf 1
 ifje-ifjf 1
 8596
 1
@@ -23135,8 +23135,8 @@ ihbd-igad 1640
 ifca-igag 1640
 8607
 2
-igag-igah 2
 igai-igah 1
+igag-igah 2
 8608
 1
 igah-igai 1640
@@ -23174,13 +23174,13 @@ igcd-igcc 1640
 igce-igcd 1640
 8624
 2
-ihcg-igce 1
+ihcg-igce 2
 igcf-igce 1
 8625
 3
 ifdb-igcf 1
 igcg-igcf 1
-ihch-igcf 1
+ihch-igcf 2
 8626
 1
 igch-igcg 1640
@@ -23196,12 +23196,12 @@ igda-igcj 1640
 8630
 3
 igdb-igda 1
-ifdg-igda 3
+ifdg-igda 2
 ihci-igda 1
 8631
 2
-igda-igdb 2
 ihcj-igdb 1
+igda-igdb 2
 8632
 1
 igdb-igdc 1640
@@ -23217,8 +23217,8 @@ igdd-igde 1
 8635
 4
 igde-igdf 1
-igdg-igdf 1
 ihdd-igdf 1
+igdg-igdf 1
 ifdh-igdf 1
 8636
 1
@@ -23240,16 +23240,16 @@ ihde-igea 1640
 iged-igec 1640
 8643
 2
-igee-iged 3
+igee-iged 2
 ihdh-iged 1
 8644
 3
-igef-igee 1
 ihdi-igee 1
+igef-igee 1
 iged-igee 1
 8645
 4
-ifed-igef 2
+ifed-igef 1
 ihdj-igef 1
 igee-igef 1
 igeg-igef 1
@@ -23265,10 +23265,10 @@ igeh-igei 1640
 8649
 2
 igei-igej 1
-igfa-igej 1
+igfa-igej 2
 8650
 2
-igfb-igfa 3
+igfb-igfa 1
 ihea-igfa 1
 8651
 1
@@ -23285,7 +23285,7 @@ igff-igfe 1640
 8655
 2
 igfg-igff 1
-ihef-igff 1
+ihef-igff 2
 8656
 1
 igff-igfg 1640
@@ -23301,12 +23301,12 @@ iffe-igga 1
 iheg-igga 1
 8663
 2
-igge-iggd 1
 ihej-iggd 1
+igge-iggd 2
 8664
 2
-iggf-igge 3
 iggd-igge 1
+iggf-igge 1
 8665
 3
 ihfb-iggf 2
@@ -23359,9 +23359,9 @@ ifgj-igih 2
 igja-igij 1640
 8690
 3
-igjb-igja 1
 ifhc-igja 1
-ihge-igja 3
+igjb-igja 1
+ihge-igja 1
 8691
 1
 igjc-igjb 1640
@@ -23370,8 +23370,8 @@ igjc-igjb 1640
 ihgg-igjc 1640
 8695
 2
-igjg-igjf 2
 ifhd-igjf 1
+igjg-igjf 1
 8696
 1
 igjh-igjg 1640
@@ -23388,12 +23388,12 @@ igjj-igji 1
 ihaa-igjj 1640
 8700
 2
-ihhc-ihaa 2
 ific-ihaa 1
+ihhc-ihaa 2
 8701
 2
 ifid-ihab 1
-ihaa-ihab 2
+ihaa-ihab 1
 8702
 1
 ihab-ihac 1640
@@ -23406,7 +23406,7 @@ ihag-ihaf 1640
 8706
 2
 ihah-ihag 1
-ihhi-ihag 2
+ihhi-ihag 1
 8707
 1
 ihai-ihah 1640
@@ -23415,12 +23415,12 @@ ihai-ihah 1640
 ihaj-ihai 1640
 8709
 2
-ihib-ihaj 2
+ihib-ihaj 1
 ifjf-ihaj 1
 8713
 2
 ihbe-ihbd 1
-ihif-ihbd 3
+ihif-ihbd 2
 8714
 1
 ihbf-ihbe 1640
@@ -23448,7 +23448,7 @@ ihcc-ihcd 1640
 ihcd-ihce 1640
 8726
 2
-ihji-ihcg 3
+ihji-ihcg 2
 igce-ihcg 1
 8727
 1
@@ -23464,7 +23464,7 @@ iiab-ihcj 1640
 ihcj-ihda 1640
 8731
 2
-igdd-ihdb 3
+igdd-ihdb 1
 ihda-ihdb 1
 8733
 1
@@ -23480,7 +23480,7 @@ ihde-ihdf 1
 8736
 2
 igec-ihdg 1
-ihdf-ihdg 2
+ihdf-ihdg 1
 8737
 2
 ihdg-ihdh 1
@@ -23490,11 +23490,11 @@ iged-ihdh 1
 iibb-ihdj 1640
 8740
 2
-iheb-ihea 1
 iibc-ihea 1
+iheb-ihea 1
 8741
 2
-ihea-iheb 1
+ihea-iheb 2
 ihec-iheb 1
 8742
 2
@@ -23508,11 +23508,11 @@ iibf-ihed 1640
 ihed-ihee 1640
 8745
 2
-iibh-ihef 3
+iibh-ihef 1
 ihee-ihef 1
 8746
 3
-iibi-iheg 2
+iibi-iheg 1
 iheh-iheg 1
 igga-iheg 1
 8747
@@ -23521,7 +23521,7 @@ ihei-iheh 1640
 8748
 2
 iica-ihei 1
-ihej-ihei 2
+ihej-ihei 1
 8749
 2
 ihei-ihej 1
@@ -23550,7 +23550,7 @@ igif-ihgd 1
 8764
 2
 igja-ihge 1
-iidg-ihge 1
+iidg-ihge 2
 8765
 1
 ihge-ihgf 1640
@@ -23562,12 +23562,12 @@ iidi-ihgg 1640
 igjf-ihgj 1640
 8770
 2
-igji-ihha 3
 ihhb-ihha 1
+igji-ihha 2
 8771
 2
 igjj-ihhb 1
-iied-ihhb 3
+iied-ihhb 2
 8772
 1
 iiee-ihhc 1640
@@ -23576,19 +23576,19 @@ iiee-ihhc 1640
 ihab-ihhd 1640
 8774
 2
-ihhd-ihhe 2
 ihhf-ihhe 1
+ihhd-ihhe 2
 8775
 2
+ihad-ihhf 1
 ihhe-ihhf 1
-ihad-ihhf 2
 8776
 1
 iiei-ihhg 1640
 8777
 3
 iiej-ihhh 1
-ihaf-ihhh 1
+ihaf-ihhh 2
 ihhg-ihhh 1
 8778
 1
@@ -23599,7 +23599,7 @@ iifb-ihhj 1640
 8780
 2
 iifc-ihia 1
-ihhj-ihia 3
+ihhj-ihia 1
 8781
 1
 ihia-ihib 1640
@@ -23626,7 +23626,7 @@ iigd-ihjb 1640
 ihjb-ihjc 1640
 8793
 2
-ihjc-ihjd 1
+ihjc-ihjd 2
 iigf-ihjd 1
 8794
 1
@@ -23640,13 +23640,13 @@ ihjf-ihjg 1
 ihce-ihjg 2
 8797
 2
-ihjg-ihjh 3
+ihjg-ihjh 1
 iigj-ihjh 1
 8798
 3
 ihcg-ihji 1
 ihjj-ihji 1
-ihjh-ihji 1
+ihjh-ihji 2
 8799
 1
 iihb-ihjj 1640
@@ -23680,14 +23680,14 @@ iiid-iibb 1640
 ihec-iibe 1640
 8815
 2
-iiih-iibf 1
-iibe-iibf 2
+iibe-iibf 1
+iiih-iibf 2
 8817
 1
 iiij-iibh 1640
 8818
 2
-iija-iibi 3
+iija-iibi 2
 iheg-iibi 1
 8819
 1
@@ -23702,12 +23702,12 @@ iicb-iica 1
 iicc-iicb 1640
 8822
 2
-iicd-iicc 1
 iije-iicc 2
+iicd-iicc 1
 8823
 2
-iicc-iicd 1
 ihfb-iicd 1
+iicc-iicd 1
 8824
 1
 iijg-iice 1640
@@ -23722,7 +23722,7 @@ ijaf-iidd 1640
 ihgd-iidf 1640
 8836
 2
-ijai-iidg 2
+ijai-iidg 1
 ihge-iidg 1
 8837
 1
@@ -23741,7 +23741,7 @@ iied-iiec 1
 3
 iiee-iied 1
 ijbf-iied 1
-ihhb-iied 1
+ihhb-iied 2
 8844
 2
 ijbg-iiee 2
@@ -23764,12 +23764,12 @@ ihhh-iiej 1
 ijcb-iiej 1
 8850
 2
-iiej-iifa 1
 ijcc-iifa 1
+iiej-iifa 1
 8851
 2
 iifa-iifb 1
-ijcd-iifb 2
+ijcd-iifb 1
 8852
 1
 ihia-iifc 1640
@@ -23796,7 +23796,7 @@ ijdf-iigd 1640
 ijdg-iige 1640
 8865
 2
-iige-iigf 2
+iige-iigf 1
 ihjd-iigf 1
 8868
 1
@@ -23813,7 +23813,7 @@ iiha-iihb 2
 ijed-iihb 1
 8872
 2
-ijee-iihc 1
+ijee-iihc 2
 iihd-iihc 1
 8873
 1
@@ -23826,7 +23826,7 @@ ijeg-iihe 1640
 iihe-iihf 1640
 8876
 2
-iihf-iihg 3
+iihf-iihg 1
 iiae-iihg 1
 8877
 1
@@ -23843,7 +23843,7 @@ iiib-iiia 1640
 8881
 2
 ijfd-iiib 1
-iiaj-iiib 3
+iiaj-iiib 2
 8883
 1
 ijff-iiid 1640
@@ -23854,8 +23854,8 @@ ijfj-iiih 1
 iibf-iiih 1
 8888
 2
-iiih-iiii 1
 ijga-iiii 1
+iiih-iiii 1
 8889
 1
 iiii-iiij 1640
@@ -23865,7 +23865,7 @@ iibi-iija 1
 iijb-iija 1
 8891
 3
-iijc-iijb 1
+iijc-iijb 2
 iija-iijb 1
 ijgd-iijb 1
 8892
@@ -23874,12 +23874,12 @@ iica-iijc 1640
 8893
 2
 iijc-iijd 1
-iije-iijd 1
+iije-iijd 2
 8894
 4
 iijd-iije 1
 iicc-iije 1
-ijgg-iije 1
+ijgg-iije 2
 iijf-iije 1
 8895
 1
@@ -23892,11 +23892,11 @@ ijgi-iijg 1640
 iijj-iiji 1640
 8902
 2
-ijad-ijac 3
+ijad-ijac 1
 ijhe-ijac 1
 8903
 2
-ijac-ijad 3
+ijac-ijad 1
 iidb-ijad 1
 8904
 1
@@ -23910,11 +23910,11 @@ ijae-ijaf 1
 iidf-ijah 1640
 8908
 2
-ijaj-ijai 1
+ijaj-ijai 2
 iidg-ijai 1
 8909
 2
-ijib-ijaj 1
+ijib-ijaj 2
 iidh-ijaj 1
 8910
 1
@@ -23922,7 +23922,7 @@ ijbb-ijba 1640
 8911
 2
 ijid-ijbb 1
-ijbc-ijbb 2
+ijbc-ijbb 1
 8912
 1
 ijie-ijbc 1640
@@ -23934,8 +23934,8 @@ iieb-ijbd 1640
 iiec-ijbe 1640
 8915
 2
-ijbe-ijbf 2
 ijjb-ijbf 1
+ijbe-ijbf 2
 8916
 1
 ijbh-ijbg 1640
@@ -23947,8 +23947,8 @@ ijjd-ijbh 1640
 iieg-ijbi 1640
 8919
 2
-ijbi-ijbj 1
 iieh-ijbj 1
+ijbi-ijbj 1
 8920
 1
 jaaa-ijca 1640
@@ -23958,29 +23958,29 @@ jaab-ijcb 1640
 8923
 2
 iifb-ijcd 1
-jaad-ijcd 1
+jaad-ijcd 2
 8924
 2
-ijcd-ijce 3
+ijcd-ijce 1
 iifc-ijce 1
 8925
 1
 iifd-ijcf 1640
 8929
 2
+ijda-ijcj 2
 jabd-ijcj 1
-ijda-ijcj 1
 8930
 2
 jabe-ijda 1
-ijcj-ijda 2
+ijcj-ijda 1
 8931
 1
 ijda-ijdb 1640
 8932
 2
 ijdd-ijdc 1
-iiga-ijdc 2
+iiga-ijdc 1
 8933
 1
 ijde-ijdd 1640
@@ -24001,18 +24001,18 @@ iigf-ijdh 1640
 jadb-ijdj 1640
 8940
 2
+ijdj-ijea 2
 iigi-ijea 1
-ijdj-ijea 1
 8941
 1
 ijea-ijeb 1640
 8943
 2
 jadf-ijed 1
-iihb-ijed 3
+iihb-ijed 1
 8944
 2
-jaea-ijee 3
+jaea-ijee 2
 ijef-ijee 1
 8945
 2
@@ -24021,7 +24021,7 @@ jaeb-ijef 1
 8946
 2
 jaec-ijeg 1
-ijef-ijeg 2
+ijef-ijeg 1
 8947
 1
 ijei-ijeh 1640
@@ -24037,7 +24037,7 @@ iihh-ijej 1640
 ijfb-ijfa 1640
 8951
 2
-iihj-ijfb 3
+iihj-ijfb 1
 jafb-ijfb 1
 8952
 2
@@ -24046,7 +24046,7 @@ ijfb-ijfc 2
 8953
 2
 ijfc-ijfd 1
-ijfe-ijfd 2
+ijfe-ijfd 1
 8954
 2
 ijfd-ijfe 1
@@ -24065,8 +24065,8 @@ ijga-ijfj 1640
 jage-ijga 1640
 8963
 2
-iijb-ijgd 2
 ijgc-ijgd 1
+iijb-ijgd 1
 8964
 1
 ijgd-ijge 1640
@@ -24079,20 +24079,20 @@ ijge-ijgf 2
 jahe-ijgg 1640
 8968
 2
+jaia-ijgi 1
 ijgj-ijgi 1
-jaia-ijgi 2
 8969
 2
 jaib-ijgj 1
 ijgi-ijgj 2
 8970
 2
-ijgj-ijha 3
+ijgj-ijha 1
 iiji-ijha 1
 8974
 2
 jaja-ijhe 1
-ijac-ijhe 3
+ijac-ijhe 2
 8977
 1
 jajd-ijhh 1640
@@ -24114,8 +24114,8 @@ jbad-ijid 1640
 ijif-ijie 1640
 8985
 2
-jbaf-ijif 1
 ijbd-ijif 1
+jbaf-ijif 2
 8989
 1
 ijja-ijij 1640
@@ -24137,16 +24137,16 @@ ijjc-ijjd 1
 ijjf-ijje 1640
 8995
 3
-ijjg-ijjf 1
-ijbj-ijjf 1
+ijbj-ijjf 2
 jbbd-ijjf 1
+ijjg-ijjf 1
 8996
 1
 ijjh-ijjg 1640
 8997
 2
-jbbf-ijjh 2
 ijjg-ijjh 1
+jbbf-ijjh 2
 8999
 1
 jbbh-ijjj 1640
@@ -24165,7 +24165,7 @@ jaae-jaad 1640
 9004
 2
 ijce-jaae 1
-jaaf-jaae 3
+jaaf-jaae 2
 9005
 4
 jbbj-jaaf 1
@@ -24201,8 +24201,8 @@ jbci-jabi 1640
 jabi-jabj 1640
 9020
 2
+ijdc-jaca 1
 jabj-jaca 1
-ijdc-jaca 2
 9021
 1
 jaca-jacb 1640
@@ -24218,17 +24218,17 @@ jacf-jace 1640
 9025
 3
 jbdb-jacf 1
-ijdh-jacf 2
 jacg-jacf 1
+ijdh-jacf 2
 9026
 3
 jacf-jacg 1
-jbdc-jacg 1
+jbdc-jacg 2
 jach-jacg 1
 9027
 2
 jbdd-jach 1
-jacg-jach 3
+jacg-jach 1
 9028
 2
 jacj-jaci 1
@@ -24238,7 +24238,7 @@ jach-jaci 2
 jada-jacj 1640
 9030
 2
-jbdg-jada 2
+jbdg-jada 1
 jadb-jada 1
 9031
 2
@@ -24274,7 +24274,7 @@ jaec-jaeb 1640
 jaed-jaec 1640
 9043
 2
-jaee-jaed 3
+jaee-jaed 2
 ijeh-jaed 1
 9044
 1
@@ -24285,21 +24285,21 @@ jbed-jaef 1
 jaeg-jaef 2
 9046
 2
-jaeh-jaeg 2
+jaeh-jaeg 1
 jaef-jaeg 1
 9047
 2
-jaeg-jaeh 1
 jaei-jaeh 1
+jaeg-jaeh 1
 9048
 3
-jaeh-jaei 1
-jbeg-jaei 1
 jaej-jaei 1
+jaeh-jaei 1
+jbeg-jaei 2
 9050
 2
 jbei-jafa 1
-ijfa-jafa 1
+ijfa-jafa 2
 9051
 1
 jafa-jafb 1640
@@ -24341,19 +24341,19 @@ jaha-jagj 1640
 9070
 2
 jahb-jaha 1
-jbga-jaha 2
+jbga-jaha 1
 9071
 2
-jahc-jahb 2
 jaha-jahb 1
+jahc-jahb 1
 9072
 2
-jahb-jahc 1
+jahb-jahc 2
 jahd-jahc 1
 9073
 2
 ijgf-jahd 1
-jahc-jahd 2
+jahc-jahd 1
 9074
 1
 jahd-jahe 1640
@@ -24382,19 +24382,19 @@ jaic-jaib 1640
 9082
 2
 jaid-jaic 1
-ijha-jaic 3
+ijha-jaic 1
 9083
 2
 jaie-jaid 1
-jaic-jaid 3
+jaic-jaid 1
 9084
 2
+jaid-jaie 2
 jaif-jaie 1
-jaid-jaie 1
 9085
 2
-jaie-jaif 2
 jaig-jaif 1
+jaie-jaif 2
 9086
 1
 jaif-jaig 1640
@@ -24407,7 +24407,7 @@ jaii-jaij 1640
 9090
 3
 jbhc-jaja 1
-ijhe-jaja 2
+ijhe-jaja 1
 jaij-jaja 1
 9093
 1
@@ -24418,7 +24418,7 @@ jajf-jaje 1640
 9095
 2
 jajg-jajf 1
-ijhj-jajf 2
+ijhj-jajf 1
 9096
 1
 jbhe-jajg 1640
@@ -24462,7 +24462,7 @@ jbia-jbag 1640
 9108
 2
 jbic-jbai 1
-jbaj-jbai 1
+jbaj-jbai 2
 9109
 1
 jbba-jbaj 1640
@@ -24474,13 +24474,13 @@ jbie-jbba 1640
 ijij-jbbb 1640
 9113
 3
-ijjf-jbbd 3
+ijjf-jbbd 2
 jbih-jbbd 1
 jbbe-jbbd 1
 9114
 2
-jbbd-jbbe 1
 jbii-jbbe 1
+jbbd-jbbe 2
 9115
 3
 ijjh-jbbf 1
@@ -24494,8 +24494,8 @@ jbja-jbbg 1640
 jbjb-jbbh 1640
 9119
 2
+jbjd-jbbj 1
 jaaf-jbbj 1
-jbjd-jbbj 2
 9121
 1
 jbcc-jbcb 1640
@@ -24510,28 +24510,28 @@ jbjh-jbcd 1640
 jabf-jbcf 1640
 9128
 2
-jbcj-jbci 1
+jbcj-jbci 2
 jcac-jbci 1
 9129
 1
 jbda-jbcj 1640
 9130
 2
-jaca-jbda 1
 jbcj-jbda 1
+jaca-jbda 2
 9131
 1
 jbdc-jbdb 1640
 9132
 2
 jbdd-jbdc 1
-jcag-jbdc 3
+jcag-jbdc 1
 9133
 1
 jbde-jbdd 1640
 9134
 2
-jaci-jbde 2
+jaci-jbde 1
 jcai-jbde 1
 9135
 1
@@ -24545,7 +24545,7 @@ jcba-jbdg 1
 jadf-jbdh 1640
 9139
 2
-jcbd-jbdj 2
+jcbd-jbdj 1
 jbea-jbdj 1
 9140
 1
@@ -24560,32 +24560,32 @@ jcbh-jbed 1
 9146
 2
 jaei-jbeg 1
-jbeh-jbeg 2
+jbeh-jbeg 1
 9147
 2
-jbei-jbeh 3
+jbei-jbeh 1
 jbeg-jbeh 1
 9148
 2
 jafa-jbei 1
-jccc-jbei 2
+jccc-jbei 1
 9149
 3
-jbfa-jbej 2
+jbfa-jbej 1
 jaff-jbej 1
 jccd-jbej 1
 9150
 2
-jbej-jbfa 2
+jbej-jbfa 1
 jbfb-jbfa 1
 9151
 3
-jbfa-jbfb 1
-jbfc-jbfb 2
 jccf-jbfb 1
+jbfa-jbfb 1
+jbfc-jbfb 1
 9152
 2
-jbfd-jbfc 2
+jbfd-jbfc 1
 jccg-jbfc 1
 9153
 1
@@ -24612,7 +24612,7 @@ jcde-jbga 1
 jahh-jbgd 1640
 9164
 2
-jcdi-jbge 2
+jcdi-jbge 1
 jbgd-jbge 1
 9165
 1
@@ -24627,14 +24627,14 @@ jbgi-jbgj 2
 9170
 2
 jbgj-jbha 1
-jbhb-jbha 2
+jbhb-jbha 1
 9171
 1
 jbhc-jbhb 1640
 9172
 2
-jaja-jbhc 1
 jceg-jbhc 1
+jaja-jbhc 1
 9173
 1
 jajf-jbhd 1640
@@ -24654,28 +24654,28 @@ jbhf-jbhg 1
 jbhg-jbhh 1640
 9178
 3
-jbaa-jbhi 3
-jbhh-jbhi 1
 jcfc-jbhi 1
+jbhh-jbhi 1
+jbaa-jbhi 1
 9179
 2
-jbia-jbhj 2
 jbaf-jbhj 1
+jbia-jbhj 2
 9180
 2
 jcfe-jbia 1
 jbhj-jbia 1
 9182
 2
-jcfg-jbic 2
+jcfg-jbic 1
 jbai-jbic 2
 9184
 1
 jbif-jbie 1640
 9185
 2
+jbbb-jbif 2
 jbig-jbif 1
-jbbb-jbif 1
 9186
 1
 jbbc-jbig 1640
@@ -24684,26 +24684,26 @@ jbbc-jbig 1640
 jcgb-jbih 1640
 9188
 2
-jbij-jbii 2
 jbih-jbii 1
+jbij-jbii 1
 9189
 2
-jbbf-jbij 2
+jbbf-jbij 1
 jbja-jbij 1
 9190
 2
 jbij-jbja 1
-jbjb-jbja 1
+jbjb-jbja 2
 9191
 2
-jbjc-jbjb 2
+jbjc-jbjb 1
 jbja-jbjb 1
 9192
 1
 jcgg-jbjc 1640
 9193
 2
-jbbj-jbjd 3
+jbbj-jbjd 2
 jbje-jbjd 1
 9194
 1
@@ -24713,7 +24713,7 @@ jcgi-jbje 1640
 jbcb-jbjf 1640
 9197
 2
-jchb-jbjh 2
+jchb-jbjh 1
 jbji-jbjh 1
 9198
 1
@@ -24742,11 +24742,11 @@ jbda-jcae 1
 jchj-jcaf 1640
 9206
 2
-jcaf-jcag 2
+jcaf-jcag 1
 jcia-jcag 1
 9208
 2
-jbde-jcai 3
+jbde-jcai 1
 jcic-jcai 1
 9210
 2
@@ -24778,14 +24778,14 @@ jcbi-jcbh 1
 9218
 2
 jcjc-jcbi 1
-jcbh-jcbi 2
+jcbh-jcbi 1
 9219
 2
 jcbi-jcbj 1
-jcca-jcbj 3
+jcca-jcbj 2
 9220
 2
-jccb-jcca 3
+jccb-jcca 2
 jbeg-jcca 1
 9221
 3
@@ -24795,11 +24795,11 @@ jccc-jccb 2
 9222
 3
 jccb-jccc 1
-jbei-jccc 2
+jbei-jccc 1
 jcjg-jccc 1
 9223
 2
-jcjh-jccd 1
+jcjh-jccd 2
 jcce-jccd 1
 9224
 1
@@ -24831,12 +24831,12 @@ jcdb-jcdc 1640
 jdah-jcdd 1640
 9234
 2
-jcdd-jcde 3
 jbga-jcde 1
+jcdd-jcde 2
 9238
 2
-jdbc-jcdi 3
 jcdj-jcdi 1
+jdbc-jcdi 1
 9239
 1
 jbgf-jcdj 1640
@@ -24848,31 +24848,31 @@ jdbh-jced 1640
 jbha-jcee 1640
 9247
 2
-jdcb-jceh 1
 jbhd-jceh 1
+jdcb-jceh 1
 9248
 1
 jceh-jcei 1640
 9249
 2
+jdcd-jcej 1
 jcei-jcej 1
-jdcd-jcej 2
 9252
 2
 jdcg-jcfc 1
-jbhi-jcfc 3
+jbhi-jcfc 1
 9254
 3
-jcff-jcfe 1
 jcfd-jcfe 1
 jbia-jcfe 1
+jcff-jcfe 1
 9255
 1
 jdcj-jcff 1640
 9256
 2
 jbic-jcfg 1
-jdda-jcfg 1
+jdda-jcfg 2
 9258
 1
 jbie-jcfi 1640
@@ -24882,10 +24882,10 @@ jcgc-jcgb 1640
 9262
 2
 jbii-jcgc 1
-jcgd-jcgc 1
+jcgd-jcgc 2
 9263
 2
-jbij-jcgd 1
+jbij-jcgd 2
 jcgc-jcgd 1
 9264
 1
@@ -24895,20 +24895,20 @@ jcgf-jcge 1640
 jbjb-jcgf 1640
 9266
 2
-jdea-jcgg 3
+jdea-jcgg 2
 jcgf-jcgg 1
 9267
 1
 jbjd-jcgh 1640
 9268
 3
-jcgj-jcgi 1
 jbje-jcgi 1
+jcgj-jcgi 1
 jdec-jcgi 2
 9269
 2
-jded-jcgj 1
 jbjf-jcgj 1
+jded-jcgj 1
 9271
 1
 jchc-jchb 1640
@@ -24924,7 +24924,7 @@ jcab-jchf 1
 jchh-jchg 1640
 9278
 2
-jdfc-jchi 1
+jdfc-jchi 2
 jcae-jchi 1
 9279
 1
@@ -24943,13 +24943,13 @@ jcid-jcic 1
 jcai-jcic 1
 9283
 2
-jcic-jcid 1
 jdfh-jcid 1
+jcic-jcid 1
 9284
 3
 jdfi-jcie 1
 jcba-jcie 1
-jcid-jcie 1
+jcid-jcie 2
 9286
 1
 jcbc-jcig 1640
@@ -24968,19 +24968,19 @@ jdgd-jcij 2
 jcjd-jcjc 1640
 9293
 2
-jcbj-jcjd 2
+jcbj-jcjd 1
 jcje-jcjd 1
 9294
 2
-jcjd-jcje 2
+jcjd-jcje 1
 jdgi-jcje 1
 9296
 2
-jdha-jcjg 1
+jdha-jcjg 2
 jccc-jcjg 1
 9297
 2
-jdhb-jcjh 2
+jdhb-jcjh 1
 jccd-jcjh 1
 9298
 1
@@ -25019,8 +25019,8 @@ jcde-jdai 1640
 jdif-jdbb 1640
 9312
 2
-jdbb-jdbc 2
 jdig-jdbc 1
+jdbb-jdbc 2
 9313
 1
 jcdj-jdbd 1640
@@ -25029,7 +25029,7 @@ jcdj-jdbd 1640
 jdbi-jdbh 1640
 9318
 2
-jcee-jdbi 2
+jcee-jdbi 1
 jdjc-jdbi 1
 9321
 1
@@ -25053,8 +25053,8 @@ jcfg-jdda 1
 jddb-jdda 1
 9331
 2
+jddc-jddb 1
 jdda-jddb 1
-jddc-jddb 2
 9332
 1
 jcfi-jddc 1640
@@ -25078,8 +25078,8 @@ jcgg-jdea 1
 jddj-jdea 1
 9341
 2
-jecd-jdeb 1
 jcgh-jdeb 1
+jecd-jdeb 1
 9342
 2
 jcgi-jdec 1
@@ -25102,11 +25102,11 @@ jche-jdei 1640
 9349
 2
 jdei-jdej 1
-jchf-jdej 1
+jchf-jdej 2
 9352
 2
 jchi-jdfc 1
-jedi-jdfc 1
+jedi-jdfc 2
 9353
 1
 jeed-jdfd 1640
@@ -25115,25 +25115,25 @@ jeed-jdfd 1640
 jeee-jdfe 1640
 9355
 2
-jcib-jdff 1
 jeef-jdff 1
+jcib-jdff 1
 9357
 2
-jeeh-jdfh 2
+jeeh-jdfh 1
 jdfi-jdfh 1
 9358
 2
 jdfh-jdfi 1
-jcie-jdfi 2
+jcie-jdfi 1
 9360
 3
-jdgb-jdga 1
-jefe-jdga 1
 jcig-jdga 1
+jefe-jdga 1
+jdgb-jdga 2
 9361
 2
 jdga-jdgb 2
-jdgc-jdgb 2
+jdgc-jdgb 1
 9362
 1
 jcii-jdgc 1640
@@ -25151,15 +25151,15 @@ jdgg-jdgf 1640
 jcjc-jdgg 1640
 9368
 3
-jdgj-jdgi 1
 jegg-jdgi 1
+jdgj-jdgi 1
 jcje-jdgi 2
 9369
 1
 jdha-jdgj 1640
 9370
 2
-jegi-jdha 2
+jegi-jdha 1
 jcjg-jdha 1
 9371
 3
@@ -25173,7 +25173,7 @@ jdhd-jdhc 1
 jcji-jdhc 1
 9373
 2
-jehf-jdhd 1
+jehf-jdhd 2
 jdhc-jdhd 1
 9374
 1
@@ -25199,12 +25199,12 @@ jdai-jdic 2
 jdib-jdic 1
 9383
 2
-jdie-jdid 1
 jejd-jdid 1
+jdie-jdid 1
 9384
 2
-jdid-jdie 1
 jdba-jdie 1
+jdid-jdie 1
 9385
 1
 jdie-jdif 1640
@@ -25222,7 +25222,7 @@ jdbg-jdja 1640
 jdja-jdjb 1640
 9392
 2
-jdbi-jdjc 3
+jdbi-jdjc 1
 jfag-jdjc 1
 9395
 1
@@ -25236,13 +25236,13 @@ jfbg-jdji 2
 jdjj-jdji 1
 9399
 2
-jeaa-jdjj 2
 jfbh-jdjj 1
+jeaa-jdjj 2
 9400
 3
+jdcg-jeaa 1
 jfbi-jeaa 1
 jdjj-jeaa 1
-jdcg-jeaa 2
 9402
 1
 jfce-jeac 1640
@@ -25256,14 +25256,14 @@ jddb-jeaf 1640
 9406
 2
 jeaf-jeag 1
-jddc-jeag 3
+jddc-jeag 1
 9407
 1
 jeag-jeah 1640
 9408
 2
 jfcg-jeai 1
-jeah-jeai 2
+jeah-jeai 1
 9409
 1
 jeai-jeaj 1640
@@ -25275,7 +25275,7 @@ jeaj-jeba 1640
 jeba-jebb 1640
 9413
 2
-jfdb-jebd 1
+jfdb-jebd 2
 jddf-jebd 1
 9414
 1
@@ -25306,7 +25306,7 @@ jecd-jecc 1
 9423
 3
 jece-jecd 1
-jecc-jecd 1
+jecc-jecd 2
 jdeb-jecd 1
 9424
 1
@@ -25321,7 +25321,7 @@ jech-jecg 1
 9427
 2
 jecg-jech 1
-jeci-jech 1
+jeci-jech 2
 9428
 1
 jecj-jeci 1640
@@ -25348,7 +25348,7 @@ jedf-jedg 1640
 jedg-jedh 1640
 9438
 3
-jdfc-jedi 2
+jdfc-jedi 1
 jedh-jedi 1
 jedj-jedi 1
 9439
@@ -25374,13 +25374,13 @@ jeed-jeee 1
 9445
 2
 jeeg-jeef 1
-jdff-jeef 2
+jdff-jeef 1
 9446
 1
 jeeh-jeeg 1640
 9447
 2
-jeei-jeeh 2
+jeei-jeeh 1
 jdfh-jeeh 1
 9448
 2
@@ -25391,8 +25391,8 @@ jffa-jeei 1
 jefc-jefb 1640
 9452
 2
+jffe-jefc 1
 jefd-jefc 1
-jffe-jefc 2
 9453
 2
 jefe-jefd 1
@@ -25400,7 +25400,7 @@ jefc-jefd 1
 9454
 2
 jdga-jefe 1
-jefd-jefe 3
+jefd-jefe 1
 9458
 1
 jefj-jefi 1640
@@ -25409,12 +25409,12 @@ jefj-jefi 1640
 jffh-jefj 1640
 9460
 2
+jegb-jega 1
 jefj-jega 1
-jegb-jega 3
 9461
 2
 jega-jegb 1
-jegc-jegb 3
+jegc-jegb 1
 9462
 1
 jegd-jegc 1640
@@ -25426,7 +25426,7 @@ jdgf-jegd 1
 9464
 2
 jegd-jege 1
-jegf-jege 3
+jegf-jege 2
 9465
 2
 jegg-jegf 1
@@ -25448,17 +25448,17 @@ jehb-jeha 1640
 9471
 2
 jfgf-jehb 1
-jehc-jehb 2
+jehc-jehb 1
 9472
 3
-jehb-jehc 1
 jfgg-jehc 1
+jehb-jehc 1
 jehd-jehc 2
 9473
 3
-jdhb-jehd 2
-jehc-jehd 1
+jdhb-jehd 1
 jehe-jehd 1
+jehc-jehd 1
 9475
 1
 jehg-jehf 1640
@@ -25470,15 +25470,15 @@ jehh-jehg 1640
 jehi-jehh 1640
 9478
 2
-jfgi-jehi 1
 jehj-jehi 1
+jfgi-jehi 1
 9479
 2
-jehi-jehj 3
+jehi-jehj 1
 jeia-jehj 1
 9480
 2
-jeib-jeia 2
+jeib-jeia 1
 jehj-jeia 1
 9481
 1
@@ -25489,11 +25489,11 @@ jfhc-jeic 1640
 9483
 3
 jdhh-jeid 1
-jeic-jeid 2
+jeic-jeid 1
 jeie-jeid 1
 9484
 2
-jdhi-jeie 2
+jdhi-jeie 1
 jeid-jeie 1
 9485
 1
@@ -25511,12 +25511,12 @@ jeij-jeii 1
 jdic-jeii 2
 9489
 2
-jeii-jeij 1
 jeja-jeij 1
+jeii-jeij 1
 9493
 3
 jdid-jejd 1
-jfhj-jejd 2
+jfhj-jejd 1
 jeje-jejd 1
 9494
 1
@@ -25541,20 +25541,20 @@ jfid-jfab 1640
 jdjb-jfaf 1640
 9506
 3
+jdjc-jfag 2
 jfah-jfag 1
 jfaf-jfag 1
-jdjc-jfag 2
 9507
 2
+jfag-jfah 2
 jfai-jfah 1
-jfag-jfah 1
 9508
 2
 jfaj-jfai 1
 jfah-jfai 2
 9509
 2
-jfih-jfaj 2
+jfih-jfaj 1
 jfba-jfaj 1
 9510
 2
@@ -25567,24 +25567,24 @@ jfbc-jfbb 1
 jfba-jfbb 2
 9512
 2
-jfbb-jfbc 3
+jfbb-jfbc 2
 jfbd-jfbc 1
 9513
 2
-jfbc-jfbd 3
 jfbe-jfbd 1
+jfbc-jfbd 1
 9514
 2
-jfbf-jfbe 2
+jfbf-jfbe 1
 jfbd-jfbe 1
 9515
 2
+jfbe-jfbf 1
 jfbg-jfbf 1
-jfbe-jfbf 2
 9516
 2
 jdji-jfbg 1
-jfbf-jfbg 2
+jfbf-jfbg 1
 9518
 1
 jfbj-jfbi 1640
@@ -25597,7 +25597,7 @@ jfje-jfca 1640
 9523
 2
 jfcc-jfcd 1
-jeab-jfcd 1
+jeab-jfcd 2
 9524
 1
 jfcd-jfce 1640
@@ -25644,9 +25644,9 @@ jeea-jfeg 1640
 jfeg-jfeh 1640
 9548
 3
-jfeh-jfei 1
-jgca-jfei 2
 jeec-jfei 1
+jfeh-jfei 1
+jgca-jfei 1
 9550
 2
 jffb-jffa 1
@@ -25656,7 +25656,7 @@ jeei-jffa 1
 jgcd-jffb 1640
 9552
 2
-jgce-jffc 1
+jgce-jffc 2
 jffd-jffc 1
 9553
 3
@@ -25688,15 +25688,15 @@ jfgd-jfgc 1640
 3
 jfge-jfgd 1
 jegj-jfgd 1
-jgdf-jfgd 3
+jgdf-jfgd 2
 9564
 2
-jfgd-jfge 2
+jfgd-jfge 1
 jeha-jfge 1
 9565
 2
 jfge-jfgf 1
-jehb-jfgf 2
+jehb-jfgf 1
 9568
 1
 jgea-jfgi 1640
@@ -25709,7 +25709,7 @@ jeia-jfha 1640
 9571
 2
 jfha-jfhb 1
-jged-jfhb 2
+jged-jfhb 1
 9572
 1
 jfhb-jfhc 1640
@@ -25731,15 +25731,15 @@ jfhh-jfhg 1
 9577
 2
 jfhg-jfhh 1
-jfhi-jfhh 1
+jfhi-jfhh 2
 9578
 2
-jgfa-jfhi 2
+jgfa-jfhi 1
 jfhh-jfhi 1
 9579
 2
-jfhi-jfhj 1
 jejd-jfhj 1
+jfhi-jfhj 2
 9580
 1
 jfib-jfia 1640
@@ -25759,11 +25759,11 @@ jfai-jfig 1
 9587
 3
 jfaj-jfih 1
-jfig-jfih 1
+jfig-jfih 2
 jfii-jfih 1
 9588
 2
-jfih-jfii 3
+jfih-jfii 2
 jfij-jfii 1
 9589
 2
@@ -25786,7 +25786,7 @@ jfbj-jfjd 1640
 jggg-jfje 1640
 9598
 2
-jgha-jfji 2
+jgha-jfji 1
 jfjj-jfji 1
 9599
 1
@@ -25803,7 +25803,7 @@ jfda-jgac 1640
 9603
 2
 jghf-jgad 1
-jgac-jgad 2
+jgac-jgad 1
 9605
 1
 jgae-jgaf 1640
@@ -25815,8 +25815,8 @@ jgaf-jgag 1640
 jgag-jgah 1640
 9608
 3
-jgah-jgai 1
 jgia-jgai 1
+jgah-jgai 1
 jfdg-jgai 1
 9610
 1
@@ -25829,21 +25829,21 @@ jgbf-jgbe 1640
 jgih-jgbf 1640
 9616
 2
-jfee-jgbg 2
+jfee-jgbg 1
 jgbh-jgbg 1
 9617
 1
 jgbi-jgbh 1640
 9618
 2
-jgja-jgbi 3
+jgja-jgbi 1
 jfeg-jgbi 1
 9619
 1
 jgbi-jgbj 1640
 9620
 2
-jgbj-jgca 3
+jgbj-jgca 1
 jfei-jgca 1
 9622
 1
@@ -25851,7 +25851,7 @@ jffa-jgcc 1640
 9623
 3
 jgcc-jgcd 1
-jgce-jgcd 2
+jgce-jgcd 1
 jgjf-jgcd 1
 9624
 3
@@ -25866,7 +25866,7 @@ jhab-jgcj 1640
 jffi-jgda 1640
 9631
 2
-jgda-jgdb 1
+jgda-jgdb 2
 jhad-jgdb 1
 9632
 2
@@ -25877,7 +25877,7 @@ jgdb-jgdc 2
 jgdc-jgdd 1640
 9635
 3
-jhah-jgdf 2
+jhah-jgdf 1
 jfgd-jgdf 1
 jgdg-jgdf 1
 9636
@@ -25895,7 +25895,7 @@ jgdi-jgdj 1640
 9640
 2
 jgeb-jgea 1
-jhbc-jgea 3
+jhbc-jgea 2
 9641
 1
 jfgj-jgeb 1640
@@ -25905,7 +25905,7 @@ jhbe-jgec 1640
 9643
 2
 jgec-jged 1
-jhbf-jged 3
+jhbf-jged 1
 9645
 1
 jfhd-jgef 1640
@@ -25923,7 +25923,7 @@ jhca-jgei 1640
 jgei-jgej 1640
 9650
 2
-jhcc-jgfa 1
+jhcc-jgfa 2
 jgej-jgfa 1
 9651
 1
@@ -25965,13 +25965,13 @@ jheg-jghe 2
 9675
 2
 jghe-jghf 1
-jgad-jghf 2
+jgad-jghf 1
 9678
 1
 jghh-jghi 1640
 9679
 2
-jgia-jghj 1
+jgia-jghj 2
 jghi-jghj 1
 9680
 2
@@ -25982,7 +25982,7 @@ jgai-jgia 1
 jhfd-jgib 1640
 9682
 2
-jhfe-jgic 3
+jhfe-jgic 2
 jgba-jgic 1
 9683
 1
@@ -25998,15 +25998,15 @@ jgie-jgif 1640
 jhfj-jgih 1640
 9688
 2
-jgbg-jgii 1
+jgbg-jgii 2
 jhga-jgii 1
 9689
 2
 jgbh-jgij 1
-jgii-jgij 2
+jgii-jgij 1
 9690
 2
-jgij-jgja 1
+jgij-jgja 2
 jgjb-jgja 1
 9691
 1
@@ -26018,7 +26018,7 @@ jgca-jgjc 1
 9693
 2
 jgjc-jgjd 1
-jhgf-jgjd 2
+jhgf-jgjd 1
 9695
 2
 jgcd-jgjf 2
@@ -26035,7 +26035,7 @@ jhhc-jhaa 1
 jhab-jhaa 1
 9701
 2
-jhaa-jhab 3
+jhaa-jhab 1
 jhac-jhab 1
 9702
 1
@@ -26043,7 +26043,7 @@ jhad-jhac 1640
 9703
 2
 jhhf-jhad 1
-jhae-jhad 1
+jhae-jhad 2
 9704
 1
 jgdc-jhae 1640
@@ -26063,7 +26063,7 @@ jhib-jhaj 1640
 jgdj-jhbb 1640
 9712
 2
-jhie-jhbc 1
+jhie-jhbc 2
 jgea-jhbc 1
 9713
 1
@@ -26086,10 +26086,10 @@ jhbj-jhbi 1640
 9719
 2
 jgeh-jhbj 1
-jhca-jhbj 2
+jhca-jhbj 1
 9720
 2
-jhcb-jhca 2
+jhcb-jhca 1
 jhjc-jhca 1
 9721
 2
@@ -26097,7 +26097,7 @@ jhjd-jhcb 1
 jhcc-jhcb 1
 9722
 2
-jhcb-jhcc 2
+jhcb-jhcc 1
 jhje-jhcc 1
 9723
 1
@@ -26122,7 +26122,7 @@ jiaa-jhci 1640
 jgfi-jhda 1640
 9734
 2
-jggc-jhde 1
+jggc-jhde 2
 jiag-jhde 1
 9735
 1
@@ -26132,7 +26132,7 @@ jhde-jhdf 1640
 jgge-jhdg 1640
 9737
 2
-jiaj-jhdh 3
+jiaj-jhdh 1
 jhdg-jhdh 1
 9743
 1
@@ -26152,7 +26152,7 @@ jhfa-jhej 1
 jicj-jhej 1
 9750
 2
-jhej-jhfa 2
+jhej-jhfa 1
 jida-jhfa 1
 9751
 3
@@ -26164,12 +26164,12 @@ jghj-jhfb 1
 jhfd-jhfc 1640
 9753
 2
-jidd-jhfd 1
 jhfc-jhfd 1
+jidd-jhfd 2
 9754
 2
 jhff-jhfe 1
-jidi-jhfe 2
+jidi-jhfe 1
 9755
 1
 jgid-jhff 1640
@@ -26184,7 +26184,7 @@ jgif-jhfh 1640
 jied-jhfj 1640
 9760
 2
-jiei-jhga 2
+jiei-jhga 1
 jgii-jhga 1
 9761
 1
@@ -26198,12 +26198,12 @@ jgjd-jhgf 1
 jifd-jhgf 1
 9766
 2
-jifi-jhgg 3
+jifi-jhgg 1
 jhgh-jhgg 1
 9767
 2
 jhgg-jhgh 1
-jgjf-jhgh 2
+jgjf-jhgh 1
 9768
 1
 jhgh-jhgi 1640
@@ -26212,7 +26212,7 @@ jhgh-jhgi 1640
 jigb-jhgj 1640
 9772
 2
-jigi-jhhc 2
+jigi-jhhc 1
 jhaa-jhhc 1
 9775
 2
@@ -26231,7 +26231,7 @@ jhah-jhhj 1640
 9780
 2
 jhhj-jhia 1
-jiia-jhia 3
+jiia-jhia 2
 9781
 1
 jhic-jhib 1640
@@ -26240,8 +26240,8 @@ jhic-jhib 1640
 jhid-jhic 1640
 9783
 2
+jhbb-jhid 1
 jiid-jhid 1
-jhbb-jhid 3
 9784
 2
 jiii-jhie 1
@@ -26257,7 +26257,7 @@ jhbi-jhja 1640
 jijj-jhjb 1640
 9792
 2
-jjaa-jhjc 1
+jjaa-jhjc 2
 jhjb-jhjc 1
 9793
 2
@@ -26313,8 +26313,8 @@ jjda-jiba 1640
 jjdi-jibg 1640
 9817
 2
-jibg-jibh 2
 jjdj-jibh 1
+jibg-jibh 1
 9818
 1
 jibh-jibi 1640
@@ -26326,7 +26326,7 @@ jibi-jibj 1640
 jicd-jicc 1640
 9823
 2
-jheh-jicd 2
+jheh-jicd 1
 jice-jicd 1
 9824
 2
@@ -26338,7 +26338,7 @@ jice-jicf 1
 jicg-jicf 2
 9826
 2
-jjee-jicg 3
+jjee-jicg 1
 jicf-jicg 1
 9827
 1
@@ -26346,11 +26346,11 @@ jicg-jich 1640
 9828
 3
 jhei-jici 1
-jich-jici 2
-jicj-jici 1
+jich-jici 1
+jicj-jici 2
 9829
 2
-jida-jicj 1
+jida-jicj 2
 jici-jicj 1
 9830
 1
@@ -26365,9 +26365,9 @@ jidd-jidc 1
 jidb-jidc 2
 9833
 3
+jhfd-jidd 1
 jidc-jidd 2
 jide-jidd 1
-jhfd-jidd 1
 9834
 1
 jjei-jide 1640
@@ -26381,20 +26381,20 @@ jidi-jidh 1
 9838
 2
 jhfe-jidi 1
-jidh-jidi 3
+jidh-jidi 2
 9840
 1
 jhfg-jiea 1640
 9841
 2
 jiea-jieb 1
-jhfh-jieb 2
+jhfh-jieb 1
 9842
 1
 jieb-jiec 1640
 9843
 2
-jiee-jied 1
+jiee-jied 2
 jiec-jied 1
 9844
 1
@@ -26424,7 +26424,7 @@ jifb-jifc 1640
 9853
 3
 jifc-jifd 1
-jjfj-jifd 2
+jjfj-jifd 1
 jhgf-jifd 1
 9854
 1
@@ -26442,7 +26442,7 @@ jifg-jifh 1
 jifi-jifh 2
 9858
 2
-jifh-jifi 3
+jifh-jifi 1
 jhgg-jifi 1
 9860
 1
@@ -26450,15 +26450,15 @@ jhgi-jiga 1640
 9861
 2
 jiga-jigb 1
-jigc-jigb 1
+jigc-jigb 2
 9862
 2
 jigb-jigc 1
-jigd-jigc 3
+jigd-jigc 1
 9863
 2
 jigc-jigd 1
-jige-jigd 2
+jige-jigd 1
 9864
 1
 jjgg-jige 1640
@@ -26468,7 +26468,7 @@ jigi-jigh 1640
 9868
 3
 jhhc-jigi 1
-jigj-jigi 2
+jigj-jigi 1
 jjha-jigi 1
 9869
 1
@@ -26485,33 +26485,33 @@ jihd-jihc 1
 jihb-jihc 1
 9873
 2
-jihc-jihd 1
+jihc-jihd 2
 jihe-jihd 1
 9874
 2
-jihd-jihe 1
+jihd-jihe 2
 jihf-jihe 1
 9875
 1
 jjhd-jihf 1640
 9876
 2
-jjhe-jihg 2
+jjhe-jihg 1
 jihf-jihg 1
 9877
 2
 jihi-jihh 1
-jihg-jihh 3
+jihg-jihh 2
 9878
 2
 jhhi-jihi 1
-jihh-jihi 3
+jihh-jihi 2
 9879
 1
 jihi-jihj 1640
 9880
 2
-jihj-jiia 3
+jihj-jiia 1
 jhia-jiia 1
 9881
 1
@@ -26522,8 +26522,8 @@ jiib-jiic 1640
 9883
 3
 jiic-jiid 1
+jhid-jiid 1
 jjhh-jiid 1
-jhid-jiid 3
 9884
 1
 jiid-jiie 1640
@@ -26603,22 +26603,22 @@ jjbe-jjbd 1640
 9914
 2
 jjjg-jjbe 1
-jjbf-jjbe 1
+jjbf-jjbe 2
 9915
 2
 jjbe-jjbf 1
 jjbg-jjbf 2
 9916
 2
-jjbh-jjbg 3
 jjbf-jjbg 1
+jjbh-jjbg 1
 9917
 2
 jjbg-jjbh 1
-jjbi-jjbh 2
+jjbi-jjbh 1
 9918
 3
-jjbh-jjbi 1
+jjbh-jjbi 2
 jiac-jjbi 1
 jjbj-jjbi 1
 9919
@@ -26632,8 +26632,8 @@ jjcc-jjcb 1640
 jjcd-jjcc 1640
 9923
 2
-jiah-jjcd 1
 jjce-jjcd 1
+jiah-jjcd 2
 9924
 1
 jjcf-jjce 1640
@@ -26677,7 +26677,7 @@ jjeh-jjei 2
 9949
 2
 jjfa-jjej 1
-jjei-jjej 1
+jjei-jjej 2
 9950
 2
 jidg-jjfa 1
@@ -26694,7 +26694,7 @@ jjfd-jjfe 1640
 9955
 2
 jjfe-jjff 1
-jjfg-jjff 3
+jjfg-jjff 1
 9956
 1
 jjfh-jjfg 1640
@@ -26721,7 +26721,7 @@ jifg-jjgc 1640
 jigd-jjgf 1640
 9966
 2
-jjgh-jjgg 2
+jjgh-jjgg 1
 jjgf-jjgg 1
 9967
 2
@@ -26743,11 +26743,11 @@ jjgj-jjha 1640
 jihe-jjhc 1640
 9973
 2
-jjhc-jjhd 1
+jjhc-jjhd 2
 jjhe-jjhd 1
 9974
 2
-jjhf-jjhe 1
+jjhf-jjhe 2
 jjhd-jjhe 1
 9975
 1
