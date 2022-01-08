@@ -61,7 +61,7 @@ class Schedules:
     Schedule is a DICTIONARY of sequences of turning the lights on and off
     - schedules_dict is the "readable" form - a dictionary with items in such form for each intersection:
         - key: intersection_id
-        - value: list of tuples: (street_name, duration)
+        - value: list of tuples: (street, duration)
     - schedules_functional is the "functional" form - a dictionary of tuples representing the schedule in form
                                                             (total_time, streets_intervals)
         - streets_intervals - dictionary with items in form:
@@ -111,8 +111,11 @@ class Schedules:
         :return: no. of seconds until green light; 0 if it is green now
         """
         # todo - optimize
-        total_time, interval_dict = self.schedules_functional[street.intersection_at_end]
-        start, end = interval_dict[street]
+        try:
+            total_time, interval_dict = self.schedules_functional[street.intersection_at_end]
+            start, end = interval_dict[street]
+        except KeyError:
+            return -1  # if a street not specified, it means it's blocked
         cycle_time = time_now % total_time  # map current time to time in the cycle
         if start <= cycle_time:
             if cycle_time <= end:

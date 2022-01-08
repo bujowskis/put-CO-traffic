@@ -2,7 +2,6 @@ import inputreader3
 import sys
 
 
-# todo - see the differences; explain in README.md why greedy not always the best approach
 def main():
     """
     Reads 4 command line parameters:

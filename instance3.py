@@ -72,6 +72,10 @@ class Instance:
                 till_green = schedules.timeTillGreen(car.path[car.current_position], time)
                 if not till_green:
                     carGo(car)
+                elif till_green == -1:
+                    # the car is blocked up until the end of simulation
+                    car.finished = True
+                    continue
                 else:
                     # wait with next action until the next green
                     car.next_time = time + till_green
@@ -224,11 +228,11 @@ class Instance:
         schedules = Schedules()
 
         for intersection in self.intersections:
-            total_cars_count = 0
+            # total_cars_count = 0
             min_cars = math.inf
             data = list()
             for street in intersection.streets_in:
-                total_cars_count += street.cars_total
+                # total_cars_count += street.cars_total
                 if 0 < street.cars_total < min_cars:
                     min_cars = street.cars_total
 
@@ -243,6 +247,139 @@ class Instance:
 
         schedules.add_functional_schedule()
         return schedules
+
+    def advancedGreedyCutBottom(self, threshold_bottom: int = 4) -> Schedules:
+        """
+        Cuts out streets with the lower total cars count relative to the highest total cars count lower than
+        threshold times
+
+        i.e. assigns 0 green time to the streets with total cars count relative to the highest total cars
+        count threshold-times lower
+
+        @param threshold_bottom: the minimal ratio of street with highest to lowest cars count to be cut out
+        @return: generated schedule
+
+        @note the higher the threshold, the bigger the tolerance
+        @note if the threshold is too large, the schedule will be the same as regular greedy
+        @note if the threshold is 1 or lower, the schedule will have only one street with green light in each
+        intersection which has at least one incoming street with some total_cars_count
+        """
+        if threshold_bottom < 1:
+            threshold_bottom = 1
+
+        schedules = Schedules()
+        threshold_functional = 1 / threshold_bottom
+        for intersection in self.intersections:
+            # get max total cars
+            max_cars = 0
+            for street in intersection.streets_in:
+                if max_cars < street.cars_total:
+                    max_cars = street.cars_total
+            if not max_cars:
+                continue
+            # see which streets have enough cars to be added
+            enough = list()
+            for street in intersection.streets_in:
+                if street.cars_total / max_cars >= threshold_functional:
+                    enough.append(street)
+            # get min total cars count out of streets with enough total cars
+            min_cars = math.inf
+            for street in enough:
+                if street.cars_total < min_cars:
+                    min_cars = street.cars_total
+            # normalize and append to schedule
+            data = list()
+            for street in enough:
+                # no bottom check needed here
+                normalized = round(street.cars_total / min_cars)  # by rounding
+                data.append((street, normalized))
+            if len(data):
+                schedules.add_schedule(intersection.id, data)
+
+        schedules.add_functional_schedule()
+        return schedules
+
+    def advancedGreedyCutTop(self, schedule_in: Schedules, threshold_top: int = 2) -> (Schedules, bool):
+        """
+        Compared to regular greedy, increases the ratio needed for streets with higher total cars count to street with
+        lowest cars count required to get more time than it
+
+        i.e. streets with higher total cars count must have at least threshold times more cars to get additional second
+        of green in the schedule
+
+        @param schedule_in: input schedule as a reference
+        @param threshold_top: ratio of total cars count relative to the least one, which is needed to assign more green
+        @return: tuple of form (generated schedule, bool indicating if any street got green light longer than 1 second)
+
+        @note threshold_top <= 1 generates schedules similar to how a regular greedy would
+        @note too big threshold_top results in a schedule in which the longest green time assigned is 1; this case is
+        indicated by bool return value in a tuple equal to false
+        """
+        if threshold_top < 1:
+            threshold_top = 1
+        schedules = Schedules()
+        longer_than_second = False
+        for intersection_id, streets_tuples_list in schedule_in.schedules_dict.items():
+            min_cars = math.inf
+            for street, duration in streets_tuples_list:
+                if 0 < street.cars_total < min_cars:
+                    min_cars = street.cars_total
+            data = list()
+            for street, duration in streets_tuples_list:
+                normalized = round(street.cars_total / min_cars / threshold_top)  # by rounding todo - by ceiling?
+                if normalized != 0:
+                    data.append((street, normalized))
+                    if not longer_than_second and normalized > 1:
+                        longer_than_second = True
+            if len(data):
+                schedules.add_schedule(intersection_id, data)
+
+        schedules.add_functional_schedule()
+        return schedules, longer_than_second
+
+    def advancedGreedy(self) -> Schedules:
+        """
+        Combines advanced greedy bottom-up and up-bottom methods to completely explore the space of solutions that
+        can be obtained using these greedy-like algorithms.
+
+        The method does check the schedules sequentially; i.e. all schedules generated along the way are checked
+        separately, among which the best one is chosen.
+
+        @return: the best obtained schedules from greedy-like space of solutions
+        """
+
+        schedules_best = self.greedy()  # start with regular greedy
+        score_best = self.simulate(schedules_best)
+        highest_time = -1
+        for intersection_id, streets_tuples_list in schedules_best.schedules_dict.items():
+            for street, duration in streets_tuples_list:
+                if 0 < duration and highest_time < duration:
+                    highest_time = duration
+        if highest_time <= 0:
+            raise Exception("Wrong schedule provided - highest assigned green time is 0 or lower")
+        threshold_bottom = min(10, highest_time)
+
+        for i in range(1, threshold_bottom):
+            print(f'i = {i}')
+            schedules_bottom = self.advancedGreedyCutBottom(i)
+            score_bottom = self.simulate(schedules_bottom)
+            if score_bottom > score_best:
+                print(f'new best from bottom, score = {score_bottom}')
+                score_best = score_bottom
+                schedules_best = schedules_bottom
+            go_on = True
+            j = 2
+            while go_on:
+                print(f'\tj = {j}')
+                schedules_top, go_on = self.advancedGreedyCutTop(schedules_bottom, j)
+                score_top = self.simulate(schedules_top)
+                if score_top > score_best:
+                    print(f'new best from top, score = {score_top}')
+                    score_best = score_top
+                    schedules_best = schedules_top
+                j += 1
+
+        return schedules_best
 
     def randomSchedules(self, variance):
         schedules = Schedules()
