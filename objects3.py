@@ -71,7 +71,7 @@ class Schedules:
         self.schedules_dict = {}
         self.schedules_functional = {}
         self.score = 0
-        # self.requests = defaultdict(lambda: 0) # todo - maybe it will be better to store requests as fields of streets
+        # self.requests = defaultdict(lambda: 0)  # todo - maybe it will be better to store requests as fields of streets
 
     def add_schedule(self, intersection_id, data):
         self.schedules_dict[intersection_id] = data
@@ -101,6 +101,33 @@ class Schedules:
                 for street, time_intervals in streets_intervals.items():
                     street_time.append((street, time_intervals[1] - time_intervals[0] + 1))
                 self.schedules_dict[intersection] = street_time
+
+    def order_initqueue_first(self):
+        """
+        Orders streets in each intersection based on their init_queue_next;
+
+        i.e. makes the streets with higher number of initial cars in the queue appear first in the schedule cycle
+        """
+        for intersection_id, streets_tuples_list in self.schedules_dict.items():
+            priority_queue_values = set()
+            priority_queue_items = dict()
+            for street, duration in streets_tuples_list:
+                if street.init_queue_next not in priority_queue_values:
+                    # create list, add to values
+                    priority_queue_items[street.init_queue_next] = list()
+                    priority_queue_values.add(street.init_queue_next)
+                priority_queue_items[street.init_queue_next].append((street, duration))
+
+            data = list()
+            while len(priority_queue_values):
+                value = max(priority_queue_values)
+                priority_queue_values.discard(value)
+                items_list = priority_queue_items[value]
+                for item in items_list:
+                    data.append(item)
+            if len(data):  # may be redundant
+                self.schedules_dict[intersection_id] = data
+        self.add_functional_schedule()
 
     def timeTillGreen(self, street: Street, time_now: int) -> int:
         """

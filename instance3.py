@@ -245,6 +245,7 @@ class Instance:
             if len(data):
                 schedules.add_schedule(intersection.id, data)
 
+        # todo - order streets according to next_car
         schedules.add_functional_schedule()
         return schedules
 
@@ -296,6 +297,7 @@ class Instance:
             if len(data):
                 schedules.add_schedule(intersection.id, data)
 
+        # todo - order streets according to next_car
         schedules.add_functional_schedule()
         return schedules
 
@@ -326,7 +328,7 @@ class Instance:
                     min_cars = street.cars_total
             data = list()
             for street, duration in streets_tuples_list:
-                normalized = round(street.cars_total / min_cars / threshold_top)  # by rounding todo - by ceiling?
+                normalized = math.ceil(street.cars_total / min_cars / threshold_top)
                 if normalized != 0:
                     data.append((street, normalized))
                     if not longer_than_second and normalized > 1:
@@ -334,6 +336,7 @@ class Instance:
             if len(data):
                 schedules.add_schedule(intersection_id, data)
 
+        # todo - order streets according to next_car
         schedules.add_functional_schedule()
         return schedules, longer_than_second
 
