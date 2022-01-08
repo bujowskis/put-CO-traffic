@@ -23,6 +23,8 @@ For clarity, we modeled the whole thing in object programming manner, trying to 
 The evaluation function considers each car in each iteration separately, but there are a lot of optimization things we used to speed up the process, such as boolean fields of each car indicating if it can be skipped in a given iteration, or skipping the iterations when we're sure there would be no changes happening. Unfortunately, that's still not enough for true EA. But keep in mind, we have a few ideas on what to try out next.
 
 ### The algorithms
+**IMPORTANT** - see the last section of README to see the additional `advanced greedy` algorithm.
+
 In total, there are three algorithms we used for generating the schedules, among which the one yielding the best result is chosen (which in all cases boiled down to Evolutionary Algorithm).
 #### Intelligent uniform
 The most simple intelligent heuristic algorithm we could think of. It assigns 1 second of green light to each street **which is used by at least one car** in its corresponding intersection. That way, no street with a car is completely blocked.
@@ -111,4 +113,26 @@ cycle_length = 34
 
 In such case, the total cycle length of switching the lights in such an intersection becomes really long, and if there are lots of such intersections, eventually it may happen that all the cars will be stuck waiting for green light most of the time, potentially all the way to the most extreme point of no cars getting through at all. We're convinced that's exactly what happens in case of `d.txt`.
 
-**During explaining this special case of greedy, I just had an idea on how to potentially improve it. Additional commit is coming soon.**
+## Advanced greedy
+This is the improvement for greedy algorithm that came to my mind while I was writing the explanation to what are the pitfalls of regular greedy algorithm we implemented. It expored the "greedy-like space" more, which proved to be a little better than `evoKiller` in case of `e.txt`. Unfortunately, that's the only such case.
+
+The algorithm is explained in more detail in the docstrings. In general, on top of what regular greedy algorithm does, this one sequentially cuts out the streets with the lowest total car counts, and then tries out the variations of them in which the proportion between total cars count relative to the lowest total cars count is sequentially increased, up to point in which all of the remaining streets are assigned 1 second each.
+
+Output for `e.txt`
+```
+***** *** Started generating schedules:
+	intelligent uniform...
+		done, obtained score: 684817
+	greedy...
+		done, obtained score: 693052
+	advanced greedy...
+		done, obtained score: 706968
+	evoKiller...
+		done, obtained score: 692667
+***** *** All schedules generated
+***** *** the best score obtained: 706968, by advanced greedy
+	exporting this schedule...
+	(done)
+
+Process finished with exit code 0
+```
