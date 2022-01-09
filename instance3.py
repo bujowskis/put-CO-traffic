@@ -413,7 +413,7 @@ class Instance:
         schedules.add_functional_schedule()
         return schedules
 
-    def evoKiller(self, pop_size, max_no_improvement: int = 100, timeout: int = 300) -> (Schedules, int):
+    def evoKiller(self, pop_size, max_no_improvement: int = 100, timeout: int = 300, do_print: bool = False) -> (Schedules, int):
         """
         Generates a schedule using Evolutionary Algorithms methods
         @param pop_size: size of the population
@@ -421,6 +421,7 @@ class Instance:
         default
         @param timeout: time after the algorithm will terminate regardless of not reaching no improvement limit, 300s
         by default
+        @param do_print: if it is set to be true, then the plot is printed
         @return: the best Schedules found
         """
         all_scores = []
@@ -630,17 +631,19 @@ class Instance:
                 prev_best_score = best_score
             generation_counter += 1
 
-        # todo - potentially unnecessary
-        print(f'total time: {time.time() - start_time}\n'
-              f'time spent on simulations: {sum(simulation_times)}\n'
-              f'time spent on other stuff: {time.time() - start_time- sum(simulation_times)}')
-        # plot the improvement
-        # flatten the scores
-        flat_scores = [item for sublist in all_scores for item in sublist]
-        times = [x//pop_size for x in range(len(flat_scores))]
+        if do_print:
+            # todo - potentially unnecessary
+            print(f'total time: {time.time() - start_time}\n'
+                  f'time spent on simulations: {sum(simulation_times)}\n'
+                  f'time spent on other stuff: {time.time() - start_time- sum(simulation_times)}')
 
-        plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter-1, 100])
-        plt.show()
+            # plot the improvement
+            # flatten the scores
+            flat_scores = [item for sublist in all_scores for item in sublist]
+            times = [x//pop_size for x in range(len(flat_scores))]
+
+            plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter-1, 100])
+            plt.show()
 
         best_individual[0].update_readable()
         best_ordered = best_individual[0].order_initqueue_first()

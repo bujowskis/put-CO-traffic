@@ -86,17 +86,17 @@ def main():
     if score_intelligent == max_score:
         print(f"***** *** the best score obtained: {score_evo}, by intelligent uniform")
         print("\texporting this schedule...")
-        schedules_intelligent.export(f"{file_export_name}-best.txt")
+        schedules_intelligent.exportToFile(f"{file_export_name}-best.txt")
         print("\t(done)")
     elif score_advanced_greedy == max_score:
         print(f"***** *** the best score obtained: {score_advanced_greedy}, by advanced greedy")
         print("\texporting this schedule...")
-        schedules_advanced_greedy.export(f'{file_export_name}-best.txt')
+        schedules_advanced_greedy.exportToFile(f'{file_export_name}-best.txt')
         print("\t(done)")
     elif score_evo == max_score:
         print(f"***** *** the best score obtained: {score_evo}, by evoKiller")
         print("\texporting this schedule...")
-        schedules_evo.export(f"{file_export_name}-best.txt")
+        schedules_evo.exportToFile(f"{file_export_name}-best.txt")
         print("\t(done)")
     else:
         raise Exception("the impossible happened")

@@ -159,7 +159,19 @@ class Schedules:
             # it will be green still in this cycle
             return start - cycle_time
 
-    def export(self, filename):
+    def export(self):
+        count = 0
+        for total_time, streets_intervals in self.schedules_functional.values():
+            if total_time:
+                count += 1
+
+        print(f'{count}\n')
+        for intersection_id in self.schedules_dict.keys():
+            print(f'{intersection_id}\n{len(self.schedules_dict[intersection_id])}\n')
+            for i in self.schedules_dict[intersection_id]:
+                print(f'{i[0].name} {i[1]}\n')
+
+    def exportToFile(self, filename):
         count = 0
         for total_time, streets_intervals in self.schedules_functional.values():
             if total_time:
