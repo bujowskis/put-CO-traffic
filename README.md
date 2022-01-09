@@ -1,4 +1,4 @@
-# put-CO-traffic
+# put-CO-traffic (submission version)
 Repository for Combinatorial Optimization laboratory classes project - Traffic signaling problem statement for the Online Qualifications of Hash Code 2021
 
 ## Foreword
@@ -58,24 +58,37 @@ Since there have been some compromises made considering a regular Evolutionary A
 - Heuristic-Aided - the **mutation** is done using an additional parameter - **requests**. It's basicaly the waiting time of cars on a given street during the simulation's span. The mutation tries to address the problem by adding green time to the streets with the biggest requests (since these seem to need it the most), and decreasing it for streets with the least requests (as these may potentially not need it that much)
 - Search - rather self explanatory, really
 
-## Running the program
+## Running the program (submission version)
+Submission version of our project reads the data from stdin, not from a file.
+
 `main.py` is, as the name suggests, the main function which is to be run. It accepts up to 4 command line parameters, 1 of which is mandatory. The other 3 ones alter some parameters of `evoKiller`.
+
+
 1. **path** to the text file containing problem instance (mandatory)
 2. max **timeout time** (optional, 300s (5min) by default)
 3. **population size** (optional, 12 by default)
 4. **maximum number of iterations without improvement** (optional, 100 by default)
 
-Basically, (depending what python you're using), running the program boils down to:
+Basically, (depending what python you're using, we were working with python 3.9), running the program boils down to:
 ```
-python3 b.txt
+python3 ./main.py
 ```
 which is equivalent to:
 ```
-python3 b.txt 300 12 100
+python3 ./main.py 300 12 100
 ```
 
+Since we were supposed to read the data from `stdin`, the actual command would look like that:
+```
+python3 ./main.py < ./b.txt
+```
+
+Then, the generated schedule should be written to `stdout`
+
+To meet the requirements, we also prepared simple version of a program: `simple_main.py`. It uses greedy algorithm only.
+
 ### Solutions
-The schedules generated using this version of the project and the default `evoKiller` parameters should be available in this repository, in directories `schedules` and `schedules-best`. The first one contains schedules generated using all three algorithms, whereas the latter only the ones yielding the best result, chosen from the three algorithms (which as we said, are basically the results of `evoKiller`).
+The schedules generated using this version of the project and the default `evoKiller` parameters should be available in the `main` branch of the repository, in directories `schedules` and `schedules-best`. The first one contains schedules generated using all three algorithms, whereas the latter only the ones yielding the best result, chosen from the three algorithms (which as we said, are basically the results of `evoKiller`).
 
 ## The interesting case of d.txt
 This particular instance was by far the biggest pain in the ass. It always took the longest time to evaluate, up to the point when the number of generations `evoKiller` went through seemed like a joke. Nonetheless, the biggest curiosity about it is that **greedy yields 0 score for it**.

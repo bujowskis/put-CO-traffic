@@ -5,7 +5,7 @@ import time
 def main():
     files = ["a.txt", "b.txt", "c.txt", "d.txt", "e.txt", "f.txt"]
     for file in files:
-        instance = inputreader3.readInput(f'example-graphs/{file}')
+        instance = inputreader3.readInputFromStdIn()
         print(f'{file}')
 
         print("uniform")

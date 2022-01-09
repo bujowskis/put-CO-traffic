@@ -2,7 +2,7 @@ import math
 from objects3 import *
 import random
 import time
-import matplotlib.pyplot as plt
+
 from collections import defaultdict
 
 
@@ -218,7 +218,7 @@ class Instance:
         else:
             return schedules
 
-    def greedy(self) -> Schedules:
+    def greedy(self) -> Schedules:   # not used in main()
         """
         Generates schedules_dict for the intersections of the instance specified by Instance's parameters using
         greedy-like heuristic algorithm
@@ -260,7 +260,7 @@ class Instance:
         else:
             return schedules
 
-    def advancedGreedyCutBottom(self, threshold_bottom: int = 4) -> Schedules:
+    def advancedGreedyCutBottom(self, threshold_bottom: int = 4) -> Schedules:  # not used in main()
         """
         Cuts out streets with the lower total cars count relative to the highest total cars count lower than
         threshold times
@@ -311,7 +311,7 @@ class Instance:
         schedules.add_functional_schedule()
         return schedules
 
-    def advancedGreedyCutTop(self, schedule_in: Schedules, threshold_top: int = 2) -> (Schedules, bool):
+    def advancedGreedyCutTop(self, schedule_in: Schedules, threshold_top: int = 2) -> (Schedules, bool):  # not used in main()
         """
         Compared to regular greedy, increases the ratio needed for streets with higher total cars count to street with
         lowest cars count required to get more time than it
@@ -400,6 +400,9 @@ class Instance:
         return schedules_best
 
     def randomSchedules(self, variance):
+        """
+        Used to create initial population
+        """
         schedules = Schedules()
         for intersection in self.intersections:
             data = list()
@@ -455,21 +458,6 @@ class Instance:
 
             return new_schedules
 
-        # todo - that's something for the future
-        def smartMutation(old_schedules: Schedules, requests: defaultdict) -> Schedules:
-            new_schedules = Schedules()
-            # iterate over all the intersection in the old schedule
-            for intersection_id, tuples in old_schedules.schedules_dict.items():
-                if len(tuples) == 1:
-                    # if just one street, make it always green
-                    new_schedules.add_schedule(intersection_id, [(tuples[0][0], self.duration)])
-                    continue
-
-                new_tuples = None   # TODO: continue (smart mutation, that allows to mutate all the streets
-                                    #   not only the most and least occupied ones
-
-            return new_schedules
-
         def requestBasedMutation(old_schedules: Schedules, requests: defaultdict):
             """
             Creates NEW schedules based on the old ones.
@@ -489,11 +477,6 @@ class Instance:
                     street, duration = tuple_
                     waiting_times.append(requests[street.name])
                     new_tuples.append((street, duration))
-
-                # if sum(waiting_times) == 0:
-                #     # no change if there are no cars waiting on this intersection
-                #     new_schedules.add_schedule(intersection, [(tuples[0][0], self.duration)])
-                #     continue
 
                 # now, with some probability, increase the duration on street that had the most requests
                 # TODO: find out, what function will yield the best results
@@ -630,20 +613,6 @@ class Instance:
                 no_improvement = 0
                 prev_best_score = best_score
             generation_counter += 1
-
-        if do_print:
-            # todo - potentially unnecessary
-            print(f'total time: {time.time() - start_time}\n'
-                  f'time spent on simulations: {sum(simulation_times)}\n'
-                  f'time spent on other stuff: {time.time() - start_time- sum(simulation_times)}')
-
-            # plot the improvement
-            # flatten the scores
-            flat_scores = [item for sublist in all_scores for item in sublist]
-            times = [x//pop_size for x in range(len(flat_scores))]
-
-            plt.hist2d(x=times, y=flat_scores, cmap='YlOrRd', cmin=0.9, bins=[generation_counter-1, 100])
-            plt.show()
 
         best_individual[0].update_readable()
         best_ordered = best_individual[0].order_initqueue_first()
