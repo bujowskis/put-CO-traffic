@@ -23,7 +23,7 @@ For clarity, we modeled the whole thing in object programming manner, trying to 
 The evaluation function considers each car in each iteration separately, but there are a lot of optimization things we used to speed up the process, such as boolean fields of each car indicating if it can be skipped in a given iteration, or skipping the iterations when we're sure there would be no changes happening. Unfortunately, that's still not enough for true EA. But keep in mind, we have a few ideas on what to try out next.
 
 ### The algorithms
-**IMPORTANT** - see the last section of README to see the additional `advanced greedy` algorithm, and `order`.
+**IMPORTANT** - see the last section of README to see the additional feature: `order`.
 
 In total, there are three algorithms we used for generating the schedules, among which the one yielding the best result is chosen (which in all cases boiled down to Evolutionary Algorithm).
 #### Intelligent uniform
@@ -52,6 +52,31 @@ assigned times:
   street4: 2      # the difference big enough to assign double the green time
   street5: 4      # the difference is relatively very big
 ```
+
+## Advanced greedy
+This is the improvement for greedy algorithm that came to my mind while I was writing the explanation to what are the pitfalls of regular greedy algorithm we implemented. It expored the "greedy-like space" more, which proved to be a little better than `evoKiller` in case of `e.txt`. Unfortunately, that's the only such case.
+
+The algorithm is explained in more detail in the docstrings. In general, on top of what regular greedy algorithm does, this one sequentially cuts out the streets with the lowest total car counts, and then tries out the variations of them in which the proportion between total cars count relative to the lowest total cars count is sequentially increased, up to point in which all of the remaining streets are assigned 1 second each.
+
+Output for `e.txt`
+```
+***** *** Started generating schedules:
+	intelligent uniform...
+		done, obtained score: 684817
+	greedy...
+		done, obtained score: 693052
+	advanced greedy...
+		done, obtained score: 706968
+	evoKiller...
+		done, obtained score: 692667
+***** *** All schedules generated
+***** *** the best score obtained: 706968, by advanced greedy
+	exporting this schedule...
+	(done)
+
+Process finished with exit code 0
+```
+
 #### evoKiller
 Since there have been some compromises made considering a regular Evolutionary Algorithm couldn't be implemented given the execution time, we like to refer to this algorithm as a `Evolutionary-Algorithm-inspired Heuristic-Aided Search`. Why? It sounds ***sciency and cool***. Oh, and also it helps to get the underlying idea.
 - Evolutionary-Algorithm-inspired - there exists a diverse population of **individuals** (schedules), which are chosen to be altered and introduced to the next **generations**
@@ -59,15 +84,20 @@ Since there have been some compromises made considering a regular Evolutionary A
 - Search - rather self explanatory, really
 
 ## Running the program (submission version)
-Submission version of our project reads the data from stdin, not from a file.
+Submission version of our project reads the data from standard input.
 
-`main.py` is, as the name suggests, the main function which is to be run. It accepts up to 4 command line parameters, 1 of which is mandatory. The other 3 ones alter some parameters of `evoKiller`.
+###Sophisticated program
+The program returns the best schedule found by one out of these three algorithms:
+- intelligent uniform
+- advanced greedy
+- evoKiller
+
+`main.py` is, as the name suggests, the main function which is to be run. It accepts up to 3 command line parameters, which are optional. They alter some parameters of `evoKiller`.
 
 
-1. **path** to the text file containing problem instance (mandatory)
-2. max **timeout time** (optional, 300s (5min) by default)
-3. **population size** (optional, 12 by default)
-4. **maximum number of iterations without improvement** (optional, 100 by default)
+1. max **timeout time** (optional, 300s (5min) by default)
+2. **population size** (optional, 12 by default)
+3. **maximum number of iterations without improvement** (optional, 100 by default)
 
 Basically, (depending what python you're using, we were working with python 3.9), running the program boils down to:
 ```
@@ -83,9 +113,10 @@ Since we were supposed to read the data from `stdin`, the actual command would l
 python3 ./main.py < ./b.txt
 ```
 
-Then, the generated schedule should be written to `stdout`
+Then, the generated schedule is written to `stdout`
 
-To meet the requirements, we also prepared simple version of a program: `simple_main.py`. It uses greedy algorithm only.
+### Simple program
+To meet the requirements, we also prepared simple version of a program: `simple_main.py`. It return the schedule built by `greedy` algorithm.
 
 ### Solutions
 The schedules generated using this version of the project and the default `evoKiller` parameters should be available in the `main` branch of the repository, in directories `schedules` and `schedules-best`. The first one contains schedules generated using all three algorithms, whereas the latter only the ones yielding the best result, chosen from the three algorithms (which as we said, are basically the results of `evoKiller`).
@@ -126,29 +157,6 @@ cycle_length = 34
 
 In such case, the total cycle length of switching the lights in such an intersection becomes really long, and if there are lots of such intersections, eventually it may happen that all the cars will be stuck waiting for green light most of the time, potentially all the way to the most extreme point of no cars getting through at all. We're convinced that's exactly what happens in case of `d.txt`.
 
-## Advanced greedy
-This is the improvement for greedy algorithm that came to my mind while I was writing the explanation to what are the pitfalls of regular greedy algorithm we implemented. It expored the "greedy-like space" more, which proved to be a little better than `evoKiller` in case of `e.txt`. Unfortunately, that's the only such case.
-
-The algorithm is explained in more detail in the docstrings. In general, on top of what regular greedy algorithm does, this one sequentially cuts out the streets with the lowest total car counts, and then tries out the variations of them in which the proportion between total cars count relative to the lowest total cars count is sequentially increased, up to point in which all of the remaining streets are assigned 1 second each.
-
-Output for `e.txt`
-```
-***** *** Started generating schedules:
-	intelligent uniform...
-		done, obtained score: 684817
-	greedy...
-		done, obtained score: 693052
-	advanced greedy...
-		done, obtained score: 706968
-	evoKiller...
-		done, obtained score: 692667
-***** *** All schedules generated
-***** *** the best score obtained: 706968, by advanced greedy
-	exporting this schedule...
-	(done)
-
-Process finished with exit code 0
-```
 
 ## Order
 An additional add-on which can be used by any algorithm, as it's applicable to `Schedules` type object directly. The idea is to order which streets appear first in every cycle, based on how many cars are waiting on the streets at the beginning of the simulation. It's the most simple heuristic which does some ordering, and it's easy to understand - in most cases, it makes the most sense to let the street with the highest initial cars count go first in the schedule.
