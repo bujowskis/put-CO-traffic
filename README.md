@@ -1,6 +1,8 @@
 # put-CO-traffic
 Repository for Combinatorial Optimization laboratory classes project - Traffic signaling problem statement for the Online Qualifications of Hash Code 2021
 
+[The pdf explaining the tasks and problems of the project](https://storage.googleapis.com/coding-competitions.appspot.com/HC/2021/hashcode_2021_online_qualification_round.pdf)
+
 ## Foreword
 We both had a good time working on this project. We spent some valuable time on all the things needed to make it into reality - modeling, coding and optimizing our code.
 
